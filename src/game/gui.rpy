@@ -9,7 +9,7 @@ init offset = -2
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
-    gui.init(1280, 720)
+    gui.init(1920, 1080)
 
 
 
@@ -64,22 +64,22 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 22
+define gui.text_size = 22*1.5
 
 ## The size of character names.
-define gui.name_text_size = 30
+define gui.name_text_size = 30*1.5
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 24
+define gui.interface_text_size = 24*1.5
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 28
+define gui.label_text_size = 28*1.5
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 16
+define gui.notify_text_size = 16*1.5
 
 ## The size of the game's title.
-define gui.title_text_size = 50
+define gui.title_text_size = 50*1.5
 
 
 ## Main and Game Menus #########################################################
