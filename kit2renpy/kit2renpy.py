@@ -95,9 +95,9 @@ for item in root:
         if(ch != character):
             if(character):
                res.append("\thide {}".format(characters[character][1])) 
-        character = ch
-        # print(ch, character)
-        res.append("\tshow {}".format(characters[character][1]))
+            
+            character = ch
+            res.append("\tshow {}".format(characters[character][1]))
     else:
         print("Found unknown tag: ", item.tag)       
         
