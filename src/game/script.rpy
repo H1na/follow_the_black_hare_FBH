@@ -9,7 +9,10 @@
 
 # Declare the characters.
 define e = Character(_('Eileen'), color="#c8ffc8")
+
 define narrator = Character(None, window_left_padding=0)
+define black = Character(_('Аш'), color="#c8ffc8") 
+define onka = Character(_('Аш'), color="#c8ffc8") 
 
 init python:
 
