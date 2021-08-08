@@ -1,3 +1,6 @@
 .DS_Store
 *.kitsp
 *.rpyc
+saves/
+log.txt
+traceback.txt
