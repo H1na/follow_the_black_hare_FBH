@@ -132,7 +132,7 @@ define gui.dialogue_xpos = 268
 define gui.dialogue_ypos = 50
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 744
+define gui.dialogue_width = 1000
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -270,7 +270,7 @@ define gui.page_spacing = 0
 define gui.slot_spacing = 10
 
 ## The position of the main menu text.
-define gui.main_menu_text_xalign = 0.0
+define gui.main_menu_text_xalign = 0.5
 
 
 ## Frames ######################################################################
@@ -377,7 +377,7 @@ define gui.nvl_name_xalign = 1.0
 ## The position, width, and alignment of the dialogue text.
 define gui.nvl_text_xpos = 450
 define gui.nvl_text_ypos = 8
-define gui.nvl_text_width = 590
+define gui.nvl_text_width = 590*1.5
 define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
