@@ -45,7 +45,7 @@ characters = {
 
 file = "./Follow The Black Hare [FBH].kitsp"
 scenario = get_scenario_xml(file)
-scenario = unescape(scenario)
+
 root = ET.fromstring(scenario)
 
 res = []
@@ -58,6 +58,9 @@ for item in root:
     
     text = item.find("v").text
     # print(text)
+    if(text):
+        text = text.replace("&quot;", "\\\"")
+    
     if(item.tag == "scene_heading"):
         if(scene_counter > 1):
             res.append("\n")            
@@ -70,7 +73,7 @@ for item in root:
         if(not character):
             print("not found person")
             break
-        res.append('\t{} "{}"'.format(character[0], text))
+        res.append('\t{} "{}"'.format(characters[character][0], text))
         
     elif(item.tag == "action"):
         if(not text):
@@ -89,12 +92,16 @@ for item in root:
             print("Unknown command: ", text)
     elif(item.tag == "character"):
         ch = text.strip().upper()
-        character = characters[ch]
-        res.append("\tshow {}".format(character[1]))
+        if(ch != character):
+            if(character):
+               res.append("\thide {}".format(characters[character][1])) 
+        character = ch
+        # print(ch, character)
+        res.append("\tshow {}".format(characters[character][1]))
     else:
         print("Found unknown tag: ", item.tag)       
         
         
-# output = prepate_renpy_output(res)
+output = prepate_renpy_output(res)
 
-# save_file(output, "../src/game/frb.rpy")
+save_file(output, "../src/game/frb.rpy")
