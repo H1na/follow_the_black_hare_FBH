@@ -8,11 +8,10 @@
 # instead.
 
 # Declare the characters.
-define e = Character(_('Eileen'), color="#c8ffc8")
 
 define narrator = Character(None, window_left_padding=0)
-define black = Character(_('Аш'), color="#c8ffc8") 
-define onka = Character(_('Аш'), color="#c8ffc8") 
+define black = Character(_('Аш'), color="#FF0000") 
+define onka = Character(_('Онка'), color="#c8ffc8") 
 
 init python:
 
@@ -144,85 +143,5 @@ default tutorials_adjustment = ui.adjustment()
 default tutorials_first_time = True
 
 # The game starts here.
-#begin start
 label start:
-#end start
     jump scene_1
-
-    scene bg washington
-    show eileen vhappy
-    with dissolve
-
-    # Start the background music playing.
-    play music "sunflower-slow-drag.ogg"
-
-    window show
-
-    e "Hi! My name is Eileen, and I'd like to welcome you to the Ren'Py tutorial."
-
-    show eileen happy
-
-    e "In this tutorial, we'll teach you the basics of Ren'Py, so you can make games of your own. We'll also demonstrate many features, so you can see what Ren'Py is capable of."
-
-    
-label tutorials:
-
-    show eileen happy at left
-    with move
-
-    if tutorials_first_time:
-        $ e(_("What would you like to see?"), interact=False)
-    else:
-        $ e(_("Is there anything else you'd like to see?"), interact=False)
-
-    $ tutorials_first_time = False
-    $ renpy.choice_for_skipping()
-
-    call screen tutorials(adj=tutorials_adjustment)
-
-    $ tutorial = _return
-
-    if not tutorial:
-        jump end
-
-    if tutorial.move_before:
-        show eileen happy at center
-        with move
-
-    $ reset_example()
-
-    call expression tutorial.label from _call_expression
-
-    if tutorial.move_after:
-        hide example
-        show eileen happy at left
-        with move
-
-    jump tutorials
-
-label end:
-
-    show eileen happy at center
-    with move
-
-    show _finale behind eileen
-
-
-    e "Thank you for viewing this tutorial."
-
-    e "If you'd like to see a full Ren'Py game, select \"The Question\" in the launcher."
-
-    e "You can download new versions of Ren'Py from {a=https://www.renpy.org/}https://www.renpy.org/{/a}. For help and discussion, check out the {a=https://lemmasoft.renai.us/forums/}Lemma Soft Forums{/a}."
-
-    e "We'd like to thank Piroshki for contributing my sprites; Mugenjohncel for Lucy, the band, and drawn backgrounds; and Jake for the magic circle."
-
-    e "The background music is \"Sunflower Slow Drag\", by Scott Joplin and Scott Hayden, performed by the United States Marine Band. The concert music is by Alessio."
-
-    show eileen vhappy
-
-    e "We look forward to seeing what you create with Ren'Py. Have fun!"
-
-    window hide
-
-    # Returning from the top level quits the game.
-    return
