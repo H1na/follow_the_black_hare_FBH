@@ -9,6 +9,7 @@
 
 # Declare the characters.
 define e = Character(_('Eileen'), color="#c8ffc8")
+define narrator = Character(None, window_left_padding=0)
 
 init python:
 
@@ -143,6 +144,7 @@ default tutorials_first_time = True
 #begin start
 label start:
 #end start
+    jump scene_1
 
     scene bg washington
     show eileen vhappy
@@ -159,6 +161,7 @@ label start:
 
     e "In this tutorial, we'll teach you the basics of Ren'Py, so you can make games of your own. We'll also demonstrate many features, so you can see what Ren'Py is capable of."
 
+    
 label tutorials:
 
     show eileen happy at left
