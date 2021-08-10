@@ -98,6 +98,8 @@ for item in root:
             
             character = ch
             res.append("\tshow {}".format(characters[character][1]))
+    elif(item.tag in ("parenthetical", "scene_description")):
+        res.append("\t#{}".format(text))  
     else:
         print("Found unknown tag: ", item.tag)       
         
