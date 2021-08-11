@@ -50,6 +50,7 @@ characters_mood = {
 
 file = "./Follow The Black Hare [FBH].kitsp"
 scenario = get_scenario_xml(file)
+save_file(scenario, "scenario.xml")
 
 root = ET.fromstring(scenario)
 
