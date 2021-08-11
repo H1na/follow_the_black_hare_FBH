@@ -57,11 +57,13 @@ for item in root:
     # print(item.tag)
     
     text = item.find("v").text
-    # print(text)
+    print(text)
     if(text):
         text = text.replace("&quot;", "\\\"")
+    if(not text): #skipping empty blocks
+        continue
     
-    if(item.tag == "scene_heading"):
+    if(item.tag == "scene_heading"): #scene title/heading 
         if(scene_counter > 1):
             res.append("\n")            
 
@@ -69,28 +71,34 @@ for item in root:
         character = None
         scene_counter += 1            
         
-    elif(item.tag=="dialog"):
+    elif(item.tag=="dialog"): #character diaglog
         if(not character):
-            print("not found person")
+            print("person not found: ", )
             break
         res.append('\t{} "{}"'.format(characters[character][0], text))
         
-    elif(item.tag == "action"):
+    elif(item.tag == "action"): #action/author block
         if(not text):
             res.append('\tnarrator ""')    
             continue
         else:
             res.append('\tnarrator "{}"'.format(text))
             
-    elif(item.tag == "noprintable_text"):
+    elif(item.tag == "noprintable_text"): #commands block
         result = text.split(' ')
-        if(result[0] == "jump"):
+        command = result[0].lower()
+        
+        #parsing commands
+        if(command == "jump"):
             res.append("\t{}".format(text))
-        elif(result[0] == "scene"):
-            res.append("\t{}".format(text))            
+        elif(command == "scene"):
+            res.append("\t{}".format(text))
+        elif(command == "choose"):
+            res.append("\tcall {}".format(result[1]))
         else:
             print("Unknown command: ", text)
-    elif(item.tag == "character"):
+
+    elif(item.tag == "character"): #character block
         ch = text.strip().upper()
         if(ch != character):
             if(character):
@@ -98,7 +106,8 @@ for item in root:
             
             character = ch
             res.append("\tshow {}".format(characters[character][1]))
-    elif(item.tag in ("parenthetical", "scene_description")):
+
+    elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
     else:
         print("Found unknown tag: ", item.tag)       
