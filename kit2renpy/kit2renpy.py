@@ -17,31 +17,36 @@ def prepate_renpy_output(res):
     return output.replace("\t", "    ")
 
 characters = {
-    "АШ": ["black", "black_regular"],
-    "ВЕЧНА": ['vechna', 'vechna_smile2'],
-    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": ['stub_character', 'mouse1'],
-    "ВЕЧНА ЦИФРОВАЯ": ['digital_vechna', 'mouse1'],
-    "МАКСИМ": ['stub_character', 'mouse1'],
-    "ОНКА": ['stub_character', 'mouse1'],
-    "ОБЛАЧНЫЙ ЛИС": ['fox', 'mouse1'],
-    "ЛИС": ['fox', 'mouse1'],
-    "ГОЛОС ИЗ СЕТИ": ['stub_character', 'mouse1'],
-    "ГОЛОС С ФАБРИКИ": ['stub_character', 'mouse1'],
-    "ЖУРНАЛИСТ": ['stub_character', 'mouse1'],
-    "НАТАША": ['stub_character', 'mouse1'],
-    "ДРУГОЙ ЛИС": ['stub_character', 'mouse1'],
-    "ЛИС ИЗ КАСТЫ 3": ['stub_character', 'mouse1'],
-    "ГОЛОС МУЛЬТЯШКИ": ['stub_character', 'mouse1'],
-    "МОБИЛЬНАЯ КАМЕРА": ['stub_character', 'mouse1'],
-    "АЛИСА": ['stub_character', 'mouse1'],
-    "ЦЕНТР ПОМОЩИ": ['stub_character', 'mouse1'],
-    "МУЖЧИНА": ['stub_character', 'mouse1'],
-    "ЧЕРНЫЙ ЗАЯЦ": ["black", "black_regular"],
-    # "ВЕЧНА ЦИФРОВАЯ": ['stub_character', 'mouse1'],
-    # "ВЕЧНА ЦИФРОВАЯ": ['stub_character', 'mouse1'],
-    # "ВЕЧНА ЦИФРОВАЯ": ['stub_character', 'mouse1'],
+    "АШ": "black",
+    "ВЕЧНА": 'vechna',
+    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'stub_character',
+    "ВЕЧНА ЦИФРОВАЯ": 'digital_vechna',
+    "МАКСИМ": 'stub_character',
+    "ОНКА": 'stub_character',
+    "ОБЛАЧНЫЙ ЛИС": 'fox',
+    "ЛИС": 'fox',
+    "ГОЛОС ИЗ СЕТИ": 'stub_character',
+    "ГОЛОС С ФАБРИКИ": 'stub_character',
+    "ЖУРНАЛИСТ": 'stub_character',
+    "НАТАША": 'stub_character',
+    "ДРУГОЙ ЛИС": 'stub_character',
+    "ЛИС ИЗ КАСТЫ 3": 'stub_character',
+    "ГОЛОС МУЛЬТЯШКИ": 'stub_character',
+    "МОБИЛЬНАЯ КАМЕРА": 'stub_character',
+    "АЛИСА": 'stub_character',
+    "ЦЕНТР ПОМОЩИ": 'stub_character',
+    "МУЖЧИНА": 'stub_character',
+    "ЧЕРНЫЙ ЗАЯЦ": "black",
 }
 
+characters_mood = {
+    "black": "black_regular",
+    'vechna': 'vechna_smile2',
+    'digital_vechna': 'mouse1',
+    'stub_character': 'mouse1',
+    'fox': 'mouse1',
+    'stub_character': 'mouse1',
+}
 
 file = "./Follow The Black Hare [FBH].kitsp"
 scenario = get_scenario_xml(file)
@@ -75,7 +80,7 @@ for item in root:
         if(not character):
             print("person not found: ", )
             break
-        res.append('\t{} "{}"'.format(characters[character][0], text))
+        res.append('\t{} "{}"'.format(character, text))
         
     elif(item.tag == "action"): #action/author block
         if(not text):
@@ -95,6 +100,8 @@ for item in root:
             res.append("\t{}".format(text))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
+        elif(command =="emotion"):
+            characters_mood[result[1]] = result[2]
         else:
             print("Unknown command: ", text)
 
@@ -102,10 +109,10 @@ for item in root:
         ch = text.strip().upper()
         if(ch != character):
             if(character):
-               res.append("\thide {}".format(characters[character][1])) 
+                res.append("\thide {}".format(characters_mood[character])) 
             
-            character = ch
-            res.append("\tshow {}".format(characters[character][1]))
+            character = characters[ch]
+            res.append("\tshow {}".format(characters_mood[character]))
 
     elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
