@@ -76,9 +76,9 @@ image black angry2            = 'black_angry2'
 image black annoyed           = 'black_annoyed'
 image black confused          = 'black_confused'
 image black disgust           = 'black_disgust'
-image black disgust1           = 'black_disgust1'     #
+image black disgust1          = 'black_disgust1'     #
 image black fear              = 'black_fear'
-image black fear1              = 'black_fear1'        #
+image black fear1             = 'black_fear1'        #
 image black happy1            = 'black_happy'
 image black happy2            = 'black_happy2'
 image black mad1              = 'black_mad1'
@@ -87,9 +87,9 @@ image black mad3              = 'black_mad3'
 image black regular           = 'black_regular'
 image black regular_blood     = 'black_regular_blood'
 image black sad               = 'black_sad'
-image black sad1               = 'black_sad1'         # 
+image black sad1              = 'black_sad1'         # 
 image black surprised         = 'black_surprised'
-image black surprised1         = 'black_surprised1'   # 
+image black surprised1        = 'black_surprised1'   # 
 image black veryangry         = 'black_veryangry'
 
 
@@ -116,6 +116,11 @@ image vechna angry = 'vechna_angry'
 image vechna smile1 = 'vechna_smile1'
 image vechna smile2 = 'vechna_smile2'
 
+image digital_vechna = 'vechna_thinking'
+image digital_vechna thinking = 'vechna_thinking'
+image digital_vechna angry = 'vechna_angry'
+image digital_vechna smile1 = 'vechna_smile1'
+image digital_vechna smile2 = 'vechna_smile2'
 
 # болванчики для отсутствующих спрайтов. Удалить когда нарисуем.
 
