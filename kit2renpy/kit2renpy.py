@@ -37,6 +37,7 @@ characters = {
     "ЦЕНТР ПОМОЩИ": 'stub_character',
     "МУЖЧИНА": 'stub_character',
     "ЧЕРНЫЙ ЗАЯЦ": "black",
+    "КАМЕРА": "stub_character",
 }
 
 characters_mood = {
