@@ -107,6 +107,7 @@ image fox       = 'fox_smile'
 image fox angry = 'fox_angry'
 image fox shock = 'fox_shock'
 image fox smile = 'fox_smile'
+image fox neon collar = 'fox_neon_collar'
 
 
 image max         = 'max_regular'
