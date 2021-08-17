@@ -1,5 +1,4 @@
 label scene_1:
-    scene black_background
     #Здесь мы рассказываем о том, где они живую и что это - опасное место. Где бояться нужно не только природы, но и себя. Аш винит себя, что это он подвел Вечну к копированию. В сцене герой должен быть крут и логичен. Он рассказывает о законе копирования.
     #(Появляется фон.)
     #(Начинается музыка.)
@@ -7,12 +6,11 @@ label scene_1:
     #(Появляется текст.)
     show black_regular
     black "В начале 21 века чаще всего боялись высоты и темноты. В 22 веке бо́льшая часть населения Земли вынуждена 10 лет жить на Луне ради науки и освобождения места. "
-    call fear_angry
     hide black_regular
     show black_regular
     black "И они боятся разгерметизации лунных станций. Больше всего на свете. "
-    hide black_fear
-    show black_fear
+    hide black_regular
+    show black_regular
     black "В ту ночь я спал в кроличьем Куполе..."
     #(CG — спящий кролик. Раздается звук сирены. )
     #(Сменяется: CG — спящий кролик в красном, аварийном освящении.)
@@ -46,7 +44,6 @@ label scene_1:
     hide black_regular
     show black_regular
     black "Вечна могла открыть, верно? Но она не сделала этого."
-    narrator " "
     #(Пауза, темный экран и просто музыка 1 секунду.)
     hide black_regular
     show black_regular
@@ -76,43 +73,45 @@ label scene_1:
 
 
 label scene_2 :
-    scene helpcenter
+    scene home
     #В этой сцене мы должны увидеть, как герой стал крутым парнем из сцены 1. Он шел чтоб спасти девушку от закона копирования, но не смог. Виртуальная Вечна удалила реальную. Как? Это останется загадкой, но потом выясниться – что это Онка
     narrator "Тремя часами ранее."
-    narrator "Перед глазами Аша высветилось уведомление: \"Твоя сестра в Центре Копирования\""
+    narrator "Перед глазами Аша высветилось уведомление: \"Твоя сестра в Центре Копирования.\""
     narrator "В голове парня мелькнула мысль: разве она не получила все, что хотела? Что она там делает?"
+    scene station_corridor
     narrator "Он несся по коридорам станции, пока не остановился перед дверью."
     narrator "В Центре копирования, по ту сторону стекла, лежала его сестра."
     narrator "Вечна рассматривала потолок. Ее тело было намертво зафиксировано на кушетке."
-    narrator "Он попытался попасть внутрь, но кабинет копирования был занят, а значит – доступ закрыт."
-    show black_fear
+    narrator "Он попытался попасть внутрь, но Центр Копирования был занят - а значит, и доступ закрыт."
+    show regular_fear
     black "Вечна, все в порядке?"
     narrator "  Его заглушил голос."
-    hide black_fear
+    hide regular_fear
     show mouse1
     stub_character "Оцифровка прошла успешно. Поздравляем!"
-    narrator "Девушка заметила брата и повернула голову в его сторону. Ее зрачки слегка загорелись."
+    narrator "Девушка заметила брата и повернула голову в его сторону."
     hide mouse1
     show vechna_smile1
     vechna "Замечательно! Можете меня расстегнуть? За мной пришли."
     hide vechna_smile1
     show mouse1
-    stub_character "Мы обязаны вас выключить, по запросу о сохранении индивидуальности. "
+    stub_character "Мы обязаны вас выключить, по запросу о сохранении индивидуальности."
+    narrator "На ее лице на секунду мелькнуло непонимание. А затем радость сменило нарастающее чувство тревоги."
     hide mouse1
     show mouse1
     stub_character "Причина: копия в сети признана первичной личностью."
-    narrator "На ее лице появилась тревога."
     hide mouse1
     show vechna_angry
     vechna "Эм, как так? Стоп-стоп-стоп! Обычно все наоборот!"
-    narrator "Перед глазами Вечны развернулась голограмма. Девушка смотрела на нее сосредоточенными глазами. "
+    narrator "Перед глазами Вечны развернулась голограмма. Девушка смотрела на нее сосредоточенными глазами."
     narrator "Это были ее собственные глаза, но столь холодные и чужие..."
     hide vechna_angry
-    show black_angry
+    show regular_angry2
     black "Что происходит? Вечна?"
     narrator "Он как будто задумался, к какой из версий девушки обращался. Две капли воды."
-    narrator "В горле оригинала стоял ком. Она понимала, как поступит девушка с холодными глазами. Ведь она поступила бы точно так же. И от этого осознания ее душа свернулась в клубок. Нити. Нити. И каждая дрожит, подобно пламени свечи."
-    hide black_angry
+    narrator "В горле оригинала стоял ком. Она абсолютно точно понимала, как поступит девушка с холодными глазами. "
+    narrator "Ведь она поступила бы точно так же."
+    hide regular_angry2
     show vechna_angry
     vechna "Не удаляй меня! Слышишь?!"
     hide vechna_angry
@@ -120,31 +119,32 @@ label scene_2 :
     vechna "Здесь же Аш, как ты можешь?.."
     narrator "Ее крик растерзал стены Центра Копирования. Но дошли ли ее слова до копии?"
     hide vechna_angry
-    show mouse1
+    show thinking
     digital_vechna "Его не должно было здесь быть. К тому же, на моем месте ты поступила бы также. "
-    hide mouse1
-    show mouse1
+    hide thinking
+    show thinking
     digital_vechna "Мы обе это понимаем, верно?.. Я не могу делить с кем-то свою индивидуальность. "
-    hide mouse1
-    show mouse1
+    hide thinking
+    show thinking
     digital_vechna "Мы не можем существовать в двух экземплярах."
     narrator "Лежа на кушетке, девушка глубоко дышала, пытаясь собраться с мыслями. "
-    narrator "Она проглотила ком, ресницы перестали дрожать. Она облизнула губы и ее голос зазвучал спокойно."
-    hide mouse1
+    narrator "Она проглотила ком, ресницы перестали дрожать. Она облизнула губы и теперь ее голос звучал спокойно."
+    hide thinking
     show vechna_angry
     vechna "Я знаю, почему мы поступаем именно так. "
-    hide vechna_angry
-    show vechna_angry
+    hide vechna_smile2
+    show vechna_smile2
     vechna "И ты, так же как и я, знаешь основное допущение. Которое ломает все аргументы."
     narrator "Цифровая Вечна молчала. В этом молчании скрывалась надежда."
-    hide vechna_angry
-    show vechna_angry
+    hide vechna_smile2
+    show vechna_smile2
     vechna "Зачем тебе индивидуальность? Нет смысла убивать одну из нас чтобы решить парадокс."
-    hide vechna_thinking
-    show vechna_thinking
-    vechna "Допустила бы я, чтобы кто-то еще использовал мой интеллект? Я пока не так открыта к новому."
-    narrator "Эти слова сильно задели девушку на кушетке. Ирония, что это были слова копии в сети."
-    hide vechna_angry
+    hide vechna_smile2
+    show smile1
+    digital_vechna "Допустила бы я, чтобы кто-то еще использовал мой интеллект? Я пока не настолько открыта новому."
+    narrator "Эти слова сильно задели девушку на кушетке. "
+    narrator "Ирония, что это были слова копии в сети, но столь точно передавшие ее собственные недавние размышления."
+    hide smile1
     show vechna_angry
     vechna "Ты и так получаешь мою мечту, дрянь! "
     hide vechna_angry
@@ -154,109 +154,124 @@ label scene_2 :
     show vechna_angry
     vechna "Ты! Ты получишь вычислительные мощности!"
     hide vechna_angry
-    show mouse1
-    digital_vechna "Именно поэтому цифровая копия — ведущее сознание. В цифре я сделаю больше, чем 2 настоящие Вечны. Ты сама знаешь про уговор!"
-    hide mouse1
-    show vechna_angry
+    show smile1
+    digital_vechna "Именно поэтому цифровая копия — ведущее сознание. "
+    hide smile1
+    show smile1
+    digital_vechna "В цифре я сделаю больше, чем 2 настоящие Вечны. "
+    hide smile1
+    show smile1
+    digital_vechna "Ты сама знаешь про уговор!"
+    hide smile1
+    show vechna_sad
     vechna "Это ошибка. Такого уговора не было!.."
     narrator "Девушка перешла на шепот, всем лицом выражая мольбу."
     narrator "Пространство вокруг сжалось, и не осталось ничего кроме слов. Слов входящих и исходящих."
-    hide vechna_serios
-    show vechna_serios
-    vechna "Я откажусь от всего. Не убивай меня! И, о боже, я исходная личность, почему решаешь ты?"
-    hide vechna_smile1
-    show vechna_smile1
-    vechna "Мне помогли… И знаешь… Через год или два – ты удалила бы меня!"
-    hide vechna_angry
-    show vechna_angry
+    hide vechna_sad
+    show vechna_sad
+    vechna "Я откажусь от всего. Не убивай меня! "
+    hide vechna_thinking
+    show vechna_thinking
+    vechna "И, о боже, я – исходная личность, почему решаешь ты?"
+    hide vechna_thinking
+    show smile1
+    digital_vechna "Мне помогли… И, знаешь… Через год или два – ты удалила бы меня!"
+    hide smile1
+    show vechna_sad
     vechna "Но мы так не договаривались! Как же брат?.."
-    narrator "Цифровая Вечна повернулась к стеклу, отделявшему их. Парень ломился в дверь."
-    hide vechna_smile2
-    show mouse1
-    digital_vechna "У него, буду я."
+    narrator "Цифровая Вечна повернулась к стеклу, разделяющему ее и брата. Парень ломился в дверь."
+    hide vechna_sad
+    show smile1
+    digital_vechna "У него буду я."
     narrator "Холодный ответ. Она могла стерпеть что угодно, но это было самое острое лезвие. "
-    narrator "Душа оригинала засмеялась. И этот смех вырвался из нее пламенем."
-    hide mouse1
-    show vechna_isteric
+    hide smile1
+    show vechna_sad
     vechna "Как же я безжалостна к себе!"
     narrator "Она плакала. Руки тряслись. Раскатистый смех пробивался сквозь слезы обреченности."
     narrator "Славно вот так лежать и осознавать, что изобрел самый оригинальный способ самоубийства. "
     narrator "Безнадежное положение, в котором тебя убивает твоя собственная копия. "
     narrator "Выход есть всегда? "
-    narrator "Иногда все двери закрыты. А в конце тоннеля нескончаемая тьма. Смерть. Смерть. Смерть."
+    narrator "Только не здесь. Как и на Луне, где за пределами купола тебя ждут лишь тьма, холод и смерть."
     hide vechna_angry
     show vechna_angry
-    vechna "Ты в сговоре с этим богатым ублюдком! Он обманул меня и тебя ждет такая же участь!"
+    vechna "Ты в сговоре с этим богатым ублюдком! "
+    hide vechna_angry
+    show vechna_angry
+    vechna "Он обманул меня, а теперь и тебя ждет такая же участь, не сомневайся!"
     narrator "Она взглянула на Аша. Его лицо искажалось сквозь стекло, заляпанное кровью. Он бился лбом и руками. "
     narrator "Но что это изменит? "
     narrator "Даже если его упрямства хватит, чтобы преодолеть стекло – его не хватит, чтобы преодолеть барьер между жизнью и смертью."
-    hide vechna_angry
-    show vechna_angry
+    narrator "Затянувшуюся на несколько секунд тишину разрезал полный бесконечного отчаяния крик девушки:"
+    hide vechna_sad
+    show vechna_sad
     vechna "Это все он... !"
     narrator "Ее заглушил голос станции:"
-    hide vechna_angry
+    hide vechna_sad
     show mouse1
     stub_character "Автоматическая подача газа запущена."
     hide mouse1
-    show black_angry2
+    show black
     black "Нет! Отключите! Отключите, это ошибка! Живая - исходная личность, не наоборот!"
-    narrator "Пальцы ее рук онемели. "
+    narrator "Пальцы ее рук онемели."
     narrator "Девушка понимала, что у нее нет шансов против самой себя, что она умирает. "
     narrator "Слезы теплым ручьем вытекали из глаз и стекали по вискам."
     narrator "Вскоре браслеты на кушетке освободили руки Вечны. "
     narrator "Кисти безжизненно повисли, приобретая мертвый синий оттенок."
     narrator "Аш наблюдал. Все время. "
     narrator "Внутрь вошли до блеска чистые роботы и подняли тело девушки."
-    hide black_angry2
-    show black_angry2
+    hide regular_angry2
+    show regular_angry2
     black "Нет! Пустите к ней! Пустите!"
-    hide black_angry2
-    show mouse1
+    hide regular_angry2
+    show thinking
     digital_vechna "Не плачь! Я же здесь!"
-    hide mouse1
-    show black_angry2
+    hide thinking
+    show regular_angry2
     black "Как ты это сделала? Как ты стала главной?! "
-    hide black_angry2
-    show black_angry2
+    hide regular_angry2
+    show regular_angry2
     black "Ты мне не сестра! Ты – чудовище!"
-    hide black_angry1
-    show black_angry1
+    hide regular_angry2
+    show regular_angry2
     black "Копии не люди! Они не принимают решения!"
-    hide black_angry1
-    show mouse1
+    hide regular_angry2
+    show thinking
     digital_vechna "Я покажу тебе, я все объясню..."
-    narrator "А затем, внезапно, даже цифровая копия сестры покинула его. Исчезла, словно не по своей воле. Аш был опустошен. "
+    narrator "А затем, внезапно, даже цифровая копия сестры покинула его. "
+    narrator "Исчезла, словно не по своей воле. Аш был полностью опустошен."
     narrator "Его разум никак не мог осознать произошедшее. В голове раз за разом крутилась лишь одна фраза - «Это все он…»."
-    hide mouse1
-    show black_sad
+    hide thinking
+    show regular_sad
     black "Зачем я дал ей код! Это все я!"
-    narrator "Перед тем, как он ушел… Комната была чиста. Словно ничего не произошло. "
-    narrator "Только слезы на кушетке заставили его вновь прильнуть к стеклу. "
-    narrator "На секунду, ему лишь показалось… промелькнул рыжий хвост."
+    narrator "Как же быстро… Едва Аш поднял голову, собираясь уходить, как увидел, что комната уже стерильно чиста. "
+    narrator "Словно ничего и не произошло. "
+    narrator "Словно еще несколько минут назад здесь трагически не прервалась жизнь."
+    narrator "Только слезы на кушетке заставили его вновь прильнуть к стеклу."
+    narrator "Перед ним высветилось сообщение в смешанной реальности: Центр Копирования свободен, отправьте запрос..."
+    narrator "На секунду, быть может, это лишь показалось… На периферии зрения промелькнул рыжий хвост."
     jump scene_3
 
 
 label scene_3:
     scene helpcentere_2
-    narrator "Настоящее время"
+    narrator "(Настоящее время)"
     #(Показываем уведомление для игрока: Распознайте эмоции героя – от этого зависит, какие эмоции увидят на Ушах другие персонажи)
     #(Показываем героя в центре помощи. Он сидит на полу и проверяет свою очередь. Еще пять человек до него.)
     show black_sad
-    black "Это все он... Неужели она винит меня?"
+    black "Это все он... Неужели, она винит меня?"
+    call angry_sad
     hide black_sad
     show black_sad
     black "Кому хоть я вру. Это правда."
     hide black_sad
     show black_sad
     black "Я просто хотел обучить Уши узнавать эмоции, я не хотел..."
-    call fear_angry
-    hide learned
-    show learned
-    #(это обученная эмоция на основе выбора выше, тут показываем выбранную эмоцию из меню выше)
-    hide black_learned_sad
-    show black_learned_sad
-    #(это обученная эмоция грусть, когда нужно показать конкретно грусть, но обученную)
-    black "Я ошибался и не должен был давать тебе то, что ты просила. Все мои действия во благо, стали злом. Все."
+    hide sad_var
+    show sad_var
+    black "Я ошибался, я не должен был давать тебе то, что ты просила."
+    hide sad_var
+    show sad_var
+    black "Все мои действия во благо стали злом. Все."
     jump scene_4
 
 
@@ -264,268 +279,317 @@ label scene_4 :
     scene Planet
     #Показывая свою планету, она уговаривает его дать доступ к коду Ушей и объясняет для чего ей это. Он соглашается, но просит ее быть на выступлении и уходит
     narrator "3 месяца назад..."
-    narrator "Аш смотрел под ноги: песок, но не как лунный грунт и не как любой песок с Земли, а как перемолотые кристаллы красно-рубинового цвета. Над головой атмосфера. Она кажется настолько густой и насыщенной парами, что розовые скопления облаков того и гляди начнут падать под собственной тяжестью."
-    show vechna_smile
-    vechna "Круто, да? Такие облака образуются только между темной и светлой стороной планеты. Там перепады температур — сдохни!"
+    narrator "Аш смотрел под ноги: песок, но не как лунный грунт и не как любой песок с Земли... "
+    narrator "...А как перемолотые кристаллы красно-рубинового цвета. "
+    narrator "Над головой атмосфера. Она кажется настолько густой и насыщенной парами... "
+    narrator "...Что розовые скопления облаков того и гляди начнут падать под собственной тяжестью."
+    show vechna_smile1
+    vechna "Круто, да? "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Такие облака образуются только между темной и светлой стороной планеты. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Там такие перепады температур — сдохнуть!"
     narrator "Парень поднял голову вверх."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Как я скучаю по небу."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Все под куполом скучают по нему. Но есть сеть, тут тебе и земное небо и спроектированное мной!"
+    hide sad_var
+    show vechna_smile1
+    vechna "Все под куполом скучают по нему. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но есть сеть, тут тебе и земное небо и спроектированное мной!"
     narrator "Она сделала несколько движений пальцами, раскрылась модель галактики. Вечна отмотала куда-то влево на периферию Млечного пути."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Это невообразимо далеко. Ровер добирался туда 60 лет, Ашик!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Это невообразимо далеко. Ровер добирался туда 80 лет, Ашик!"
+    hide vechna_smile1
+    show sad_var
     black "Ты своим Ашиком весь драматизм убила."
-    narrator "В густых, красных облаках засверкали молнии. Вечна в нетерпении захлопала в ладоши и вытянула шею."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "В густых, красных облаках засверкали молнии. "
+    narrator "Казалось, небеса захлестнула электронная музыка."
+    narrator "Вечна в нетерпении захлопала в ладоши и вытянула шею, будто бы желая стать хоть чуточку ближе к облакам."
+    hide sad_var
+    show sad_var
     black "Что-то начинается?"
-    narrator "Видя что сестра уставилась на небо и не реагирует, тоже всмотрелся."
-    narrator "Тучи разразились красными, сверкающими каплями. Крупные кристаллы дождем посыпались на их головы."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Видя, что сестра уставилась на небо, и не реагирует, парень тоже решил подарить ему все свое внимание."
+    narrator "Тучи разразились красными сверкающими кровавыми слезами-каплями."
+    narrator "Крупные кристаллы дождем посыпались на их головы."
+    hide sad_var
+    show sad_var
     black "Ааа!"
-    narrator "Уши Аша опустились, но кристаллы не коснулись его."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Они проходят сквозь?"
-    hide black_learned_sad
-    show vechna_smile
+    narrator "Аш испугался, но кристаллы не коснулись его."
+    hide sad_var
+    show sad_var
+    black "Они проходят насквозь?"
+    hide sad_var
+    show vechna_smile1
     vechna "Пока не доделаю, на мир можно только смотреть, не чувствовать."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Почему?"
     narrator "Вечна сделала недовольное лицо. Присела на корточки и попыталась зачерпнуть розовый, кристальный песок."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Я не успела проработать все так сильно. За обработку данных с исследовательских устройств мне не платят."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Я не успела проработать все так подробно. За обработку данных с исследовательских устройств мне не платят."
+    hide vechna_smile1
+    show sad_var
     black "Не переживай, ты найдешь себе именно такую работу, как хочешь!"
     narrator "Девушка встала и он обнял ее за плечи. Она ответила ему усталой улыбкой. Словно давно пытается объяснить что-то, в который раз."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Лучшее что может быть — полное отсутствие причин заниматься чем-то другим, кроме создания далеких миров."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "А у меня и нет, этих других причин... Но и возможностей заниматься только этим — тоже нет."
-    narrator "Уши Аша опустились. Вечна заметила это."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Нет смысла грустить"
+    narrator "Лицо брата изменилось. Вечна заметила это."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Нет смысла грустить."
     call fear_angry
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Ты ругаешь меня за мои чувства?"
-    narrator "Вечна закатывает глаза."
-    hide black_learned_sad
-    show vechna_smile
+    narrator "Его глаза выражали осуждение, Вечна же свои закатила."
+    hide sad_var
+    show vechna_smile1
     vechna "Нет, но и ты на меня за мои тоже не обижайся."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Ты можешь мне помочь..."
-    hide vechna_smile
-    show black_learned_sad
-    black "Ты опять за свое. Уши еще ничего не узнают, может и не будут... Вдруг ты умрешь?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Тем более, что ты можешь мне помочь..."
+    hide vechna_smile1
+    show sad_var
+    black "Ты опять за свое. Уши еще ничего не узнают толком, может и не будут..."
+    hide sad_var
+    show sad_var
+    black "Это опасно."
+    hide sad_var
+    show vechna_smile1
+    vechna "Эээх!"
+    hide vechna_smile1
+    show sad_var
     black "Лучше я займусь едой."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Как хочешь. Я пока тут, нужно закрыть пару задач по работе."
-    #(Появляется черный экран и кнопка)
-    #(“Выйти из Чудесной Сети”)
+    hide sad_var
+    show vechna_smile1
+    vechna "Как хочешь. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Что ж, пока я тут, нужно закрыть пару задач по работе."
+    narrator "Аш вышел из сети."
     jump scene_5
 
 
 label scene_5:
     scene home
-    #(Фон комната Вечны и Аша)
-    narrator "Поднявшись и немного попрыгав, Вечна потянулась и сделала колесо."
-    show vechna_smile
-    vechna "Когда в реальности, почти все время приходится упражняться. Очень досадно."
-    hide vechna_smile
-    show black_learned_sad
+    narrator "Поднявшись, и немного попрыгав на месте, Вечна потянулась и сделала колесо."
+    show vechna_smile1
+    vechna "Когда в реальности, почти все время приходится упражняться."
+    hide vechna_smile1
+    show sad_var
     black "Потому что ты любую свободную минуту проводишь там."
     #(Девушка гримасничает.)
     narrator "С этими словами она схватила с дивана плюшевую коалу и резко надавила. Голова с громким чпоком отделилась от плюшевого тела."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Я починю, не переживай."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Ты просто лапошка-коапошка!"
-    hide vechna_smile
-    show vechna_smile
-    vechna "Видеть твои чувства не всегда приятно. Я хочу вечером начать обработку новых данных от ровера, а то мой рейтинг ниже, чем у сетевиков. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "Легко иметь высокий рейтинг, если можешь работать двадцать четыре часа, семь дней в неделю. Меня хватает на четырнадцать часов в день! И то через неделю выдыхаюсь. Плюсом все эти уборки, уход за собой, спорт.."
-    narrator "Её передернуло."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Ты просто лапушка-коалушка!"
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Видеть твои чувства не всегда приятно. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я хочу вечером начать обработку новых данных от ровера. Мой рейтинг ниже, чем у копий в сети! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Конечно, легко иметь высокий рейтинг, если можешь работать двадцать четыре часа, семь дней в неделю. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Меня хватает на четырнадцать часов в день! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Да и то через неделю выдыхаюсь."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Плюсом все эти уборки, уход за собой, спорт.."
+    narrator "Ее передернуло."
+    hide vechna_smile1
+    show sad_var
     black "Ты давно не занималась уборкой."
     narrator "Она всплеснула руками, раздражаясь."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "22 век на дворе! А пыль все равно не победили. Под куполом блин, на Луне!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Ты отлично знаешь, что пыль из пещер. Эти гигантские тоннели все равно будут пылить."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Жестокая жизнь колонистов."
     narrator "Она вздохнула."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Еда готова?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Сегодня праздник. Поэтому есть кое-что особенное."
     #(Лицо девушки становится серьезным.)
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Сегодня день траура, милый. 24 августа в 23. 50 2225 года, под куполом было 650 человек, а через пятнадцать минут стало 200."
-    narrator "Лицо Аша не стало грустным, он задумался."
-    hide vechna_smile
-    show black_learned_sad
-    black "Но нам же повезло."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Нам скорее повезло, что ты спал с животинками. А так, нам повезло выиграть на Земле в лотерею чтоб свалить в космос и чуть не умереть в первый месяц — везение на невезение."
+    hide sad_var
+    show vechna_smile1
+    vechna "Сегодня день траура, милый. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "24 августа в 23:50 2225 года, под куполом было 650 человек, а через пятнадцать минут стало 200."
+    narrator "Лицо Аша не выражало признаков грусти, он задумался."
+    hide vechna_smile1
+    show sad_var
+    black "Но нам же повезло. Хотя после такого могли бы и вернуть нас на Землю."
+    hide sad_var
+    show vechna_smile1
+    vechna "Нам скорее повезло, что ты спал с животинками. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "А так, нам \"повезло\" выиграть на Земле в лотерею чтоб свалить в космос и чуть не умереть в первый месяц — везение на невезение."
     narrator "Брат взял плюшевую голову коалы и кинул в сестру."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Ты подлым образом, отвлекаешь меня от работы. Атата. Три кота, а голова у них одна."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Ты своей едой, подлым образом, отвлекаешь меня от работы. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Атата. Три кота, а голова у них одна."
     narrator "Она заливается смехом."
-    hide vechna_smile
-    show black_learned_sad
-    black "Очень черный юмор. Ты же просила еду."
-    narrator "Он с чем-то копался в кухне. В следующий момент пешеру заполнили бабочки и когда Аш погасил свет, они подсветили собой комнату."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "ООО, если можно получить разрыв сердца из-за красоты, я его получу! Я хочу есть их в темноте! Ты ведь не всех выпустил их фудрариума? "
+    hide vechna_smile1
+    show sad_var
+    black "Очень черный юмор. Тебе же нужно есть, чтоб работать."
+    narrator "Он с чем-то копался на кухне. Комнату заполнили светлячки, и, когда Аш погасил свет, они подсветили собой помещение."
+    hide sad_var
+    show vechna_smile1
+    vechna "Божечки-кошечки, если можно получить разрыв сердца из-за красоты, я его получу!"
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я хочу есть их в темноте! Ты ведь не всех выпустил их фудрариума? "
     narrator "Младший брат был доволен, что угодил сестре."
-    hide vechna_smile
-    show black_learned_sad
-    black "Конечно я оставил светлячков на салат. Они конечно красивые, но в первую очередь еда."
+    hide vechna_smile1
+    show sad_var
+    black "Конечно, я оставил светлячков на салат. Они, конечно, симпатичные… но в первую очередь - еда. "
+    hide sad_var
+    show sad_var
+    black "Об этом нужно помнить."
     narrator "Вечна хлопала в ладоши. Пока брат в полумгле расставлял посуду: салат с бабочками, рагу из сверчков и пирожные."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты такой хороший."
     narrator "Девушка стала грустной."
-    hide vechna_smile
-    show black_learned_sad
-    black "Ты что?"
+    hide vechna_smile1
+    show sad_var
+    black "Ты чего это?"
     narrator "Вечна положила пластиковые палочки рядом с тарелкой."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "На счет того что ты сказал, что я тут не живу."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Я не могу работать меньше и даже стремлюсь делать это больше."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "На счет твоих слов о том, что я тут будто бы и не живу…"
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я не могу работать меньше… Напротив, стремлюсь делать это как можно больше."
+    hide vechna_smile1
+    show sad_var
     black "Разве ты уже не сделала все, что могла? Ты хочешь совсем не спать?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ну вообще то, раньше так и было. А сейчас ты можешь мне помочь."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Опять? Твои идеи это слишком."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Идея это фантазия, а у тебя есть готовое решение для меня!"
     narrator "Аш напрягся, он знал, что сестра может мыслить слишком нестандартно и не знает границ."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Ты же написал софт для обучения Ушей, который распознает эмоции и выводит на импланты. "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Ты же написал софт для обучения Ушей, который распознает эмоции и выводит их на импланты. "
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Если ты можешь научить распознавать эмоции, можно распознать и другие активности мозга."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "А значит, можно что-то засечь. А то что можно засечь - можно изменить."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Софт Ушей ведь работает на основе чипа, с помощью которого мы выходим в сеть. "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Эта железяка может усиливать или ослаблять связи. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "Я могу хакнуть себя. Стать продуктивнее."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я могу хакнуть себя, понимаешь? Могу стать продуктивнее!"
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Дашь доступ к коду?"
     narrator "Аш подавился светлячком — он выплюнул его в тарелку, а тот постарался улизнуть. Вечна с омерзением отодвинула свой салат."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ты опять не умертвил их в вакуумном шкафу? Это уже слишком. Есть живых запрещено везде, кроме парочки отсталых стран."
     narrator "Парень тоже перестал есть, рассматривая свою тарелку.."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Уже 10.00 утра. Мне нужно на учебу."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Дак дашь доступ к BitBacket? Я просто посмотрю код. Что там да как."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Почему-то мне это не нравится."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты ведь видел мой проект! Разве он не потрясный?"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "По набору нулей и единичек я воссоздаю настолько далекие миры, что мы с тобой умрем, пока летим туда! Настолько эта планета далеко!"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ну пожалуйста! Ты же мне доверяешь?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Хорошо, я поделюсь доступом. Но будь на моей презентации!"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Спасибо, спасибо! Ты самый лучший!"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Можно доступ прямо сейчас?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "А ты успеешь ко мне?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Да, да, да!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Но приходи в реальности, не в сети. Мне так спокойней. Я могу получить отличные инвестиции и сделать Уши массовым продуктом."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Эх... Кому нужна Луна или Земля, когда можно пройтись по мирам не имеющим названий?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Мне нужна и тебе, хотя не признаешься."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "И мы ведь договорились."
     narrator "Зазвучал сигнал, брат положил палочки на тарелку, сжал концы и те стали разлагаться, сливаясь с остатками еды в вязкую массу. Поднялся на ноги."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Мне пора. "
     narrator "Он остановился у выхода."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Хорошо. Только не забудь про доступ."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Уже дал. Жаль, что чем проработанней будет твоя симуляция, тем мучительнее там находиться человеку."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Конечно, атмосфера же из кислот!"
     jump scene_6
 
@@ -534,48 +598,69 @@ label scene_6 :
     scene audience
     #Аш рассказывает о благородной цели ушей. Появляется Макс у и них происходит конфликт.
     narrator "Аш ждал Вечну."
-    narrator "Недалеко в другом конце аудитории туда-обратно ходил парень. Его однокурсник. Он всегда побеждал."
-    narrator "Он так и выглядел, самоуверенным и нахальным. Обычно, люди только встречают по одежке, но как только у них появляется новая информация — они ее сразу же применяют. "
-    narrator "Про Макса Аш думал, что это не тот случай и первое мнение верное. Поэтому старался держаться подальше."
-    narrator "Блондин репетировал выступление. "
+    narrator "Недалеко, в другом конце аудитории туда-обратно ходил парень. Его однокурсник. Тот, кто побеждал во всех конкурсах."
+    narrator "Выглядел он соответствующе: самоуверенно и нахально. "
+    narrator "Обычно, люди только встречают по одежке, но при появлении новой информации — они применяют ее незамедлительно."
+    narrator "Обычно, люди только встречают по одежке, но как только у них появляется новая информация — они ее сразу же применяют. "
+    narrator "Про Макса Аш думал, что это не тот случай и первое мнение верное. "
+    narrator "Поэтому старался держаться подальше."
+    narrator "Блондин репетировал выступление."
+    narrator "Аш пытался его не слушать. Время в ожидании Вечны тянулось бесконечно. "
     show mouse1
-    stub_character "Автоматическая система озеленения: дроны которые самостоятельно решают где и какие растения нужно рассадить, в какое время года это лучше делать. Они смогут сами заказывать необходимые семена из банков, отслеживать процент успешных всходов и конечно возвращаться на станцию для зарядки. Во второй версии предусматривается возможность самодиагностики, чтоб в случае необходимости прибыть на станцию тех обслуживания. Технология актуальна больше для Земли."
-    narrator "Аш пытался не слушать его. Вечны все не было."
+    stub_character "Автоматическая система озеленения: дроны которые самостоятельно решают где и какие растения нужно рассадить, в какое время года это лучше делать. "
     hide mouse1
-    show black_learned_sad
-    black "Таких проектов куча!"
-    hide black_learned_sad
     show mouse1
-    stub_character "Значит есть сформированный рынок и спрос. Ничего ты не знаешь про бизнес. "
+    stub_character "Они смогут сами заказывать необходимые семена из банков..."
+    hide mouse1
+    show mouse1
+    stub_character "...Отслеживать процент успешных всходов и конечно возвращаться на станцию для зарядки. "
+    hide mouse1
+    show mouse1
+    stub_character "Во второй версии предусматривается возможность самодиагностики, чтобы в случае необходимости прибыть на станцию тех обслуживания."
+    hide mouse1
+    show mouse1
+    stub_character "Технология актуальна для Земли..."
+    narrator "Вечны все не было. Аш злился. "
+    hide mouse1
+    show sad_var
+    black "Таких проектов куча! "
+    hide sad_var
+    show mouse1
+    stub_character "Значит есть сформированный рынок и спрос. "
+    hide mouse1
+    show mouse1
+    stub_character "Прикинь, в бизнесе это плюс, а не минус. "
     narrator "Он рассмеялся."
     hide mouse1
     show mouse1
-    stub_character "Хотел бы я вернуться на Землю. Соскучался. "
+    stub_character "Нужно искать занятие на будущее, на Земле. "
     hide mouse1
-    show black_learned_sad
-    black "Все можно получить в сети - или даже, сади там сколько хочешь деревьев. Без дронов."
-    narrator "Максим сделал шаг в сторону темноволосого. Он размахнулся и бросил рулон армированного скотча BRUTAL Ашу в голову. Тот поймал его."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Что какой дикий?"
-    narrator "Убрал моток в карман и развернулся."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Все такие нервные."
-    hide black_learned_sad
+    show sad_var
+    black "Я думал ты ошиваешься преимущественно в сети."
+    narrator "Максим скривил губы и сделал шаг в сторону темноволосого. Он размахнулся и бросил рулон армированного скотча BRUTAL Ашу в голову. Тот поймал его."
+    hide sad_var
     show mouse1
     stub_character "Не смей говорить со мной про сеть. Я ее ненавижу."
+    narrator "И никаких сомнений в обратном не было…"
+    hide mouse1
+    show sad_var
+    black "Что какой дикий? Я это забираю."
+    narrator "Парень убрал моток в карман и развернулся."
+    hide sad_var
+    show sad_var
+    black "Все такие нервные."
+    narrator "Максим сел в первый ряд и положил ноги на стол, проговаривая презентацию."
     jump scene_7
 
 
 label scene_7:
-    scene AUdience
+    scene Audience
     #Появляется Онка. 
-    narrator "В этот момент, в аудиторию проскользнул рыжий хвост в сопровождении броско одетого мужчины."
-    narrator "Последний сел на скамейку, близко-близко к Максиму, практически выгнав его с этого места."
+    narrator "В следующий момент, в аудиторию проскользнул рыжий хвост в сопровождении броско одетого мужчины."
+    narrator "Последний сел на скамейку, близко-близко к Максиму, практически столкнув его с этого места."
     narrator "Для зрителей в сети, это место скоро облепят бейджами \"Жюри\" и \"Потрясный Илли Онка\". "
     narrator "Под ногами у рыжего сел лис в воротничке. "
-    narrator "Максим не обратил внимание на вторжение, холодно сверля Аша глазами. "
+    narrator "Максима никак не задело это вторжение. Он продолжал холодно сверлить Аша глазами."
     narrator "Онка обратил внимание на бейдж выступающего, который светился в дополненной реальности и обратился к Максиму:"
     show mouse1
     stub_character "Когда ваш выход?"
@@ -584,7 +669,7 @@ label scene_7:
     stub_character "После первой звезды."
     hide mouse1
     show mouse1
-    stub_character "Дерзко, но тут так скучно, что я прощу."
+    stub_character "Дерзко, но уже тут так скучно, что я прощу."
     hide mouse1
     show mouse1
     stub_character "Я вас тоже, так и быть прощу."
@@ -598,8 +683,8 @@ label scene_7:
     hide mouse1
     show mouse1
     stub_character "У меня его теперь нет!"
-    narrator "Блондин пошел в глубь зала, проговаривая текст презентации."
-    narrator "Аш наблюдал за лисом издалека. Это было интересней, чем миллиардер."
+    narrator "Блондин пошел в глубь зала, проговаривая текст презентации. "
+    narrator "Аш наблюдал за мужчиной с лисом издалека. Это было интересно."
     hide mouse1
     show mouse1
     stub_character "Давай пройдемся, раз уж я вышел с Фвбрики."
@@ -610,10 +695,10 @@ label scene_7:
     narrator "Взгляд лиса забегал, он наклонил свою голову и начал вылизывать пятно на груди."
     hide mouse1
     show mouse1
-    stub_character "Как долго будут презентации?"
+    stub_character "Как долго будут идти презентации?"
     hide mouse1
     show mouse1
-    fox "Пара часов. Желающих идти вам под суд оказалось как не странно - много."
+    fox "Пару часов. Желающих идти вам под суд оказалось как не странно - много."
     hide mouse1
     show mouse1
     stub_character "А ты из какой касты?"
@@ -622,18 +707,22 @@ label scene_7:
     fox "Из низшей."
     hide mouse1
     show mouse1
-    stub_character "У нас открыты переходы между кастами, но не официальные, а душевные, лис может взять на себя еще задач низшего менеджмента, ну поменьше поспит, зато прикоснется к высшей касте."
-    narrator "Лис возбужден и выбегает перед хозяином вперед, на большое расстояние."
+    stub_character "Что думаешь на счет перехода в высшую касту?"
+    narrator "Лис был возбужден и выбежал перед хозяином вперед, на большое расстояние."
     hide mouse1
     show mouse1
-    fox "Огромное спасибо, комплемент от вас я буду распространять всю жизнь. Да возненавидят меня все завистники. Можно с вами сфоткаться? Естественно уже на Фабрике, я бы подошел..."
+    fox "Огромное спасибо, комплемент от вас я буду распространять всю жизнь. "
     hide mouse1
     show mouse1
-    stub_character "Ага! Бесконтактный ошейник по техническому заданию, работает лишь в радиусе полтора метра!"
+    fox "Да возненавидят меня все завистники. Можно с вами сфоткаться?"
+    narrator "Рыжий провел глазами от себя до лиса, отмечая расстояние, на которое от него убежало животное."
     narrator "Хозяин смеялся."
     hide mouse1
     show mouse1
-    stub_character "Вот это технологии! Ошейник не нужно выключать или он удерживает на километры?"
+    stub_character "Вот это технологии! "
+    hide mouse1
+    show mouse1
+    stub_character "Ошейник не нужно выключать или он удерживает на километры, а не 1,5 метра?"
     narrator "Лис в страхе кинулся под ноги Онке."
     hide mouse1
     show mouse1
@@ -647,59 +736,80 @@ label scene_7:
     stub_character "Я не скармливаю вам друг друга. Хватит читать бред в Сети. "
     hide mouse1
     show mouse1
-    stub_character "Я схитрил на счет ошейника, знал что это фикция. Лучше сними его. А то потом объяснятй в СМИ, когда это выйдет на рынок."
+    stub_character "Я схитрил на счет ошейника, знал что это фикция. Лучше сними его."
+    hide mouse1
+    show mouse1
+    stub_character "А то потом объяснятй в СМИ, когда это выйдет на рынок."
     hide mouse1
     show mouse1
     fox "С ошейником так вышло. Мне сказали он должен быть, но проект незакончен!"
     narrator "Ашу показалось это забывным. Было очевидно, кто перед ним и \"что\". Он на миг забыл о сестре, ради пушистой морды."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Добрый день!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "О! Земное приветствие, я уже давно путаюсь что и когда... 25 лет на Луне."
     narrator "Аш с азартом разглядавал Лиса, нагнувшись чтоб заглянуть ему в мордочку."
     hide mouse1
-    show black_learned_sad
-    black "Моя сестра такого хотела. Любит всех пушистых. Но черт знает, где ее сейчас носит..."
-    hide black_learned_sad
+    show sad_var
+    black "Моя сестра такого хотела. Любит всех пушистых. "
+    hide sad_var
+    show sad_var
+    black "Но черт знает, где ее сейчас носит..."
+    hide sad_var
     show mouse1
-    fox "Некрасиво так перебивать! Я между прочим объяснялся с хозяином Фабрики Чипов, с самим..."
-    narrator "Онка отодвинул лиса за себя, посмотрев на него так, что он снова поверил, будто Илли скармливает лисам лис."
+    fox "Некрасиво перебивать! "
     hide mouse1
     show mouse1
-    stub_character "Прошу прощения. Он взбалмошный и слишком пафосно меня презентует."
+    fox "Я между прочим объяснялся с хозяином Фабрики Чипов, с самим..."
+    narrator "Онка отодвинул лиса за себя, посмотрев на него так, что тот снова поверил, будто Илли действительно скармливает лисам лис…"
     hide mouse1
-    show black_learned_sad
-    black "Мне кажется, в нем все прекрасно. Но я не видел подобных моделей в продаже. Они не говорят!"
+    show mouse1
+    stub_character "Прошу прощения. Он взбалмошный… и презентует меня излишне пафосно."
+    hide mouse1
+    show sad_var
+    black "Мне кажется, в нем все прекрасно."
+    hide sad_var
+    show sad_var
+    black "Но я не видел подобных моделей в продаже. Они не говорят!"
     narrator "Лис вышел вперед."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Личность не продается. Стоит рассказать вам поучительную историю..."
     hide mouse1
     show mouse1
-    stub_character "Забирай бесплатно."
-    narrator "Аш улыбнулся. Онка тоже посмеялся."
+    stub_character "Сильно разумных мы не продаем. "
     hide mouse1
     show mouse1
-    stub_character "Но конечно они не говорят, фокус группа показала, что люди хотят молчаливых друзей, а не как в том древнем меме с собакой, которая делает больно подругому."
+    stub_character "А этого, забирай бесплатно."
+    narrator "Аш улыбнулся. Онка ответил тем же. Лис был в шоке."
+    hide mouse1
+    show mouse1
+    stub_character "Но фокус группа показала, что люди хотят молчаливых друзей, "
+    hide mouse1
+    show mouse1
+    stub_character "А не как в том древнем меме с собакой, которая делает больно подругому."
     #(Прозвенел старт.)
     hide mouse1
     show mouse1
-    stub_character "Мне пора в жури. Судить."
+    stub_character "Мне пора в жюри. Судить, разумеется."
     #(Улыбается.)
     hide mouse1
-    show black_learned_sad
-    black "А мне пора быть судимым. Я буду последним. Приятно было познакомиться."
+    show sad_var
+    black "А мне похоже пора быть судимым."
+    hide sad_var
+    show sad_var
+    black "Приятно было познакомиться."
     narrator "Он улыбнулся лису и его хозяину."
-    narrator "Аш шел за сцену обдумывая про себя, что хорошие отношения с жури это плюс балл за выступление."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Аш шел ближе к сцене обдумывая, что хорошие отношения с жюри - это плюс балл к его выступлению."
+    hide sad_var
+    show sad_var
     black "И все-таки где Вечна?"
     narrator "В это время Онка обернулся Ашу в след."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Все-таки странный аксессуар у него на голове. Да? Хотя обычно, это хорошо для продаж."
+    stub_character "Все-таки странный аксессуар у него на голове. Да? Тем не мене для продаж в этом только плюсы, ха. "
     hide mouse1
     show mouse1
     fox "Лучше бы лисьи Уши сделал."
@@ -710,134 +820,215 @@ label scene_7:
     hide mouse1
     show mouse1
     stub_character "Мне пора, не нам."
-    narrator "Но лис молча улыбался, идя в ногу рядом с самим Илли Онкой и витая в своих лисьих облаках."
+    narrator "Но лис молча улыбался, идя в ногу рядом с самим Илли Онкой, витая в своих лисьих рыжих облаках…"
     jump scene_8
 
 
 label scene_8:
     scene Audience
     #Аш рассказывает о своем изобретении. Появляется Максим. Показываем, что вечна не приходит.
+    narrator "Все несколько часов Онка зевал, оживившись лишь во время выступления Макса и то, ради того, чтоб завалить его вопросами. Пришла очередь Аша."
     narrator "В аудитории погас свет."
     show mouse1
-    stub_character "Веселеье выходит в плюс."
-    narrator "Илли подался вперед уперев в стол локти и столкнул пустой стакан со стола."
-    narrator "Свет от мобильных камер, упал на Аша, находящегося в центре сцены."
+    stub_character "Веселье выходит в плюс!"
+    narrator "Илли подался вперед, уперев в стол локти и столкнув пустой стакан."
+    narrator "Свет от камер, падал на Аша, находящегося в центре сцены."
     hide mouse1
     show mouse1
-    stub_character "Смотри, наш знакомый!"
-    narrator "Лис вывалил язык в качестве ответа хозяину."
-    narrator "Никто этого не видел, но глазами Аш пытался найти Вечну."
+    stub_character "Смотри, еще один наш знакомый!"
+    narrator "Лис довольно вывалил язык, в качестве ответа хозяину."
+    narrator "Никто этого не видел, но глазами Аш пытался найти Вечну. Он на секунду растерялся, но быстро пришел в себя. "
+    narrator "Думая про себя: \"Важный момент. Соберись…\""
+    narrator "(показываем спрайт грустного Аша) "
     narrator "Он опустил Уши, но быстро пришел в себя."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Спасибо, что дождались последнего выступления."
-    narrator "Он улыбнулся, в ответ Максим нахмурился еще больше, а Онка улыбался во все зубы.  "
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Он улыбнулся, в ответ Максим усмехнулся, а Онка мило улыбался.  "
+    hide sad_var
+    show sad_var
     black "Всем привет! Меня зовут Аш Хом, я студент I курса биопротезирования."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Сегодня я расскажу об инструменте, который позволяет интерпретировать чужие чувства."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "И демонстрировать ваши."
+    hide sad_var
+    show sad_var
     black "Люди верят, будто эмоции у всех одни. Но так ли это?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Пол Экман нашел подтверждение теории, что базовые эмоции универсальны для всех."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Страх, радость, удивление, отвращение, злость и грусть. Человеческие общества не связанные культурно и развивающиеся параллельно будут выражать их одинаково. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Страх, радость, удивление, отвращение, злость и грусть."
+    hide sad_var
+    show sad_var
+    black "Человеческие общества не связанные культурой и развивающиеся параллельно –"
+    hide sad_var
+    show sad_var
+    black "– будут выражать базовые эмоции одинаково. "
+    hide sad_var
+    show sad_var
     black "Но есть смешанные – их испытывают чаще других, и это вызывает сложности."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Интерпретация смешанных эмоций в разных культурах отличается. Мы не всегда можем понять что чувствуем сами, а выразить их для других – отдельная задача."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Я разрабатываю универсальный язык эмоций. Который сможет интуитивно понятным, визуальным языком показать эмоции."
-    hide black_learned_sad
-    show black_learned_sad
-    black "На данный момент, ИИ Ушей учится узнавать и отображать базовые эмоции. Но получая все больше данных, он сможет интерпретировать и интенсивность эмоций и метаэмоции. Например, смесь гнева с отчаянием или любви с ненавистью."
-    narrator "Он сделал драматическую паузу. Встретился с Онкой взглядом. Илли смотрел и слушал не моргая, он еле сдерживался чтоб прокомментировать проект. На Максима Аш старался не смотреть – его насмешливый взгляд демотивировал."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Почему людям так важно понимать друг друга? Сложность интерпретации чужих эмоций приводит к конфликтам на Земле."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Потому что интерпретация смешанных эмоций в разных культурах отличается. "
+    hide sad_var
+    show sad_var
+    black "Мы не всегда можем понять что чувствуем сами, а выразить их для других – отдельная задача."
+    hide sad_var
+    show sad_var
+    black "Я разрабатываю универсальный язык эмоций. "
+    hide sad_var
+    show sad_var
+    black "Который сможет интуитивно понятным, визуальным языком показать ваши чувства другим."
+    hide sad_var
+    show sad_var
+    black "На данный момент, Искуственный Интеллект Ушей учится узнавать и отображать базовые эмоции. "
+    hide sad_var
+    show sad_var
+    black "Но получая все больше данных, он сможет интерпретировать и интенсивность эмоций и метаэмоции."
+    hide sad_var
+    show sad_var
+    black "Например, смесь гнева с отчаянием или любви с ненавистью."
+    narrator "Он сделал драматическую паузу. Встретился с Онкой взглядом."
+    narrator "Илли смотрел и слушал не моргая, он еле сдерживался чтобы прокомментировать проект. "
+    narrator "На Максима Аш старался не смотреть – его насмешливый взгляд демотивировал."
+    hide sad_var
+    show sad_var
+    black "Почему людям так важно понимать друг друга? "
+    hide sad_var
+    show sad_var
+    black "Сложность интерпретации чужих эмоций приводит к конфликтам на Земле."
+    hide sad_var
+    show sad_var
     black "А люди уже Луне. Когда займем новые миры, что мы принесем? Войны?"
-    narrator "Он вышел ближе к зрителям, замолчал и медленно обвел взглядом слушателей, нагнетая атмосферу. Он знал, в сети их – сотни."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Или мир? Достигнутый за счет универсального, визуального языка."
-    narrator "По залу прошелся шепот. Это был Илли и Лис"
-    hide black_learned_sad
+    narrator "Он вышел ближе к зрителям, замолчал и медленно обвел взглядом слушателей, нагнетая атмосферу. "
+    narrator "Он знал, в сети их – сотни. И они его слышат. Каждый. "
+    hide sad_var
+    show sad_var
+    black "Или мы принесем мир? "
+    hide sad_var
+    show sad_var
+    black "Достигнутый за счет универсального, визуального языка."
+    narrator "По залу прошелся шепот. Это был Илли и Лис."
+    hide sad_var
     show mouse1
-    stub_character "Как же я люблю космос!"
-    narrator "Макс строго на него посмотрел. Онка как школьник, виновато замолчал и вернул взгляд на сцену. "
+    stub_character "Как же я люблю когда говорят про космос!"
+    narrator "Макс строго на посмотрел на рыжего. Онка как школьник, виновато замолчал и вернул взгляд на сцену. "
+    narrator "Но выступающий сделал паузу, которой и воспользовался член жюри."
     hide mouse1
     show mouse1
-    stub_character "Есть вопрос!Общения в реальности мало. Уши ведь для неё."
+    stub_character "Есть вопрос! Общения в реальности мало. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Импланты в виде Ушей Зайца ведь для неё?"
+    hide mouse1
+    show sad_var
     black "Живое общение – это стресс. Есть даже слово, означающее пресыщение людьми – “аумбук”."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Логично, большую часть истории Homo Sapiens жили в небольших группах, а не миллионниках."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Именно поэтому, общаться тоже нужно учить. Это не врожденный навык."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Я понимаю, что проблема комплексная. Но импланты выражающие эмоции, неплохой проект для популяризации данной идеи. Глядя на человека с имплантами мы будем помнить – его нужно понять."
-    narrator "Максим поджал губы и замолчал. Это была грусть."
-    narrator "Аш смотрел на публику, она на него. Пару неловких секунд все молчали."
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Общение это стресс – потому что тоже навык. Но мы не думаем об этом."
+    hide sad_var
+    show sad_var
+    black "Мы не прикладываем усилий, для того чтобы понимать других и себя."
+    hide sad_var
+    show sad_var
+    black "Я понимаю, что проблема недопонимания комплексная. "
+    hide sad_var
+    show sad_var
+    black "Но импланты выражающие эмоции, неплохой проект для популяризации данной идеи. "
+    hide sad_var
+    show sad_var
+    black "Глядя на человека с имплантами мы будем помнить – его нужно понять."
+    hide sad_var
+    show sad_var
+    black "Его можно понять."
+    narrator "Максим поджал губы. Это была грусть, на его особенном языке."
+    narrator "Аш смотрел на публику, она на него. Неловкие секунды отстучали с десяток раз. Все молчали."
+    hide sad_var
     show mouse1
-    stub_character "Я в восторге. Бредово, но при этом — все так и есть. Довольно интересно, как работает устройство?"
+    stub_character "Я в восторге!"
     hide mouse1
-    show black_learned_sad
-    black "Конечно, стоит благодарить вас, что чип, выпускаемой вашей Фабрикой стал открытым. Запустив на нем мой код ИИ я смог задать параметры, по которым программа учится различать и отслеживать эмоции в мозге. И когда узнает, не всегда со 99% степенью уверенности – отображает эмоцию на дисплее."
-    narrator "Онка хотел продолжить вопросы, но его перебили."
-    hide black_learned_sad
+    show mouse1
+    stub_character "Бредово, но при этом — все так и есть. "
+    hide mouse1
+    show mouse1
+    stub_character "Довольно интересно, как работает устройство?"
+    hide mouse1
+    show sad_var
+    black "Конечно, стоит благодарить вас, что чип, выпускаемой вашей Фабрикой Чипов стал открытым. "
+    hide sad_var
+    show sad_var
+    black "Запустив на нем мой код ИИ я смог задать параметры, по которым программа учится различать и отслеживать эмоции в мозге. "
+    hide sad_var
+    show sad_var
+    black "И когда узнает, не всегда с 99% степенью уверенности – отображает эмоцию на дисплее."
+    hide sad_var
+    show sad_var
+    black "Чем менее четкое изображение на имплантах, тем меньше ИИ уверен – что верно определил эмоцию."
+    narrator "Онка хотел задать каскад вопросов, но его перебили."
+    hide sad_var
     show mouse1
     stub_character "Тенденция к увеличению сетевого дня говорит о том, что ты провалишься."
+    narrator "Хладнокровно и уверенно."
     hide mouse1
     show mouse1
     stub_character "Кто будет это покупать? Частные инвесторы в это не вложатся."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Возможность распознавать эмоции работает и в Сети."
-    hide black_learned_sad
-    show black_learned_sad
-    black "В чем разница, на какое средство вывода информации передавать данные с чипа? Что имплатны, что аватар в сети."
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "В чем разница, на какое средство вывода информации передавать данные с чипа? "
+    hide sad_var
+    show sad_var
+    black "Что имплатны, что аватар в сети. Устройство универсально."
+    hide sad_var
     show mouse1
     stub_character "Да тут нужен патент!"
     hide mouse1
-    show black_learned_sad
-    black "Он уже оформлен. Именно дизайн вывода эмоции как Уши Зайца принадлежат мне."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Он уже оформлен. Именно дизайн вывода эмоции как Уши Зайца принадлежат мне. И конечно код."
+    hide sad_var
+    show sad_var
     black "Но важно то, что с момента появления первых станций на Луне прошло 200 лет."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Марс доступен только ученым и бизнесу, на Луне так себе. А дальше будет еще хлеще."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "И да, скорее всего основная коммуникация будет строиться в вашей Илли Онка Чудесной Сети."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Мы там работаем, развлекаемся, учимся и получаем новую информацию. Только это не важно. Скоро войну в соседней галактике сможет обеспечить одна строчка кода, выпустившая ракету."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Мы там работаем, развлекаемся, учимся и получаем новую информацию."
+    hide sad_var
+    show sad_var
+    black "Только это не важно. "
+    hide sad_var
+    show sad_var
+    black "Скоро войну в соседней галактике сможет обеспечить одна строчка кода, выпустившая ракету."
+    hide sad_var
+    show sad_var
     black "Нет разницы где мы общаемся, важно как мы это делаем."
-    hide black_learned_sad
+    narrator "На последних словах он сделал особенно яркий акцент."
+    hide sad_var
     show mouse1
-    stub_character "Только в итоге, ты стимулируешь людей к увеличению сетевого дня – в реале никто не захочет ставить себе импланты."
+    stub_character "В итоге, ты стимулируешь людей к увеличению сетевого дня – в реале никто не захочет ставить себе импланты."
     hide mouse1
     show mouse1
     stub_character "Интересно, кроме эмоций, что еще может зафиксировать твой ИИ в мозгу?"
+    hide mouse1
+    show mouse1
+    stub_character "Он может узнать о человеке все, если сказать, что искать?"
     #(Их прерывает голос из Сети. )
     hide mouse1
     show mouse1
@@ -850,346 +1041,526 @@ label scene_9:
     #Аш видит, что девушка хакнула мозг без его ведома и злиться.
     narrator "Фон комната Вечны и Аша."
     #(Девушка сидела за столом, волосы обрезаны, на лице написано блаженство. Она не слушала брата.)
-    show black_learned_sad
-    black "Думаю, что я пролетел. С точки зрения бизнеса, идея у меня так себе."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Почему всегда побеждает Максим?"
+    narrator "Сестра слушает его улыбаясь."
+    hide sad_var
+    show sad_var
+    black "Все эти графики, финансовые показатели..."
+    hide sad_var
+    show sad_var
+    black "Хотя кому я вру, с точки зрения бизнеса, идея у меня так себе."
+    hide sad_var
+    show sad_var
     black "Это как физикам выбивать деньги на фундаментальные исследования, которые может быть пригодятся лет через 300."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Да, тяжелый вышел день! Но неплохой."
-    narrator "Она улыбнулась, но быстро вспомнила про брата и сделала сочувствующее лицо."
-    hide vechna_smile
-    show vechna_smile
-    vechna "У меня радость! Всего за 3 часа и сотню мелких задач, я смогла удачно хакнуть мозг!"
-    hide vechna_smile
-    show black_learned_sad
+    narrator "Она продолжала улыбаться, но быстро вспомнила про брата и сделала сочувствующее лицо."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "У меня радость! Всего за 4 часа и сотню мелких задач, я смогла удачно хакнуть мозг!"
+    hide vechna_smile1
+    show sad_var
     black "Как? Всмысле? Что ты сделала?"
     narrator "Он произнес это резко, чувствуя приближение проблем."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Как бы я не любила свою работу, мне тоже лень и я устаю. Но нашлось изящное решение."
+    hide sad_var
+    show vechna_smile1
+    vechna "Как бы я не любила свою работу, мне тоже лень и я устаю. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но нашлось изящное решение."
     narrator "Ей нетерпелось поделиться своим открытием."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Мы же говорили. Нейрохакинг. Ты забыл? Я провела первый тест. Я знаю ты был против, но все ок. Задача выполнена! Это прорыв!"
-    hide vechna_smile
-    show black_learned_sad
-    black "Значит этим ты занималась, пока меня сливали на сцене?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Мы же говорили. Нейрохакинг. Ты забыл? "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я провела первый тест! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я знаю ты был против, но все ок. Задача выполнена! Это прорыв!"
+    hide vechna_smile1
+    show sad_var
+    black "Значит этим ты занималась, пока я так сильно тебя ждал?"
+    hide sad_var
+    show sad_var
+    black "Я же ненавижу сцену, ты была мне нужна!"
+    hide sad_var
+    show vechna_smile1
+    vechna "Но..."
+    hide vechna_smile1
+    show sad_var
     black "И ты обещала посмотреть код, а не экспериментировать над собой!"
-    hide black_learned_sad
-    show vechna_smile
-    vechna "На счет эксперимента — все же хорошо, все прошло успешно! А от слива презентации я бы тебя не спасла."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "На счет эксперимента — все же хорошо, все прошло успешно! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "А от слива презентации я бы тебя не спасла."
+    hide vechna_smile1
+    show sad_var
     black "Значит я виноват?"
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Не знаю, но я точно не виновата в том, что твоя работа не зашла на конкурсе. Хотя и результатов то еще не было."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Не важно! Ты только послушай! "
-    hide vechna_smile
-    show vechna_smile
-    vechna "Моей целью было выкроить себе еще часитка 4 для работы. Собрала статистику, на что я трачу время в реальности и вышло, что больше всего времени уходит на сон, а все остальное по мелочи, занимает час-два."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Сон я урезать уже не могу, хватило галлюцинаций в прошлом месяце"
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Не знаю, но я точно не виновата в том, что твоя работа не зашла на конкурсе. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Там же был супер-пупер Макс."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но только послушай! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Моей целью было выкроить себе еще часика 4 для работы. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Собрала статистику, на что я трачу время в реальности и вышло..."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "...Что больше всего времени уходит на сон, а все остальное по мелочи, занимает час-два."
+    hide vechna_smile1
+    show sad_var
+    black "Я тебе про одно, а ты совсем не о том..."
+    hide sad_var
+    show vechna_smile1
+    vechna "Сон я урезать уже не могу, хватило галлюцинаций в прошлом месяце."
+    hide vechna_smile1
+    show sad_var
     black "Как разумно."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Изначально, была идея зафиксировать связи в мозгу, отвечающие за любовь к еде, сериалам и прочей ерунде."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Но! Чтоб изменить три параметра в мозгу, нужно их определить, а это в три раза больше времени, чем определять связи для чего-то одного. А главное, когда меняешь много вещей, больше вероятность ошибки. "
-    hide vechna_smile
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
+    vechna "У меня была идея зафиксировать связи в мозгу, отвечающие за любовь к еде, сериалам и прочей ерунде."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но! Чтоб изменить три параметра в мозгу, нужно их определить."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "А это в три раза больше времени, чем определять связи для чего-то одного. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но главное, когда меняешь много связей в мозге, то больше вероятность ошибок. "
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Все-таки, я думаю о своем здоровье!"
-    hide vechna_smile
-    show vechna_smile
-    vechna "И тогда в голову пришла такая крутая мысль! Не нужно уменьшать любовь к чему-то, когда я могу увеличить любовь к работе!"
-    hide vechna_smile
-    show vechna_smile
-    vechna "В итоге, сейчас я получаю максимум удовольствия, когда закрываю одну задачу и я жива!"
-    #(Аш замолчал. Его Уши приняли обычное положение.)
-    hide vechna_smile
-    show black_learned_sad
-    black "Я даже не знаю, поздравлять тебя или ругать. Тоесть теперь, кроме работы тебе вообще ничего не интересно?"
-    hide black_learned_sad
-    show vechna_smile
+    hide vechna_smile1
+    show sad_var
+    black "Даже не знаю, что на это сказать. Разве что: странно!"
+    hide sad_var
+    show vechna_smile1
+    vechna "И тогда в голову пришла такая крутая мысль! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Не нужно уменьшать любовь к чему-то, когда я могу увеличить любовь к выполнению задач!"
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "В итоге, сейчас я получаю огромное удовольствия, когда закрываю задачу!"
+    hide vechna_smile1
+    show sad_var
+    black "Я даже не знаю, поздравлять тебя или ругать. "
+    hide sad_var
+    show sad_var
+    black "Тоесть теперь, кроме работы тебе вообще ничего не интересно?"
+    hide sad_var
+    show vechna_smile1
     vechna "Очень на это надеюсь!"
-    hide vechna_smile
-    show black_learned_sad
-    black "Я хочу уйти. Испытываю очень смешанные чувства, в том числе злость и обиду. Поэтому, я пойду пройдусь."
-    hide black_learned_sad
-    show vechna_smile
+    hide vechna_smile1
+    show sad_var
+    black "Я хочу уйти. "
+    hide sad_var
+    show sad_var
+    black "Испытываю очень смешанные чувства, в том числе злость и обиду."
+    hide sad_var
+    show sad_var
+    black "Поэтому, я пойду пройдусь."
+    hide sad_var
+    show vechna_smile1
     vechna "Окей, а я работать!"
-    hide vechna_smile
-    show vechna_smile
-    vechna "Тогда прошу, не трогай мои вещи."
-    narrator "Девушка легла на пол и закрыла глаза. Ее у же не было в этой комнате, она создавала миры."
-    narrator "Аш встал из-за стола. Взял охапку игрушек Вечны и вышел из жилой пещеры. Располагавшейся в лавовых туннулях, под поверхностью Лунного кратера."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "И прошу, не трогай мои вещи. Их уже мало осталось."
+    narrator "Девушка легла на пол и закрыла глаза. "
+    narrator "Ее уже не было в этой комнате, она превращала набор 0 и 1, переданные ровером с далекой планеты в симуляцию, позволяющую пройтись по неизведанному миру каждому. "
+    narrator "Аш встал из-за стола. "
+    narrator "Взял охапку игрушек Вечны, немного подумал и вернул на место ее любимую коаллу и вышел из жилого отсека. "
+    narrator "Располагающегося в лавовом тоннеле, под поверхностью Лунного кратера."
     jump scene_10
 
 
 label scene_10 :
     scene lake
     #Аш надеется, что присутствие на конкурсе объединит их с сестрой.
-    narrator "В центре Лунного озера, состоящего из миллиардов нано-ботов. На пушистом, живом ковре-самолете грустил Илли Онка. Илли говорил сам с собой."
+    narrator "Рядом с берегом, о который ударялись невысокие волны Лунной реки, состоящей из миллиардов нано-ботов, думал вслух Илли Онка."
     show mouse1
-    stub_character "Что создал я? Чип - нет. Его создал дед. Сеть? Ее отец. А что сделал я? Я просто неудачник, который не может заселить космос."
+    stub_character "Что создал я? Чип - нет. "
+    hide mouse1
+    show mouse1
+    stub_character "Его создал дед. Сеть? Ее отец. "
+    hide mouse1
+    show mouse1
+    stub_character "А что сделал я? "
+    hide mouse1
+    show mouse1
+    stub_character "Я просто неудачник, который не может заселить космос."
     narrator "Онка поднял голову вверх. Горький ком встал в горле, когда его взгляд уперся в темный потолок."
     hide mouse1
     show mouse1
-    stub_character "Как велик соблазн жалости к себе и как я хочу дойти до конца. Но ничего не получается. Для моих целей, не хватает вычислительных мощностей..."
+    stub_character "Как велик соблазн жалости к себе и как я хочу дойти до конца. "
+    hide mouse1
+    show mouse1
+    stub_character "Но ничего не получается. Для моих целей, не хватает вычислительных мощностей..."
     hide mouse1
     show mouse1
     stub_character "У меня нет столько ресурсов, чтоб заселять планеты. Ни у кого их нет."
-    narrator "Он стукнул кулаком по коврику, тот пискнул в ответ и понесся в сторону берега."
+    narrator "Он стукнул по металлической поверхности и вскрикнул от боли."
+    narrator "В этот момент Онке в голову прилетела игрушка. "
+    narrator "Аш и так бесился, еще этот нытик в его любимом месте."
     hide mouse1
-    show mouse1
-    stub_character "Прости, прости, я забыл!"
-    narrator "В этот момент Онке в голову прилетела игрушка. Аш и так бесился, еще этот нытик в его любимом месте."
-    hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Не хотел попасть, честно."
-    narrator "Онка молча смотрел на Аша, он держал в руках прилетевшую в голову плюшевую коалу."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Онка молча смотрел на парня, он держал в руках прилетевшую в голову плюшевую игрушку."
+    hide sad_var
+    show sad_var
     black "Шутка. Не слишком больно?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Не больнее, чем критика твоего проекта. Это твое место силы? Думаю искать ли новое?"
+    stub_character "Не больнее, чем критика твоего проекта. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Это твое место силы? Думаю искать ли новое?"
+    hide mouse1
+    show sad_var
     black "Прихожу выкидывать вещи, когда погано."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Древний феншуй, выкинь вещи и освободи свою жизнь?"
     narrator "Аш смеется."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это не мои вещи."
     narrator "Теперь смеется Илли."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Тогда понимаю."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "У тебя значит депрессия? Нет идей для изобретений?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "У меня нет идей? У меня может не быть лишь нескольких решений, но со временем и они находятся."
+    stub_character "У меня нет идей? "
     hide mouse1
-    show black_learned_sad
-    black "И это верно! Если не знаешь что делать — найди тех, кто знает. У кого есть хорошие идеи."
+    show mouse1
+    stub_character "У меня может не быть лишь нескольких решений, но со временем и они находятся."
+    hide mouse1
+    show sad_var
+    black "И это верно! Если не знаешь что делать — найди тех, кто знает. "
+    hide sad_var
+    show sad_var
+    black "У кого есть хорошие решения."
     narrator "Он как бы невзначай провел рукой по Ушкам. Онка следил за движением."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Все это время, решение было на поверхности."
+    stub_character "А ты прав! Все это время, решение было на виду."
+    narrator "В его взгляде показалось нечто зловещее, но тут же погасло."
     hide mouse1
     show mouse1
-    stub_character "Хотя будто бывает иначе. Ты мне очень пригодился молодой человек!"
+    stub_character "Хотя будто бывает иначе. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Ты мне очень пригодился молодой человек!"
+    hide mouse1
+    show sad_var
     black "Я еще не начинал искать инвестиции, но если речь идет о..."
-    narrator "Онка приложил палец к губам и обшарил карманы. Спустился на берег и принялся прощупывать карманы Аша. "
-    narrator "Первая его реакция — замереть, не потому что Заяц, а потому что непонятно что миллиардер может искать в твоих карманах."
-    hide black_learned_sad
+    narrator "Онка приложил палец к губам и обшарил карманы. Не найдя что искал, он и принялся прощупывать карманы Аша. "
+    narrator "Первая реакция — замереть, не потому что Заяц, а потому что непонятно что миллиардер может искать в твоих карманах."
+    hide sad_var
     show mouse1
-    stub_character "Пожалуйста, скажи что у тебя есть камера? Это чертвово озеро единственное место не утыканное ими. Самое обидное, я сам об этом попросил. "
+    stub_character "Пожалуйста, скажи что у тебя есть камера? "
+    hide mouse1
+    show mouse1
+    stub_character "Это чертвово озеро единственное место не утыканное ими. "
+    hide mouse1
+    show mouse1
+    stub_character "Самое обидное, я сам об этом попросил. "
     hide mouse1
     show mouse1
     stub_character "Мне необходимо сделать трансляцию!"
-    narrator "Аш растерялся, в непонятках, он отдает ему планшет из рюкзака."
+    narrator "Аш растерялся, в непонятках, он отдал ему планшет из кармана."
     hide mouse1
     show mouse1
     stub_character "Ого! Ты что, воспитывался общественниками в приюте?"
     hide mouse1
-    show black_learned_sad
-    black "Представь себе. И не все хотят отрубаться на полу, чтоб войти в сеть."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Бери раз нужно!"
-    hide black_learned_sad
+    show sad_var
+    black "Представь себе. "
+    hide sad_var
+    show sad_var
+    black "И не все хотят каждый раз отрубаться на полу, чтоб войти в сеть."
+    narrator "Онка молча на него смотрел. Было непонятно, что ему еще нужно."
+    hide sad_var
+    show sad_var
+    black "Бери раз спрашивал!"
+    hide sad_var
     show mouse1
     stub_character "Нет."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что значит нет?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ты снимай! Я зашел в свой мунтер."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты взломал мой акк?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Это лисы."
     hide mouse1
     show mouse1
-    stub_character "Твой пароль 4 одинаковые цифры, 2 слова и символы."
+    stub_character "Твой пароль 4 одинаковые цифры, 2 слова и символ."
     hide mouse1
     show mouse1
     stub_character "Слишком простой, я бы даже постеснялся предъявлять претензии."
-    narrator "Илли добежал до коврика и прыгает на него, вскидывая руки к потолку купола."
+    hide mouse1
+    show sad_var
+    black "Значит, желтая пресса про тебя не врет?"
+    hide sad_var
+    show mouse1
+    stub_character "Конечно, врет! Записывай!"
+    narrator "Илли сел на перилла и вскинул руки к потолку купола."
     hide mouse1
     show mouse1
-    stub_character "Фабрика Чипов создана ради воплощения и внедрения в нашу жизнь великих инновационных идей. И сегодня я ищу проекты, которые должны увидеть свет. Объявляю хакатон! Обязательное условие — использование в проекте чипа, как ключевого составляющего."
+    stub_character "Фабрика Чипов создана ради воплощения и внедрения в нашу жизнь великих инновационных идей."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "И сегодня я ищу проекты, которые должны увидеть свет. "
+    hide mouse1
+    show mouse1
+    stub_character "Объявляю хакатон! "
+    hide mouse1
+    show mouse1
+    stub_character "Обязательное условие — использование в проекте чипа с Фабрики Чипов, как ключевого составляющего."
+    hide mouse1
+    show sad_var
     black "А мне подходит!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Не упустите свой шанс! Подробности сами знаете где."
+    narrator "Онка пару секунд натужно улыбался, пока темноволосый догадался выключить камеру."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Конкурс?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Да, там я и найду хорошие проекты."
     hide mouse1
-    show black_learned_sad
-    black "Можно ли мне на конкурс?"
-    hide black_learned_sad
+    show sad_var
+    black "Я могу на него пройти?"
+    hide sad_var
     show mouse1
-    stub_character "Конечно, ты же навел меня на мысль. Но попасть на туда можно только через тест, сразу очень сложный."
+    stub_character "Конечно, ты же навел меня на мысль."
     hide mouse1
-    show black_learned_sad
-    black "Еслибы я не открыл рот, тест видать был бы проще?"
-    hide black_learned_sad
     show mouse1
-    stub_character "Наверно."
-    narrator "Он укладывается на свой коврик, тот начинает удаляться."
-    narrator "А Аш раздосадованно кинул вещи Вечны в самое красиво Озеро по переработке мусора."
+    stub_character "Но попасть туда можно только через тест. "
     hide mouse1
-    show black_learned_sad
-    black "Как глупо думать, что он в меня инвестирует. Хотя ради конкурса Вечна может вылезти из сети."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Соединить с Вечной"
-    narrator "Перед ним высвечивается сообщение: готовлюсь к экзамену на Конкурс Фабрики и куча эмодзи: шок, истерика, счастье."
-    hide black_learned_sad
-    show black_learned_sad
+    show mouse1
+    stub_character "Очень сложный!"
+    hide mouse1
+    show sad_var
+    black "Если бы я не открыл рот, тест похоже был бы проще?"
+    hide sad_var
+    show mouse1
+    stub_character "Кто же знает?"
+    narrator "Бросил владелец фабрики, практически скрывшись за поворотом к выходу."
+    hide mouse1
+    show sad_var
+    black "Ты!"
+    narrator "Оставшийся раздосадованно кинул вещи Вечны в самую красивую реку по переработке мусора."
+    hide sad_var
+    show sad_var
+    black "Как глупо думать, что он в меня инвестирует. "
+    hide sad_var
+    show sad_var
+    black "Хотя ради конкурса, Вечна может вылезти из сети."
+    narrator "Он вызвал девушку с планшета. "
+    narrator "Перед ним высветилось сообщение: готовлюсь к экзамену на Конкурс Фабрики и куча эмодзи: шок, истерика, счастье."
+    hide sad_var
+    show sad_var
     black "Ну естественно, это не к брату прийти."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Зато там, проведем время вместе."
     jump scene_11
 
 
 label scene_11 :
-    scene Chip_factory_wall
+    scene Audience
     #Аш и Вечна знакомятся с Лисом. Аш помогает Лису. Вечна завидует высокому баллу брата. Тот говорит что отдал бы ей жетон, но это бесполезно. Там они снова встречают Макса. Тот негативно настроен на лиса (из-за отца винит фабрику) Аш спрашивает для чего тот туда пошел, но Макс не говорит... это Макс устроил пожар в лаборатории
-    narrator "Подростки стоят в шеренгу перед зеркальной стеной высотой несколько метров. Блондинка и рыжая девушка стоящие с двух сторон от Аша с интересом поглядывают на Уши. Все чувствуют дискомфорт — редко на Луне встретишь больше 3х человек в одном месте. В конце шеренги, парень разглядел знакомый костюм и крашенные волосы Макса."
-    narrator "Аш закатал рукава яркой толстовки и щелкнул сигнал Сети. В головах присутствующих торжественно, заговорил голос: "
+    narrator "Большая часть подростков сидели по домам. В аудитории, Аш находился с еще несколькими людьми. "
+    narrator "Блондинка и рыжая девушка сидели с двух сторон от него и с интересом поглядывали на его импланты. "
+    narrator "Все чувствовали дискомфорт — редко на Луне встретишь больше трех человек в одном месте. "
+    narrator "В конце аудитории, парень разглядел знакомый костюм и крашенные волосы Макса."
+    show sad_var
+    black "Ну конечно, куда же без тебя!"
+    narrator "Он нащупал в кармане моток армированной изоленты BRUTAL, которую в него бросил Максим в этой же аудитории..."
+    narrator " ...И еле сдержался, чтоб не \"вернуть\" ее ему в голову."
+    narrator "Аш закатал рукава толстовки и щелкнул сигнал Сети. "
+    narrator "В смешенной реальности, заговорил голос, подаваемый чипом прямо в мозг: "
+    hide sad_var
     show mouse1
-    stub_character "Фабрика чипов приветствует юных изобретателей! Сегодня мы объявляем итоги пред выборочного отбора! Решим же, кто достоин вступить на территорию инноваций и успеха!   "
+    stub_character "Фабрика чипов приветствует юных изобретателей! "
     hide mouse1
     show mouse1
-    stub_character "Где он сможет потягаться за приз —ресурсы для развития своего изобретения! НО сейчас, вы получите жетоны, решающие судьбу. "
+    stub_character "Сегодня мы объявляем итоги отбора!"
     hide mouse1
     show mouse1
-    stub_character "Синий жетон, через года, напомнит вам о неудаче. Зеленый — о шансе, а возможно... победе. Фабрика желает вам удачи!"
-    narrator "Все затихли. Голос не сказал что же им делать."
-    narrator "В стене открылось множество маленьких дверей, из которых на встречу конкурсантам вышли лисы с жетонами в зубах. Большинство бежали на 4 лапах. К Ашу же, торжественной походкой, крепко стоя на задних лапах подошел лис без жетона. "
-    narrator "Парень внимательно осмотрел лиса. Они друг друга узнали."
+    stub_character "Решим же, кто достоин вступить на территорию инноваций и успеха!   "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Территорию, где изобретатель сможет потягаться за приз — ресурсы для развития своего изобретения!"
+    narrator "Знакомый голос затих. "
+    hide mouse1
+    show mouse1
+    stub_character "Сейчас, вы получите жетоны, решающие судьбу. "
+    hide mouse1
+    show mouse1
+    stub_character "Синий жетон, через года, напомнит вам о неудаче. "
+    hide mouse1
+    show mouse1
+    stub_character "Зеленый — о шансе, а возможно... победе. Фабрика желает вам удачи!"
+    narrator "Голос не сказал, что же им делать. Все сидели в ожидании."
+    narrator "В аудиторию забежали лисы с жетонами в зубах. Большинство бежали на четырех лапах. "
+    narrator "К Ашу же, торжественной походкой, крепко стоя на задних лапах подошел лис без жетона. "
+    narrator "Парень внимательно осмотрел зверя. Они друг друга узнали."
+    hide mouse1
+    show sad_var
     black "Приятно снова увидеться."
     narrator "Он улыбнулся серьезному зверю, тот продолжал молчать."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Мне нужно что-то сделать, чтоб получить результат?"
-    narrator "Он осмотрелся по сторонам, глядя что делают остальные. С одной стороны рыжая девочка держит в руках синий жетон и плачет, с другой блондинка повесила на шею зеленый, но тоже плачет."
+    narrator "Парень осмотрелся по сторонам, глядя что делают остальные. "
+    narrator "С одной стороны рыжая девочка держала в руках синий жетон и плакала."
+    narrator "С другой стороны, блондинка повесила на шею зеленый, но тоже заливалась слезами."
     narrator "Аш вопросительно посмотрел на своего лиса. Тот отвел морду."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Если я попаду на конкурс с сестрой, будут отличные каникулы, не лишайте меня их. Я ведь все равно узнаю результат.."
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Если я попаду на конкурс с сестрой, будут отличные каникулы, не лишайте меня их."
+    narrator "Лис сердито молчал."
+    narrator "Мимо прошел Максим, размахивая зеленым жетоном."
+    narrator "Темноволосый повернулся к рыжему зверю."
+    hide sad_var
+    show sad_var
+    black "Я ведь все равно узнаю результат."
+    narrator "Животное смягчило выражение мордочки."
+    hide sad_var
     show mouse1
-    fox "По ужасному стечению обстоятельств, ваш жетон недоступен. Он оказался в моем желудке. И я его не видел, и не знаю результат."
-    narrator "В ответ парень лишь молча помахал руками в воздухе будто с его языка хотело сорваться возмущенное: что ты несешь? Как такое возможно? Но видя грустное лицо лиса, который даже опустился на 4 лапы, не стал его ругать."
+    fox "По ужасному стечению обстоятельств, ваш жетон недоступен."
+    narrator "(удивленный спрайт Аша)"
     hide mouse1
-    show black_learned_sad
+    show sad_var
+    black "?"
+    hide sad_var
+    show mouse1
+    fox "Он оказался в моем желудке."
+    narrator "В ответ парень лишь молча помахал руками в воздухе будто с его языка хотело сорваться возмущенное: что ты несешь? Как такое возможно? "
+    narrator "Но видя грустное лицо лиса, который даже опустился на четыре лапы, не стал его ругать."
+    hide mouse1
+    show sad_var
     black "Хорошо, какие у нас варианты?"
-    hide black_learned_sad
+    narrator "Зверь повеселел."
+    hide sad_var
     show mouse1
     fox "Начало конкурса завтра, до этого времени, все само собой решится."
     hide mouse1
-    show black_learned_sad
-    black "Удобно всем, кроме меня. Я не могу ждать пока ты удобришь травку. Попрошу заменить жетон. Так ведь можно?"
+    show sad_var
+    black "Удобно всем, кроме меня. "
+    hide sad_var
+    show sad_var
+    black "Я не могу ждать, пока ты сделаешь свои непотребства в аудитории университета. "
+    hide sad_var
+    show sad_var
+    black "Попрошу заменить жетон. Так ведь можно?"
     narrator "Лис вжался в траву."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Так будет проще для вас, справедливо."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Но?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Почему ты сразу не предложил этот вариант?"
     narrator "Лис дернулся от \"ТЫ\", но внимание переключилось на вопрос студента."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "Хозяин спишет меня как брак. У нас говорят — ты не создан совершать ошибки."
+    fox "Хозяин спишет меня как брак. "
     hide mouse1
-    show black_learned_sad
-    black "Это очень, очень жестоко. Надеюсь конкурсантам ничего не угрожает?"
-    narrator "Лис посмотрел на зеркальную стену в которой отражались только Черный и Лис (остальные разошлись)."
-    hide black_learned_sad
+    show mouse1
+    fox "У нас говорят — ты не создан совершать ошибки."
+    hide mouse1
+    show sad_var
+    black "Это очень, очень жестоко. "
+    hide sad_var
+    show sad_var
+    black "Надеюсь конкурсантам ничего не угрожает?"
+    narrator "Лис посмотрел в пол Черный и Лис (остальные разошлись)."
+    hide sad_var
     show mouse1
     fox "Только удача."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ладно, ждать дак ждать. Но мне нужно найти кое-кого."
-    narrator "Он развернулся, чуть не столкнувшисьс лицом, с широченной улыбкой, как у Джокера."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Я прошла! Целых 186 баллов! Я все спрашивала у остальных — у них меньше! Я спросила почти у всех! Я выиграю и буду работать на фабрике!"
-    hide vechna_smile
-    show black_learned_sad
-    black "Поздравляю тебя! Повидалась с кем друзьями?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show sad_var
+    black "Она ведь только что была тут?"
+    narrator "Он развернулся, чуть не столкнувшись лицом с сестрой. На ее лице была широченная улыбка, как у Джокера."
+    hide sad_var
+    show vechna_smile1
+    vechna "Я прошла! Целых 186 баллов! Я все спрашивала! У остальных кто ответил меньше! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я спросила почти у всех! Я выиграю и буду работать на фабрике!"
+    hide vechna_smile1
+    show sad_var
+    black "Поздравляю тебя! Повидалась с друзьями?"
+    hide sad_var
+    show vechna_smile1
     vechna "Да, все такие же скучные, как и год назад."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Наверно тебе нужны новые друзья."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Сколько ты набрал?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "У меня проблемы с лисьим пищеварением — жетон пока недоступен."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Это неловкий инцидент! Не нужно всем рассказывать."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Оооо ты говоришь!!! А погавкаешь, погавкаешь?"
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     fox "Прошу побольше уважения!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Пришла бы на мое выступление, он бы и там погавкал."
     narrator "По глазам Вечны стало видно, что она ничего не понимает."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Тогда расскажи мне что-то о себе!"
-    hide vechna_smile
+    hide sad_var
+    show sad_var
+    black "Мы познакомились там, куда тебе было сложно прийти."
+    hide sad_var
+    show vechna_smile1
+    vechna "Лис что ты любишь? Расскажи мне о себе!"
+    hide vechna_smile1
     show mouse1
-    fox "РасскажиТЕ."
+    fox "РасскажиТЕ!"
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Ой, прошу прощения. Где мои манеры."
-    narrator "Лис смущенно махнул лапкой... А Вечна бросила взгляд в сторону собеседника и незаметно для лиса покрутила пальцем у виска, корча смешное лицо брату. Аш улыбнулся."
-    hide vechna_smile
+    narrator "Лис смущенно махнул лапкой. А Вечна бросила взгляд в сторону брата..."
+    narrator "...И незаметно для лиса покрутила пальцем у виска, корча смешное лицо."
+    narrator "(спрайт Аша с улыбкой)"
+    hide vechna_smile1
     show mouse1
     fox "Что же я люблю?"
     narrator "Он расплылся в улыбке."
@@ -1197,110 +1568,135 @@ label scene_11 :
     show mouse1
     fox "Например, я люблю коал. Они..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Они вымерли."
     narrator "Вечна протянула руки в сторону лиса, намереваясь обнять и облапать."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "О! Это мои любимые животные. Я обязана обнять тебя!"
-    narrator " Лис и ловко перекатился от Вечны на метр."
+    narrator "Лис ловко перекатился от Вечны на метр."
     narrator "Аш закатил глаза, но ему пришла в голову мысль."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Коалы! Это же врожденно гадкие животные."
     narrator "Лис манерно махнул хвостом."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Несправедливо!"
     narrator "Парень передразнивал манеру речи лиса."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Тогда давайте милый господин, мы посмотрим зарисовки из жизни этих благородных животных."
     narrator "Он снова достал свой старенький планшет в наклейках."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "В первую очередь, хочу посмотреть как они заботились о потомстве."
-    hide black_learned_sad
-    show black_learned_sad
-    black " Видите ли, чтоб передать детенышам полезные бактерии, им приходилось…"
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Видите ли, чтоб передать детенышам полезные бактерии, им приходилось…"
+    hide sad_var
     show mouse1
     fox "Кормить их молоком?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Не совсем. Они кормили их гов.., прошу прощения – продуктами жизнедеятельности."
-    narrator "Черный показывал видеозапись лису."
-    hide black_learned_sad
-    show vechna_smile
+    narrator "Черный показал видеозапись лису."
+    hide sad_var
+    show vechna_smile1
     vechna "Мерзость, вот так, сразу в рот своему ребенку... "
-    narrator "Морда лиса искривилась, животное стошнило."
-    hide vechna_smile
-    show black_learned_sad
+    narrator "Лис был в шоке, а затем, его ожидаемо стошнило."
+    hide vechna_smile1
+    show sad_var
     black "И ждать не пришлось! На Земле я бы взял палочку, но на Луне её нет."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Может вашим Ухом подцепить жетон?"
     hide mouse1
-    show black_learned_sad
-    black "Очень, очень остроумно. Но тут ничего не поделать, доставать тебе."
-    narrator "Лис брезгливо поднял жетон. Достал из-за воротничка салфетку. Аш немного отодвинулся, желая соблюсти дистанцию с предметом."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Очень остроумно. Но доставать многоуважаемый сударь вам."
+    narrator "Лис брезгливо поднял жетон. Достал из-за воротничка салфетку."
+    narrator "Аш немного отодвинулся, желая держать дистанцию от предмета."
+    hide sad_var
+    show sad_var
     black "Он ведь должен быть синий или зеленый?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Красный — значит самые высокие баллы за входной тест."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "И что это значит?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Значит, что у тебя баллов больше, чем у меня."
     narrator "Расстроилась Вечна."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Завтра утром мы будем на Фабрике, а ты сможешь отыграться."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Благодарю, что решили вопрос без привлечения администрации."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я бы не смог спать, зная что тебя списали."
+    hide sad_var
+    show vechna_smile1
+    vechna "Его что?"
+    hide vechna_smile1
+    show sad_var
+    black "Потом расскажу."
     jump scene_12
 
 
 label scene_12 :
-    scene Chip_Factory_wall
+    scene Chip_Factory_territory
     #Ребята ждут старта конкурса
-    narrator "Компании на Земле и Луне давно выглядят как этажи автоматизированных лабораторий, сборочных цехов, серверов и тишины. Изредка приходит инспекция, если на самодиагностике компании что-то пошло не так."
-    narrator "Но что же за зеркальной стеной, скрывающей Фабрику Чипов, которая дает пожизненный пропуск в сеть каждому, кто желает подключиться к ней?"
-    narrator "Вечна трепещет и подпрыгивает. Кроме них здесь 20 детей и множество дронов транслирующих все в сеть."
-    show vechna_smile
-    vechna "Я так завидую что ты уже знаешь Онку! Вселенная тебя просто облизывает."
-    hide vechna_smile
-    show black_learned_sad
-    black "Ага, перед тем как съесть."
-    narrator "В зеркальной стене появился круг, в нем глаз. Аш сразу узнал одного из представителей лисьих. Часть стены убралась. Перед двумя десятками испытуемых и кучей дронов предстал двор Фабрики Чипов."
-    hide black_learned_sad
-    show vechna_smile
+    narrator "Перед двумя десятками испытуемых и кучей дронов находился двор Фабрики Чипов."
+    show vechna_smile1
     vechna "Диснейленд — Микки Маус меня дери!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Твои формулировки, нечто."
-    narrator "Она остановилась, жадно изучая глазами обстановку. Дроны разлетелись по поляне. "
+    narrator "Она остановилась, жадно изучая глазами обстановку. Дроны разлетелись по территории. "
+    narrator "Компании на Земле и Луне давно выглядели как этажи автоматизированных лабораторий, сборочных цехов, серверов, тишины и темноты. Ведь роботам не нужен свет."
+    narrator "Изредка приходила инспекция, если на самодиагностике завода что-то пошло не так."
+    narrator "Но что же скрывала Фабрика Чипов, даеющая пожизненный пропуск в Чудесную Сеть каждому, кто желает подключиться к ней?"
+    narrator "Вечна трепещала и подпрыгивала. Кроме них здесь было двадцать детей и множество дронов транслирующих все в сеть."
+    hide sad_var
+    show vechna_smile1
+    vechna "Я так завидую что ты уже знаешь Онку! Вселенная тебя просто облизывает."
+    hide vechna_smile1
+    show sad_var
+    black "Ага, перед тем как съесть."
     #Онка говорит пару слов о своих сотрудниках и о том, что много денег заработал на разумных домашних животных.
-    narrator "Всюду стояли разноцветные, леденечные статуи чудовищ словно из книг Лавкрафта. Сквозь них просвечивали лучи подсветки, добавляя яркости. Отовсюду доносились звуки жизни: летали плавно и как безумные птицы: живые и механические, с протезами и имплантами. "
-    narrator "Под деревом, у входа в Фабрику сидела группа хорьков. "
-    narrator "На лавках обедали или читали лисы. Вечна уставилась на одного с ланчбоксом. Видя это, Лис раздраженно поднялся на задние лапы и зашагал по поляне в сторону здания. "
-    narrator "— Где бы мне такую походку! — грустно сообщила Вечна."
+    narrator "Всюду стояли разноцветные, леденечные статуи. "
+    narrator "Сквозь них просвечивали лучи подсветки, добавляя яркости."
+    narrator "Отовсюду доносились звуки жизни: летали плавно и как безумные птицы: живые и механические, с протезами и имплантами. "
+    narrator "Под странной фигурой, у входа в Фабрику сидела группа хорьков. "
+    narrator "На лавках обедали или читали лисы. Вечна уставилась на одного с ланчбоксом. "
+    narrator "Видя это, Лис раздраженно поднялся на задние лапы и зашагал по поляне в сторону здания."
+    hide sad_var
+    show vechna_smile1
+    vechna "Где бы мне такую походку!"
     narrator "К гостям вышел Онка. Некоторое время он снисходительно смотрел как дроны снимают все происходящее, а участники не обращают на него внимания. "
-    narrator "Кроме Аша, тот специально отошел из его поля зрения, чтоб лишний раз не общаться."
-    hide black_learned_sad
+    narrator "Кроме Аша, тот специально отошел из его поля зрения, чтобы лишний раз не общаться."
+    hide vechna_smile1
     show mouse1
-    stub_character "Добро пожаловать на Конкурс Фабрики Чипов юные изобретатели! Именно здесь может ожить ваш проект. А может и не ожить, а может ожить и сразу умереть… Ну да ладно. Мы отвлеклись."
+    stub_character "Добро пожаловать на Конкурс Фабрики Чипов юные изобретатели! "
     hide mouse1
     show mouse1
-    stub_character "По правилам конкурса, вы должны пробыть на Фабрике три дня. Если готовы, идите за мной."
+    stub_character "Именно здесь может ожить ваш проект."
+    hide mouse1
+    show mouse1
+    stub_character "А может и не ожить, а может ожить и сразу умереть… "
+    hide mouse1
+    show mouse1
+    stub_character "Ну да ладно. Мы отвлеклись."
+    hide mouse1
+    show mouse1
+    stub_character "По правилам конкурса, вы должны пробыть на Фабрике три дня. "
+    hide mouse1
+    show mouse1
+    stub_character "Если готовы, идите за мной."
     narrator "Он хотел уйти, но его остановил дрон, зависший прямо перед лицом."
     hide mouse1
     show mouse1
@@ -1311,21 +1707,24 @@ label scene_12 :
     narrator "Он развернулся. И сразу повернулся обратно. Отчего его шея хрустнула."
     hide mouse1
     show mouse1
-    stub_character "Ах, да! Все свои вещи оставляйте у входа. Хорьки с ними ничего не сделают, их последнее время интересует одна архитектура."
+    stub_character "Ах, да! Все свои вещи оставляйте у входа. "
+    hide mouse1
+    show mouse1
+    stub_character "Хорьки с ними ничего не сделают, их последнее время интересует одна архитектура."
     narrator "Все пошли за ним. Аш посмотрел на сестру."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Вытри слюни, ну серьезно."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Мысль что его копию можно сделать в сети, не дает мне покоя."
-    narrator "Уши Аша снова покрылись зеленым, а его передернуло."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Мысль что его симуляцию можно сделать в сети, не дает мне покоя."
+    narrator "Аша передернуло."
+    hide vechna_smile1
+    show sad_var
     black "Я не хочу знать этого, никогда."
     narrator "Он пошел вперед, обгоняя сестру."
     narrator "Перед входом в здание, Онка развернулся к присутствующим и сообщил."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Отправляя заявку на участие, вы подписали договор о неразглашении того, что увидите и услышите внутри. "
     hide mouse1
@@ -1338,19 +1737,31 @@ label scene_12 :
 label scene_13 :
     scene Chip_Factory_corridor
     #Рассказываем условия конкурса. Наташа устраивает Ашу проблему с проектом, так как считает его главным конкурентом. Проект Макса и Наташи тоже должен быть на основе чипа или онка ее потом за это сольет
-    narrator "Внутри, Фабрика не выглядела как сказочные декорации. Обычное здание: чистый и зеленый вестибюль, но полным-полно деловых лис."
-    narrator "Илли заметил удивленный отсутствием удивительного взгляд Аша. Хозяин заправил волосы за ухо и пожал плечами:"
+    narrator "Внутри, Фабрика не выглядела как сказочные декорации из фильма. "
+    narrator "Обычный космический корабль, как на любой вывеске в сети."
+    narrator "Илли заметил удивленный отсутствием удивительного взгляд Аша."
+    narrator "Хозяин заправил волосы за ухо и пожал плечами:"
     show mouse1
-    stub_character "— Думаете, я не смотрел Чарли и Шоколадную Фабрику? Все ожидают по приходу что-то такое. Поэтому, крутая реклама и сад в котором лисы носят чай, важная часть образа."
-    narrator "У Аша появилось желание повесить жетон на шею, чтоб Онка обратил внимание на количество баллов. Но воспоминания о том, где этот жетон побывал переубедили его."
+    stub_character "Думаете, я не смотрел Чарли и Шоколадную Фабрику? "
     hide mouse1
-    show black_learned_sad
-    black "Не удивлены, что я тут?"
-    hide black_learned_sad
     show mouse1
-    stub_character "Удивлен? Конечно нет. Я же делал тест исходя из того, какие сильные будут конкурсанты."
+    stub_character "Все ожидают по приходу что-то такое. "
+    hide mouse1
+    show mouse1
+    stub_character "Но у меня сильно круче! В миллион раз!"
+    narrator "У Аша появилось желание повесить жетон на шею, чтоб Онка обратил внимание на количество баллов. "
+    narrator "Но воспоминания о том, где этот жетон побывал переубедили его."
+    hide mouse1
+    show sad_var
+    black "Не удивлены, что я тут?"
+    hide sad_var
+    show mouse1
+    stub_character "Удивлен? Конечно нет. "
+    hide mouse1
+    show mouse1
+    stub_character "Я же делал тест исходя из того, какие сильные будут конкурсанты."
     narrator "Потом он широко улыбнулся показывая зубы."
-    narrator "Они пошли по коридору. Онка остановился у одной из дверей."
+    narrator "Они пошли по коридору. Хозяин Фабрики остановился у одной из дверей."
     hide mouse1
     show mouse1
     stub_character "Еще раз про договор. "
@@ -1359,62 +1770,83 @@ label scene_13 :
     stub_character "Никто, никогда не должен рассказывать о том, что тут произошло. "
     hide mouse1
     show mouse1
-    stub_character "Договор о неразглашении действует тысячу лет. Вдруг кому-то из вас скопируется в сеть перед смертью. "
+    stub_character "Договор о неразглашении действует тысячу лет. "
     hide mouse1
     show mouse1
-    stub_character "Все могут входить куда им захочется, лисы в помещениях расскажут о назначении всего. Они обязаны вам помогать."
+    stub_character "Все могут входить куда им захочется, лисы в помещениях расскажут о назначении всего. "
     hide mouse1
     show mouse1
-    stub_character "Есть места ОПАСНЫЕ, боюсь есть риск некоторых увечий. Прошу заметить, это не покрывается страховкой по документу который вы подписали."
+    stub_character "Они обязаны вам помогать."
+    hide mouse1
+    show mouse1
+    stub_character "Есть места ОПАСНЫЕ, боюсь есть риск некоторых увечий. "
+    hide mouse1
+    show mouse1
+    stub_character "Прошу заметить, это не покрывается страховкой по документу который вы подписали."
     narrator "Онка закончил фразу, на ходу запуская конкурсантов за одну из дверей."
-    narrator "Все вошли в аудиторию. Скромную, но огромную."
+    narrator "Все вошли в огромную аудиторию."
     hide mouse1
     show mouse1
-    stub_character "В ходе конкурса вы должны создать или улучшить свое изобретение. Конкурс субъективный, цель фабрики — найти потенциально коммерчески успешный проект, на основе чипа выпускаемого моей компанией."
+    stub_character "В ходе конкурса вы должны создать или улучшить свое изобретение."
     hide mouse1
     show mouse1
-    stub_character "Не важно, идея у вас или прототип. Важно, как много вы успеете сделать за эти дни и презентовать в последний."
+    stub_character "Конкурс субъективный, цель фабрики — найти потенциально коммерчески успешный проект, на основе чипа выпускаемого моей компанией."
+    hide mouse1
+    show mouse1
+    stub_character "Не важно, идея у вас или прототип. Важно, как сильно вы меня впечатлите."
     narrator "Вечна смотрит на Онку влюбленными глазами."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Не могу рядом с тобой стоять."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "У него просто потрясные проекты."
     narrator "АШ закатил глаза."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Что ты хочешь получить?"
     narrator "Она удивилась."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Ты не читал условия? Поддержку проекта конечно, а еще работу на Фабрике. У него есть отдел космоса!"
-    hide vechna_smile
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
+    vechna "Ты не читал условия? "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Поддержку проекта конечно, а еще работу на Фабрике. У него есть отдел космоса!"
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Брак с моим образом жизни не вяжется, если ты об этом."
-    hide vechna_smile
-    show black_learned_sad
-    black "Догадываюсь с каким проектом ты пришла. Мои Уши по сравнению с программированием мозга просто фигня. Ты получишь эту работу."
-    hide black_learned_sad
-    show vechna_smile
+    hide vechna_smile1
+    show sad_var
+    black "Догадываюсь с каким проектом ты пришла. "
+    hide sad_var
+    show sad_var
+    black "Мои Уши по сравнению с программированием мозга просто фигня. Ты получишь эту работу."
+    hide sad_var
+    show vechna_smile1
     vechna "Мое изобретение, на основе твоего сделано. Ты бы мог подать в суд."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Мне просто нужно повеселиться. Есть куча способов запустить проект без Онки."
-    narrator "Раздался звук распахнутых дверей — это девушка открыла дверь и с гордо поднятой головой, прошла внутрь. В дополненной реальности высветилось: открытые данные. Наташа Р. Факультет микробиологии, 2 курс. 18 лет. Статус — 199 баллов на Конкурсе Илли Онки, иду побеждать! Подписывайтесь и следите за мной в мунтере!"
-    hide black_learned_sad
-    show vechna_smile
+    narrator "Раздался звук распахнутых дверей — это девушка с длинными, темными волосами открыла дверь и с гордо поднятой головой, прошла внутрь. "
+    narrator "Вечна открыла информацию о ней в смешанной реальности: Наташа Ром. Факультет микробиологии, 2 курс. 18 лет. "
+    narrator "Статус — 199 баллов на Конкурсе Илли Онки, иду побеждать! Подписывайтесь и следите за мной в мунтере!"
+    hide sad_var
+    show vechna_smile1
     vechna "А ты может и подружишься с ней. Тоже ботанка."
     narrator " Аш бросил взгляд на Онку, тот помахал ему рукой."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Он точно врал, когда говорил что поверил в меня. Такая интонация была, знаешь..."
-    narrator "Новенькая раскручивала на пальце жетон с цепочкой, вытворяя с ним что-то на уровне мастера йо-йо."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Она же не могла научиться заранее так крутить! Неужели успела за ночь? Как ты думаешь?"
+    narrator "Новенькая раскручивала на пальце жетон с цепочкой, на котором былы выгравировано количество баллов за входной тест. "
+    narrator "Она вытворяла с ним что-то на уровне мастера йо-йо."
+    hide sad_var
+    show vechna_smile1
+    vechna "Она же не могла научиться заранее так крутить! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Неужели успела за ночь? Как ты думаешь?"
     narrator "Девушка с длинными волосами остановилась и оглядела присутствующих презрительным взглядом."
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     stub_character "Здравствуйте, меня зовут Наташа и я собираю команду для конкурса."
     hide mouse1
@@ -1423,23 +1855,30 @@ label scene_13 :
     narrator "Она несколько раз повертела его на пальце."
     hide mouse1
     show mouse1
-    stub_character "Буду рада приветствовать сильных конкурсантов, подробный чек-лист, как попасть в мою команду вы можете посмотреть в моем блоге."
+    stub_character "Буду рада приветствовать сильных конкурсантов в мою команду."
+    hide mouse1
+    show mouse1
+    stub_character "Подробный чек-лист, как попасть в е нее вы можете посмотреть в моем блоге."
     narrator "Девушка опустила руки и сомкнула за спиной в замок."
     hide mouse1
     show mouse1
     stub_character "У кого из вас самые высокие баллы после меня?"
     narrator "Теперь Аш обратил на нее внимание."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А если в последнем туре, тебе придется сражаться с участником твоей команды, который сильнее тебя?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Это ты что, намекаешь на себя?"
-    narrator "Аш ничего ей не ответил, он повернулся к остальным участникам. Все наблюдали за неофициальным поединком. Поэтому каждый услышал:"
+    narrator "Аш ничего ей не ответил, он повернулся к остальным участникам. "
+    narrator "Все наблюдали за неофициальным поединком. Поэтому каждый услышал:"
     hide mouse1
-    show black_learned_sad
-    black "Я приглашаю к себе в команду трех человек с самим низким проходным баллом. Кстати мой балл 200."
-    hide black_learned_sad
+    show sad_var
+    black "Я приглашаю к себе в команду трех человек с самим низким проходным баллом. "
+    hide sad_var
+    show sad_var
+    black "Кстати мой балл 200."
+    hide sad_var
     show mouse1
     stub_character "Вау! 200! Разница целый 1 балл. Все очень эпично, но моя цель победить."
     narrator "Все это время молча наблюдавший Онка наконец подошел к участникам."
@@ -1451,43 +1890,63 @@ label scene_13 :
     show mouse1
     stub_character "Конечно, если они захотят вам что-то рассказывать."
     narrator "Максим прогуливающийся по периферии аудитории и внимательно осматривающий ее засмеялся."
-    narrator "Наташа повернула голову в его сторону, на лице читалась обида. Девушка сделала вид, что ничего не заметила. "
+    narrator "Наташа повернула голову в его сторону, на лице читалась обида. "
+    narrator "Девушка сделала вид, что ничего не заметила. "
     narrator "К присутствующим обратился владелец фабрики."
     hide mouse1
     show mouse1
-    stub_character "Я рад что вы столь инициативны и успели разделиться на команды. Хотя еще час и были бы жертвы."
+    stub_character "Я рад что вы столь инициативны и успели разделиться на команды. "
     hide mouse1
     show mouse1
-    stub_character "Но вы играете каждый за себя. Напоминаю, что за эти 2 дня вы должны подготовить прототип собственного проекта, который бы демонстрировал возможность его реализации. "
+    stub_character "Хотя еще час и были бы жертвы."
     hide mouse1
     show mouse1
-    stub_character "Сейчас, у нас будет питч проектов — за минуты вам нужно рассказать о том, что вы создаете и что собираетесь делать на конкурсе."
+    stub_character "Но вы играете каждый за себя."
+    hide mouse1
+    show mouse1
+    stub_character "Напоминаю, что за эти 2 дня вы должны подготовить прототип собственного проекта, который бы демонстрировал возможность его реализации. "
+    hide mouse1
+    show mouse1
+    stub_character "Сейчас, у нас будет питч проектов — за минуту вам нужно рассказать о том, что вы создаете и что собираетесь делать на конкурсе."
     narrator "Все молча смотрели на Онку. Он молча смотрел на конкурсантов."
     hide mouse1
     show mouse1
     stub_character "Я первая!"
-    narrator "Илли Онка ехидно улыбнулся девушке, которая поднялась на сцену. Остановившись в центре она развернулась лицом к публике на острых, небольших каблучках."
+    narrator "Илли Онка ехидно улыбнулся девушке, которая поднялась на сцену. "
+    narrator "Остановившись в центре она развернулась лицом к публике на острых, небольших каблучках."
     hide mouse1
     show mouse1
-    stub_character "В наше мирное и спокойное время, когда ресурсов для живых организмов может быть в избытке, люди сталкиваются с необходимостью сокращения или истребления некоторых видов животных."
+    stub_character "В наше мирное и спокойное время, когда ресурсов для живых организмов может быть в избытке... "
+    hide mouse1
+    show mouse1
+    stub_character "...Люди сталкиваются с необходимостью сокращения или истребления некоторых видов животных."
     hide mouse1
     show mouse1
     stub_character "Например, на нашей любимой Земле, нужен более эффективный способ сокращения количества медуз."
     hide mouse1
     show mouse1
-    stub_character "Несмотря на увеличение популяций их естественных хищников, потепление Мирового океана и кормовая база необходимая для поддержки других видов, создают благоприятную среду для медуз. "
+    stub_character "Несмотря на увеличение популяций их естественных хищников и"
+    hide mouse1
+    show mouse1
+    stub_character "...Потепление Мирового океана, кормовая база необходимая для поддержки других видов, создают благоприятную среду для медуз. "
     hide mouse1
     show mouse1
     stub_character "Они в свою очередь попадают в канализации, убивают другие виды."
-    stub_character "Или не медузы, а морские ежи которые убивают коралловые рифы. Мы боремся с ними почти двести лет."
+    stub_character "Или не медузы, а морские ежи которые убивают коралловые рифы. "
+    hide mouse1
+    show mouse1
+    stub_character "Мы боремся с ними почти двести лет."
     hide mouse1
     show mouse1
     stub_character "В качестве решения, я предлагаю"
     stub_character "программируемые вирусы, которые могут внедряться в клетку и быть неактивными до того момента, пока не поступит триггер. Вот и все."
     hide mouse1
     show mouse1
-    stub_character "Презентацию можно скачать в моем мунтере. Он само собой открыт, как и мое сердечко."
-    narrator "Онка жевал саранчу покрытую разноцветным леденцом."
+    stub_character "Презентацию можно скачать в моем мунтере. "
+    hide mouse1
+    show mouse1
+    stub_character "Он само собой открыт, как и мое сердечко."
+    narrator "Онка жевал саранчу покрытую разноцветной карамелью."
     hide mouse1
     show mouse1
     stub_character "Давайте похлопаем первому конкурсанту!"
@@ -1497,10 +1956,16 @@ label scene_13 :
     stub_character "Крайне интересный доклад. Но остаются вопросы. Какой же триггер?"
     hide mouse1
     show mouse1
-    stub_character "Для каждого организма разный. Когда происходит триггер вирус сокращает популяцию."
+    stub_character "Для каждого организма разный. "
     hide mouse1
     show mouse1
-    stub_character "Мы сами решаем как сильно. Мясо остается пригодно к еде. Это не заразно для других видов. Хотите знать, как это связано с Фабрикой?"
+    stub_character "Когда происходит триггер вирус сокращает популяцию."
+    hide mouse1
+    show mouse1
+    stub_character "Мы сами решаем как сильно. Мясо остается пригодно к еде. "
+    hide mouse1
+    show mouse1
+    stub_character "Это не заразно для других видов. Хотите знать, как это связано с Фабрикой?"
     hide mouse1
     show mouse1
     stub_character "Вы читаете мои мысли!"
@@ -1509,7 +1974,7 @@ label scene_13 :
     stub_character "Триггером для запуска умервщления может являться импульс от чипа."
     hide mouse1
     show mouse1
-    stub_character "Один чипированный организм может получить импульс для активации вируса и запустить цепную реакцию внутри своей популяции "
+    stub_character "Один чипированный организм может получить импульс для активации вируса и запустить цепную реакцию внутри своей популяции. "
     hide mouse1
     show mouse1
     stub_character "Можно сказать, они будут заражать друг друга."
@@ -1522,90 +1987,119 @@ label scene_13 :
     stub_character "Кто следующий?"
     narrator "Хлопнув большой пузырь жвачки, который переливался всеми цветами нефти, на сцену поднялась Вечна."
     hide mouse1
-    show vechna_smile
-    vechna "Всем привет, меня зовут Вечна Хом и я закончила факультет обработки данных космических объектов."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Несмотря на мою основную специальность, недавно я опубликовала исследование о технологии нейрохакинга мозга, то есть изменении связей между нейронами. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "Отмечу, что мозг работает по принципу: какие связи сильнее, по ним и пойдет импульс, то есть такое решение. Все наши хорошие и плохие привычки — это определенные, закрепленные связи в мозге."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Но чип, спасибо Илли Онке, вы кстати сегодня отлично выглядите."
+    show vechna_smile1
+    vechna "Всем привет, меня зовут Вечна Хом и я заканчиваю факультет обработки данных космических объектов."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Несмотря на мою основную специальность... "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "...Недавно я опубликовала исследование о технологии нейрохакинга мозга."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Возможности изменения связей между нейронами. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Да, такое уже есть, но у меня лучше."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Отмечу, что мозг работает по принципу: какие связи сильнее, по ним и пойдет импульс, то есть такое решение вы примите. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Все наши хорошие и плохие привычки — это определенные, закрепленные связи в мозге."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но чип... спасибо Илли Онке! "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Вы кстати сегодня отлично выглядите!"
     narrator "Она улыбнулась и покраснела."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Значит, на основе Чипа можно изменить связи. "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Значит, на основе Чипа можно изменить \"мощность\" связей в мозге. "
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Можно стать любым человеком, приобрести страхи или избавиться от них. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "На данном конкурсе я хочу подтвердить роботоспособность технологии. Я покажу, что связи в мозге действительно можно изменить, а вслед за ними и поведение!"
-    narrator "Она осмотрела зал ожидая вопросов, все хлопали глазами."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Я уже провела первый эксперимент на себе и готова рассказать об этом лично. Всем спасибо за внимание!"
-    narrator "Она бросила взгляд на Онку, он смотрел прямо на нее, но что-то сосредоточенно обдумывал. Рядом с ним крутился лис."
-    hide vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "На данном конкурсе я хочу подтвердить работоспособность технологии. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я покажу, что связи в мозге действительно можно изменить, а вслед за ними и поведение!"
+    narrator "Она осмотрела на зал ожидая вопросов, все хлопали глазами."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я уже провела первый эксперимент на себе и готова рассказать об этом лично. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Всем спасибо за внимание!"
+    narrator "Она бросила взгляд на Онку, он смотрел прямо на нее, но в тоже время сквозь. Рядом с ним крутился лис."
+    hide vechna_smile1
     show mouse1
-    stub_character "Это сестра ушастого?"
+    stub_character "Это сестра Аша?"
     hide mouse1
     show mouse1
     fox "Определенно."
     hide mouse1
     show mouse1
-    fox "Опережая ваш вопрос, в исследовании она писала, что определяет связи в мозгу то же программное обеспечение, которое определяет и эмоции."
+    fox "Опережая ваш вопрос, в исследовании она писала, что определяет связи в мозгу то же программное обеспечение, которое определяет и эмоции у его имплантов."
     hide mouse1
     show mouse1
     stub_character "Очень ценная информация!"
     narrator "Девушка спустилась со сцены. Только Наташа стоящая в первом ряду расслышала тихое."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Задачка выполнена! Какой же кайф!"
     narrator "К ней сразу же подошел брат."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Думаю, у тебя мало конкурентов. "
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Спасибо! Я об этом подозревала!"
-    narrator "Вскоре, остальные участники закончили свои презентации. Хозяин Фабрики активно жестикулируя разговаривал с конкурсантами."
-    hide vechna_smile
+    narrator "Вскоре, остальные участники закончили свои презентации. "
+    narrator "Хозяин Фабрики активно жестикулируя разговаривал с конкурсантами."
+    hide vechna_smile1
     show mouse1
-    stub_character "Я очень впечатлен вашими проектами. Это талантливые и оригинальные применения чипа. Но у нас остался последний участник."
+    stub_character "Я очень впечатлен вашими проектами. "
+    hide mouse1
+    show mouse1
+    stub_character "Это талантливые и оригинальные применения чипа! "
+    hide mouse1
+    show mouse1
+    stub_character "Но у нас остался последний участник."
     hide mouse1
     show mouse1
     stub_character "Питч обязателен. Надеюсь это ваша скромность, а не страх?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А может мой способ привлечь внимание?"
-    narrator "Сегодня Аш был не в настроении выступать. Но что делать, он сам заварил эту кашу. В прямом смысле. Конкурсант медленно поднялся на сцену. Выдохнул."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Сегодня Аш был не в настроении выступать. "
+    narrator "Но что делать, он сам заварил эту кашу. В прямом смысле. Конкурсант медленно поднялся на сцену. Выдохнул."
+    hide sad_var
+    show sad_var
     black "Аш — 1 курс биопротезирования. Использую технологические возможности чипа, чтоб решить проблему отсутствия взаимопонимания между людьми."
     narrator "По залу разнеслись звуки непонимания."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Уверен, вас интересует что у меня на голове. Это и есть моя разработка. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Интерпретатор эмоций. Что бы вы не почувствовали — Уши отобразят это и покажут вашему собеседнику. В идеале."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Они призваны делать контакт между людьми более эффективным. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Мой софт позволяет обучить чип узнавать эмоции и чувства, и выдавать на них специфическую реакцию. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "На конкурсе обучу какую-нибудь эмоцию. Надеюсь, не ярость."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Конец."
     narrator "Он посмотрел на сестру, та с кем-то увлеченно болтала не глядя в его сторону."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Будем очень ждать!"
     hide mouse1
@@ -1646,40 +2140,44 @@ label scene_14:
     show mouse1
     stub_character " Кто что нашел на Фабрике?"
     narrator "Наташа сделала шаг вперед и открыла рот. "
-    narrator "Ее перебила Вечна, она поднималась на сцену. Глаза бегали из стороны в сторону, она читала невидимый всем кроме нее текст в дополненной реальности."
+    narrator "Ее перебила Вечна, она поднималась на сцену. "
+    narrator "Глаза бегали из стороны в сторону, она читала невидимый всем кроме нее текст в смешанной реальности."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Мне потребуется сорок лис и один фиолетовый шарик. "
     narrator "Она повертела его в руках."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Я желаю сохранить ожидаемые итоги эксперимента в тайне."
     narrator "Девушка кинула мячик вниз, в руки брата."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ты следующий."
     narrator "Он поймал мяч и занял её место."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Неудобно говорить..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Неужели вы не подготовились?"
     narrator "У Лиса начали подкашиваться лапки, но Вечна подхватила его и погладила по голове."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Нет вакцин от отсутствия манер."
     narrator "Она радовалась, что может потискать это образованное животное. Конкурсант продолжал:"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Мне нужны были деньги, поэтому я продал часть оборудования Фабрики."
     narrator "Онка не смог сдержать удивления."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "А так можно было?"
     hide mouse1
     show mouse1
-    fox "Это не запрещено правилами. Было позволено использовать оборудование Фабрики."
+    fox "Это не запрещено правилами. "
+    hide mouse1
+    show mouse1
+    fox "Было позволено использовать оборудование Фабрики."
     hide mouse1
     show mouse1
     stub_character "Как можно так составить документы? Может он и Фабрику продал? А?"
@@ -1689,32 +2187,32 @@ label scene_14:
     show mouse1
     stub_character "1/0 в вашу пользу. Могу узнать, чего именно лишилась Фабрика Чипов?"
     hide mouse1
-    show black_learned_sad
-    black "Это было оборудование требующее переработки. Нашлись места где нужны материалы. Так что считайте, я вынес мусор."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Деньги требуются для добровольцев. Распознавать эмоции в полу-кибернетическом мозге лис это не тоже самое, что распознавать человеческий мозг."
-    hide black_learned_sad
+    show sad_var
+    black "Это было оборудование требующее переработки. Нашлись места где нужны материалы. "
+    hide sad_var
+    show sad_var
+    black "Так что считайте, я вынес мусор."
+    hide sad_var
+    show sad_var
+    black "Деньги требуются для добровольцев."
+    hide sad_var
+    show sad_var
+    black "Распознавать эмоции в полу-кибернетическом мозге лис это не тоже самое, что распознавать человеческий мозг."
+    hide sad_var
     show mouse1
     stub_character "Что мы увидим в итоге Аш?"
-    narrator "Он обвел руками аудиторию с конкурсантами. Онка никогда не называл его имя. По его спине парня пробежал холод. "
-    hide mouse1
-    show black_learned_sad
-    black "Как липко он произносит мое имя."
+    narrator "Он обвел руками аудиторию с конкурсантами. Онка никогда не называл его имя. "
     narrator "По его спине снова пробежали мурашки."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Все хорошо?"
-    hide vechna_smile
-    show black_learned_sad
-    black "Я планирую обучить Уши удивляться. Я надеюсь научить узнавать эмоцию хотя бы 3 раза из 10. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide mouse1
+    show sad_var
+    black "Я планирую обучить Уши удивлению или отвращению. Я надеюсь научить узнавать эмоцию хотя бы три раза из десяти. "
+    hide sad_var
+    show sad_var
     black "Уверен на Фабрике найдется то, что удивит меня."
     narrator "В стороне стояла Наташа, она ехидно смотрела на Аша и когда он закончил, медленно похлопала в ладоши."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Ты хочешь выйти за пределы Фабрики и попросить людей зафиксировать активность мозга твоим софтом? "
+    stub_character "Ты хочешь выйти за пределы Фабрики и попросить людей зафиксировать активность мозга твоим софтом?"
     hide mouse1
     show mouse1
     stub_character "Хочу тебя расстроить. Очень хочу!"
@@ -1725,41 +2223,48 @@ label scene_14:
     stub_character "Это против правил."
     narrator "Она широко улыбнулась."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Правда?"
     narrator "Онка вопросительно посмотрел на Лиса. Тот одобрительно кивнул головой."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Как можно было так изучить документы?"
     narrator "Лис снова сжался, но Илли говорил с Ашем."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мне кажется, вы тоже удивлены!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Есть ли другие варианты обучения на людях?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Если другие конкурсанты не хотят быть моими подопытными всю ночь, то нет."
-    narrator "Он злился, но больше на себя. Потому что думал о таком развитии событий, но надеялся ему повезет. В голове мелькуло: \"Слово \"обойдется\", точно не про тебя\"."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Соберу всю информацию на себе. А что? Устрою марафон удивления или другой эмоции, как пойдет."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Он злился, но больше на себя. Потому что думал о таком развитии событий, но надеялся ему повезет. "
+    narrator "В голове мелькуло: \"Слово \"обойдется\", точно не про тебя\"."
+    hide sad_var
+    show sad_var
+    black "Соберу всю информацию на себе. "
+    hide sad_var
+    show sad_var
+    black "А что? Устрою марафон удивления или другой эмоции, как пойдет."
+    hide sad_var
+    show sad_var
     black "А может научиться не удивлению а радости? Для этого придется проверить, сколько человек я смогу убить за время конкурса."
-    narrator "Онка залился смехом. В тишине, это звучало странно."
-    narrator "Наташа округлила глаза, тяжело было не принять шутку на свое счет. "
-    narrator "В аудиторию проскользнул Макс, длинноволосая переключила внимание на него, не замечая рядом с собой парня, который пытался незаметно понюхать ее волосы."
-    narrator "Максим даже не скользнул по ней взглядом. Онка наконец отсмеялся и глубоко вдыхал воздух, стараясь успокоиться. Лис принес ему воду."
-    hide black_learned_sad
+    narrator "Онка залился смехом. В тишине, это звучало странно. Другие не оценили шутку."
+    narrator "Наташа округлила глаза, тяжело было не принять шутку на свой счет. "
+    narrator "В аудиторию проскользнул Макс, длинноволосая переключила внимание на него."
+    narrator "Она не замечала рядом с собой парня, который пытался незаметно понюхать ее волосы."
+    narrator "А Максим даже не скользнул по ней взглядом. "
+    narrator "Онка наконец отсмеялся и глубоко вдыхал воздух, стараясь успокоиться. "
+    narrator "Лис принес ему воду."
+    hide sad_var
     show mouse1
     stub_character "Мне нравится настрой! Но во избежание жертв, могу помочь с удивлением."
     narrator "Взгляд Онки изменился. Он сел на пол."
     hide mouse1
     show mouse1
     stub_character "Что-то мне нехорошо."
-    narrator "Он взял воду у лиса."
+    narrator "Он взял воду у лиса. Через минуту он пришел в себя."
     hide mouse1
     show mouse1
     stub_character "Все участники получили информацию о точках проживания, питания и прочую необходимую информацию? "
@@ -1770,7 +2275,10 @@ label scene_14:
     narrator "Хозяин обратился к подопечному."
     hide mouse1
     show mouse1
-    stub_character "Зафиксируй требования остальных участников. И не совершай ошибок."
+    stub_character "Зафиксируй требования остальных участников. "
+    hide mouse1
+    show mouse1
+    stub_character "И не совершай ошибок."
     narrator "Тот кивнул головой, серьезно посмотрел на конкурсантов и выпрямил спину."
     narrator "Вскоре все покинули аудиторию. Аш искал глазами сестру, но не найдя вышел в коридор."
     jump scene_15
@@ -1779,43 +2287,47 @@ label scene_14:
 label scene_15:
     scene Chip_Factory_corridor
     #Аш получает возможность узнать о лисьих кастах
-    narrator "Пройдя пару метров, почувствовал чью-то ладонь на руке. В нос ударил слабый запах манго. Это Илли тянул Аша за собой, в другую сторону."
-    show black_learned_sad
+    narrator "Пройдя пару метров, почувствовал чью-то ладонь на руке. В нос ударил слабый запах манго. "
+    narrator "Это Илли тянул Аша за собой, в другую сторону."
+    show sad_var
     black "Эм... Проводить тебя до врача? Это кстати тоже лис?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я в норме, физические трудности меня не остановят."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я хотел сестру найти. Куда она ушла после выступления?"
     narrator "Илли резко остановился."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Разве ты пришел не за шансом для своего изобретения?"
     narrator "Аш смотрел вглубь длинного коридора, старясь разглядеть удаляющуюся Вечну."
     hide mouse1
     show mouse1
     stub_character "Ты можешь выбрать любое направление работы фабрики и я покажу, как это устроено."
-    narrator "Лицо Онки выражает торжество."
+    narrator "Лицо Онки выражало торжество."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А, да."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Я все равно не знаю куда мне нужно."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Почему ты не стараешься ради своего изобретения?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "У тебя высокие требования. Это все на что я способен."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ты же понимаешь, что читать эмоции тоже самое, что читать мысли?"
     hide mouse1
-    show black_learned_sad
-    black "Я всего лишь хотел, чтоб у людей не было шанса не понять меня. Думаешь чтение мыслей сделает мир лучше?"
-    hide black_learned_sad
+    show sad_var
+    black "Я всего лишь хотел, чтоб у людей не было шанса не понять меня. "
+    hide sad_var
+    show sad_var
+    black "Думаешь чтение мыслей сделает мир лучше?"
+    hide sad_var
     show mouse1
     stub_character "Не важно. Сейчас Чудесная Сеть настолько эффективна, что вредит людям. "
     hide mouse1
@@ -1824,18 +2336,21 @@ label scene_15:
     stub_character "Сеть не место для жизни, а инструмент для осуществления действительно великих проектов."
     narrator "Аш смотрел на Илли другими глазами."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Сложно это говорить, но я согласен."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "А еще, почему наедине мы говорим на ты?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Иногда, мне нужен хотя бы один такой человек. Хотя, достаточно что ты человек, а не лис."
+    stub_character "Иногда, мне нужен хотя бы один такой человек. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Хотя, достаточно что ты человек, а не лис."
+    hide mouse1
+    show sad_var
     black "Это должно быть грустно?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Должно быть разнообразно. Мозг всегда требует новой информации. "
     hide mouse1
@@ -1843,277 +2358,372 @@ label scene_15:
     stub_character "Но он такой глупый, для него насыщенная жизнь, тоже самое что видеоряд в сети. "
     hide mouse1
     show mouse1
-    stub_character "Поэтому из-за того, что заставляет меня чувствовать мозг, я не переживаю. Чувства это иллюзия."
+    stub_character "Поэтому из-за того, что заставляет меня чувствовать мозг, я не переживаю. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Чувства это иллюзия."
+    hide mouse1
+    show sad_var
     black "Очень хорошо, что у тебя получается игнорировать чувства. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Только простые смертные как я, не могут их игнорировать. Поэтому мне приходится их учитывать. И я не среди лис живу."
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Только простые смертные как я, не могут их игнорировать. "
+    hide sad_var
+    show sad_var
+    black "Поэтому мне приходится их учитывать. Я не среди лис живу."
+    hide sad_var
     show mouse1
-    stub_character "Очень остроумно. Нужно внести в договор запрет на шуточки. Куда мы пойдем?"
+    stub_character "Очень остроумно. Нужно внести в договор запрет на шуточки. "
     hide mouse1
-    show black_learned_sad
-    black "Как и говорил, я не знаю куда мне нужно. Я ищу сестру."
-    hide black_learned_sad
     show mouse1
-    stub_character "Эх! Дай ей спокойно поработать, если девушка хочет хакнуть свои мозги, ее не остановить."
+    stub_character "Куда мы пойдем?"
+    hide mouse1
+    show sad_var
+    black "Как и говорил, я не знаю куда мне нужно. Я ищу сестру."
+    hide sad_var
+    show mouse1
+    stub_character "Эх! Дай ей спокойно поработать, если человек хочет хакнуть свои мозги, его не остановить."
     hide mouse1
     show mouse1
     stub_character "А ты идешь со мной."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Вот внеси это в правила, тогда посмотрим."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Ты хочешь узнать процесс производства запантентованных, кибернетических лис? Из-за которых мы судимся с десятками компаний?"
+    stub_character "Ты хочешь узнать как живут мои кибернетические лисы? "
     narrator "Гость Фабрики оживился."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Сложно отказаться от такого!"
-    narrator "Они продолжали петлять по коридорам. Через несколько минут, Илли остановился у одной из дверей."
+    narrator "Они продолжали петлять по коридорам. Через несколько минут, Илли оказались у выхода."
     jump scene_16
 
 
 label scene_16:
     scene Chip_Factory_foxs
     #Здесь показываем, что Облачный пытается обмануть Онку и он не так-то прост. Хотя как потом покажут, он все равно улизнул и вернулся только что бы помочь Ашу в битве с Максом
-    narrator "Они вошли в дверь."
-    narrator "Внутри оказался еще один двор с входом в пещеру. Было темно. Светились только глаза Онки."
+    narrator "Прошли через двор."
+    narrator "Там оказался еще один, невзрачный вход в лавовый тоннель. Было темно. Светились только глаза Онки."
     show mouse1
     stub_character "Это самая скучная часть."
     hide mouse1
-    show black_learned_sad
-    black "А что с твоими глазами?"
-    hide black_learned_sad
+    show sad_var
+    black "А что с твоими глазами? Почему так темно?"
+    hide sad_var
     show mouse1
     stub_character "Скажи, для чего тратить энергию на помещения где живут те, кто видят в темноте? Я тоже вижу."
     hide mouse1
-    show black_learned_sad
-    black "И много я увижу?"
-    hide black_learned_sad
+    show sad_var
+    black "И много я увижу? В темноте?"
+    hide sad_var
     show mouse1
     stub_character "Света нет в служебных помещениях, не беспокойся."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "На Фабрике обычно тоже темно."
+    hide mouse1
+    show sad_var
     black "К твоему приходу здесь не готовятся?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Нет."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Разве не от тебя зависит их судьба?"
     narrator "Хозяин Фабрики рассмеялся."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Нет, что ты. Жизнь да. Судьба совершенно нет."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Сказал тот, кто разделил их на касты!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Может тебе не нужно туда? Смотрю ты все и так знаешь."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты спрашивал об этом лиса на презентации."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Лисы появились очень давно. До меня. Фабрика Чипов – это же технологическая династья."
+    stub_character "Лисы появились очень давно. До меня. "
     hide mouse1
     show mouse1
-    stub_character "У лис есть культура связанная с Фабрикой. Должен знать, что те кто варятся в изоляции живут по очень причудливым правилам."
+    stub_character "Фабрика Чипов – это же технологическая династья."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "У лис есть культура связанная с Фабрикой. "
+    hide mouse1
+    show mouse1
+    stub_character "Должен знать, что те кто варятся в изоляции живут по очень причудливым правилам."
+    hide mouse1
+    show sad_var
     black "Разве ты не можешь взять и отменить касты?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "От меня зависит лишь то, станет лис из низшей касты, представителем высшей."
     narrator "Заяц обрадовался, что он смог донести мысль."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Об этом я и говорю, ты же можешь повышать лис или понижать!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Только Высших и Низших. Третьи и вторые, они не хотят быть высшими или низшими, хотя могут. Потому и нумера 3 и 2, средние обычно самые скучные."
+    stub_character "Только Высших и Низших. Третья и вторая, они не разумные. "
+    hide mouse1
+    show mouse1
+    stub_character "Потому и названы номерами три и два, а не Высшие и Низшие."
     narrator "Илли остановился и посмотрел на Аша."
     hide mouse1
     show mouse1
-    stub_character "Другие лисы даже не назвали эти касты. Они — другие. Увидишь. Просто 3 и 2."
-    narrator "Они вошли в огромную пещеру, куполообразную, правильной формы. Все ее стенки были увиты лестницами и норами. С разных сторон пещеры шли туннели куда-то глубже. В самом центре, стоял удивительно блестящий, как новенький — робот в желтой накидке."
+    stub_character "Другие лисы даже не назвали те касты. Они — другие. Увидишь. Просто три и два."
+    narrator "Они вошли в кубическое помещение. Все его стенки были увиты лестницами и ячейками. "
+    narrator "С разных сторон  шли туннели куда-то глубже."
+    narrator " А в самом центре, стоял удивительно блестящий, как новенький — робот в желтой накидке."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Целый лисий улей!"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Но я себе все не так представлял. Они же такие важные, с ланчбоксами."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "О! Тут есть кухня и прачечные, куда без этого. Шучу, все автоматизировано."
+    stub_character "О! Тут есть кухня и прачечные, куда без этого. "
+    hide mouse1
+    show mouse1
+    stub_character "Шучу, все автоматизировано."
     narrator "Вокруг было шумно, лисы бегали по лестницам, носили что-то в руках и зубах, шумно обсуждали новости на скамейках."
     hide mouse1
     show mouse1
-    stub_character "Ты захотел посмотреть НЕ самое интересное на Фабрике, но в один из самых интересных моментов."
-    narrator "Аш пытался ухватить окруживших его лис за хвост. В стенах собственного дома они походили на обычных зверей, которых он видел в детстве на Земле."
+    stub_character "Ты захотел посмотреть не самое интересное на Фабрике, но в один из самых интересных моментов."
     hide mouse1
-    show black_learned_sad
+    show sad_var
+    black "Ты сам предложил."
+    narrator "Аш пытался ухватить окруживших его лис за хвост. "
+    narrator "В стенах собственного дома они походили на обычных зверей, которых он видел в детстве на Земле."
+    hide sad_var
+    show sad_var
     black "Это и есть третья и вторая каста?"
     narrator "Лисы поблизости презрительно фыркнули на него и сразу ушли."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Вот и урок местной культуры. Их обижает такое сравнение."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что с ними не так?"
     narrator "Звучит громкий звук. Из нор посыпались лисы. Илли отошел вместе с Ашем к стене."
-    narrator "Парень наблюдал как с лестниц, словно стекают вниз лисы и смешиваются в кишащей толпе. Аш вглядывается вокруг. Что-то кажется ему непривычным. Чего-то не хватает."
+    narrator "Парень наблюдал как с лестниц, словно стекают вниз лисы и смешиваются в кишащей толпе. "
+    narrator "Аш вглядывался вокруг. Что-то кажется ему непривычным. Странным."
     narrator "Раздался еще один звонок и движущаяся масса пушистых зверей замерла вокруг робота в желтой накидке. "
     narrator "Робот в центре зала шевельнулся. Аш повернул голову на Илли. Тот улыбался во все зубы с любовью глядя на зверей."
     narrator "Шум и гам сменился тишиной. В воздухе запахло благовониями. Хотя как сильно не пытался гость рассмотреть где они находятся — не смог. "
-    narrator "Робот сложил ладонь к ладони перед грудью, сидящие до этого лисы наклонили головы и в воздухе зазвучала буддийская молитва. Про себя Заяц решил, что это был правильный выбор места, чтоб удивляться."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Робот сложил ладонь к ладони перед грудью, сидящие до этого лисы наклонили головы и в воздухе зазвучала буддийская молитва. "
+    narrator "Про себя Заяц решил, что это был правильный выбор места, чтоб удивляться."
+    hide sad_var
+    show sad_var
     black "Что происходит?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Они молятся, что еще."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что? Что?"
     narrator "Он уже не смотрел на лис, а пытался понять по глазам Онки смеется он или нет. Хотя зрелище это подтверждало."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Религия или другая фантазия, дает им что-то общее, чтоб они друг друга не убили."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Почему не дать что-то нормальное?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Веру в Фабрику? Это ведь тоже фантазия. Убери из Фабрики всех лис, разве она закроется? Убери все здания, но юридически она будет существовать. Религия и компании основаны на вере."
+    stub_character "Веру в Фабрику? Это ведь тоже фантазия. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Убери из Фабрики всех лис, разве она закроется? "
+    hide mouse1
+    show mouse1
+    stub_character "Убери все здания, но юридически она будет существовать. "
+    hide mouse1
+    show mouse1
+    stub_character "А юридическое существование – просто фантазия о которой договорились люди. "
+    hide mouse1
+    show mouse1
+    stub_character "Если подпишем бумаги – будем в них верить."
+    hide mouse1
+    show mouse1
+    stub_character "Религия и компании основаны на вере."
+    hide mouse1
+    show sad_var
     black "Но почему Буддизм?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "ИИ Фабрики считает это оптимальным вариантом. "
     hide mouse1
     show mouse1
-    stub_character "Кстати, это Фабрика управляет судьбой лис в момент рождения. Судьбой, значит кастами."
+    stub_character "Кстати, это Фабрика управляет судьбой лис в момент рождения."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character " Судьбой, значит кастами."
+    hide mouse1
+    show sad_var
+    black "А здесь какие?"
+    hide sad_var
+    show mouse1
+    stub_character "Высшие и низшие."
+    hide mouse1
+    show sad_var
+    black "Эти живут вместе? В чем их разница?"
+    hide sad_var
+    show mouse1
+    stub_character "И растут вместе. "
+    hide mouse1
+    show mouse1
+    stub_character "Их разница в уровне образования. Любой низший, может стать высшим."
+    hide mouse1
+    show mouse1
+    stub_character "Лисятами они растут вместе получая базовое воспитание."
+    hide mouse1
+    show mouse1
+    stub_character "Затем получают имплант развитого неокортекса и специализацию."
+    hide mouse1
+    show mouse1
+    stub_character "Высшие специализируются на научных дисциплинах, а низшие на обслуживании Фабрики."
+    hide mouse1
+    show mouse1
+    stub_character "Хотя там тоже куча инженерии."
+    hide mouse1
+    show mouse1
+    stub_character "Кто из низших хочет в высшую – сдает экзамен, если находит на это время."
+    hide mouse1
+    show sad_var
     black "А почему они не здесь?"
     narrator "Парень показал рукой на группу лис, выскользнувших из одного тоннеля ко входу в следующий. Один из них был уже знакомый, Облачный лис."
-    narrator "Хозяин Фабрики взял Аша за руку и повел за лисами."
-    narrator "Они окликнули их, но те старательно пытались скрыться из виду."
-    hide black_learned_sad
-    show mouse1
-    stub_character "Что случилось?"
-    narrator "Догнал Онка Облачного."
-    hide mouse1
-    show mouse1
-    fox "Может вы желаете показать конкурсанту детский сад? Хотел его подготовить, но раз вы уже тут..."
-    narrator "Лис остановился перед одной из дверей. Илли с сомнением посмотрел на Облачного."
-    hide mouse1
-    show mouse1
-    stub_character "Хм, почему бы и нет."
-    narrator "Лис поспешно затолкал Аша за дверь. Внутри все гудело, под ногами росла обычная, зеленая трава. Маленькие лисята играли с роботами и друг другом."
-    narrator "Уши Аша засияли."
-    hide mouse1
-    show black_learned_sad
-    black "Какое чудо! Здесь растут малыши?"
-    narrator "Онка посмотрел на лиса, приглашая его принять участие в рассказе. Тот явно нервничал."
-    hide black_learned_sad
-    show mouse1
-    stub_character "Что-то не так?"
-    hide mouse1
-    show mouse1
-    fox "Собираюсь с мыслями. И да, здесь у нас игровая зона для маленьких низших и высших."
-    hide mouse1
-    show black_learned_sad
-    black "Эти касты растут вместе? В чем их разница?"
-    hide black_learned_sad
-    show mouse1
-    fox "В уровне образования. Любой низший, может стать высшим."
-    narrator "Добавил он не без гордости, явно говоря о себе."
-    hide mouse1
-    show mouse1
-    fox "Рекомендую вам познакомиться поближе с нашими малышами. "
-    narrator "Лис позвал лисят. Аш сам не заметил как увлекся мокрыми, милыми носами. Из транса его вытащил Онка."
-    hide mouse1
+    hide sad_var
     show mouse1
     stub_character "Быстрее!"
-    narrator "Илли поднял парня с травы и потянул за собой."
+    narrator "Хозяин Фабрики взял Аша за руку и повел за лисами."
+    narrator "Они окликнули их, но те старательно пытались скрыться из виду."
     hide mouse1
-    show mouse1
-    stub_character "Легко тебя отвлечь!"
-    narrator "Они выглянули в коридор и тихо пошли за лисом. Аш просто шел за Онкой практически в кромешной тьме."
-    narrator "Вскоре, тот открыл одну из дверей. Аш жалел что лисы не используют дополненную реальность. "
-    narrator "Можно было бы узнать что внутри, не читая табличку на двери. Досчитав до 10, Илли дал знак идти за дверь. Потом вспомнил, что спутник ничего не видит и просто потянул его за собой."
+    show sad_var
+    black "Что случилось?"
+    narrator "Илли выждал десять секунд, затем выглянул в коридор и тихо пошел за лисом, держа гостя за руку. "
+    narrator "Аш двигался за Онкой практически в кромешной тьме."
+    narrator "Вскоре, тот открыл одну из дверей. "
+    narrator "Аш жалел что лисы не используют дополненную реальность."
+    narrator "На двери не было информации ни в одной из реальностей, ни в смешанной, ни в обычной. "
+    narrator "Снова досчитав до десяти, Илли дал знак идти за ним. Потом вспомнил, что спутник ничего не видит и просто потянул его за собой."
     jump scene_17
 
 
 label scene_17:
     scene Chip_Factory_foxs_3_2
     #Макс говорит, что Онка зло поскольку создает животных для обсчета данных на них. Выдвигает гипотезу, что может быть и скопированных он использует также? Онка выгоняет его.
-    narrator "В нос ударил сильный запах. Пахло животными, тлеющей шерстью и дымом. Неинтенсивное освящение обрисовало герою длинное помещение с высокими потолками и множеством отверстий под ним. В конце комнаты был огромный, яркий экран."
+    narrator "В нос ударил сильный запах. Пахло животными, тлеющей шерстью и дымом. "
+    narrator "Неинтенсивное освящение обрисовало герою длинное помещение с высокими потолками. "
+    narrator "В конце комнаты был огромный, алый экран."
     show mouse1
     stub_character "Где Облачный?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "У экрана? Ты чувствуешь запах дыма?"
     narrator "Хозяин Фабрики снова вел парня вперед."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Здесь я и сам вижу."
     narrator "Онке уже не было смешно и любопытно, он насторожился. Послышался лай нескольких лис."
-    narrator "Приблизившись, Аш понял, что ошибся на счет экрана — это было окно в другое помещение. Рядом с ним располагалась дверь."
-    narrator "Парень замер на месте, вглядываясь в происходящее за стеклом. Внутри полыхало пламя и что-то двигалось, прыгало в нем."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Приблизившись, Аш понял, что ошибся на счет экрана — это было окно в другое помещение. "
+    narrator "Рядом с ним располагалась дверь."
+    narrator "Парень замер на месте, вглядываясь в происходящее за стеклом. "
+    narrator "Внутри полыхало пламя и что-то двигалось, прыгало в нем. С шумом лопнула колба, из которой выпал кто-то живой, без сознания."
+    hide sad_var
+    show sad_var
     black "Это лисы! Отключите подачу кислорода? Ну же!"
-    narrator "Он повернулся к Онке и лисам, которые молча наблюдали за происходящим. Один из лис что-то жевал. Парень стал искать Облачного, но среди лис его не было."
-    hide black_learned_sad
+    narrator "Он повернулся к Онке и лисам, которые молча наблюдали за происходящим. "
+    narrator "Один из них что-то жевал. Парень стал искать Облачного, но среди лис его не было."
+    hide sad_var
     show mouse1
-    stub_character "Само потухнет."
+    fox "Само потухнет."
     narrator "Заяц подошел к двери ведущей внутрь."
     hide mouse1
     show mouse1
-    stub_character "Я благоразумно рекомендую не трогать..."
-    narrator "Но Аш уже открыл дверь и этого хватило, чтоб огонь ворвался в общее помещение. Конечно, парень сразу же пожалел о своем эмоциональном порыве, одежда на нем загорелась. "
-    narrator "Легкие обожгло, но рядом появился другой лис, передними лапами захлопнувший дверь.  "
-    narrator "Лисы тут же повалили Аша на пол и принялись топтаться, туша проженую в некоторых местах толстовку."
+    fox "Я благоразумно рекомендую не трогать..."
+    narrator "Но Аш уже открыл дверь и этого хватило, чтобы огонь ворвался в общее помещение. "
+    narrator "Конечно, парень сразу же пожалел о своем эмоциональном порыве, одежда на нем загорелась. "
+    narrator "Легкие обожгло, но рядом появился другой лис, закрывший лапами дверь.  "
+    narrator "Лисы тут же повалили Аша на пол и принялись топтаться, туша проженую в некоторых местах толстовку. Повреждения были почти не видны."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Да что это!?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Похоже, произошла авария в блоке 3 и 2 касты. Но Фабрика все починит."
+    stub_character "Похоже, произошла авария в блоке третьей и второй касты. "
+    hide mouse1
+    show mouse1
+    stub_character "Но Фабрика все починит."
     hide mouse1
     show mouse1
     stub_character "Вопрос в причине аварии."
-    narrator "Из темноты вышел Максим."
+    hide mouse1
+    show sad_var
+    black "Всмысле в причине?"
+    hide sad_var
+    show mouse1
+    fox "Это же третьи, вторые! Расходники. Вот оборудование жаль, дорогое."
+    hide mouse1
+    show sad_var
+    black "Вы дикие совсем?"
+    hide sad_var
+    show mouse1
+    fox "Молодой человек, следите за словами!"
+    hide mouse1
+    show sad_var
+    black "Разве это не ваши сородичи?"
+    narrator "Лисы рядом засмеялись."
+    hide sad_var
+    show mouse1
+    fox "Да они из-за стекла на Фабрику выходят года в четыре, хуже роботов."
     hide mouse1
     show mouse1
-    stub_character "Уже не вопрос. Я знаю, что ты их используешь, как живые компьютеры."
+    fox "Годятся только для экспериментов над ними, да для обсчетов."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    fox "Когда мозги их запретили есть, совсем бесполезными стали."
+    hide mouse1
+    show sad_var
+    black "Вы дикие!"
+    narrator "Он бросился на лиса и стал его трясти. Но темного угла помещения, вышел Максим."
+    hide sad_var
+    show mouse1
+    stub_character "А что ты удивляешься?"
+    hide mouse1
+    show mouse1
+    stub_character "Я знаю, что он их использует, как живые компьютеры."
+    hide mouse1
+    show sad_var
     black "Это ты сделал? Сжег бы Онку, идиот!"
-    narrator "Через секунду Максим ударил Аша под колени, и, схватив его за Уши, рванул их со всей силы вверх. Раздался жуткий хруст и из места крепления имплантов по замерзшему лицу потекла кровь. Он закричал."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Ты их повредишь!"
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Через секунду Максим ударил Аша под колени, и, схватив его за Уши, рванул их со всей силы вверх. "
+    narrator "Раздался жуткий хруст и из места крепления имплантов по лицу потекла кровь. Он закричал."
+    hide sad_var
+    show sad_var
+    black "Ты меня убьешь!"
+    hide sad_var
+    show sad_var
     black "Идиот! Они же вживлены в голову."
-    narrator "Кровь продолжала стекать по лицу."
-    hide black_learned_sad
+    narrator "Кровь продолжала стекать по лицу, а Максим все тянул Уши вверх."
+    hide sad_var
     show mouse1
     stub_character "А ты уже подружился с этим террористом?"
     narrator "Онка молча наблюдал за сценой, дав лисам сигнал не вмешиваться."
     hide mouse1
     show mouse1
-    stub_character "Я смотрю ты многое узнал, пока тут шастал. Сжег бы все тут, что мелочиться. Даже всю лунную станцию."
-    narrator "Максим не давал Ашу подняться, он кипел от злости."
+    stub_character "Я смотрю ты многое узнал, пока тут шастал. "
+    hide mouse1
+    show mouse1
+    stub_character "Сжег бы все тут, что мелочиться. Даже всю лунную станцию."
+    hide mouse1
+    show mouse1
+    stub_character "А то сколько тут зла наверно твориться!"
+    narrator "Максим не давал Ашу подняться, он оставался холодным, но в глазах виднелась жестокость."
     hide mouse1
     show mouse1
     stub_character "Твоя сеть..."
@@ -2124,22 +2734,27 @@ label scene_17:
     show mouse1
     stub_character "Почему мой отец скопировался в нее и пропал, не подскажешь?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Может он просто свалил от такого маньякак как ты?"
     narrator "Максим отпустил жертву и пнул ногой."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Все кто поддерживают рыжего ублюдка сгорят! И да, может и вся станция!"
-    narrator "Максим хотел броситься на Онку, то его сбил с ног Аш."
+    stub_character "Все кто поддерживают рыжего ублюдка сгорят! "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "И да, может и вся станция!"
+    narrator "Максим хотел броситься на Онку, но его сбил с ног Аш."
+    hide mouse1
+    show sad_var
     black "Нафига жечь лис!"
-    narrator "Аш обездвижил соперника, усевшись сверху и заломив ему руки за спину. Затем достал из толстовки моток армированного скотча BRUTAL! и до ушей Максима донесся ее резкий скрип."
-    narrator "Тот пытался сопротивляться, но Заяц уже накрепко залепил ему рот и всё сильнее обматывал голову скотчем, перекрывая доступ к кислороду. А когда ты живёшь на лунной станции, задохнуться – твой самый большой страх."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Аш обездвижил соперника, усевшись сверху и заломив ему руки за спину. "
+    narrator "Затем достал из толстовки моток армированного скотча BRUTAL! И до ушей Максима донесся ее резкий скрип."
+    narrator "Тот пытался сопротивляться, но Заяц уже накрепко залепил ему рот и всё сильнее обматывал голову скотчем, перекрывая доступ к кислороду. "
+    narrator "А когда ты живёшь на лунной станции, задохнуться – твой самый большой страх."
+    hide sad_var
+    show sad_var
     black "Помнишь свой подарок, мне на презентации? Пригодился!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ого! У меня будут из-за этого проблемы?"
     narrator "Он задал этот вопрос Облачному, но забыл, что того нет рядом. Вызвал его в сети."
@@ -2149,43 +2764,50 @@ label scene_17:
     hide mouse1
     show mouse1
     stub_character "Оттащите парня."
-    narrator "Черный Заяц продолжал заматывать голову Максима клейкой лентой, пока не почувствовал на руке крепкие челюсти. Из-под клыков Лиса брызнула кровь."
+    narrator "Черный Заяц продолжал заматывать голову Максима клейкой лентой, пока не почувствовал на руке крепкие челюсти. "
+    narrator "Из-под клыков Лиса брызнула кровь."
     hide mouse1
     show mouse1
     stub_character "Хватит! Хватит все портить!"
     narrator "Он сам отбросил Аша в сторону."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что ты делаешь? Он жег твоих лис!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ничего страшного! "
     narrator "Лис рядом, разорвал зубами скотч на лице Макса и невинно отметил."
     hide mouse1
     show mouse1
-    fox "Третьи и вторые неразумны."
-    narrator "Уши Аша желтели. Лицо стало заливаться краской."
+    fox "Третьи и вторые неразумны, я же сообщил."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Но маленькие лисы высшей и низшей касты тоже неразумные! Разве нет? Но о них вы заботитесь!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "О нет, производство третьих и вторых автоматизированно. Они до взрослого состояния растут в аквариумах."
+    fox "Производство третьих и вторых автоматизированно. "
+    hide mouse1
+    show mouse1
+    fox "Они до взрослого состояния растут в аквариумах."
     narrator "Аш посмотрел на Онку."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты собираешься спасать лис? Ты же отвечаешь за их безопасность!"
     narrator "Тот удивленно на него посмотрел."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Это подпольное лисье развлечение. Именно поэтому, психу удалось попасть только сюда. "
+    stub_character "Это подпольное лисье развлечение. Они иногда специально так делают."
+    hide mouse1
+    show mouse1
+    stub_character "Именно поэтому, этому недоразумению удалось попасть только сюда."
+    narrator "Он указал рукой на Макса, который сидел на полу. Тот уже не выглядел таким самоуверенным."
     hide mouse1
     show mouse1
     stub_character "Из преступлений только нерациональная трата ресурсов, этих лис все-таки и кормили и поили."
     narrator "Аш молчал, пытаясь понять что произошло."
     hide mouse1
     show mouse1
-    stub_character "А ты"
+    stub_character "А ты."
     narrator "Он повернулся к Максу."
     hide mouse1
     show mouse1
@@ -2199,6 +2821,9 @@ label scene_17:
     hide mouse1
     show mouse1
     stub_character "Кто? Кто? Находится в зале с инопланетными лианами?"
+    hide mouse1
+    show mouse1
+    stub_character "Почему сработала безопасность! Там кто-то без лис! Без присмотра!"
     narrator "Лисы подпрыгнули на месте и разбежались в разные стороны. Облачный остался на месте."
     hide mouse1
     show mouse1
@@ -2206,48 +2831,67 @@ label scene_17:
     hide mouse1
     show mouse1
     stub_character "Мне всю фабрику решили разрушить, очевидно!"
-    narrator "Он поднял Аша на ноги и снова повел за собой. Аш не отрывал взгляда от горящих заживо лис и не мог думать ни о чем другом. Он не мог поверить, что лисы так поступают друг с другом. Считают мертвыми тех, кто еще живы."
+    narrator "Он поднял Аша на ноги и снова повел за собой. "
+    narrator "Аш не отрывал взгляда от горящих заживо лис и не мог думать ни о чем другом. "
+    narrator "Он не мог поверить, что лисы так поступают друг с другом. Считают мертвыми тех, кто еще живы."
     hide mouse1
     show mouse1
-    fox "Третья каста — просто живые компьютеры, а вторые просто лабораторные животные. Они даже не говорят."
+    fox "Третья каста — просто живые компьютеры, а вторые просто лабораторные животные. "
     hide mouse1
+    show mouse1
+    fox "Они даже не говорят."
+    hide mouse1
+    show sad_var
+    black "Некоторые люди, тоже не говорят..."
+    hide sad_var
     show mouse1
     fox "Фабрика вырастит новых, у нас регулярно какие-то аварии. Это же Луна."
     narrator "Успокаивает его Облачный."
     hide mouse1
     show mouse1
-    #(ЛИСУ)
-    stub_character "Пойдешь с нами. И еще расскажешь где ты был!"
+    stub_character "Пойдешь с нами пушистый. "
+    hide mouse1
+    show mouse1
+    stub_character "И еще расскажешь где ты был!"
     hide mouse1
     show mouse1
     stub_character "И этого тоже, бери с собой!"
+    narrator "Он с презрением посмотрел на Максима, наего лице уже вернулась ухмылка."
     jump scene_18
 
 
 label scene_18 :
     scene Chip_Factory_Vines
     #Показываем, что Онке его мечта о заселении планет важнее, чем живые лисы на Луне. Он рассказывает о своем деле жизни
-    narrator "Они вышли с территории лис. Петляя по коридорам, Аш давно потерялся, даже с наличием освещения. Аш посматривал на Максима. Они шли позади Онки и Облачного, Аш чувствовал запах манго, исходящий от хозяина Фабрики. Лис лепетал перед хозяином."
-    show black_learned_sad
+    narrator "Они вышли с территории лис. Петляя по коридорам, Аш давно потерялся, даже с наличием освещения. "
+    narrator "Аш посматривал на Максима. "
+    show sad_var
     black "Что с твоим отцом?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я же сказал, он пропал."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Причем тут Онка?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Ты дурак? Да он сделал сеть и чип открытыми, но ядро принадлежит ему! Непонятно чем он здесь занимается. 1 из 50 копий пропадает! И никаких следов!"
+    stub_character "Ты дурак? Да он сделал сеть и чип открытыми, но ядро принадлежит ему!"
     hide mouse1
-    show black_learned_sad
-    black "Очень надуманно. Ты же не можешь узнать, пропали они или нет на 100%"
-    hide black_learned_sad
-    show black_learned_sad
-    black "Могли специально скрыться."
-    hide black_learned_sad
     show mouse1
-    stub_character "А могли как лисы – стать функциями, нет?"
+    stub_character "Непонятно чем он здесь занимается. одна из пятидесяти копий пропадает! И никаких следов!"
+    hide mouse1
+    show sad_var
+    black "Очень надуманно. Ты же не можешь узнать, пропали они или нет на сто процентов."
+    hide sad_var
+    show sad_var
+    black "Могли специально скрыться от семьи."
+    hide sad_var
+    show mouse1
+    stub_character "Мой отец не мог. Он и ушел туда, чтобы закрыть все хотелки этой..."
+    narrator "Парень остановил себя и сменил тему."
+    hide mouse1
+    show mouse1
+    stub_character "А могли копии как лисы – стать функциями, нет?"
     narrator "Онка остановился у одной из дверей."
     hide mouse1
     show mouse1
@@ -2257,23 +2901,23 @@ label scene_18 :
     show mouse1
     stub_character "Смотри под ноги!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ого!"
-    narrator "Он запнулся о лиану. Она порвалась и что-то липкое и теплое вылилось ему на ногу."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Он запнулся о лиану, испачкавшись чем-то липким и теплым."
+    hide sad_var
+    show sad_var
     black "Фэ!"
-    narrator "Свет от Ушей  отражался о корнеобразные растения стелющиеся высоким ковром по большому залу."
+    narrator "Свет ламп отражался о корнеобразные растения стелющиеся высоким ковром по большому залу."
     narrator "Илли крепко взял парня за руку."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Для равновесия."
     narrator "И они двинулись в центр."
-    narrator "Скоро Аш все-таки потерял равновесие и схватился рукой за одну из лиан. Холодная, склизкая она лопнула не выдержав натяжения, снова испачкав парня."
+    narrator "Скоро Аш все-таки потерял равновесие и схватился рукой за одну из лиан. Склизкая она была на ощупь как червь толшиной с руку. Казалось, оно пульсировало и было живым."
     hide mouse1
-    show black_learned_sad
-    black "Что это! Это яд?"
-    hide black_learned_sad
+    show sad_var
+    black "Чем оно покрыто? Что это?"
+    hide sad_var
     show mouse1
     stub_character "Тихо!"
     narrator "В центре помещения виднелся чей-то силуэт."
@@ -2282,38 +2926,53 @@ label scene_18 :
     show mouse1
     stub_character " Приготовьтесь удивляться!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это Наташа!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я уже понял."
     narrator "Лица девушки не было видно, лианы подсвечивали бледным голубым цветом тонкие, голые ноги девушки. "
-    narrator "Она взяла светящуюся лиану левой рукой. Поднялась и наступила каблуком на свободный конец растения голой ногой. "
-    narrator "Снова наклонилась взяв другой конец в свободную руку, затем накрутила концы вокруг кистей рук, натянула и..."
+    narrator "Она взяла светящуюся лиану левой рукой. Поднялась и наступила каблуком на середину. "
+    narrator "Снова наклонилась взяв два конца в свободные руки, затем накрутила их вокруг кистей рук, натянула и..."
     hide mouse1
     show mouse1
     stub_character "Стой! Твою... !"
     narrator "Но она уже резко дернула лиану вверх."
     narrator "От рывка та разорвались, из-под ног девушки в месте разрыва красиво, множеством капель разлетелся светящийся сок."
-    narrator "Наташа опустила руки и села на колени. Из центра сада, лианы начали меняться — они угасали. Девушка поднялась на ноги, она казалась настоящим центром смерти."
-    narrator "Уши Аша опустились, он с пустой головой наблюдал за тотальным уничтожением растений. Онка же просто упал на колени, не в силах сказать даже 2х слов."
-    narrator "Скоро он стоял среди мертвых. \"Они и живые-то не слишком приятные\" — мелькнуло у него в голове."
-    narrator "На границе между светящимся голубым живых лиан и серых, липких мертвых, с улыбкой шагала Наташа. Девушка заметила Онку."
+    narrator "Наташа опустила руки и села на колени. Из центра сада, лианы начали меняться — они угасали. "
+    narrator "Девушка казалась настоящим центром смерти."
+    narrator "Уши Аша с пустой головой наблюдал за тотальным уничтожением растений. "
+    narrator "Онка же просто упал на колени, не в силах сказать даже двух слов."
+    narrator "На границе между светящимися голубыми, живыми лианами и темными, мертвыми с улыбкой шагала Наташа. "
+    narrator "Словно каждый ее шаг убивал растения."
     narrator "В кромешной тьме, светились лишь глаза девушки. Растения потухли."
+    narrator "Она заметила Онку и Аша. Забыв в порыве радости о их отношениях, ярко улыбалась."
     hide mouse1
     show mouse1
-    stub_character "У меня получилось! Все прекрасно сработало! Думаю ролик будет эффектный!"
+    stub_character "У меня получилось! Все прекрасно сработало! "
+    hide mouse1
+    show mouse1
+    stub_character "Думаю ролик будет эффектный!"
     narrator "Онка молчал, его глаз задергался. Он пытался что-то сказать, но губы не слушались."
     hide mouse1
     show mouse1
-    stub_character "Конечно, в качестве триггера на самоубийство — я взяла сильное разрушение. Оно все и запустило! Это отличная демонстрация моей концепции."
+    stub_character "Конечно, в качестве триггера на самоубийство — я взяла сильное разрушение. "
     hide mouse1
     show mouse1
-    stub_character "Это было единственное растение, которое смогло жить хоть сколько-то на RDF-13! А ты его убила из-за ролика?!"
+    stub_character "Оно все и запустило! Это отличная демонстрация моей концепции."
+    hide mouse1
+    show mouse1
+    stub_character "Это было единственное растение, которое смогло жить хоть сколько-то на RDF-13! "
+    hide mouse1
+    show mouse1
+    stub_character "А ты его убила из-за ролика?!"
     narrator "Он схватился за волосы."
     hide mouse1
     show mouse1
-    stub_character "Это кошмар. Кто допустил тебя до этого? Мне и так постоянно плохо, еще вы!"
+    stub_character "Это кошмар. Кто допустил тебя до этого? "
+    hide mouse1
+    show mouse1
+    stub_character "Мне и так постоянно плохо, еще вы!"
     narrator "Уверенность девушки испарилась."
     hide mouse1
     show mouse1
@@ -2323,57 +2982,79 @@ label scene_18 :
     stub_character "Что? Нет! Вы не можете просто так взять и нарушить правила."
     hide mouse1
     show mouse1
-    stub_character "О! Раз я не могу их нарушить, то может ли млечный сок лиан это сделать? В нем яда на 10 Лун хватит. Надеюсь, что-то попало тебе в рот!"
+    stub_character "О! Раз я не могу их нарушить, то может ли млечный сок лиан это сделать? "
+    hide mouse1
+    show mouse1
+    stub_character "В нем яда на 10 Лун хватит. Надеюсь, что-то попало тебе в рот!"
     hide mouse1
     show mouse1
     stub_character "А если не попало, я помогу!"
     narrator "Аш понял что дело плохо."
     hide mouse1
-    show black_learned_sad
-    black "Она не лисы."
+    show sad_var
+    black "Она не лисы!"
     narrator "Девушка стояла как вкопанная."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Ты не можешь причинить вреда на своем же конкурсе, конкурсантам."
+    hide sad_var
+    show sad_var
+    black "Ты не можешь причинить вреда на своем же конкурсе конкурсантам."
     narrator "Онка взглянул на Зайца."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Могу. Но ты прав..."
+    stub_character "Могу."
     hide mouse1
     show mouse1
     stub_character "Я даже подумать не мог, что у кого-то рука поднимется на такое..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это же твои правила. Как говориться, выбирая игру, ты выбираешь правила."
-    narrator "Спокойный, с потухшими глазами он пробирался сквозь лианы обратно. Аш с Наташей шли за ним."
-    hide black_learned_sad
+    narrator "Онка снял цилиндр и нес его в руках, постоянно заглаживая волосы назад."
+    hide sad_var
+    show mouse1
+    stub_character "Не выгоняйте меня! Это же по правилам!"
+    hide mouse1
+    show mouse1
+    stub_character "Я спросила у лис, где что-то может умереть по цепной реакции..."
+    hide mouse1
+    show mouse1
+    stub_character "Сказали..."
+    narrator "Ее остановил новый друг."
+    hide mouse1
+    show sad_var
+    black "Не нужно. Не продолжай."
+    narrator "Быстрым шагом, с потухшими глазами Онка пробирался сквозь лианы обратно. "
+    narrator "Аш с Наташей шли за ним."
+    hide sad_var
     show mouse1
     stub_character "Он угрожал мне?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Он просто зол."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Спасибо что заступился. Я ему точно не нравлюсь."
     hide mouse1
-    show black_learned_sad
-    black "Нет, дело действительно в лианах, а не в тебе. Похоже, ими он дорожит больше, чем подопечными."
+    show sad_var
+    black "Нет, дело действительно в лианах, а не в тебе. "
+    hide sad_var
+    show sad_var
+    black "Похоже, ими он дорожит больше, чем подопечными."
     narrator "Он снова запнулся за растение и теперь уже не теплая, а холодная жижа стекала по его ноге."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Как же мерзко! Как же мерзко!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Аккуратней! Там же яд!"
     narrator "Аш обрадовался свету за дверью, когда он вывалился из комнаты."
-    narrator "Онка давал указания лису на счет Макса. Тот скользнул презрительным взглядом по девушке. На ее глазах появились слезы, она постаралась отвлечься."
+    narrator "Онка давал указания лису на счет Макса. "
+    narrator "Тот скользнул презрительным взглядом по девушке. На ее глазах появились слезы, она потянула Аша прочь от остальных."
     hide mouse1
     show mouse1
-    stub_character "Нужна помощь?"
+    stub_character "Тебе нужна одежда."
     narrator "Аш был перепачкан ядом."
     hide mouse1
-    show black_learned_sad
-    black "Нужна одежда! Я чувствую, как по ноге что-то течет!"
+    show sad_var
+    black "Я чувствую, как по ноге что-то течет!"
     jump scene_19
 
 
@@ -2381,169 +3062,224 @@ label scene_19 :
     scene Chip_Factory_room
     #Аш рассказывает про Макса, Наташа жалеет парня так как проецирует свои отношения с братом на их. Но Ната еще не говорит, что Макс ее брат
     narrator "Ребята разговаривали, двигаясь по коридору."
-    show black_learned_sad
+    show sad_var
     black "Этот придурок, сжег сегодня лис..."
-    hide black_learned_sad
-    show black_learned_sad
-    black "А главное, для Онки это нормально!"
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Главное, для Онки это нормально!"
+    hide sad_var
     show mouse1
     stub_character "А для лис?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Для них кажется тоже."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Многое бы отдала, за интервью с одним из них... Только они не особо со мной говорят."
+    stub_character "Многое бы отдала, за интервью для блога, с одним из них... "
     hide mouse1
-    show black_learned_sad
-    black "У них очень закрытое общество и не все, понравится общественности. Не могу даже понять, хорошие они или нет..."
-    hide black_learned_sad
-    show black_learned_sad
+    show mouse1
+    stub_character "Только они не особо со мной говорят."
+    hide mouse1
+    show sad_var
+    black "У них очень закрытое общество и не все, понравится общественности. "
+    hide sad_var
+    show sad_var
+    black "Не могу даже понять, хорошие они или нет..."
+    hide sad_var
+    show sad_var
     black "А еще, я видел как Макс на тебя посмотрел. Что между вами?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Похоже что мы знакомы?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Да неособо."
     narrator "Она засмеялась. Аш улыбнулся в ответ."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Лучше поспешить сменить твою одежду."
     narrator "Они шли незнакомыми Ашу коридорами. Вокруг никого не было."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Кажется, мы потерялись..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Прости за ненормальное поведение вчера, что сорвала твои планы. На счет обучения ИИ на людях..."
+    stub_character "Прости за ненормальное поведение вчера, что сорвала твои планы. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "На счет обучения ИИ на людях..."
+    hide mouse1
+    show sad_var
     black "Я уже забыл."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Просто у меня проблемы. Еще этот Онка, который критикует."
     hide mouse1
-    show black_learned_sad
-    black "Не переживай, это не связано с тем, что твой проект плохой. Людям тяжело говорить о смерти, о возможности использования средств массового убийства и что это может быть полезно."
-    hide black_learned_sad
+    show sad_var
+    black "Не переживай, это не связано с тем, что твой проект плохой. "
+    hide sad_var
+    show sad_var
+    black "Людям тяжело говорить о смерти, о возможности использования средств массового убийства и что это может быть полезно."
+    hide sad_var
     show mouse1
     stub_character "Да! Знаешь как много можно заработать выключив половину медуз?"
+    hide mouse1
+    show mouse1
     stub_character "Станции и очистные, бассейны — все забивается медузами."
     narrator "Она взяла его за руку и Аш почувствовал, что ему нравится это прикосновение в отличии от странного Хозяина фабрики, который вечно пахнет манго."
     narrator "Проходя мимо одной из дверей, они услышали шорохи. Наташа остановила Аша."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мне нужна новая одежда."
     narrator "Подруга закрыла ему рот."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Там кто-то из наших! Всмысле, это точно человек!"
+    stub_character "Там кто-то из наших! В смысле, это точно человек!"
     narrator "Аш замолк и они заглянули за приоткрытую дверь."
-    narrator "Внутри комнаты с витражными окнами от пола до потолка, в клетке, на голом полу сидел Лис из 3 касты. На его браслете виднелся номер."
+    narrator "Внутри комнаты с витражными окнами от пола до потолка, в клетке, на голом полу сидел Лис из третьей касты. На его воротничке виднелся номер."
     narrator "На против клетки, на мягком пуфике, в дополненной реальности, делала невидимые другим заметки Вечна."
     hide mouse1
     show mouse1
     stub_character "Это же твоя сестра? Эта выскочка?"
     narrator "Парень посмотрел на нее с упреком. В ответ Наташа виновато пожала плечами."
-    narrator "Сестра обратила внимание на лиса в клетке, тот махал хвостом из стороны в сторону, а взгляд не отрывался от соседки по комнате. Он был поглощен ею. "
+    narrator "Сестра обратила внимание на лиса в клетке, тот махал хвостом из стороны в сторону. Его взгляд не отрывался сидящей девушки. Он был поглощен ею. "
     narrator "Ребята увидели, как Вечна достала из-за спины мячик. Обычный, фиолетовый мяч, такой же она бросила в руки Ашу, приглашая его на сцену."
-    narrator "Покрутила игрушкой перед своим лицом. Лис высунул язык и часто задышал, но не двинулся. К нему обратилась девушка."
+    narrator "Покрутила игрушкой перед своим лицом. Лис высунул язык и часто задышал, но не двинулся. Зеленоглазая обратилась к нему."
     hide mouse1
-    show vechna_smile
-    vechna "Насколько сильно ты его хочешь? От 1 до 10. Тебе ведь подключили речь?"
-    narrator "Зрачки лиса расширились. Из рта потекла слюна."
-    hide vechna_smile
+    show vechna_smile1
+    vechna "Насколько сильно ты его хочешь? От одного до десяти. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Тебе ведь подключили речь?"
+    narrator "Зрачки лиса расширились. Изо рта потекла слюна."
+    hide vechna_smile1
     show mouse1
     stub_character "Да, сильно! Сильно! Дай!"
-    narrator "Девушка несколько раз смачно пожамкала мяч в руке. Потом потянула его в рот. Лис подорвался с места и так бросился на прутья клетки, что она качнулась."
+    narrator "Девушка несколько раз смачно пожамкала мяч в руке. Потом потянула его в рот. "
+    narrator "Лис подорвался с места и так бросился на прутья клетки, что она качнулась."
     hide mouse1
     show mouse1
     stub_character "Дай!"
     hide mouse1
-    show vechna_smile
-    vechna "Жаль, что речь так скудна..."
-    hide vechna_smile
-    show vechna_smile
+    show vechna_smile1
+    vechna "Жаль, что речь так скудна... Скажи от одного до десяти!"
+    narrator "В ответ лис зарычал и начал грызть клетку."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Я же говорила правила — без команды \"встать\" нельзя двигаться."
-    narrator "Поведение лиса было агрессивным. Он грыз прутья клетки."
+    narrator "Зверь бесился."
     narrator "Вечна смотрела на лиса с досадой."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Значит нужно сделать синоптические связи слабее. В 2 раза?"
-    narrator "Из-за ее спины показался Облачный Лис. Он с нескрываемым страхом посмотрел в клетку. Лис в ней громко рычал."
-    hide vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Значит нужно сделать синоптические связи слабее. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "В два раза? "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Дели или умножай на два, так хоть будет ясно, меняется что-то или нет."
+    narrator "Сказала она самой себе. Сестра подошла к клетке и смачно пожамкала мячик."
+    narrator "Из-за ее спины показался Облачный Лис. Он с неодобрительно посмотрел в клетку. Лис в ней громко рычал."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Долго пришлось тебя ждать."
+    hide vechna_smile1
     show mouse1
-    stub_character "Дайте! Отгрызу лапу!"
+    fox "Пришел как смог. И можно на вы?"
+    narrator "Девушка сделала недовольное лицо. Внутри клетки бесновался лис."
     hide mouse1
-    show vechna_smile
+    show mouse1
+    stub_character "Дайте! Отберу!"
+    hide mouse1
+    show vechna_smile1
     vechna "Можно научить его лучше говорить?"
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
-    fox "На это нужна хотя бы неделя. Мы не можем поставить ему более развитый неокортекс как у меня или Высших. Это решает ИИ Фабрики."
+    fox "На это нужна хотя бы неделя. "
     hide mouse1
-    show vechna_smile
+    show mouse1
+    fox "Мы не можем поставить ему более развитый неокортекс как у меня или Высших. "
+    hide mouse1
+    show mouse1
+    fox "Это решает ИИ Фабрики."
+    hide mouse1
+    show vechna_smile1
     vechna "Печаль..."
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     fox "Но очевидно, что желание играть с мечом у него ненормально сильное..."
-    narrator "Вечна повернулась в сторону ЛИса из касты 3 и снова показала ему мяч. Тот замер, сел на пол как еще минуту назад и высунул язык."
+    narrator "Вечна повернулась в сторону Лиса в клетке и снова показала ему мяч. "
+    narrator "Тот замер, сел на пол как еще минуту назад и высунул язык."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Слушаешься? "
     narrator "Животное замолкло."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Не дам мяч. Он мой."
-    narrator "Она даже не успела закончить слова, как лис стал грызть свою лапу. Девушка наблюдала минуту, потом перешла в дополненную реальность и сделала заметки."
-    #(Показываем интерфейс Вечны.)
-    narrator "Данные по образцу 7 демонстрируют сильную психологическую зависимость? Изучить данные подробней. "
-    narrator "Важно! Нужно изучить чтоб это не повторилось. А что б изучить — требуется повторить."
-    narrator "По щекам Наташи текут слезы. Из комнаты с витражами слышатся грызущие звуки."
-    hide vechna_smile
+    narrator "Она даже не успела закончить слова, как лис бросился на прутья, клетка покачнулась. "
+    narrator "Он пытался пролезть сквозь решетку. А затем... стал грызть свою лапу. "
+    narrator "Девушка наблюдала минуту скептически глядя на зверя. "
+    narrator "А затем сделала заметки. Проговаривая вслух."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Данные по образцу 7 демонстрируют сильную психологическую зависимость? "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Изучить данные подробней."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Важно! Нужно изучить, чтоб это не повторилось. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "А что б изучить — требуется повторить."
+    narrator "По щекам Наташи текут слезы. Из комнаты слышатся грызущие, чавкающие звуки."
+    hide vechna_smile1
     show mouse1
     stub_character "Что за жесть!"
     hide mouse1
-    show vechna_smile
-    vechna "Пожалуй, стоит усиливать связи процентов на 50 меньше... Хотя..."
-    hide vechna_smile
+    show vechna_smile1
+    vechna "Что же делать?"
+    hide vechna_smile1
     show mouse1
     fox "Не знаю, но как приказал наш хозяин. Мы выполним любые ваши указания."
     narrator "Тихо произнес Облачный."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Пойду разбираться. Он меня пугает."
-    narrator "Облачный удивился. Не было похоже, что девушка напугана."
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     fox "Можно его забрать?"
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Да, конечно. К сожалению с ним не вышло."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Мне нужен подопытный с навыками речи."
-    hide vechna_smile
-    show vechna_smile
+    narrator "Она на секунду остановилась."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Будешь следующим?"
     narrator "Сестра Аша скрылась из вида."
-    narrator "Наташа с сочувствием посмотрела на него. Сейчас его Уши были очень желтые."
-    hide vechna_smile
+    narrator "Наташа с сочувствием посмотрела на нового друга и потянула скорее прочь."
+    hide vechna_smile1
     show mouse1
     stub_character "Я конечно предлагаю убивать животных, но разумные это слишком."
-    narrator "Аш молчал. Из-за двери еще слышались поскуливания. Он вспоминал, как сестра спасла его и кроликов, во время аварии в детстве."
-    narrator "Он задумался, что она делала тогда: спасала животных или убивала людей, что могли бы занять место животных? Девушка всегда готова кем-то жертвовать. Тогда жизнью людей ради кроликов и него, сейчас жизнью лис, ради людей. "
+    narrator "Аш молчал. Из-за двери еще слышались поскуливания. "
+    narrator "Он вспоминал, как сестра спасла его и кроликов, во время аварии в детстве."
+    narrator "Он задумался, что она делала тогда: спасала животных или убивала людей, что могли бы занять место кроликов? "
+    narrator "Девушка всегда готова кем-то жертвовать. Тогда жизнью людей ради кроликов и его."
+    narrator "А сейчас жизнью лис, но ради чего? "
     narrator "Он решил, что главное быть для нее важнее, чем эти люди, чем все эти открытия и сеть."
     narrator "Они шли по коридору. Яд на одежде парня высох."
     hide mouse1
     show mouse1
     stub_character "Я знаю как это, когда твои близкие отдаляются. С моим братом похожая история."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Сочувствую. Но у меня все не так плохо. Я для нее важнее всего."
     narrator "Наташа обняла его."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я тоже очень на это надеюсь."
     hide mouse1
@@ -2556,59 +3292,85 @@ label scene_20:
     scene Chip_Factory_Audience
     #Аш видит изменения Вечны, и чувствует свою вину - не нужно было давать ей код. Наташа его поддерживает (может за руку берет), а он поддерживает ее - Онка сливает девушку за несоответствие теме конкурса. Аш побеждает, но отдает победу Вечне. Предварительно спрашивая, позволяют ли это правила.
     #(Последний день на конкурсе.)
-    show black_learned_sad
+    show sad_var
     black "Можно?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Почему ты спрашиваешь о таком?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Надеюсь, что на остальные вопросы ты будет отвечать охотнее."
-    narrator "Несмотря на бессонную ночь из-за адреналина и кучи работы, Аш чувствовал себя бодро. От вчерашних воспоминаний, на душе скребли кошки. \"Бедные лисы\" — подумал он про себя."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "От вчерашних воспоминаний, на душе скребли кошки. \"Бедные лисы\" — подумал он про себя."
+    hide sad_var
+    show sad_var
     black "Всех лис починила?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты это о чем?"
     narrator "Аш вспомнил, что вчера он подсматривал, а не был с ней в комнате."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ты слишком часто психуешь. Даже шутить об этом не хочется."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Хотел узнать, сколько лис ушло в утиль."
     narrator "Вечна пожала плечами, потом задумалась."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "12 лис, пока я не поняла в чем проблема. Ты был прав, что мне повезло не спалить свой мозг!"
+    hide sad_var
+    show vechna_smile1
+    vechna "Двадцать три лисы, пока я не поняла в чем проблема. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Ты был прав, что мне повезло не спалить свой мозг!"
     narrator "В глубине души, Аш был уверен, что Вечна починит всех лис. Сестра продолжала говорить."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Я достигла прогресса в изменении мозга. Теперь можно менять все что хочешь в нем. Естественно, как всегда самое долгое — это обучение.  Найти именно те связи, которые нужно усилить. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "С ослаблением все слишком сложно. Там не 12 лис, а пару тысяч нужно. Но это возможно и все благодаря тебе!"
-    hide vechna_smile
-    show black_learned_sad
-    black "Класс, я очень горжусь что 12 лис свихнулись благодаря мне. И ты тоже свихнулась."
-    hide black_learned_sad
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я достигла прогресса в изменении мозга. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Теперь можно менять все что хочешь в нем. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Естественно, как всегда самое долгое — это обучение.  Найти именно те связи, которые нужно усилить."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Но кое-что вышло. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "И все благодаря тебе!"
+    hide vechna_smile1
+    show sad_var
+    black "Класс, я очень горжусь что лисы свихнулись благодаря мне. "
+    hide sad_var
+    show sad_var
+    black "И ты тоже свихнулась."
+    hide sad_var
+    show vechna_smile1
+    vechna "Я?"
+    hide vechna_smile1
+    show sad_var
+    black "Еще недавно, ты бы никогда так не поступила с животными. "
+    hide sad_var
+    show sad_var
+    black "Если бы не твоя радость, от выполнения задач. Достигнутая за счет нейрохакинга."
+    hide sad_var
+    show vechna_smile1
     vechna "С Облачным все прошло ок."
-    narrator "Вечна вздохнула."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Может я наконец та, кем хотела быть? Все наши разногласия незначительны по сравнению с настоящими открытиями."
+    narrator "Девушка задумалась и пожала плечами."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Может я наконец та, кем хотела быть? А может, такой была?"
     narrator "Аш хотел что-то сказать, но девушка дала знак молчать."
     narrator "Её отвлек звук шагов — Онка поднялся на сцену."
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     stub_character "Сегодня мы выслушаем итоговые презентации и я выберу победителя."
     hide mouse1
     show mouse1
     stub_character "Конечно не сразу, после выступлений лисы разберут ваши данные по проектам."
     narrator "Наташа поднялась с места. Она лучезарно улыбнулась Онке. "
-    narrator "Аш почувствовал ревность: \"Все слишком фанатеют от него\". Его мысли сразу же перескочили на Уши, готов ли он сам, чтоб все видели все его эмоции? Почему он об этом волнуется? Да потому что, если он и не сблизился с сестрой, то хоть продвинется по работе\""
+    narrator "Аш почувствовал подумал: \"Думаю, это тебе уже не поможет\". "
+    narrator "Его мысли сразу же перескочили на его проект, готов ли он сам, чтоб участники видели его эмоции? "
+    narrator "Почему он об этом волнуется? Да потому что, пусть он и не сблизился с сестрой, то хоть продвинется по работе."
     hide mouse1
     show mouse1
     stub_character "Вы не против, если я начну?"
@@ -2619,20 +3381,27 @@ label scene_20:
     hide mouse1
     show mouse1
     stub_character "Прошу всех подключиться к сети. Я начну трансляцию презентации в дополненной реальности."
-    narrator "Перед аудиторией появилось окно с презентацией. Наташа рассказывала о распространении медуз, уроне которые они наносят очистным сооружениям и сколько денег можно на этом заработать. В самом конце, она открыла видео."
+    narrator "Перед аудиторией появилось окно с презентацией. "
+    narrator "Наташа рассказывала о распространении медуз, уроне которые они наносят очистным сооружениям и сколько денег можно на этом заработать. "
+    narrator "В самом конце, она открыла видео. Аш замотал головой: \"Надеюсь ты не покажешь Онке, как убила его лианы, выживающие даже на астероидах?\". Но у нее хватило ума так не делать."
     hide mouse1
     show mouse1
-    stub_character "Внутри Фабрики я еще раз протестировала распространение бактерий, но не для животных. Для растений. Триггером запуска цепной реакции, назовем это самоуничтожение являлся холод."
+    stub_character "Внутри Фабрики я еще раз протестировала распространение бактерий, но не для животных, для мяты. "
     hide mouse1
-    show black_learned_sad
-    black "Надеюсь ты не покажешь Онке, как убила его лианы, выживающие даже на астероидах?"
-    narrator "Рукой девушка указала на невидимую для нечипированных презентацию, в которой открылось видео."
+    show mouse1
+    stub_character "Триггером запуска цепной реакции, назовем это самоуничтожение являлся холод."
+    hide mouse1
+    show mouse1
+    stub_character "Пришлось напечатать базовый прототип моего вируса за ночь, но я успела!"
+    narrator "Рукой девушка указала на невидимую для нечипированных презентацию, в которой открылось видео. "
     narrator "В конце Онка молчал, крутя в пальцах крупную, засахаренную саранчу из вазы со снеками."
-    narrator "Но она показала собранную за ночь, мультяшную модель."
-    hide black_learned_sad
+    hide mouse1
     show mouse1
     stub_character "Сама концепция биологического оружия — противоречит нашим ценностям открытия и создания новых возможностей для жизни."
-    stub_character "Сейчас люди понимают, что уничтожение — плохая стратегия. По теории игр самая выгодная — это договориться."
+    stub_character "Сейчас люди понимают, что уничтожение — плохая стратегия."
+    hide mouse1
+    show mouse1
+    stub_character "По теории игр самая выгодная — это договориться."
     hide mouse1
     show mouse1
     stub_character "Достигнуть равновесия. А уничтожить, это хорошая тактика, но не стратегия."
@@ -2640,154 +3409,176 @@ label scene_20:
     show mouse1
     stub_character "Я не веду речи о полном истреблении. Речь о регуляции численности."
     narrator "Хозяин Фабрики положил в рот хрустящее насекомое."
-    narrator "Девушка твердо смотрела перед собой. Аш чувствовал себя неловко, он боялся что подруга заплачет. Наташа отрицательно покачала головой."
+    narrator "Девушка твердо смотрела перед собой. Аш чувствовал себя неловко, он боялся что подруга заплачет. "
     hide mouse1
     show mouse1
     stub_character "Спасибо за выход. Не обижайтесь, конкурс субъективный. Кто выступает следующим?"
     narrator "К Илли снова вернулся интерес."
     narrator "Наташа в расстроенных чувствах спустилась со сцены. Аш ждал у лестницы."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Меня тоже недавно Онка слил."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Все из-за вчерашнего..."
     narrator "На глазах Наташи наворачивались слезы."
     hide mouse1
     show mouse1
-    stub_character "Хоть бы в одной сфере жизни было так, как хочется! И я все транслировала в сеть! Вот позор!"
+    stub_character "Хоть бы в одной сфере жизни было так, как хочется! "
     hide mouse1
-    show black_learned_sad
-    black "Ничего страшного нет, если это кто-то увидит. Наоборот, больше шансов найти инвестора — глядишь какой-нибудь Онко-ненавистник решит дать тебе денег, чтоб насолить рыжику."
+    show mouse1
+    stub_character "И я все транслировала в сеть! Вот позор!"
+    hide mouse1
+    show sad_var
+    black "Ничего страшного нет, если это кто-то увидит. "
+    hide sad_var
+    show sad_var
+    black "Наоборот, больше шансов найти инвестора — глядишь какой-нибудь Онко-ненавистник решит дать тебе денег, чтоб насолить ему."
     narrator "Наташа подняла глаза на сцену."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Останься с сестрой, мне нужно побыть одной."
     narrator "Аш и так не отрывал взгляд от сестры. Подруга это заметила."
-    hide mouse1
-    show mouse1
-    stub_character "Нужно подумать как отработать весь негатив в мунтере. Для всех я с треском провалилась."
     narrator "На глазах девушки опять навернулись слезы, она старалась глубоко дышать. Только Аш не обращал на нее внимание."
     narrator "Вечна поднималась на сцену в сопровождении Облачного Лиса."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Рада вас приветствовать!"
     narrator "Перед глазами конкурсантов появился полупрозрачный слой с презентацией. Оратор стояла перед ним."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "На снимках можно видеть активность мозга при любви к фиолетовым мячам."
     narrator "Показывает новый кадр."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Это мозг моего ассистента – лиса перед вами."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Если кратко, за одну ночь я смогла научить мозг лиса любить неодушевленный предмет до дрожи. Очень сильно любить. "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Конечно, есть данные до и после."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Они данные хранятся в открытом доступе. Поэтому вы можете ознакомиться с уровнем активности мозга до нейрохакинга и после."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Перспективы применения данной разработки огромные, вплоть до изменения психики. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "Конечно, первые применения спорных технологий — это всегда медицина. Когда у врача встает вопрос использовать сомнительные с точки зрения этики методы или дать пациенту умереть — все знают, что выберет пациент."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Конечно, первые применения спорных технологий — это всегда медицина."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Когда у врача встает вопрос использовать сомнительные с точки зрения этики методы или дать пациенту умереть — все знают, что выберет пациент."
     narrator "Она обратилась к Илли."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Исследование монетизации и рынка для подобных инноваций требует больше времени, чем было доступно."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Но я верю, что сфера применения нейрохакинга огромна и это может действительно изменить мир."
     narrator "Онка аплодировал стоя."
-    narrator "С момента ухода Наташи, он смотрел в одну точку на сцене и думал про свою сестру. Краем глаза заметил, что она движется к выходу и пошел за ней. Его под руку поймал Облачный."
-    hide vechna_smile
+    narrator "С момента ухода Наташи, Аш смотрел в одну точку на сцене и думал про свою сестру. "
+    narrator "Краем глаза заметил, что она движется к выходу и пошел за ней. Его под руку поймал Облачный."
+    hide vechna_smile1
     show mouse1
     fox "Ай, ай, ай! Сейчас ваш выход молодой человек!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я пропускаю вперед кого-нибудь."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "Вы же последний!"
+    fox "Вы же последний! Как всегда!"
     narrator "С этими словами он взял его зубами за рукав и повел за собой."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А как же манеры?"
     narrator "Лис выпустил рукав из пасти."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Что вы знаете о нашей культуре? "
     narrator "Парень вздохнул и попробовал собраться с мыслями. Перед глазами был только лис в клетке."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "После таких открытий, как у Наташи моя работа не выглядит такой революционной."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Конечно, можно найти полезное применение нейрохакингу, но я хочу разобраться с проблемами наших чувств. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "За эту ночь я смог обучить чип узнавать удивление примерно в 40% случав. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "За эту ночь я смог немного обучить ИИ узнавать удивление и отвращение. "
+    hide sad_var
+    show sad_var
     black "Кроме этого, внедрил автогенерацию дизайна — с помощью сторонней программы Уши ищут изображения которые максимально ассоциируются с эмоцией и выводят его на Уши."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Технически, они представляют собой интерфейс подключенный к чипу находящийся в голове и дисплеи — сами Уши."
+    hide sad_var
+    show sad_var
     black "Из-за автогенерации изображений, Уши сами создают визуальный язык, без моего участия."
     narrator "Илли слушал не отрываясь."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ваша теория в том, что люди будут менять свое отношение к другим видя их эмоции?"
     hide mouse1
-    show black_learned_sad
-    black "Да, это позволит быть более открытыми с самим собой и другими. Часто, мы сами не хотим признаваться себе в наших чувствах."
-    hide black_learned_sad
+    show sad_var
+    black "Да, это позволит быть более открытыми с самим собой и другими. "
+    hide sad_var
+    show sad_var
+    black "Часто, мы сами не хотим признаваться себе в наших чувствах."
+    hide sad_var
     show mouse1
-    stub_character "Если все будут видеть мои эмоции — это серьезное изменение образа жизни. Я тогда с Фабрики носа не покажу."
+    stub_character "Если все будут видеть мои эмоции — это серьезное изменение образа жизни. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Я тогда с Фабрики носа не покажу."
+    hide mouse1
+    show sad_var
     black "Это изменение культуры. Как мы знаем минимальный шаг значимых культурных изменений — одно поколение."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Почему именно Уши зайца? Не лись... не кошачьи например?"
     hide mouse1
-    show black_learned_sad
-    black "Это решение необоснованно технически. Можно сделать дисплеи в форме разных Ушей. Просто дело вкуса."
+    show sad_var
+    black "Это решение необоснованно технически. "
+    hide sad_var
+    show sad_var
+    black "Можно сделать дисплеи в форме разных Ушей. Просто дело вкуса."
     narrator "Скрестя руки на груди и чувствуя себя неимоверно важным, Облачный внимательно выслушал ответ и утвердительно покачал головой, говоря самому себе, что так он и думал."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "И значит у вас есть патент на софт?"
     hide mouse1
-    show black_learned_sad
-    black "Да, я дал его в безвозмездное пользование сестре. Думаю, вы и так все уже знаете."
+    show sad_var
+    black "Да, я дал его в безвозмездное пользование сестре. "
+    hide sad_var
+    show sad_var
+    black "Думаю, вы и так все уже знаете."
     narrator "Онка повернулся к другим участникам."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Через 2 часа отдел контроля проверит данные ваших проектов и сообщит результаты. "
+    stub_character "Через два часа отдел контроля проверит данные ваших проектов и сообщит результаты. "
     hide mouse1
     show mouse1
     stub_character "Победитель сможет присоединиться к любой исследовательской группе на Фабрике. "
-    narrator "Через пару часов, все были поражены, что выиграл Аш. Второе место принадлежало Вечне. От досады она рвала на голове волосы."
+    narrator "Через пару часов, все были поражены, что выиграл Аш. "
+    narrator "Второе место принадлежало Вечне. От досады она рвала на голове волосы."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я отказываюсь от победы. И я прочел правила – так можно."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ожидаемо... Но не расстраивайся!"
     hide mouse1
     show mouse1
     stub_character "Занявший второе место, получит утешительный приз — ужин с самым выдающимся инноватором нашего поколения – ..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "...Со мной."
     narrator "Договорил за него Аш и закатил глаза."
     narrator "Вечна сидела не шевелясь, красная как помидор от приливающей крови."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Я победила! Задача выполнена!"
     jump scene_21
 
@@ -2799,204 +3590,243 @@ label scene_21:
     narrator "Соединить с Вечной."
     narrator "Мир вокруг изменился, парень стоял на планете, чувствуя резкий запах кислот. Они обжигали легкие. Звучали раскаты грома и свист. "
     narrator "Руку резко пришибло к земле, Аш понял – что-то падает с неба."
-    narrator "Кристаллы, — мелькнуло в голове и снова боль пробила руку. Оглядевшись, начал двигаться в сторону невысокой пещеры. "
+    narrator "Кристаллы, — мелькнуло в голове и снова боль пробила руку. Оглядевшись, он начал двигаться в сторону невысокой пещеры. "
     narrator "Дойдя, Аш попробовал вытащить один из кристаллов. Не получалось нащупать их конец в мышцах, чтоб подцепить и вытащить. "
     narrator "Но на глаза попались рубины лежащие у входа в укрытие — сантиметра 4-5 в длину и острые как иглы."
-    show black_learned_sad
-    black "Ааа, фиг я их вытащу!"
-    narrator "Руку Аша украшали рубиновые колья. Ему раздробило кость в нескольких местах и разорвало мышцы."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Что за жесть!"
-    narrator "Из под рубинов в руке стали выделяться капли крови. "
+    show sad_var
+    black "Ааа, я такие длинные не вытащу!"
+    narrator "Из под рубинов в руке стали выделяться капли крови."
+    hide sad_var
+    show sad_var
+    black "Что за жесть! "
     narrator "Красиво, — успел подумать парень, пока рука не онемела, ему казалось что пробиты даже кости. "
-    narrator "Вытащить из себя пятигранные клинки казалось невозможным. Мерзко, потому что ты достаешь их долго."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Вытащить из себя пятигранные клинки казалось невозможным. "
+    hide sad_var
+    show sad_var
     black "Вечна! Фак! Выключи это все нафиг!"
     narrator "Но никто не ответил."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Все, я тогда пас! Выйти из сети."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Пожалуйста, закончите симуляцию."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Вход в симуляцию подразумевает подписание пользовательского соглашения."
     narrator "Перед Ашем появилось соглашение."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Так не пойдет. Я присоединился не к симуляции, а к пользователю."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Для минимизации получения нежеланного опыта в сети, рекомендуется перед переходом — ознакомиться с локацией."
     narrator "Аш злился на себя, что всегда пропускал этот шаг, настроив мгновенный переход после одобрения запроса."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ладно, как закончить игру?"
     narrator "Перед ним высветились правила."
     narrator "\"Наблюдай за Нихалом и найди новое открытие — свое серендипити\"."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "О, то что нужно с раздробленной рукой! Самое оно мать вашу."
     narrator "Рука заныла."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "А если я умру?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Симуляция закончиться."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Выбор очевиден. Кристаллы еще сыплются с неба?"
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Он посмотрел на небо, дождь из рубинов закончился."
+    hide sad_var
+    show sad_var
     black "Правда что-ли нет???"
-    narrator "Спустя 10 минут он сидит в позе лотоса у входа в пещеру и глубоко дышит. Наблюдает за ландшафтом."
+    narrator "Спустя десять минут он сидел в позе лотоса у входа в пещеру и глубоко дышал. Наблюдая за ландшафтом."
     narrator "Появилась Вечна."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Прости, я только-только включила уведомления. Не знала что ты тут."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Я натерпелся такой боли!"
-    narrator "Он хотел выругаться, что из симуляции просто так не выйти, но вспомнил, что мог бы этого избежать, будь он внимательней. Она бы точно на это указала."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Прости! Планета с атмосферой из сенильной кислоты и дождями из драгоценных камней, может показаться неприветливой в первое время."
-    hide vechna_smile
-    show black_learned_sad
+    narrator "Он хотел выругаться, что из симуляции просто так не выйти, но вспомнил, что мог бы этого избежать, будь он внимательней."
+    narrator " Она бы точно на это указала."
+    hide sad_var
+    show vechna_smile1
+    vechna "Прости! Планета с атмосферой из сенильной кислоты и дождями из драгоценных камней... "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "...Может показаться неприветливой в первое время."
+    hide vechna_smile1
+    show sad_var
     black "То, то я чувствую, что легких уже нет. Почему я жив?"
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Если я все буду включать на полную катушку, то не продержусь тут и пары минут. Поэтому, обычно то что разрабатываю включаю полностью, а остальное внешние факторы притупляю."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Если я все буду включать на полную катушку, то не продержусь тут и пары минут. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Поэтому, обычно то что разрабатываю включаю полностью, а остальное внешние факторы притупляю."
+    hide vechna_smile1
+    show sad_var
     black "Что за фишка с серендипити?"
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Ааа, ну это мое упражнение – перед выходом из симуляции, я обычно наблюдаю за миром вокруг и записываю какое-то потенциальное открытие."
-    narrator "Девушка сделала несколько манипуляций рукой и Аш облегченно вздохнул, боль пропала, но чувствуется холод рубинов когда дотрагиваешься пальцами."
-    hide vechna_smile
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
+    vechna "Ааа, ну это мое упражнение – перед выходом из симуляции. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я наблюдаю за миром вокруг и записываю какое-то потенциальное открытие."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я понимаю под серендипити глубокий вывод из случайных наблюдений."
+    narrator "Девушка сделала несколько манипуляций рукой и Аш облегченно вздохнул, боль пропала, но чувствовался холод рубинов когда дотрагиваешься пальцами."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "У тебя какое-то дело? А то у меня..."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "...Еще столько задач незакрытых есть."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Именно."
-    hide vechna_smile
-    show black_learned_sad
-    black "Ты что сейчас это все на себе тестишь? Почему не на модели? Ты вон вся какая драная."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Сам ты драная. Я подвожу итоги. Когда задача сделать дожди как на других планетах, то удар камня по голове может обрадовать тебя больше, чем рождество!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
+    black "Ты что сейчас это все на себе тестишь? "
+    hide sad_var
+    show sad_var
+    black "Почему не на модели? Ты вон вся какая драная."
+    hide sad_var
+    show vechna_smile1
+    vechna "Сам ты драная! Я подвожу итоги."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Когда задача сделать дожди как на других планетах, то удар камня по голове может обрадовать тебя больше, чем рождество!"
+    hide vechna_smile1
+    show sad_var
     black "Это нездорОво и не ЗдОрово."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Я делаю великие вещи."
     narrator "Аш пристально на нее посмотрел. Одна рука девушки выбита из плеча. На теле ожоги."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Это не вредит мне!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "А не вредит ли? Пусть тело это не проживает, но проживает мозг."
     narrator "Девушка была недовольна непредвиденным конфликтом, на пустом месте."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Для меня это инструмент, понимаешь? Может быть странный, но это новая культура. Хоть умри, с этим уже ничего не сделаешь. Новое можно направить, но не заставить исчезнуть."
-    hide vechna_smile
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
+    vechna "Для меня это инструмент, понимаешь? Может быть странный, но это новая культура. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Хоть умри, с этим уже ничего не сделаешь. Новое можно направить, но не заставить исчезнуть."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Оглянись, мы на другой планете. Где люди даже жить не могут. "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Остальное ер ун да. Я бы за это сотни раз умирала без притупления чувств."
     narrator "С неба снова сыпались кристаллы."
-    narrator "Сестра показала рукой на выход из пещеры. Над кристальным дождем садилась звезда — местное Солнце. Сквозь минералы преломлялись лучи, они на секунду зажигали камни яркими вспышками. "
+    narrator "Сестра показала рукой на выход из пещеры. Над кристальным дождем садилась звезда — местное Солнце. "
+    narrator "Сквозь минералы преломлялись лучи, они на секунду зажигали камни яркими вспышками. "
     narrator "Словно блестящие звезды падают с неба."
-    narrator "В такие моменты все кажется ему неважным, никчемным в сравнении с вселенной и её чудесами и грусть отпускает. А позже, от осознания этой никчемности, становится еще хуже."
-    hide vechna_smile
-    show black_learned_sad
+    narrator "В такие моменты все кажется неважным, никчемным в сравнении с вселенной и её чудесами и грусть отпускает. "
+    narrator "А позже, от осознания этой никчемности, становится еще хуже."
+    hide vechna_smile1
+    show sad_var
     black "Ты делаешь великие вещи."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Но ты постоянно лежишь подключившись к Фабрике, работаешь по 15 часов."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты сюда подключился просто так? На мозг мне покапать?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Пообщаться, узнать как дела."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Отлично дела! Были!"
-    hide vechna_smile
-    show vechna_smile
-    vechna "Я работаю в месте мечты. Мне теперь платят за моделирование других планет. Счастливое везение, что Онка просто помешан на космосе."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Я работаю в месте мечты. Мне теперь платят за моделирование других планет. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Счастливое везение, что Онка просто помешан на космосе."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "И опережая твои комментарии, я очень благодарна, что ты отдал мне победу!"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Пойми, у меня правда загруженный период. Потом будет проще."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Не знал, что ты настолько этого хочешь."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ну ешки-поварешки!"
     narrator "Она всплеснула руками, задев часть пещеры."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Люди очень хотят чтоб мы не шли на поводу у чувств, а спокойно все говорили. "
-    hide vechna_smile
-    show vechna_smile
-    vechna "НО! По какой-то причине когда я говорю спокойно всем плевать, доходит только через истерики. Поэтому, наслаждайся!"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "НО! По какой-то причине когда я говорю спокойно всем плевать, доходит только через истерики."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Поэтому, наслаждайся!"
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Для меня очень важно хорошо справляться со своей работой."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Сетевики, с которыми я конкурирую за данные в которых можно обнаружить что-то новое, имеют больше времени и возможностей для обработки данных с других планет."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Сетевики, с которыми я конкурирую за данные в которых можно обнаружить что-то новое..."
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "...Имеют больше времени и возможностей для обработки данных с других планет."
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Следовательно, они быстрее делают задачи и разбирают самые интересные!"
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Им не нужно спать, тратить ресурсы мозга на обработку сигналов от кожи, глаз и других рецепторов."
     narrator "Девушка завелась и уже была в откровенно плохом настроении."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Да ладно, не бесись..."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Я не бешусь! Тебе не нравится, что мой сетевой день 15 часов? Хорошо! "
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Я его сокращу – использую нейрохакинг. И буду успевать тоже, что сейчас часов за 13-14."
-    hide vechna_smile
-    show black_learned_sad
-    black "Только не говори что подключишь себя к системе жизнеобеспечения. Тогда и на зрение ресурсы мозга не тратятся и легкие от аппарата смогут работать!"
+    hide vechna_smile1
+    show sad_var
+    black "Только не говори что подключишь себя к системе жизнеобеспечения."
+    hide sad_var
+    show sad_var
+    black "Тогда и на зрение ресурсы мозга не тратятся и легкие от аппарата смогут работать!"
     narrator "Вечна засмеялась."
-    hide black_learned_sad
-    show vechna_smile
-    vechna "Не бойся. Я хочу повысить производительность мозга, убрать какую-нибудь внешнюю информацию которую ему требуется обрабатывать. И это не легкие."
-    hide vechna_smile
-    show black_learned_sad
+    hide sad_var
+    show vechna_smile1
+    vechna "Я хочу повысить производительность мозга, убрать какую-нибудь внешнюю информацию которую ему требуется обрабатывать. "
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "И это не легкие."
+    hide vechna_smile1
+    show sad_var
     black "Если честно, звучит плохо."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты доверяешь мне?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Опять этот вопрос..."
     jump scene_22
 
@@ -3004,45 +3834,61 @@ label scene_21:
 label scene_22:
     scene lake
     #Он приглашает к ней знакомого лиса, для скандального интервью, лис просит анонимности, чтоб ему не влетело
-    narrator "Прошел месяц. Друзья сидели на берегу озера, для переработки мусора. Самой красивой свалки в мире. Зеркальная масса наноботов отражала в себе цветную подсветку с потолка."
+    narrator "Прошел месяц. Друзья сидели на берегу озера, для переработки мусора. "
+    narrator "Самой красивой свалки в мире. Зеркальная масса наноботов отражала в себе цветную подсветку с потолка."
     narrator "Аш что-то читал вслух Наташе. Она невнимательно слушала и всем видом показывала, как ей скучно."
-    show black_learned_sad
+    show sad_var
     black "Ты должна разбираться не только в микробиологии, но и в других смежных дисциплинах быть в тренде."
-    narrator "Они сидели на стеклянном полу, под ним закрытый сад живущий своей жизнью. Из-за испарений на стенах растения плохо видны. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Нельзя так долго грустить из-за проекта. Ты все равно хорошо шаришь в микробиологии. Чем занимаются у тебя в семье?"
-    hide black_learned_sad
+    narrator "Они сидели на полу застеленном пледом, на нем были разложения печенье, чашечки и прочее, что говорило – у них пикник. "
+    hide sad_var
+    show sad_var
+    black "Нельзя так долго грустить из-за проекта. "
+    hide sad_var
+    show sad_var
+    black "Ты все равно хорошо шаришь в микробиологии. Чем занимаются у тебя в семье?"
+    hide sad_var
     show mouse1
-    stub_character "Что ты все время спрашиваешь про семью? Я думала, что общественно воспитанных это не интересует."
+    stub_character "Что ты все время спрашиваешь про семью? Я"
     hide mouse1
-    show black_learned_sad
-    black "У меня есть семья, просто в ней не было родителей. И я смотрю моя психика вышла более устойчивой."
-    hide black_learned_sad
+    show mouse1
+    stub_character "Думала, что общественно воспитанных это не интересует."
+    hide mouse1
+    show sad_var
+    black "У меня есть семья, просто в ней не было родителей. "
+    hide sad_var
+    show sad_var
+    black "И я смотрю моя психика вышла более устойчивой."
+    hide sad_var
     show mouse1
     stub_character "Ну да, ищешь с кем бы пообщаться пока твоя сестра пожинает плоды победы, обрабатывая данные Онки 24/7."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Только 15/7."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "И это было очень грубо."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Да. Прости. Просто я со своей традиционной семьей общаюсь еще хуже."
     narrator "Она поджала под себя колени, длинные прямые волосы свесились на лицо."
     hide mouse1
-    show black_learned_sad
-    black "Тебе все равно нужно решить чем ты хочешь заниматься. Какие у тебя баллы на учебе?"
-    hide black_learned_sad
+    show sad_var
+    black "Тебе все равно нужно решить чем ты хочешь заниматься. "
+    hide sad_var
+    show sad_var
+    black "Какие у тебя баллы на учебе?"
+    hide sad_var
     show mouse1
     stub_character "Мы с тобой познакомились на конкурсе для ботанов. Догадайся."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что тебе еще интересно?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Вот тебе новость. Я учусь как и большинство, не потому что хочу собирать звезды, а чтоб выдержать всю эту бешеную конкуренцию! "
+    stub_character "Вот тебе новость. "
+    hide mouse1
+    show mouse1
+    stub_character "Я учусь как и большинство, не потому что хочу собирать звезды, а чтоб выдержать всю эту бешеную конкуренцию! "
     hide mouse1
     show mouse1
     stub_character "Иногда кажется, эта гонка словно... "
@@ -3051,63 +3897,96 @@ label scene_22:
     stub_character "Словно чем сложнее тебе двигаться, тем быстрее приходится это делать чтоб не выбыть из игры. "
     hide mouse1
     show mouse1
-    stub_character "Безумие, но даже дело моей жизни пришло не из нутра, а из вне. Сказали Наташ, факультет оки-доки. А мне не оки это и не доки."
+    stub_character "Безумие, но даже дело моей жизни пришло не из нутра, а из вне."
     hide mouse1
     show mouse1
-    stub_character "Я не знаю чем мне заниматься. Где блин моя кьюти-марка??? Я хочу быть пони..."
+    stub_character "Сказали Наташ, факультет оки-доки. А мне не оки это и не доки."
+    hide mouse1
+    show mouse1
+    stub_character "Я не знаю чем мне заниматься. "
+    hide mouse1
+    show mouse1
+    stub_character "Где блин моя кьюти-марка??? Я хочу быть пони..."
     narrator "Наташа схватилась за голову."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "У тебя есть блог. Кажется, им тебе реально интересно заниматься."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Интересно."
+    stub_character "Интересно. Но это же не так круто, как наука."
     narrator "Она мило вытерла носик."
     hide mouse1
-    show black_learned_sad
-    black "Есть сюрприз: сейчас придет лис — он готов рассказать про самые внутренности Фабрики. Но без видео, анонимно."
-    narrator "Наташа сложила руки перед лицом, словно сейчас прочитает Ашу молитву. На коленях девушка подползла к нему, по взгляду было непонятно, она сейчас заплачет или упадет в обморок."
-    hide black_learned_sad
+    show sad_var
+    black "У тебя действительно проблема с чужим мнением."
+    hide sad_var
+    show sad_var
+    black "Есть сюрприз: сейчас придет лис — он готов рассказать про самые внутренности Фабрики. "
+    hide sad_var
+    show sad_var
+    black "Но без видео, анонимно."
+    narrator "Наташа сложила руки перед лицом, словно сейчас прочитает Ашу молитву. "
+    narrator "На коленях девушка подползла к нему, по взгляду было непонятно, она сейчас заплачет или упадет в обморок."
+    hide sad_var
     show mouse1
     stub_character "Спасибо! Я не верю, что кто-то что-то сделал для меня!"
     narrator "За их спиной раздалось солидное."
     hide mouse1
     show mouse1
-    fox "— хм, хм, — Простите я не знал что у вас время молитвы. Какую религию вы исповедуете?"
+    fox "Хм, хм, — Простите я не знал что у вас время молитвы. "
+    hide mouse1
+    show mouse1
+    fox "Какую религию вы исповедуете?"
     narrator "Аш засмеялся, подал Нате руку."
     hide mouse1
     show mouse1
     stub_character "Мы не молимся, жуткая глупость."
     hide mouse1
     show mouse1
-    fox "Вот и неправда, это для нервов полезно."
-    narrator "Наташа жестом пригласила Облачного сесть рядом. Она уже не выглядела вялой и апатичной. Громко хлопнула в ладоши. От неожиданности ее друг вздрогнул. "
-    narrator "Аш вспомнил, что сестра всегда хлопала в ладоши, чтоб вокруг замолчали."
+    fox "Неверное и нахальное утверждение, это для нервов полезно."
+    narrator "Наташа жестом пригласила Облачного сесть рядом. "
+    narrator "Она уже не выглядела вялой и апатичной. Громко хлопнула в ладоши. От неожиданности ее друг вздрогнул. "
+    narrator "Аш вспомнил, что сестра всегда хлопала в ладоши, чтобы вокруг замолчали."
     hide mouse1
     show mouse1
     fox "Можем поскорее начать?"
     hide mouse1
     show mouse1
-    stub_character "Конечно. Только мне нужно придумать вопросы. Буду импровизировать."
+    stub_character "Конечно. Только мне нужно придумать вопросы. "
+    hide mouse1
+    show mouse1
+    stub_character "Буду импровизировать."
     narrator "Про себя она ругала Аша, которого больше волновал вау эффект сюрприза, чем ее подготовка к интервью."
     hide mouse1
     show mouse1
-    fox "Заранее оговариваю, никто не должен знать источник. Я возвращаю старый долг. Давным-давно, твой друг дал мне шанс, хотя я не смог выполнить долг."
+    fox "Заранее оговариваю, никто не должен знать источник. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    fox "Я возвращаю старый долг."
+    hide mouse1
+    show sad_var
     black "Он говорит, что съел входной жетон на конкурс, а я не стал жаловаться и подождал когда он из него выйдет."
     narrator "Лис смешался, поправил воротник."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Выйдет — это очень грубо звучит, можно подумать..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Тут ничего эстетичного все равно не подумаешь."
     narrator "Наташа заметила, что гость чувствует себя некомфортно."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Мы очень признательны, что вы тут. Скажите, вы — разумный лис, потому что имеете имплант коры головного мозга? Как вас кстати зовут?"
+    stub_character "Мы очень признательны, что вы тут."
+    hide mouse1
+    show mouse1
+    stub_character "Скажите, вы — разумный лис, потому что имеете имплант коры головного мозга? "
+    hide mouse1
+    show mouse1
+    stub_character "Как ваше имя?"
     narrator "Девушка опустила ноги в массу нанороботов. Аш смотрит за кругами, расходящимися от движений ног девушки."
+    hide mouse1
+    show mouse1
+    fox "Я предпочитаю скрыть свое имя."
+    narrator "Сердито ответил лис."
     hide mouse1
     show mouse1
     fox "Щенками мы проходим процедуру имплантации."
@@ -3126,19 +4005,28 @@ label scene_22:
     hide mouse1
     show mouse1
     fox "Низшие не глупы, просто мы не занимаемся инновациями, а лишь помогаем."
-    narrator "Уши Аша залились желтыми цветами."
+    narrator "Аш все это знал, поэтому сидел молча и старался не мешать."
     hide mouse1
     show mouse1
     stub_character "Можно ли сменить касту?"
     hide mouse1
     show mouse1
-    fox "Очень редко, лисы могут переходить между кастами. Один лис в год."
+    fox "Очень редко лисы могут переходить между кастами. Один лис в год."
     narrator "Лис выглядел очень гордым собой."
+    hide mouse1
+    show mouse1
+    stub_character "Вы говорите о себе?"
+    hide mouse1
+    show mouse1
+    fox "Стараюсь, очень стараюсь."
     narrator "Наташа резко дергает ногой и зеркальные капли попадают на хвост лиса."
     hide mouse1
     show mouse1
     fox "Аккуратнее! Никто не должен знать, что я тут был!"
-    narrator "Лис судорожно счищает их с хвоста, но в некоторых местах остаются проплешины."
+    hide mouse1
+    show mouse1
+    fox "Шерсть ведь не кожа! Ее разъест!"
+    narrator "Лис судорожно счищал капли наноботов с хвоста, но в некоторых местах остались проплешины."
     narrator "Наташа кивает головой на озеро."
     hide mouse1
     show mouse1
@@ -3149,10 +4037,19 @@ label scene_22:
     narrator "В ответ она пожала плечами."
     hide mouse1
     show mouse1
-    fox "Значит вы правда молитесь? Почему одни лисы ходят на задних лапах, а другие нет?"
+    fox "Значит вы правда молитесь? "
     hide mouse1
     show mouse1
-    fox "Молимся, но в низшей касте. Только высшие лисы могу ходить на задних лапах и работать на высоких должностях."
+    fox "Почему одни лисы ходят на задних лапах, а другие нет?"
+    hide mouse1
+    show mouse1
+    fox "Да мы молимся, нас так воспитала Фабрики. "
+    hide mouse1
+    show mouse1
+    fox "Часто высшие лисы могу ходить на задних лапах. "
+    hide mouse1
+    show mouse1
+    fox "Но это не ограничение, а привычка, поэтому низшие тоже ходят на задних."
     narrator "Наташа толкнула в бок Зайца, привлекая его внимание."
     hide mouse1
     show mouse1
@@ -3160,25 +4057,37 @@ label scene_22:
     narrator "Лис отрицательно покачал головой. Оглянулся в сторону Фабрики."
     hide mouse1
     show mouse1
-    fox "Мне пора. В любой касте сколько часов за день ты отработал + 5 часов на сон — столько времени ты проживешь."
+    fox "Мне пора. "
+    hide mouse1
+    show mouse1
+    fox "В любой касте сколько часов за день ты отработал + 6 часов на сон — столько времени ты проживешь."
     narrator "Наташа одним прыжком встала на ноги. Даже Аш вернулся из своих мыслей."
     hide mouse1
     show mouse1
     stub_character "Вы зарабатываете часы жизни?"
     hide mouse1
     show mouse1
-    fox "Все справедливо. Содержание каждого лиса требует ресурсов, будто люди детей содержат, чтоб те потом ушли на все 4 стороны и ничего им не дали."
+    fox "Все справедливо. "
+    hide mouse1
+    show mouse1
+    fox "Содержание каждого лиса требует ресурсов."
+    hide mouse1
+    show mouse1
+    fox "будто люди детей содержат, чтоб те потом ушли на все четыре стороны и ничего им не дали."
     narrator "Лис встал и стал внимательно себя оглядывать."
     hide mouse1
     show mouse1
     stub_character "Уходите?"
     hide mouse1
     show mouse1
-    fox "Завтра я проживу 10 часов и 5 на сон. А я не хочу чтоб мой день длился 10 часов! Имейте совесть."
-    narrator "Лара не нашла что ответить, Лис уже удалялся. Девушка обняла со спины Черного."
+    fox "Завтра я проживу 10 часов и 6 на сон. "
     hide mouse1
     show mouse1
-    stub_character "А этот Онка, чистое зло! Сколько отработал + 5 часов на сон! Дикость. "
+    fox "А я не хочу чтоб мой день длился 11 часов! Имейте совесть."
+    narrator "Наташа не нашла что ответить, Лис уже удалялся. Девушка обняла со спины Черного."
+    hide mouse1
+    show mouse1
+    stub_character "А этот Онка, чистое зло!"
     hide mouse1
     show mouse1
     stub_character "Теперь я не удивляюсь, что он позволил Вечне ставить эксперименты на лисах."
@@ -3186,124 +4095,140 @@ label scene_22:
     hide mouse1
     show mouse1
     stub_character "Сделал на заводе свою страну, где он Бог!"
-    narrator "Она встала и начала собирать свои веши: баночку для воды, один огрызок яблока."
+    narrator "Она встала и начала собирать свои веши: баночку для воды, чашки, один огрызок яблока."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black " Ты уходишь?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Мы же договорились встретиться вечером?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Хорошо."
-    #(Он остается на берегу один.)
+    narrator "Но вечером, девушка была занята."
     jump scene_23
 
 
 label scene_23:
     scene lake
     #Парень поддерживает как может, рассказываем, что он вырос без родителей
-    narrator "Аш точно знал, распознавать какую эмоцию он может научить чип в этот период жизни. Чаще всего он испытывал тревогу."
-    #(Его мысли прервал поток сообщений.))
-    narrator "Ты не идешь на учебу, ты идешь со мной к озеру."
-    narrator "Чувство тревоги усилилось настолько, что его Уши прижались к голове, а после этого... иногда на Ушах начинали появляться красные пятна."
-    narrator "Аш чувствавал в себе силы нападать. Парень вышел из лунной пешеры. Потребовалось время чтоб убедить себя, что поводов для тревоги нет и Уши пришли в спокойное положение."
-    narrator "Наташа сидела на пледе у куста цветов."
+    narrator "Темноволосый точно знал, распознавать какую эмоцию он может научить ИИ сегодня. "
+    narrator "С самого утра он испытывал тревогу. Его мысли прервал поток сообщений, с одинаковым содержанием: \"Ты не идешь на учебу, ты идешь со мной к реке.\""
+    narrator "Аш почувствавал в себе силы нападать, если того потребует защита близкого."
+    narrator "Парень вышел из жилого отсека, потребовалось время чтоб убедить себя, что поводов для тревоги нет."
+    narrator "Наташа сидела на пледе тамже, где и в прошлый раз."
     show mouse1
     stub_character "Она умерла. Она убила себя."
     hide mouse1
-    show black_learned_sad
-    black "О ком ты говоришь? Ты рассказывала про семью...отца, брата, мать..."
+    show sad_var
+    black "О ком ты говоришь? "
+    hide sad_var
+    show sad_var
+    black "Ты рассказывала про семью...отца, брата, мать..."
     narrator "По щекам Наташи потекли слезы."
-    narrator "Аш понял что наделал."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Аш погадался."
+    hide sad_var
+    show sad_var
     black "Прости. У меня не было родителей, никогда. Ты знаешь это."
-    narrator "Ему было очень стыдно, что он не испытывает жалости к родителям, только к Наташе. Хотя знал, что это нормально. У него же не было традиционной модели семьи. "
-    narrator "Множество взрослых и сестра. Но его глодало, что Наташа видит, что ему не жаль. Уши молчали. Был бы на Ушах стыд, — она хотя бы знала что у него есть совесть."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Ему было очень стыдно, что он не испытывает жалости к родителям, только к Наташе. "
+    narrator "Хотя знал, что это нормально. У него же не было традиционной модели семьи. "
+    narrator "Множество взрослых и сестра. Но его глодало, что Наташа видит, что ему не жаль. "
+    narrator "Уши молчали. Был бы на Ушах стыд, — она хотя бы знала что у него есть совесть."
+    hide sad_var
+    show sad_var
     black "Я бы хотел, разделить с тобой, но..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ничего, я понимаю. "
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Хочешь поговорить? Это твоя мать убила себя?"
     narrator "Наташа сильнее заплакала."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "А где твой отец, брат?"
     narrator "Девушка зарыдала и начала задыхаться."
     narrator "Он решил ничего не спрашивать. Аш вспомнил, что такое паническая атака. Вспомнил про термос в рюкзаке."
-    narrator "Аш обнял ее, так что она не видела ничего и уткнулась лицом в плечо. Спустя несколько минут Наташа перестала реветь и начала говорить."
-    hide black_learned_sad
+    narrator "Аш обнял ее, так что она не видела ничего и уткнулась лицом в плечо. "
+    narrator "Спустя несколько минут Наташа перестала реветь и начала говорить."
+    hide sad_var
     show mouse1
-    stub_character "Отца тоже нет, уже год. При переезде в сеть и пропал. "
+    stub_character "Отца тоже нет, уже год. При копировании в сеть он пропал. "
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А оригинал?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Ты делаешь копию в сеть и убиваешь тело, чтоб решить парадокс двойников. Потому что мы верим, что человек должен быть индивидуален. Он должен быть единственным."
+    stub_character "Ты делаешь копию в сеть и убиваешь тело, чтоб решить парадокс двойников."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Потому что мы верим, что человек должен быть индивидуален. Он должен быть единственным."
+    hide mouse1
+    show sad_var
     black "Но оригинал же главный!"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Если он при жизни отдаст права на личность копии, то нет."
-    narrator "Она вытирала лицо салфетками, слезы так и текли из глаз, но она стала спокойней. Внутри Аша все перевернулось."
+    narrator "Она вытирала лицо салфетками, слезы так и текли из глаз, но она стала спокойней. "
+    narrator "Внутри Аша все перевернулось."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Нужно выпить что-нибудь сладкое."
     narrator "Наташа вытирала красный нос."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "А где твой брат?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Как ни в чем не бывало проснулся и пошел по своим делам. Мы не общаемся, с тех пор как отец пропал."
+    stub_character "Как ни в чем не бывало проснулся и пошел по своим делам. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Мы не общаемся, с тех пор как отец пропал."
+    hide mouse1
+    show sad_var
     black "Наверно, ему тоже нужно время."
-    narrator "Девушка одобрительно качнула головой и вытерла нос. Аш в который раз отметил как она похожа на сестру. "
-    narrator "Наташа носит длинные волосы, как прежняя Вечна и в итоге похожа сейчас на сестру больше, чем та, сама на себя."
-    hide black_learned_sad
+    narrator "Девушка одобрительно качнула головой и вытерла нос."
+    narrator "Аш в который раз отметил как она похожа на сестру. "
+    hide sad_var
     show mouse1
     stub_character "Куда мы идем?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "В кафе в парке, если его можно так назвать. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Выпьем густой, горячий шоколад. Это конечно яд, но помогает."
     narrator "Наташа взяла его за руку и шла, тихо плача себе под нос."
     narrator "Еще издалека была видна какая-то шумиха. Рядом с помещением с аудиторией университета. Аш хотел уйти."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Тут точно ничего хорошего. Пойдем в другое кафе."
     narrator "Но Наташа как дикая, подорвалась в сторону скопления роботов и пары людей, все еще держа его за руку. "
-    narrator "Подходя ближе, Наташа сбавила шаг и Аш заметил, кровь среди людей и устройств. "
+    narrator "Подходя ближе, Наташа сбавила шаг и Аш заметил кровь среди людей и устройств. "
     narrator "Наташа отпустила его руку и медленно пошла ближе."
-    narrator "Уши Аша опустились. Почему-то ему захотелось остановить подругу. Но не решился, просто шел за ней. Совсем рядом кто-то из преподавателей сказал ей, чтоб она ушла, но девушка оттолкнула его."
-    narrator "Там лежало что-то накрытое черной тканью, если вы думаете, что на ней не было видно крови — вы ошибаетесь."
+    narrator "Почему-то ему захотелось остановить подругу. Но не решился, просто шел за ней. "
+    narrator "Совсем рядом кто-то из преподавателей сказал ей, чтоб она ушла, но девушка оттолкнула его."
+    narrator "Там лежало что-то накрытое черной тканью, если вы думаете, что черной ткани не видно кровь — вы ошибаетесь."
     narrator "Наташе все-таки не дали подойти близко, как бы она не старалась. А она только кричала:"
     narrator "- Где Максим? Где мой брат? Позовите Максима!"
-    narrator "Одна из преподавательниц заплакала. А Аш вспомнил слова Макса: “У меня отец пропал в сети...”. Как же он раньше не догадался?"
-    #(Наташу забрали в центр помощи. )
-    #Ашу пришло уведомление из больницы.
+    narrator "Кто-то из присутствующих заплакал. А Аш вспомнил слова Макса: “У меня отец пропал в сети...”. "
+    narrator "Как же он раньше не догадался? Наташу в истерике увели. Ему не позволили пойти с ней."
+    narrator "Он уже готов идти следом, в Медцентр. Который по необходимости, выполнял функцию Центра Копирования – во время копирования в сеть и Цента Помощи – помогающего при проблемах с психикой."
+    narrator "Но ему пришло уведомление. Тот же Медцентр, комната 33."
     jump scene_24
 
 
 label scene_24:
     scene helpcenter
     #Аш пытается дозвониться до Вечны, но выясняется, что та в больнице из-за неудачного теста с нейрохакингом. Девушка заходит все дальше. Оставаясь в тишине она думает, что сегодня могла лишиться всего (тела). И она готова, готова оставить брату оригинал. Она отправляет Онке запрос, можно ли так сделать
-    narrator "Герой подошел к двери в Центре Помощи, выполняющем функцию больницы. В дополненной реальности, над входом высвечивалось 33."
-    narrator "В темной палате, без сознания лежала Вечна."
+    narrator "В палате, без сознания лежала Вечна."
     narrator "Он хотел спрятаться от зрелища, которое все равно уже будет преследовать его всю жизнь."
     narrator "В дополненной реальности появился автоматический помощник — мобильная камера."
     show mouse1
-    stub_character "Состояние пациента удовлетворительное. Диагноз – отключение сигналов с рецепторов и скелетной мускулатуры. "
+    stub_character "Состояние пациента удовлетворительное. "
+    hide mouse1
+    show mouse1
+    stub_character "Диагноз – отключение сигналов с рецепторов и скелетной мускулатуры. "
     hide mouse1
     show mouse1
     stub_character "Последствия: возможно, чувствительность и активность мышц не восстановится. "
@@ -3312,69 +4237,70 @@ label scene_24:
     stub_character "Лечение: нет, профилактика — прекращение неквалифицированного вмешательства в мозг."
     narrator "Парень схватился за волосы."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Как она могла отключить свою кожу и скелетный мышцы? Как?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Могу найти информацию в сети. Отправить запрос?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Не важно. Она в коме?"
     narrator "Он стал быстро ходить туда обратно."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "По текущим прогнозам пациент придет в сознание через несколько часов."
     narrator "Аш начал вытирать слезы, трясущимися руками."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Как она поступила к вам?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Она отправила запрос из сети."
     narrator "Парень разворачивается к кровати сестры, пытаясь осознать ситуацию."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты придумала это сама?"
-    narrator "В нем возник порыв дернуть ее за руку, сбросить с кровати. Разбудить. Вместо этого, он почувствовал холодную ладонь сестры и одернул свою. "
+    narrator "В нем возник порыв дернуть ее за руку, сбросить с кровати. Разбудить. "
+    narrator "Вместо этого, он почувствовал холодную ладонь сестры и одернул свою. "
     narrator "На секунду перестав дышать, он постарался отогнать страшную мысль."
     narrator "В голове загудело. Сердце стало биться громче, адреналин требовал выплеснуть ярость, разжигая кровь."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Как у тебя хватило смелости сделать это все? "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Как у тебя хватило совести?"
     narrator "Он игнорировал ответы на свои вопросы: \"что тут такого? Врачи бы приехали, в сети я в сознании...\""
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Выписать вам успокоительное? Вы выглядите очень возбужденно, зрачки расширены."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Почему? Почему из всего в этом мире ты выбираешь различные способы покончить с собой?"
     narrator "У него появилось желание поступить с ней также, как и она с ним. Взять шприц, взять нож. Интересно, тут есть чем убить себя?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Хай Алиса, чем себя можно убить в радиусе 2х метров?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Варианты будут, но чуть позже."
     stub_character "В ситуации суицидальных наклонностей, я должна ознакомить с заключением в одиночной камере за попытку самоубийства в общественных местах."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "О! Тут нет людей кроме меня."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Общественное место — зона предназначенная для пользования многих лиц не подразумевающая наличие приоритета для какой-либо группы."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ответ на основной вопрос."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Острый угол тумбы. Рекомендуется удариться виском, с расстояния 10 шагов от нее."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Совсем не то."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Вы можете придавить паховую область ножкой кровати и умереть от болевого шока."
     narrator "Парня передернуло."
@@ -3382,157 +4308,186 @@ label scene_24:
     show mouse1
     stub_character "Вариант 3. Вы можете съесть плед и умереть."
     narrator "Ашу стало смешно. Он решил про себя: \"понятно почему разработчикам разрешили ввести такую функцию\"."
-    narrator "Он услышал шелест простыней. Вечна очнулась. Было сложно сдержаться и не обнять сестру, но она зашла слишком далеко и он не должен позволить ей остаться безнаказанной."
+    narrator "Он услышал шелест простыней. Вечна очнулась. "
+    narrator "Было сложно сдержаться и не обнять сестру, но она зашла слишком далеко и он не должен позволить ей остаться безнаказанной."
     narrator "Он не должен поощрять такие действия."
     narrator "Руки еще дрожали, ноги стали подкашиваться и он сел на пол. Посмотрел на нее снизу вверх."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты просто не знаешь меру. Может подключиться к аппарату жизнеобеспечения? "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Например, можно выключать легкие и может сердце. Интересно, как это повлияет на производительность?"
+    hide sad_var
+    show sad_var
+    black "Например, можно выключать легкие и может сердце. "
+    hide sad_var
+    show sad_var
+    black "Интересно, как это повлияет на производительность?"
     narrator "Вечна задумывается. Осторожно садиться на постели."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Это уже глупо. Если хочешь уйти в сеть, уходи."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Но какая тебе от этого разница - жизнью в сети будет наслаждаться копия или что она там вообще будет делать."
     narrator "Вечна молча смотрела на брата. Она словно выжидала, сказать или нет? Брат продолжал."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Удел настоящих людей жизнь преимущественно тут и что нельзя сделать в реальности, делать в сети. Типа для этого ее и придумали."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show sad_var
+    black "Удел настоящих людей жизнь преимущественно тут и что нельзя сделать в реальности, делать в сети."
+    hide sad_var
+    show sad_var
+    black "Типа для этого ее и придумали."
+    hide sad_var
+    show vechna_smile1
     vechna "Ты не против моего копирования в сеть?"
     narrator "Парень закатывает глаза."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Сколько раз это повторять."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Не судьба тебе оптимизироваться на 100% или даже 95. Копия это уже не жизнь. Что это вообще? Симуляция? Разве она похожа на жизнь?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show sad_var
+    black "Не судьба тебе оптимизироваться на 100% или даже 95. "
+    hide sad_var
+    show sad_var
+    black "Копия это уже не жизнь. Что это вообще? Симуляция? Разве она похожа на жизнь?"
+    hide sad_var
+    show vechna_smile1
     vechna "Симуляция как раз полностью ее повторяет. То что похоже на жизнь, называют эмуляция."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Сеть это жизнь, просто ты ее не узнаешь в новой форме."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Все плохо закончится."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Как ты смогла отключить импульсы от кожы и мышц?"
-    hide black_learned_sad
-    show black_learned_sad
-    black "Тебе бы не хватило вычислительных мощностей! Там же столько расчетов! Даже начни ты это до конкурса – не успела бы!"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show sad_var
+    black "Тебе бы не хватило вычислительных мощностей! "
+    hide sad_var
+    show sad_var
+    black "Там же столько расчетов! Даже начни ты это до конкурса – не успела бы!"
+    hide sad_var
+    show vechna_smile1
     vechna "Я же на Фабрике работаю."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Начинаю понимать Макса..."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Парень из университета, оказывается брат Наташи. И похоже умер. После конфликта на Фабрике, к слову."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show sad_var
+    black "Парень из университета, оказывается брат Наташи. "
+    hide sad_var
+    show sad_var
+    black "И похоже умер. "
+    hide sad_var
+    show sad_var
+    black "После конфликта на Фабрике, к слову."
+    hide sad_var
+    show vechna_smile1
     vechna "Оставь свои домыслы. Если мы и покорим дальний космос, то только за ресурсы Онки."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Одно другому не мешает."
     narrator "Он поднялся на ноги."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Я подожду пока ты оденешься."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Вообще-то... Мне кажется я еще не оправилась и мне стоит провести в больнице еще день."
     narrator "Брат разозлился."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Очень удобно, никто не помещает побыть в сети еще часиков 20."
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Хватит."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Ты чуть не убила себя! Понимаешь какого мне?"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "А ты понимаешь какого мне?"
     narrator "Она встала с кровати и пошла на брата. Ноги неуверенно держали ее, но злость придавала сил."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Я делаю, что считаю верным!"
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     stub_character "Не рекомендуется вставать с кровати в ближайшие 3-5 часов."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Вот видишь. Все решилось само. Я остаюсь."
     narrator "Она улеглась в кровать."
     narrator "Его голос задрожал."
-    hide vechna_smile
-    show black_learned_sad
-    black "Ты считаешь, что у тебя все нормально? Ты можешь не восстановить чувствительность многих мышц и рецепторов."
-    hide black_learned_sad
-    show vechna_smile
+    hide vechna_smile1
+    show sad_var
+    black "Ты считаешь, что у тебя все нормально? "
+    hide sad_var
+    show sad_var
+    black "Ты можешь не восстановить чувствительность многих мышц и рецепторов."
+    hide sad_var
+    show vechna_smile1
     vechna "А оно мне надо?"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Ты чуть не умерла, а для тебя это норма!"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Это побочный эффект!"
     narrator "Зубы Аша скрипели друг о друга."
-    hide vechna_smile
-    show vechna_smile
-    vechna "Ты понимаешь, что на Фабрике работают одни сетевики, а им вообще не нужно спать!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show vechna_smile1
+    vechna "Ты понимаешь, что на Фабрике работают одни копии, а им вообще не нужно спать!"
+    hide vechna_smile1
+    show sad_var
     black "Это не повод рисковать жизнью! Это не симуляция!"
-    narrator "Влажные ладони парня схватили стул и бросили. Он попал в аппаратуру для измерения показателей жизнеобеспечения. Вечна испугалась."
-    hide black_learned_sad
+    narrator "Он пнул кушетку. Аппаратура для измерения показателей жизнеобеспечения затряслась. Вечна испугалась."
+    hide sad_var
     show mouse1
     stub_character "Законные разрушения невозможны в медицинском учреждения."
     hide mouse1
     show mouse1
     stub_character "Дождитесь охраны. Караются одиночным заключением..."
-    narrator "Парень не обращает внимание на автоматического помощника. Вечна кричала."
+    narrator "Парень не обращаел внимание на автоматического помощника. Вечна кричала."
     hide mouse1
-    show vechna_smile
+    show vechna_smile1
     vechna "Что ты делаешь? Успокойся!"
     narrator "Он стал задыхаться, злость отступала. Но снова нарастала в сестре."
     narrator "Она приподнялась на постели."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ты лицемер. Ты сам..."
     narrator "В ее голосе слышалась желчь."
-    hide vechna_smile
-    show vechna_smile
+    hide vechna_smile1
+    show vechna_smile1
     vechna "Ты цифровизируешь чувства, твои Уши ..."
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Я пытаюсь говорить с вами на вашем языке!"
-    hide black_learned_sad
-    show vechna_smile
+    hide sad_var
+    show vechna_smile1
     vechna "Ты запрещаешь мне жить так, как я хочу!"
-    hide vechna_smile
-    show black_learned_sad
+    hide vechna_smile1
+    show sad_var
     black "Потому что ты выбрала самый короткий путь в могилу."
-    narrator "Перед глазами Аша высветилось сообщение: выход в сеть ограничен. Местоположение передается сотрудникам Центра Помощи. Дождитесь помощи."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Сегодня ты могла умереть. Ты просто не доживешь до отлета на Землю! А Вечна? Ты невечна! Очнись уже!"
-    hide black_learned_sad
-    show vechna_smile
-    #(show black_regular_blood)
+    hide sad_var
+    show vechna_smile1
     vechna "Пока невечна."
+    hide vechna_smile1
+    show sad_var
+    black "Хочешь, делай копию в сеть."
+    hide sad_var
+    show sad_var
+    black "Все равно, как только ты поймешь, что та копия лучше тебя – ты сама ее удалишь."
+    hide sad_var
+    show sad_var
+    black "Больше открытий, ты похоже любишь только свое эго!"
     narrator "Он вышел в коридор. Сестра долго смотрела в стену, она и забыла, что ее сознание не живет в сети, оно лишь заходит в нее."
     narrator "Ей пришло уведомление с Фабрики Чипов."
     jump scene_25
@@ -3541,140 +4496,185 @@ label scene_24:
 label scene_25 :
     scene lake
     #Раскрываются карты, что Макс ее брат. Он винит в своей смерти Онку и Аша (чисто из вредности. А еще, саму Наташу в смерти отца, это ей нужны были ресурсы. Из-за этого, он пропал в сети
-    narrator "Со стороны Аш выглядит как сумасшедший. Наташа сидит на пледе скрестив ноги."
-    show black_learned_sad
-    black "Еще и ты? Серьезно? Это просто смешно. Куда ты? Луна маленькая."
-    hide black_learned_sad
+    narrator "Со стороны Аш выглядел как сумасшедший. Наташа сидела на пледе скрестив ноги."
+    show sad_var
+    black "Еще и ты? Серьезно? Это просто смешно. "
+    hide sad_var
+    show sad_var
+    black "Куда ты? Луна маленькая."
+    hide sad_var
     show mouse1
-    stub_character "Я не могу и не хочу тут находиться. Мой брат вынес себе камнем мозги перед Университетом. Как мне тут жить?"
+    stub_character "Я не могу и не хочу тут находиться. Мой брат вынес себе камнем мозги перед Университетом. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Как мне тут жить?"
+    hide mouse1
+    show sad_var
     black "Это пройдет."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Что прости пройдет? Люди стали оживать? О, как-то я пропустила эту новость!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Прости..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ты действительно не можешь поставить себя на мое место?"
     hide mouse1
-    show black_learned_sad
-    black "Знаешь, я более чем на твоем месте. У меня все тоже очень сложно! Но разве мы должны ругаться, а не поддержать друг друга?"
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Знаешь, я более чем на твоем месте. У меня все тоже очень сложно! "
+    hide sad_var
+    show sad_var
+    black "Но разве мы должны ругаться, а не поддержать друг друга?"
+    hide sad_var
+    show sad_var
     black "Разве я не твой родной человек?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Кто тебе родной? Для общественников родной любой, с кем знаком месяц."
     narrator "Аш сделал шаг вперед. Наташа подалась назад."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Почему ты не рассказала про свои проблемы?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Для чего? Разве мы так близки?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Выглядело, что да."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Расскажи что отец пропал во время копирования в сеть, а его тело при этом он сам умертвил. Что бы ты делал? Ходил бы за своей сестрой! Я не привыкла к такому."
+    stub_character "Расскажи что отец пропал во время копирования в сеть, а его тело при этом он сам умертвил. "
     hide mouse1
     show mouse1
-    stub_character "Расскажи я что мать, при попытке удалить воспоминания нейрохакингом в Центре Помощи, пусть и официальным спалила себе мозг, чтобы ты сделал? Опять ходил бы за ней!"
+    stub_character "Что бы ты делал? "
+    hide mouse1
+    show mouse1
+    stub_character "Ходил бы за своей сестрой! А мне тоже нужно было внимание!"
+    hide mouse1
+    show mouse1
+    stub_character "Расскажи я что мать, которая при попытке удалить воспоминания экспериментальным нейрохакингом..."
+    hide mouse1
+    show mouse1
+    stub_character "...Спалила себе мозг, чтобы ты сделал? Опять ходил бы за сестрой!"
     narrator "Аш молчал. Никогда он не чувствовал такого разочарования."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Почему ты не сказала про Максима?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Он во всем винит меня! Что я требовала лучше факультет и вещи и..."
-    narrator "По ее щекам снова покатились слезы. Аш стоял напротив. За ним серебрилось Лунное Озеро. Девушка стояла и смотрела в глаза Аша."
+    stub_character "Он во всем винит меня! "
     hide mouse1
-    show black_learned_sad
-    black "Вернешься на Землю, как Максим мечтал? Ты ведь и на конкурс пошла, чтоб угодить?"
-    narrator "Плечи девушки на секунду опустились, но автоматически вытянулись в струну. Она вздернула подбородок (надменный вид, как при знакомстве)."
-    hide black_learned_sad
+    show mouse1
+    stub_character "Что я требовала лучше факультет и вещи и..."
+    narrator "По ее щекам снова покатились слезы. Аш стоял напротив. За ним серебрилась река по переработке. "
+    narrator "Девушка стояла и смотрела в глаза Аша."
+    hide mouse1
+    show sad_var
+    black "Вернешься на Землю, как Максим мечтал? "
+    hide sad_var
+    show sad_var
+    black "Ты ведь и на конкурс пошла, чтоб угодить ему?"
+    narrator "Плечи девушки на секунду опустились, но автоматически вытянулись в струну. Она вздернула подбородок."
+    hide sad_var
     show mouse1
     stub_character "Ты хоть иногда думаешь о том, какого другим? "
     hide mouse1
     show mouse1
     stub_character "Не о том, что они сделают тебе и как ты себя будешь чувствовать, а о том, что будут чувствовать они?"
     hide mouse1
-    show black_learned_sad
-    black "Ты неадекватная. Все кто прошел подростковый возраст под Лунным Куполом, психи."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Ты неадекватная. "
+    hide sad_var
+    show sad_var
+    black "Все кто прошел подростковый возраст под Лунным Куполом, психи."
+    hide sad_var
+    show sad_var
     black "Зная, что светит Вечне от самопального нейрохакинга, молчала."
-    narrator "Заяц почувствовал толчок в грудь, он понял что стоит на краю озера. К нему прижимается Наташа."
-    narrator "Он был уверен, что та столкнет его."
-    hide black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Не пытайся выставить меня виноватым."
+    narrator "Заяц почувствовал толчок в грудь, он чувствовал что стоит на краю. "
+    narrator "К нему прижималась Наташа. Он был уверен, что та столкнет его."
+    hide sad_var
     show mouse1
-    stub_character "Стоило бы бросить тебя. Оставить с повреждениями мозга от переработанного протеза."
-    narrator "Она говорит сквозь зубы. Четко произнося каждый звук."
+    stub_character "Стоило бы бросить тебя. "
     hide mouse1
     show mouse1
-    stub_character "Но боль поражения сильнее. Пусть ты и твои идеи будут никому не нужны."
+    stub_character "Оставить с повреждениями мозга от переработанного протеза."
+    narrator "Она говорила сквозь зубы. Четко произнося каждый звук."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Но боль поражения сильнее. "
+    hide mouse1
+    show mouse1
+    stub_character "Пусть ты и твои идеи будут никому не нужны."
+    hide mouse1
+    show sad_var
     black "Это и есть, моя текущая ситуация."
-    narrator "Наташа держала парня за толстовку и резко дернула на себя, заставив парня сделать несколько шагов вперед."
-    hide black_learned_sad
+    narrator "Наташа держала парня за толстовку и резко дернула на себя, заставив его сделать несколько шагов вперед."
+    hide sad_var
     show mouse1
     stub_character "Еще объяснительные писать, как ты упал."
     hide mouse1
     show mouse1
     stub_character "И без моей помощи сгниешь."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Кто бы мог подумать, что вместо трогательных прощаний, я познакомлюсь с настоящей тобой."
-    narrator "Девушка сложила плед, собрала влажные от слез платки и бросила в Озеро."
-    hide black_learned_sad
+    narrator "Девушка сложила плед, собрала влажные от слез платки и бросила в реку."
+    hide sad_var
     show mouse1
     stub_character "Больше не пригодиться!"
-    narrator "Уходя она не подняла глаза на Аша. Аш повернулся лицом к озеру, он подался вперед, словно намереваясь броситься вниз."
+    narrator "Уходя она не подняла глаза на Аша. Аш повернулся лицом к массе наноботов, подался вперед, словно намереваясь броситься вниз."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Живого они меня не переработают, но Уши в голове расщипят."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Смысл оставаться овощем, с повреждением мозга?"
-    narrator "Он поставил нависшую над перерабатывающей субстанцией ногу на берег и собрался домой."
-    narrator "Ему пришло сообщение. Отправителем был Илли Онка."
-    narrator "Текст гласил: Вечна запросила функцию копирования. Говорят, копии пропадают..."
+    narrator "Он поставил нависшую над  субстанцией ногу на берег и собрался домой."
+    narrator "Ему пришло сообщение от Илли Онки. В голове парня мелькнула мысль, нужели тот вспомнил про свой \"утешительный приз – ужин\". "
+    narrator "Но прочитав со всех ног бежал в Медцентр, выполняющий функцию Центра Копирования. В голове стучал ускоренный пульс и звучали слова: \"Твоя сестра в Центре Копирования... говорят, копии пропадают.\""
     #Показываем полную сцену копирования Вечны. Она не хотела убивать оригинал, но что-то пошло не так. Почему-то рядом с Ашем оказался Лис. После этого, лиса повысит онка
-    narrator "Аш со всех ног бежал обратно в Центр Помощи. Он чувствовал, что плохой конец ближе, чем он думал."
+    narrator "Аш чувствовал, что плохой конец ближе, чем он думал."
     jump scene_26
 
 
 label scene_26:
     scene helpcenter_2
-    narrator "Отрывок из сцены 2."
+    narrator "Спустя 30 минут."
+    narrator "(Отрывок из сцены 2)"
     narrator "Вечна повернула голову к Ашу, лицо брата искажалось, сквозь стекло заляпанное кровью. Он бился лбом и руками. Зря."
-    show vechna_smile
+    show vechna_smile1
     vechna "Это все он... !"
     narrator "Ее заглушил голос станции:"
-    hide vechna_smile
+    hide vechna_smile1
     show mouse1
     stub_character "Автоматическая подача газа запущена."
+    narrator "(показываем спрайт грустная Вечна)"
     jump scene_27
 
 
 label scene_27:
     scene helpcenter_3
     narrator "Настоящее время."
-    show black_learned_sad
-    black "Это все он... Неужели она так думала? Что я во всем виноват?"
-    hide black_learned_sad
-    show black_learned_sad
-    black "Именно поэтому, я теперь здесь. Не только сестра должна платить. Я тоже."
+    show sad_var
+    black "Это все он... Неужели она так думала? "
+    hide sad_var
+    show sad_var
+    black "Что я во всем виноват?"
+    hide sad_var
+    show sad_var
+    black "Именно поэтому, я теперь здесь. "
+    hide sad_var
+    show sad_var
+    black "Не только сестра должна платить. Я тоже."
     narrator "Герой видит перед собой дверь, в дополненной реальности на ней выведено:"
     black "\"Центр Помощи. Особые услуги.\""
-    black "Статус: Ожидается Аш Хом)"
-    narrator "Аш с мешками под глазами. "
-    hide black_learned_sad
+    black "Статус: Ожидается Аш Хом."
+    narrator "Аш с сидит с мешками под глазами. "
+    hide sad_var
     show mouse1
     stub_character "Разрешение одобрено. Оплата принята. "
     hide mouse1
@@ -3682,33 +4682,34 @@ label scene_27:
     stub_character "Я должен произнести речь о красоте жизни."
     narrator "Ашу показывают фото их и Вечны."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мне не нравится, что вы это показываете. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Разве я давал разрешение на обработку этих данных?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я не произвожу оценочных суждений, поэтому можете чувствовать себя комфортно. "
     hide mouse1
     show mouse1
     stub_character "Я просто вещь, просто вещь."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мне бы хотелось быстрее начать."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Пройдите."
-    narrator "Аш идет в комнату. Там человек."
+    narrator "Аш зашел в комнату. Там человек."
     hide mouse1
     show mouse1
     stub_character "На таком заказе нужен живой человек. Ну ты парень и удумал."
     narrator "Аш пропустил все мимо ушей и подошел к металлической двери, нажал вход и вошел. Дверь сразу закрылась."
-    narrator "Присутствие за дверью живого человека успокаивало. "
-    narrator "Войдя внутрь, он не мог ничего разглядеть. Но услышал рычание. На него бросились три собаки. "
+    narrator "Присутствие за ней живого человека успокаивало. "
+    narrator "Войдя внутрь, парень не мог ничего разглядеть. Но слышал рычание. На него бросились три собаки."
+    narrator "Глаза привыкли к свету. "
     narrator "Тело парализовал страх, но в следующий момент адреналиновая эйфория пробежала по телу, он чувствовал отчаяние и злость."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Не только я виноват! Ты меня бросила!"
     narrator "Он сам не понял, как под зубами оказалась пульсирующая шея пса. "
     narrator "Все произошло быстро, у него во рту словно лопнула черри, забрызгав своим соком кровью все вокруг."
@@ -3716,7 +4717,7 @@ label scene_27:
     narrator "Уши заливались красным, Аша качало, он почувствовал тошноту."
     narrator "Дверь открылась."
     narrator "Вбежал мужчина с аптечкой в руке. Он бросился к псам, обработал рану одному из них — остановил кровь."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Он обернулся к Ашу — ты ему артерию перегрыз!"
     hide mouse1
@@ -3725,7 +4726,7 @@ label scene_27:
     hide mouse1
     show mouse1
     stub_character "Решил сдохнуть, так бы и делал!"
-    narrator "Пес без глаза жалобно скулит. Мужчина чуть не плача осматривает голову пса."
+    narrator "Пес без глаза жалобно скулит. Мужчина чуть не плача осматривает голову пса, любя глядя его по морде."
     narrator "Аш стал приходить в себя. Руки затряслись только сейчас."
     narrator "Мужчина держит голову пса и гладит."
     hide mouse1
@@ -3735,7 +4736,7 @@ label scene_27:
     show mouse1
     stub_character "Псы не должны были пострадать. Ты же сам заплатил, чтоб тебя съели!"
     narrator "Аш молчит. Что здесь можно сказать?"
-    narrator "В лаборатории Онки, он и лисы смотрял на экран. Видят на нем Аша в собачьей крови и мед. Персонал, бинтующий псов. Аша уводит полиция."
+    narrator "В лаборатории Онки, он и лисы смотрят на экран. Видят на нем Аша в крови и персонал, бинтующий псов."
     hide mouse1
     show mouse1
     stub_character "А вы так можете?"
@@ -3751,109 +4752,121 @@ label scene_27:
     stub_character "Ладно. Вытащите парня. Пора провести обещанный ужин. "
     hide mouse1
     show mouse1
-    stub_character "Он же все-таки выиграл, утешительный приз."
+    stub_character "Он же все-таки выиграл утешительный приз."
     jump scene_28
 
 
 label scene_28:
-    scene planet
     #Онка связывается с Ашем. Рассказывая, как с помощью кода ушей можно жить вечно. Аш задачется вопросом, почему сейчас тот говорит ему это все? Но соглашается - ведь это способ вернуть сестру. Но ему кое-что нужно (тело)
-    narrator "Видим черный экран."
-    narrator "Аш в тюрьме. Он получает приглашение — звуковой сигнал. В углу его зрения — кнопка вызова и аватар Илли Онки (должно быть интуитивно понятно, что он ему звонит)."
-    narrator " "
-    #(Появляется кнопка:)
-    narrator "Принять вызов."
-    narrator "Парень нажимает ее."
-    narrator "Открывается симуляция, которую создавала Вечна."
-    show black_learned_sad
+    scene black_background
+    narrator "Сидя в комнате изоляции, Аш проваливатся в сон. Он получает приглашение — в сети. Забыв где находится и обстоятельства, он автоматически принимает выхов и заходит в сеть."
+    scene planet
+    narrator "Виртуальный мир и понимание происходящего, захлестывают его с головой."
+    show sad_var
     black "Что мы тут делаем? Как ты получил доступ?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Это работа моей сотрудницы. Почему не зайти?"
     hide mouse1
-    show black_learned_sad
-    black "Что тебе нужно, все это чертовски странно. Мне же должны были заблокировать сеть."
-    hide black_learned_sad
+    show sad_var
+    black "Что тебе нужно? Все это чертовски странно. "
+    hide sad_var
+    show sad_var
+    black "Мне же должны были заблокировать сеть."
+    hide sad_var
     show mouse1
-    stub_character "Я что, зря в ней главный? Код может и открытый, а дата центры мои."
+    stub_character "Я что, зря в ней главный? Код может и открытый, а ядро мое."
     hide mouse1
     show mouse1
-    stub_character "Это очень серьезно, если нельзя связаться с человеком в сети. Поэтому я сразу принялся тебя искать."
+    stub_character "Это очень серьезно, если нельзя связаться с человеком в сети."
+    hide mouse1
+    show mouse1
+    stub_character "Поэтому я сразу принялся тебя искать."
     hide mouse1
     show mouse1
     stub_character "Решил, здесь тебе будет уютно. Не бойся, разрушающие факторы окружающего мира отключены."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я принял все наказания, которые мне дали."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Да, охранник сообщил что ты даже не пытался торговаться по праву субъективной оценки для личностей со здоровыми моральными ценностями."
     hide mouse1
-    show black_learned_sad
-    black "Я в это числе не попадаю."
-    hide black_learned_sad
+    show sad_var
+    black "Я в это число не попадаю."
+    hide sad_var
     show mouse1
-    stub_character "У нас они здоровые, мое и твое понимание хорошего и плохого совпадает."
+    stub_character "У нас они здоровые моральные ценности! "
+    hide mouse1
+    show mouse1
+    stub_character "Мое и твое понимание хорошего и плохого совпадает с большей частью людей."
     narrator "Аш засмеялся."
     hide mouse1
-    show black_learned_sad
-    black "Что если наоборот? Ты же про это думал?"
-    hide black_learned_sad
+    show sad_var
+    black "Что если наоборот? Мы все больные?"
+    hide sad_var
     show mouse1
-    stub_character "Думал и считаю маловероятно, что сумасшедшие почти 95% всех жителей Луны и Земли, ведь их мораль та же."
+    stub_character "Думал и считаю маловероятно, что сумасшедшие почти 95% всех жителей Луны и Земли."
+    narrator "Аш усмехнулся."
     hide mouse1
     show mouse1
     stub_character "Тебе нравится космос?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Земля мне нравится больше."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Он нравится всем, это был риторический вопрос."
+    stub_character "Это был риторический вопрос."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что тебе нужно, можно покороче? Мне здесь тяжело."
-    narrator "Аш смотрит на розовые облака и думет про сестру."
-    hide black_learned_sad
+    narrator "Аш смотрит на кристаллы под ногами и невольно думет про сестру."
+    hide sad_var
     show mouse1
     stub_character "Мои предки видели в чипе лишь способ заработка, с помощью которого они финансировали борьбу с голодом и покорение Луны. Ерунду, одним словом."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Поскольку с недавних пор мне наплевать на манеры. К чему ты ведешь?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Я вижу в чипе нечно большее. Кое что сумасшедшее. Возможность жить вечно. Например, Вечне."
+    stub_character "Я вижу в чипе большее. Кое что сумасшедшее. Возможность жить вечно. "
+    hide mouse1
+    show mouse1
+    stub_character "Сочувствую твоей сестре... Возможно, есть одна безумная идея."
     narrator "Аш не нашелся что сказать, он изо всех сил пытался понять, что говорит Илли."
     hide mouse1
     show mouse1
-    stub_character "Чип это то, что фиксирует карту активности мозга вплоть до мощности сигналов в нем. Еще в нем есть память и слепок мозга."
+    stub_character "Чип это то, что фиксирует карту активности мозга вплоть до мощности сигналов в нем. И может передавать эти сигналы обратно в мозг."
     hide mouse1
     show mouse1
     stub_character "Теоретически, цифровую копию можно использовать как прослойку, между переносом из одного тела в другое."
     hide mouse1
     show mouse1
-    stub_character "Сейчас, мы можем уйти в сеть, но не вернуться в реальность."
+    stub_character "Сейчас, люди могут уйти в сеть, но не вернуться в реальность."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты предлагаешь это исправить?"
     narrator "Аша прошиб пот."
     narrator "Онка еле сдерживается чтоб не похвалить себя."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Но мне нужен кто-то кто готов заниматься проектом. Раз ты уже знаком с чипом и написал для него прекрасный ИИ, я уверен будь это человек – он был бы симпотяга!"
+    stub_character "Но мне нужен кто-то, кто готов заниматься проектом. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Раз ты уже знаком с чипом и написал для него прекрасный ИИ..."
+    hide mouse1
+    show sad_var
     black "Какая-то слабая причина..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ладно. Ты знаешь, в душе я монополист и занимаюсь дальним космосом."
     hide mouse1
     show mouse1
     stub_character "Мне нравится концепция универсального языка, она может объединить людей из разных галактик лет через 300? 500?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Тоесть за работу над проектом по возвращению копий из сети, ты просто хочешь ИИ ушей? Он же простой."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Он работает и это главное. Считай, такая прихоть."
     hide mouse1
@@ -3864,38 +4877,38 @@ label scene_28:
     show mouse1
     stub_character "Мы сделаем тебя очень популярным. Имплантируем Уши детям вместе с чипом. А?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Неплохо."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Но с возвращением копии в тело столько технических моментов..."
+    hide sad_var
+    show sad_var
+    black "Но с возвращением копии в тело столько технических моментов... И экспериментов..."
     narrator "Улыбка Илли тянулась все выше. Он поднял руки и поправил цилиндр."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Сложный проект, но благой. Возможно, ты решишь за счет него некоторые проблемы..."
     hide mouse1
     show mouse1
     stub_character "Ради Вечной жизни в теле, а не в сети — стоит попробовать. Ведь разве это жизнь? В сети?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты прав..."
     narrator "Ему казалось, что что-то тут не то, но возможность вернуть сестру заглушила все остальное."
     narrator "Он вспомнил ее последние слова: \"Это все он...\"."
     narrator "Сердце Аша снова сжалось."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Я виноват."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Что?"
     hide mouse1
-    show black_learned_sad
-    black "Хорошо, Уши Зайца станут дочерней компанией. Но ты должен дать мне кучу ресурсов, для возвращения..."
+    show sad_var
+    black "Хорошо, Уши Зайца станут твоей дочерней компанией. Но ты должен дать мне кучу ресурсов, для возвращения..."
     narrator "Он оборвал себя."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Для загрузки копий в живое тело."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я так и хотел! Придумаем тебе крутой псевдоним."
     hide mouse1
@@ -3907,67 +4920,70 @@ label scene_28:
     stub_character "Кстати, Черного Зайца отпустят, как только он выйдет из сети."
     hide mouse1
     show mouse1
-    stub_character "Сразу иди на Фабрику Чипов."
+    stub_character "Сразу иди на Фабрику Чипов. Жду не дождусь подписания документов."
     jump scene_29
 
 
 label scene_29:
     scene Chip_factory_Laboratory
-    narrator "Войдя в помещение, не пришлось зажигать свет. Все вокруг светится. Помещение представляет собой лабиринт, разделенный панелями с жидкостью — плоские аквариумы с разноцветными, сгустками слизи. Каждый аквариум уникален по цвету, подсветке и наполнению."
+    narrator "Войдя в помещение на Фабрике Чипов, не пришлось зажигать свет. Все вокруг светилось. Помещение представляет собой лабиринт, разделенный панелями с жидкостью — плоские аквариумы с разноцветными, сгустками слизи. Каждый аквариум уникален по цвету, подсветке и наполнению."
     narrator "Глаза владельца Фабрики горят."
     show mouse1
     stub_character "Добро пожаловать домой!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это не мой дом."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Зря ты так.. Привыкнешь."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что это за аквариумы с плесенью?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Это колонии бактерий! Созданы заселять космические объекты. считай боги."
+    stub_character "Это колонии бактерий! Созданы заселять космические объекты. Считай боги."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это же гигантские чашечки петри?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Что это?"
-    narrator "Уши Аша залились желтым."
+    narrator "(спрайт Аша с удивлением)"
     hide mouse1
     show mouse1
     stub_character "Я бы мог запросить чип и он бы вывел перед моими глазами ответ, но мне интересны твои слова."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я думал ты шаришь в биотехнологиях ну или школьной программе."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Лисы из высшей касты знают. А я — это космос и деньги."
+    stub_character "Лисы из высшей касты знают. А я — это космос, деньги и видение развития компании."
     hide mouse1
     show mouse1
-    stub_character "Я верю, что только они способны стать космосу родными."
+    stub_character "Я верю, что только эти бактерии способны стать космосу родными."
     hide mouse1
-    show black_learned_sad
-    black "Или умрут."
-    hide black_learned_sad
+    show sad_var
+    black "Или умереть."
+    hide sad_var
     show mouse1
-    stub_character "Это вопрос тестов. Вопрос моделирования и времени. Будут вычислительные мощности и время — нет нерешаемых задач."
+    stub_character "Это вопрос тестов. Вопрос моделирования и времени. "
+    hide mouse1
+    show mouse1
+    stub_character "Будут вычислительные мощности и время — нет нерешаемых задач."
     narrator "Илли Онка стоит среди дела всей, всей своей жизни."
     hide mouse1
-    show black_learned_sad
-    black "Исследуя фабрику на конкурсе, я не нашел тут сухих лабораторий — ну таких чтоб кто-то мог выйти в сеть и обсчитывать там данные."
-    hide black_learned_sad
+    show sad_var
+    black "Исследуя фабрику на конкурсе, я не нашел тут сухих лабораторий — ну таких, чтобы кто-то мог выйти в сеть и обработать там данные."
+    hide sad_var
     show mouse1
-    stub_character "Все вычисления делегированы копиям и касте 2."
+    stub_character "Все вычисления делегированы копиям в сети и касте 2."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Все мило, но давай к делу."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Ты сам понимаешь что нужно для создания технологии копирования из сети в тело?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Мне нужно понимать, что ты знаешь как достигнуть результата. "
     hide mouse1
@@ -3975,294 +4991,368 @@ label scene_29:
     stub_character "Я хочу узнать твое видение."
     narrator "Аш обвел взглядом помещение. Продолжил шепотом:"
     hide mouse1
-    show black_learned_sad
-    black "Где взять живого человека, который согласиться, чтоб в его тело посадили чужое сознание? Это же нелегально!"
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Где взять живого человека, который согласиться, чтоб в его тело посадили чужое сознание? Это же нелегально и смертельно!"
+    hide sad_var
+    show sad_var
     black "Копировать в лис? На первой стадии ок, но нужен и человек."
     narrator "Онка наклонился к Ашу. Тот почувствовал запах манго."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "А что, тело смертельно больного мужчины может не подойти? Или нужна молодая девушка?"
-    narrator "Аш серьезно смотрел на Онку. Тот точно знаешь, зачем Аш согласился на эту работу."
+    stub_character "А что, тело смертельно больного мужчины может не подойти? "
     hide mouse1
-    show black_learned_sad
-    black "Раз так, то да. Лет 18. Когда поймем, что все точно работает."
-    hide black_learned_sad
-    show black_learned_sad
-    black "До этого даже дед подойдет."
-    hide black_learned_sad
     show mouse1
-    stub_character "Придумай эксперимент, все его циклы."
-    narrator "Илли очаровательно улыбнулся и у Аша мелькнула в голове мысль, что у  Онки зубов больше, чем у Пеннивайза. Но ради Вечны он готов на любую сделку."
+    stub_character "Или нужна молодая девушка?"
+    narrator "Аш серьезно смотрел на Онку. Тот точно знает, зачем Аш согласился на эту работу. Смысл кривить душой?"
+    hide mouse1
+    show sad_var
+    black "Раз так, то да. Лет 18. Когда поймем, что все точно работает."
+    hide sad_var
+    show sad_var
+    black "До этого даже дед подойдет."
+    hide sad_var
+    show mouse1
+    stub_character "Придумай эксперимент, все его стадии, а там подумаем. "
+    narrator "Илли очаровательно улыбнулся и у Аша мелькнула в голове мысль, что у  Онки зубов больше, чем у Пеннивайза. Но ради сестры, он готов на любую сделку."
     jump scene_30
 
 
 label scene_30:
-    scene Chip_factory_wall
-    narrator "Все внутри него сжалось, а руки задрожали. Герой почувствовал невыносимое желание начинать действовать, не откладывать, двигаться к цели."
-    narrator "Аш посмотрел на свое отражение в зеркальной стене. Он смотрит в свои глаза и понимает, как выглядел его взгляд когда он решил задушить Максима, убить собак."
-    show black_learned_sad
+    scene lake
+    narrator "Все внутри него сжалось, а руки задрожали. Герой почувствовал невыносимое желание начинать действовать, не откладывать, двигаться к цели. Но как же все сложно..."
+    narrator "Аш посмотрел на свое отражение в зеркальной поверхности реки из наноботов. "
+    narrator "Он смотрит в свои глаза и понимает, как выглядел его взгляд когда он решил убить собак. Автоматически, безсознательно, глупо..."
+    show sad_var
     black "Это всегда во мне было?"
-    narrator "Когда он выбрал: жить или умереть, да или нет, 1 или 0. Аш первый раз почувствовал ту эмоцию на Ушах — автоматическая генерация дизайна жила своей жизнью. "
-    narrator "Теперь красные круги падали вниз, словно кровавым дождем. Аш знал, что в конце-концов Уши должны будут выбрать тот дизайн, который лучшего всего ассоциируется у людей с эмоцией. Но еще рано (в части 2 Уши выберут картинку со стекающей кровью)."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Вечнуть Вечну... Дьявол в деталях. И этих деталей тысячи..."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Для того, чтоб понять возвращается копия в тело или нет, нужно провести эксперимент статистически достоверное количество раз."
-    hide black_learned_sad
-    show black_learned_sad
-    black "А это, сотни, в идеале тысячи."
-    hide black_learned_sad
-    show black_learned_sad
-    black "К тому же, на людях."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Когда он выбрал: жить или умереть, да или нет, 1 или 0. Аш первый раз почувствовал ту эмоцию — безумие."
+    narrator "Автоматическая генерация дизайна жила своей жизнью. "
+    narrator "Аш знал, что в конце-концов Уши выберут тот дизайн, который лучшего всего ассоциируется у людей с эмоцией. Но еще рано."
+    hide sad_var
+    show sad_var
+    black "Вечнуть Вечну... "
+    narrator "Он вспоминал, как она любила каламбуры. Пока не захакала свой мозг до неузнаваемости."
+    hide sad_var
+    show sad_var
+    black "Дьявол в деталях. И этих деталей тысячи..."
+    hide sad_var
+    show sad_var
+    black "Для того, чтоб понять возвращается копия в тело или нет... "
+    hide sad_var
+    show sad_var
+    black "...Нужно провести эксперимент статистически достоверное количество раз."
+    hide sad_var
+    show sad_var
+    black "А это, сотни, в идеале тысячи раз."
+    hide sad_var
+    show sad_var
+    black "Тысячи мать его людей!"
+    hide sad_var
+    show sad_var
     black "Понятно почему Онка не хочет брать это на себя. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Разве многие найдут в себе желание убить стольких?"
-    hide black_learned_sad
-    show black_learned_sad
-    black "Он узнал о Вечне. Как-никак она у него работала. Поэтому и пришел ко мне."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Он точно знает о Вечне. "
+    hide sad_var
+    show sad_var
+    black "Как-никак она у него работала. Поэтому и пришел ко мне."
+    hide sad_var
+    show sad_var
     black "Очевидно, без его помощи я ничего не смогу..."
-    narrator "От мыслей о Онке по спине Аша пробежали мурашки. Человек который может позволить себе самую большую роскошь — возможность собственным умом и ресурсами реализовывать свои дикие идеи и иметь успех. "
-    narrator "Он пахнет манго, абсолютно всегда. Он поднял голову вверх и отвел взгляд, который всегда упирается в далекие, но вездесущие стенки купола."
+    narrator "От мыслей о Онке по спине Аша пробежали мурашки. "
+    narrator "Человек который может позволить себе самую большую роскошь... "
+    narrator "...Возможность собственным умом и ресурсами реализовывать свои дикие идеи и иметь успех. "
+    narrator "Он пахнет манго, абсолютно всегда. Почему? "
+    narrator "Парень бросил взгляд вверх, тот всегда упирается в далекие, но вездесущие стенки купола или потолки лавовых тоннелей под ним."
     narrator "Аш крутил по кругу мысли."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "1. Решить что значит сознание."
-    black "2. Провести эксперимент по его пересадке и убедиться, что это возможно."
-    black "3. как будут результаты, вернуть Вечну "
+    black "2. Провести эксперимент по его пересадке и убедиться, что в теле оказывается, именно сознание из сети, а не что-то иное."
+    black "3. Как будут положительные результаты, вернуть Вечну в какое-нибудь тело. "
+    hide sad_var
+    show sad_var
+    black "Пусть \"моя сестра в сети\" будет против, но она даже ничего не заметит."
     narrator "Он представил себе мягкие кресла корабля, рядом сидит сестра, разглядывающая маленьких собачек и пушистых ящериц на руках у пассажиров поблизости. Приятный голос проводника в дополненной реальности сообщает, что корабль отправляется и скоро, они вернутся на Землю."
-    narrator "Из мечтаний его вырвал шепот лиса. Перед парнем Облачный, он стоит на четвереньках."
-    hide black_learned_sad
+    narrator "Из мечтаний его вырвало рычание лиса. Перед парнем Облачный, он стоит на четвереньках."
+    hide sad_var
     show mouse1
-    fox "Мне конец! Видео с интервью попало в сеть. И это только начало. Есть за мной и другие грехи."
+    fox "Мне конец! Видео с интервью попало в сеть."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    fox "За мной и так есть другие грехи."
+    hide mouse1
+    show sad_var
     black "Успокойся, не убить же ты его пытался."
-    narrator "Лис виновато умолк."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Лис рассердился."
+    hide sad_var
+    show sad_var
     black "Расскажи, что за видео?"
-    narrator "Задав вопрос, ответ сразу посетил его голову. Лис лег на траву и закрыл лапами голову."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Она не могла так поступить. Покажи."
-    narrator "Да. Это действительно был тот замечательный день, когда он и Наташа брали у Лиса интервью. "
-    narrator "Это было так недавно..."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Как она могла тайно записать, когда ты просил не делать этого? Как может быть настолько на всех наплевать?"
-    hide black_learned_sad
+    narrator "Задав вопрос, ответ сразу посетил его голову. Лис лег на пол и закрыл лапами голову."
+    hide sad_var
+    show sad_var
+    black "Она не могла так поступить! Покажи."
+    narrator "Да. Это действительно был тот замечательный день, когда он и Наташа брали у Лиса интервью."
+    hide sad_var
+    show sad_var
+    black "Как может быть настолько на всех наплевать?"
+    hide sad_var
     show mouse1
-    fox "Не важно, мне крышка. Вам скорее всего тоже."
+    fox "Еще как! Я же ей помог, показал лианы..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
+    black "Да ты словно ненавидишь Онку! Раз показал ей его сокровища!"
+    hide sad_var
+    show mouse1
+    fox "Не важно, мне путь на переработку."
+    narrator "Зверь посмотрел в расщепляющую с расщепляющими наноботами."
+    hide mouse1
+    show mouse1
+    fox " Вам скорее всего тоже."
+    hide mouse1
+    show sad_var
     black "До сих пор не верю. После всего того, что произошло с ее семьей, с моей. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Она должна лучше всех меня понять, но осознанно делает хуже и хуже."
+    hide sad_var
+    show sad_var
+    black "Она должна лучше всех меня понять, но осознанно делает хуже и хуже!"
     narrator "Лис нервно машет хвостом и, оглядывается по сторонам."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Все труды насмарку! Я сбегу. Сбегу."
     narrator "Друг опустился на колени рядом с лисом."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты напуган, это мешает тебе здраво рассуждать. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Мы на Луне, под нами сеть пещер, а над нами купол. Его стенки достигают трех метров и состоят из десятков материалов. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "За ними радиация и нет атмосферы."
+    hide sad_var
+    show sad_var
+    black "Мы на Луне, в сети пещер, а над нами купол."
+    hide sad_var
+    show sad_var
+    black "За ним радиация и нет атмосферы."
     narrator "Аш дотронулся до Лиса."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Куда ты хочешь сбежать?"
     narrator "Лис поднял свою мордочку и нарисовал носом в воздухе круг."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "На Землю."
     narrator "Аш грустно улыбнулся."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты не сможешь улететь в этом году."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "Хочу поправить ваше неверное предположение. Я могу пробраться на корабль через месяц."
+    fox "Я могу пробраться на корабль через месяц."
     hide mouse1
-    show black_learned_sad
-    black "Как можно не заметить Лиса? Но я мог бы взять тебя с собой. Как неразумное, домашнее животное."
-    hide black_learned_sad
+    show sad_var
+    black "Как можно не заметить Лиса? "
+    hide sad_var
+    show sad_var
+    black "Но я мог бы взять тебя с собой. Как неразумное, домашнее животное."
+    hide sad_var
     show mouse1
     fox "Унизительно!"
-    narrator "Парень пожал плечами. Лис перестал драматизировать."
+    narrator "Парень пожал плечами."
     hide mouse1
+    show sad_var
+    black "Зато не смертельно!"
+    narrator "Лис перестал драматизировать."
+    hide sad_var
     show mouse1
     fox "Когда? Когда мы сможем вылететь?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Через год. Я ручаюсь, что Онка тебя не тронет."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "С чего мне верить? Какая вам выгода?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Да никакой выгоды! Что вы все..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Вы нужны хозяину, только это ничего не значит."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мы закончим свои дела на Луне. Тебе же есть, чем заняться."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "Еще как есть."
+    fox "Еще как есть!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
+    black "Ты же хотел в высшую касту?"
+    hide sad_var
+    show sad_var
     black "На счет видео, попрошу удалить..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Оно по всей сети!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Решим."
-    narrator "Парень подтолкнул Лиса в сторону входа и тот понуро поплелся за ним."
+    hide sad_var
+    show mouse1
+    fox "Как, как вы это решите?"
+    hide mouse1
+    show sad_var
+    black "У твоего хозяина, я уверен, рыльце тоже в пушку."
+    hide sad_var
+    show sad_var
+    black "Именно поэтому, он должно быть, сам все решил."
+    narrator "Парень подтолкнул Лиса в сторону выхода и тот понуро поплелся за ним на Фабрику Чипов."
     jump scene_31
 
 
 label scene_31:
     scene Chip_factory_Laboratory
     narrator "Ученый осматривает лабораторию, не глядя никуда конкретно. Аш сосредоточен на мыслях."
-    show black_learned_sad
-    black "Никто никогда этого не делал, пересадить в сеть — ок, а вот записи на биологический носитель — официально не существует."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Сейчас, передо мной стоит задача — пересадить сознание из сети в тело."
-    hide black_learned_sad
-    show black_learned_sad
-    black " Значит пункт один: решить, что такое сознание."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Эксперимент будет успешен, если мы сможем понять в новом теле оригинал сознания или нет. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Значит, мне вообще необязательно понимать что такое сознание, нужно лишь сравнить оригинал и копию в теле."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Никто никогда этого не делал, пересадить в сеть — ок. "
+    hide sad_var
+    show sad_var
+    black "А вот записи на биологический носитель — официально не существует."
+    hide sad_var
+    show sad_var
+    black "Значит пункт один: решить, что такое сознание."
+    hide sad_var
+    show sad_var
+    black "Эксперимент будет успешен, если мы сможем понять в новом теле оригинал сознания или химера. "
+    hide sad_var
+    show sad_var
+    black "Значит, мне вообще необязательно понимать что такое сознание."
+    hide sad_var
+    show sad_var
+    black "Нужно лишь сравнить оригинал и копию в теле."
+    hide sad_var
+    show sad_var
     black "Если они будут считать себя одним человеком, тогда сделаем допущение – это успех."
     narrator "Аш водит пальцем по панели со светящимися бактериями. От тепла они меняют цвет на малиновый."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Ладно, значит с этим разобрались."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Пункт два: Провести эксперимент по пересадке сознания. "
-    hide black_learned_sad
-    show black_learned_sad
-    black "Трудности: перед финальным тестированием, нужно провести более массовый тест... нужно пересадить сознание примерно в тысячу людей, чтоб удостовериться, что это работает. "
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Трудности: нужно пересадить сознание примерно в тысячу людей, чтоб удостовериться, что это работает. "
+    hide sad_var
+    show sad_var
     black "Из 1 000 копий, однозначно будут ошибки. Вопрос 1% или 99%. "
-    narrator "Он устало потер глаза. Как хороший брат, он бы никогда не стал переселять сознание Вечный в качестве теста в 1000 не понятных тел."
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Он устало потер глаза. Как хороший брат, он бы никогда не стал переселять сознание Вечны в качестве теста в 1000 не понятных тел."
+    hide sad_var
+    show sad_var
     black "Эх, жаль тут симуляция не поможет. Можно ли заменить 1 000 человек?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Лисы подойдут на стадии, чтоб понять выживут они или нет."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Я действительно зло... Стоит ли этим заниматься?"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
+    black "Я действительно зло... бедные лисы... "
+    hide sad_var
+    show sad_var
+    black "Стоит ли этим заниматься?"
+    hide sad_var
+    show sad_var
     black "Копие Вечны наверно будет плевать, что ее еще раз скопируют в тело."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Но что скажет Вечна, в новом теле?"
-    narrator "Панель с бакрериями перед ним стала стала холодной, цвет бактериальной культуры менялся на синий, движения сгустков бактерий остановилось. На поверхности появился конденсат."
+    narrator "Панель с бакрериями перед ним стала холодной, цвет бактериальной культуры менялся на синий, движения сгустков бактерий остановилось. На поверхности появился конденсат."
     narrator "Аш рисует перед собой единицу. А потом еще и еще одну. Прошло минут десять, а он как в трансе двигался и рисовал единицы. В зале послышались шаги."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Забыл кое-что!"
-    narrator "Он удивленно рассматривает Аша, который отрешенно рисует палочки."
+    narrator "Хозяин Фабрики удивленно рассматривает Аша, который отрешенно рисует палочки."
     hide mouse1
     show mouse1
     stub_character "Все хорошо?"
     hide mouse1
-    show black_learned_sad
-    black "Хочу прочувствовать. Предстоящие события."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Примерно столько, нам нужно народа для эксперимента. А лис еще больше."
-    hide black_learned_sad
+    show sad_var
+    black "Хочу прочувствовать. Как много это – тысяча жертв."
+    hide sad_var
+    show sad_var
+    black "Примерно столько, нужно народа для эксперимента. А лис еще больше."
+    hide sad_var
     show mouse1
     stub_character "Это не стоит победы над смертью?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Если облажаемся, то не стоит..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я забыл предложить закрепить сделку как принято в наших культурах. "
     hide mouse1
     show mouse1
-    stub_character "Не знаю из какой ты, но везде в итоге пьют что-то одурманивающее. Лучше друг друга узнаем."
+    stub_character "Не знаю из какой ты, но везде в итоге пьют что-то одурманивающее."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Лучше друг друга узнаем."
+    hide mouse1
+    show sad_var
     black "Не смогу пропустить такое зрелище. Лисы тоже пьют?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "ИИ Фабрики им не позволяет. Они же сотрудники."
     hide mouse1
     show mouse1
-    stub_character "Я не спросил как ты предпочитаешь веселиться: алкоголь, галлюциногены, убийства? Я имел ввиду игры."
+    stub_character "Я не спросил как ты предпочитаешь веселиться: алкоголь, галлюциногены, убийства? "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Я имел ввиду игры."
+    hide mouse1
+    show sad_var
     black "Ты так веселишься?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Только на мамин день рождения. Почему нет?"
     hide mouse1
-    show black_learned_sad
-    black "Куда я попал? Голова кругом."
+    show sad_var
+    black "Куда я попал?"
     narrator "Онка махнул рукой и наклонился к парню."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Всем регулярно невыносимо — это здоровое состояние человека."
     hide mouse1
     show mouse1
-    stub_character "Особенно в космосе. Луна никогда не станет как Земля. Разве что для бактерий."
+    stub_character "Особенно в космосе. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Луна никогда не станет как Земля. Разве что для бактерий."
+    hide mouse1
+    show sad_var
     black "Надеюсь у тебя есть другие темы для разговоров."
-    narrator "Илли продолжает держаться рядом и Аш чувствует приторный запах манго."
-    hide black_learned_sad
+    narrator "Илли продолжает держаться рядом и Аш чувствует приторный фруктовый запах."
+    hide sad_var
     show mouse1
     stub_character "Самое сложное для меня в реализации научных причуд, делиться ими."
     hide mouse1
     show mouse1
-    stub_character "Например хочу я розовых крыс — генетика, светящихся - системная биология, хочешь чтоб они играли с тобой в шашки и жгли твое электричество — умей работать с желязяками и писать софт чтоб прикрутить зверям имплант. "
+    stub_character "Например хочу я розовых крыс — генетика."
+    hide mouse1
+    show mouse1
+    stub_character "Хочу чтоб светялись - системная биология."
+    hide mouse1
+    show mouse1
+    stub_character "Хочешь чтоб они играли с тобой в шашки и жгли твое электричество —"
+    hide mouse1
+    show mouse1
+    stub_character "– умей работать с желязяками. "
     hide mouse1
     show mouse1
     stub_character "Одному это сделать нереально."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "А с лисами реально?"
-    narrator "В дверь вошли лисы с подносами, японским столиком и подушками. Их расставили в центре комнаты. Остался облачный, остальные вышли за дверь."
+    narrator "В дверь вошли лисы с подносами, японским столиком и подушками. Их расставили в центре комнаты. "
+    narrator "Остался облачный, остальные вышли за дверь. Аш напрягся, ожидая когда Илли отреагирует на видео в сети."
     narrator "Илли качнул головой в сторону подушки рядом со столиком, показывая Ашу жест сеть."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я с ними рос. Рядом, не среди них. Как я говорил, судьба лис — это Фабрика. "
     hide mouse1
     show mouse1
-    stub_character "Это ИИ, которая заботиться о производстве лис. "
+    stub_character "ИИ которая заботиться о производстве лис. "
     hide mouse1
     show mouse1
     stub_character "Она выбрала буддизм для одних каст и выращивание в загонах для других. "
@@ -4270,72 +5360,89 @@ label scene_31:
     show mouse1
     stub_character "В противной ситуации они хуже выполняют функции."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Ты знал, что не так давно высшая каста ела мозг 2 и 3 касты?"
+    hide mouse1
+    show sad_var
+    black "Рад что это в прошлом."
+    hide sad_var
+    show mouse1
+    stub_character "Надеюсь."
+    hide mouse1
+    show sad_var
     black "Почему вечеринка в японском стиле?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Для разнообразия. Дед, который сделал чип массовым, был японцем."
+    narrator "Аш пытался разрядить обстановку, избегая неприятных разговоров, которые могут возникнуть во время паузы."
     narrator "Лис наполнил отёко."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "О, ты лучше чем первая гейся Осаки."
     narrator "Лис недовольно посмотрел на парня, он явно нервничал, но старался не подавать виду."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     fox "Лисята надоели убегать по ночам к Онке. "
     hide mouse1
     show mouse1
     fox "А им даже не установили имплант, они могут попасть в беду."
-    narrator "Онка цыкнул на лиса. Показывая взглядом, что разговоров достаточно. Тот дождался когда хозяин отвернулся и лакнул саке из его чашечки."
-    narrator "Аш удивился, думал что не подал вида, но Уши пожелтели."
+    narrator "Онка цыкнул на лиса. Показывая взглядом, что разговоров достаточно. "
+    narrator "Тот дождался когда хозяин отвернулся и лакнул саке из его чашечки."
+    narrator "Аш удивился, думал что не подал вида, но Уши выдали его."
     hide mouse1
     show mouse1
     stub_character "Что такое?"
     hide mouse1
-    show black_learned_sad
-    black "Я знаешь тоже, ребенком спал среди кроликов. Как-то раз это спасло мне жизнь."
-    hide black_learned_sad
-    show black_learned_sad
+    show sad_var
+    black "Я знаешь тоже, ребенком спал среди кроликов. "
+    hide sad_var
+    show sad_var
+    black "Как-то раз это спасло мне жизнь."
+    hide sad_var
+    show sad_var
     black "Основной купол разгерметизировался, но загоны для животных имеют отдельную систему жизнеобеспечения."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Помню эту аварию. Я на Луне уже 25 лет."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "И как себя чувствуешь?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Да ужасно!"
+    stub_character "Последний месяц ужасно! Думаю это стресс."
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Еще вопросы?"
+    hide mouse1
+    show sad_var
     black "Был ли ты влюблен?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "В человека или явление?"
     narrator "Он обвел взглядом лабораторию со светящимися, пластинами—петри."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Думаю ты ответил на мой вопрос."
     narrator "Хозяин Фабрики пожал плечами. Раздался лакающий звук, это был лис. "
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Этот сад! Он кишит жизнью для разных космических объектов."
-    narrator "Илли раскраснелся и просто уставился в один из стендов, с синими, замерзшими водорослями."
+    narrator "Илли раскраснелся иуставился в один из стендов, с синими, замерзшими бактериями."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Сменим тему..."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Почему от тебя пахнет манго? Ты специально прыскаешься?"
     narrator "Онка медленно отвернул голову от водорослей, его глаза были необычайно круглые."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Манго? Ты не путаешь?"
     narrator "Аш утвердительно покачал головой."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты сам не чувствуешь?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Я не чувствую запахи."
     hide mouse1
@@ -4343,60 +5450,64 @@ label scene_31:
     stub_character "Но теперь ясно, почему мне все время плохо."
     narrator "Онка встал и начал снимать с себя одежду. "
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Думал, что уже привыкаю к тебе."
     narrator "Стоящему рядом лису Онка бросил."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Проверь мою комнату. Где есть на фабрике манго или эфирные масло, все что угодно. "
+    stub_character "Проверь мою комнату! Найди на фабрике манго или эфирные масло, все что угодно! "
     hide mouse1
     show mouse1
     stub_character "Никому не рассказывай, записи тоже все собери."
+    hide mouse1
+    show mouse1
+    stub_character "И без интервью, будь добр."
     narrator "Лис немного покачиваясь сделал реверанс. Он сильно нервничал."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мне не то чтоб сильно интересно, но для чего ты разделся?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Нашел нам развлечение — нужно это сжечь."
+    stub_character "Нашел нам развлечение — нужно это сжечь. У меня аллергия."
     narrator "Аш хлопнул в ладоши."
     hide mouse1
-    show black_learned_sad
-    black "А есть где? И горючее?"
-    hide black_learned_sad
+    show sad_var
+    black "На Фабрике есть возможность жечь? И горючее?"
+    hide sad_var
     show mouse1
     stub_character "Значит такое веселье подходит?"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "То что обыденность на Земле, дорогое удовольствие в закрытом куполе."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "У меня есть бензин! Настоящий, из древней органики."
+    stub_character "У меня есть бензин!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Это действительно хорошая идея!"
     narrator "Весело произнес Аш, потом серьезно добавил:"
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Для того кто пару дней назад пытался скормить себя псам."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Ну это не про меня."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Еще бы, отлично быть миллиардером."
     narrator "Онка сделал испуганные глаза."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Что ты, не дай Фабрика, чтоб я остался миллиардером. Считай что голым."
-    narrator "Вскоре они стояли рядом с полыхающим костром в закрытой комнате. С одной стороны, пламя освещало Аша, с другой Онку."
+    scene black_background
+    narrator "Спустя несколько часов, Аш вспоминал как Илли жег свою одежду в костре и последнее, что они сказали друг другу:"
     hide mouse1
-    show black_learned_sad
-    black "Чтоб добиться вечной жизни, нам нужно нарушить все законы."
-    hide black_learned_sad
+    show sad_var
+    black "Чтобы добиться вечной жизни, нам нужно нарушить все законы."
+    hide sad_var
     show mouse1
     stub_character "С какого начнем?"
-    narrator "Аш смотрел на пламя и думал, готов ли взять на себя смерть 1 000 людей."
+    narrator "Аш смотрел в черноту и думал, готов ли взять на себя смерть 1 000 людей? А то и больше?"
     jump scene_32
 
 
@@ -4404,12 +5515,15 @@ label scene_32:
     scene Chip_factory_Laboratory
     #Аш получает триггер заняться разработкой, не только ради сестры, но и ради остальных, кто может прожить не двойную жизнь в сети, а в другом теле
     narrator "Спустя несколько недель."
-    narrator "Онка наблюдает за Ашем, который лежит на полу в лаборатории. Он в сети."
+    narrator "Онка вместе с лисом наблюдает за Ашем, который лежит на полу в лаборатории. Он в сети."
     show mouse1
-    stub_character "Я думал, что после того как он получит добро, то восстановит сестру и начнет эксперимент по копированию в тело. Но он медлит."
+    stub_character "Я думал, что после того как он получит добро, то восстановит сестру и начнет эксперимент по копированию в тело. "
     hide mouse1
     show mouse1
-    stub_character "Я получу столько ресурсов для обработки данных, что совершу революцию. "
+    stub_character "Но он медлит."
+    hide mouse1
+    show mouse1
+    stub_character "Когда я получу столько ресурсов для обработки данных, что совершу революцию? "
     hide mouse1
     show mouse1
     fox "По вашему запросу, на счет пяти-шести тысяч испытуемых. Мы нашли 3 варианта их получения. "
@@ -4418,79 +5532,100 @@ label scene_32:
     fox "С разной тяжестью последствий, так как закон не поощряет такие испытания. Тем более на живых. Даже на добровольцах."
     hide mouse1
     show mouse1
-    stub_character "Отлично. Но наш Заяц тянет время. "
+    stub_character "Какая разница. Наш Заяц все равно тянет время. "
     hide mouse1
     show mouse1
-    fox "Кроме решительности. Ему очень сложно жертвовать людьми."
+    fox "Ему очень сложно жертвовать людьми. И лисами."
     hide mouse1
     show mouse1
-    stub_character "Да. Я надеялся, что он обойдется без помощи."
-    narrator "Здание дрогнуло. Зашептали лисы. Снова почувствовался толчок. Аш зашевелился."
+    stub_character "Да. Но я до последнего надеялся, что он самостоятельный мальчик. Зря."
     hide mouse1
     show mouse1
-    stub_character "Мне пора. Дальше все само само собой решится."
-    narrator "Вокруг все трясется. Аш выбежал в коридор. Лисы спокойно перемещаются по Фабрике, явно зная что делать. Когда Онка скрылся за поворотом, произошел сильный толчок. Аш оперся на локти."
+    stub_character "Поэтому... Раз..."
+    narrator "Здание дрогнуло. Зашептали лисы. Снова почувствовался толчок."
+    hide mouse1
+    show mouse1
+    stub_character "Я пожалуй пойду, не люблю сцены."
+    narrator "Аш зашевелился."
+    narrator "Вокруг все трясется. Парень выбегает в коридор. Лисы спокойно перемещаются по Фабрике, явно зная что делать."
     narrator "Облачный был возбужден и от его вида Черный решил скорее подняться на ноги."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что происходит?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "Пещера под куполом провалилась."
+    fox "Тоннель под куполом провалился!"
     hide mouse1
-    show black_learned_sad
-    black "Какая?"
-    hide black_learned_sad
+    show sad_var
+    black "Какой?"
+    hide sad_var
     show mouse1
     fox "На периферии... И продолжает разрушаться."
     narrator "Аш схватил себя за уши и потянул их вниз, ошеломленный новостью. Ноги подкосились. Он вспомнил крики людей, бивших по куполу с кроликами."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Я хочу это видеть."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Я понимаю — обвал пещеры по периферии — это 100% разгерметизация! Но я должен узнать что там!"
+    hide sad_var
+    show sad_var
+    black "Обвал пещеры по периферии — это 100% разгерметизация! "
+    hide sad_var
+    show sad_var
+    black "Но я должен узнать что там!"
     narrator "Лис отвернул мордочку."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    fox "2 этажа выше. Но я боюсь, что зрелище может оказаться не из приятных."
+    fox "В аудитории есть окно. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    fox "Но я боюсь, что зрелище может оказаться не из приятных."
+    hide mouse1
+    show sad_var
     black "В 9 лет я выдержал."
-    narrator "Аш поднялся на этаж, где во все 4 стороны открывался отличный вид на город над землей."
-    narrator "Когда он взглянул в окно. То не сразу понял что произошло. С внешней стороны купола, словно тесто из-под двери поднимались клубы пыли. Клубы режущей пыли. Которую не обтачивает ветер и она режет ваши легкие, вступает в реакцию с жидкостями и отравляю организм токсичными соединениями."
-    hide black_learned_sad
-    show black_learned_sad
-    black "Мы должны открыть!"
-    narrator "Он опустил Уши. Ночь с кроликами накрыла его, воздух застрял в легких. Парень начал задыхаться и упал, больно ударившись о пол коленями. Он почувствовал давление в голове. Перед ним, сел на колени Илли. Он заглянул Ашу в лицо и что-то сказал, но Аш не слышал."
-    hide black_learned_sad
+    narrator "Аш поднялся в знакомое помещение. Лис отключил затемнение стекла."
+    narrator "Черный Заяц не сразу понял, что произошло. С внешней стороны купола поднимались клубы пыли. Клубы режущей пыли. "
+    narrator "Которую не обтачивает ветер. Она вступит в реакцию с жидкостями в легких и отравит организм токсичными соединениями."
+    hide sad_var
+    show sad_var
+    black "Мы должны открыть им!"
+    narrator "Ночь с кроликами накрыла его, воздух застрял в легких. Парень начал задыхаться и упал, больно ударившись о пол коленями. "
+    narrator "Он почувствовал давление в голове. Перед ним, сел на колени Илли. "
+    narrator "Он заглянул Ашу в лицо и что-то сказал, но Аш не слышал. только сжимал кулаки ощущая кровь от ран под ногтями. "
+    hide sad_var
     show mouse1
     stub_character "Это паническая атака, дыши."
     narrator "Он взял Аша за плечи когда тот стал заваливаться вперед. Холодные-холодные руки Илии вернули Ашу чувства."
     hide mouse1
-    show black_learned_sad
-    black "Нужно помочь остальным."
-    hide black_learned_sad
+    show sad_var
+    black "Нужно помочь остальным!"
+    hide sad_var
     show mouse1
-    stub_character "Как только возобновят герметичность. Выйдем. Но не сейчас."
+    stub_character "Как только возобновят герметичность. Но не сейчас."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мы не можем их не пустить."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Это лунный город, тут все знают что делать в такой ситуации. Сейчас, все должны оставаться в помещениях."
-    narrator "Аш смотрит в окно, на площадь заваленную телами. Над ней клубится пыль, она замерла в воздухе."
+    stub_character "Это лунный город, тут все знают что делать в такой ситуации. "
     hide mouse1
     show mouse1
-    stub_character "Дыши глубоко. Мне тоже не просто."
-    narrator "Он обхватил руками голову Зайца, закрыв его глаза, как когда-то сделала Вечна. Дыхание парня стало успокаиваться."
+    stub_character "Сейчас, все должны оставаться в помещениях."
+    narrator "Аш смотрит в окно, на площадь. Над ней клубится пыль, она замерла в воздухе."
+    narrator "И он точно знает, что когда ее отфильтруют – все будет покрыто телами."
+    hide mouse1
+    show mouse1
+    stub_character "Дыши глубоко."
+    narrator "Он обхватил руками голову Зайца, закрыв его глаза, как когда-то сделала Вечна. "
+    narrator "Дыхание парня стало успокаиваться."
     hide mouse1
     show mouse1
     stub_character "Ты похоже и правда как Заяц — ничего не видишь, значит ничего нет."
     narrator "За окном рушится город. Облачный сидит рядом."
     hide mouse1
     show mouse1
-    stub_character "Положите своего коллегу выспаться с лисятами. И дай успокоительное с минимальными побочными действиями."
+    stub_character "Положите своего коллегу выспаться с лисятами. "
+    hide mouse1
+    show mouse1
+    stub_character "И дай успокоительное с минимальными побочными действиями."
     jump scene_33
 
 
@@ -4501,78 +5636,104 @@ label scene_33:
     narrator "Онка лежит в углу, не двигается. Голова безжизненно свесилась."
     narrator "Аш входит с Облачным и отскакивает назад."
     show mouse1
-    fox "Неужели!"
-    narrator "Аш стоит как вкопанный. Только и думал:"
-    fox "Так не вовремя!"
+    fox "Неужели! Получилось?"
+    narrator "Аш стоит как вкопанный. Только и думал: так не вовремя!"
     narrator "Илли резко подпрыгнул и вскрикнул от испуга. Он смотрит на Аша заспанными, непонимающими глазами."
     hide mouse1
     show mouse1
     fox "Я решил, вы мертвы..."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Ты прикидывался мертвым?"
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Что? Нет. Я всего лишь уснул. Ты правда думал я умер? Ты не видел спящих людей?"
+    stub_character "Что? Нет. Я всего лишь долго работал. "
+    hide mouse1
+    show mouse1
+    stub_character "Ты не видел спящих людей?"
     narrator "Онка прищурил взгляд и расплылся в широкой улыбке."
     hide mouse1
     show mouse1
     stub_character "Ты успел испугаться!"
     narrator "Он довольно потянулся."
     hide mouse1
-    show black_learned_sad
-    black "Сейчас твоя смерть совсем не ко времени. Есть что обсудить — дальнейшие шаги."
-    narrator "Заяц показал глазами в сторону, намекая что лис нужно отослать."
-    narrator "Онка махнул рукой в сторону двери."
-    hide black_learned_sad
-    show mouse1
-    stub_character "Уважаемые, подождите у входа."
-    hide mouse1
+    show sad_var
+    black "Есть что обсудить — дальнейшие шаги."
+    hide sad_var
     show mouse1
     stub_character "С удовольствием слушаю."
     hide mouse1
-    show black_learned_sad
-    black "Есть план. Безумный, но мы обязаны рассмотреть такую возможность из-за последних событий. Нам нужно поместить одну копию в 900-2000 человек. Проверяем сколько из этих людей соответствует оригиналу. Успех — если хотя бы 70% человек в новом теле, будут считать себя оригиналом."
+    show sad_var
+    black "Есть план. Мы обязаны рассмотреть такую возможность из-за последних событий. "
+    hide sad_var
+    show sad_var
+    black "Нам нужно поместить одну копию в 900-2000 человек. "
+    hide sad_var
+    show sad_var
+    black "Проверяем сколько из этих людей соответствует оригиналу. "
+    hide sad_var
+    show sad_var
+    black "Успех — если хотя бы 70% человек в новом теле, будут считать себя исходной личностью."
     narrator "Илли сделал потрясенное лицо."
-    hide black_learned_sad
-    show black_learned_sad
+    hide sad_var
+    show sad_var
     black "Потом, нужен итоговый тест — копию из сети поместить в тело. Да, это..."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Это жестоко."
+    stub_character "Это жестоко!"
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Мы могли бы спасти всех тех, кто умер вчера."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
-    stub_character "Стоит ли возможность вечной жизни такого?"
+    stub_character "Стоит ли возможность вечной жизни такого? "
     hide mouse1
-    show black_learned_sad
-    black "Стоит."
-    narrator "Онка подошел к Ашу. Как всегда, неприятно близко, от чего Аш почувствовал дискомфорт."
-    hide black_learned_sad
     show mouse1
-    stub_character "Что бы ты не потерял, распространение Ушей и возможность пересадить сознание в тело сделают жизнь кучи людей намного лучше."
+    stub_character "Помню недавно, ты сомневался."
+    hide mouse1
+    show sad_var
+    black "Столько людей погибло вчера."
+    narrator "Онка подошел к Ашу. Как всегда, неприятно близко, от чего Аш почувствовал дискомфорт."
+    hide sad_var
+    show mouse1
+    stub_character "Что бы ты не потерял, распространение Ушей..."
+    hide mouse1
+    show mouse1
+    stub_character "...И возможность пересадить сознание в тело сделают жизнь людей намного лучше."
     hide mouse1
     show mouse1
     stub_character "Ты сможешь довести дело до конца?"
     hide mouse1
-    show black_learned_sad
-    black "Да. Придя в Центр Помощи я не имел цель, надежды и желания. Сейчас, это слишком много для меня значит."
-    narrator "Заяц не хотел говорить Илли обо всем, он помнил что властных людей стоит бояться. Даже если у нет мыслей навредить тебе, они могут появиться."
-    hide black_learned_sad
+    show sad_var
+    black "Придя на растерзание соббакам я не имел цели, надежды и желания. "
+    hide sad_var
+    show sad_var
+    black "Сейчас, это не только для меня."
+    narrator "Заяц не хочет говорить Илли обо всем. Он ему не доверяет, слишком все гладко..."
+    hide sad_var
     show mouse1
-    stub_character "Я уже нашел что ты просил. Для итогового теста \"копия-тело\" я выбрал кандидата. Одинока, доверчива и скоро умрет — Наташа."
-    narrator "В дополненной реальности развернулось фото Наташи."
-    narrator "Уши Аша прижались к голове."
+    stub_character "Я нашел что ты просил. "
     hide mouse1
-    show black_learned_sad
+    show mouse1
+    stub_character "Для итогового теста \"копия-тело\" я выбрал кандидата. "
+    hide mouse1
+    show mouse1
+    stub_character "Одинока, доверчива, 18 лет и скоро умрет — Наташа."
+    narrator "В голове Аша возник образ девушки в комнате с инопланетными растениями."
+    hide mouse1
+    show sad_var
     black "Это как-то связано с видео?"
+    hide sad_var
+    show sad_var
+    black "Не удивительно. "
+    hide sad_var
+    show sad_var
+    black "Может ты и с Максимом связан?"
     narrator "Илли сжал губы плохо сдерживая улыбку и пожал плечами. "
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Эта информация не нужна для принятия решения. Ты отказываешься?"
-    narrator "За спиной хозяина Фабрики скалятся лисы."
+    narrator "За спиной хозяина Фабрики появились лисы из высшей касты, они скалились."
     hide mouse1
     show mouse1
     stub_character "А еще я нашел манго."
@@ -4584,29 +5745,29 @@ label scene_33:
     show mouse1
     stub_character "Я же не кричу \"это он хотел меня отравить\"."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Что ты сделал?"
     narrator "Но Хозяин Фабрики улыбнулся острыми, вытянутыми зубами."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Разве это что-то изменит, для всех тех людей?"
     narrator "\"Кроме того, что они были бы живы?\" — сказал Заяц сам себе."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "От тебя пришло сообщение, что Вечна копируется?"
     narrator "Онка промолчал."
-    narrator "Аш думал про себя. Вот кто помог копии, убить оригинал. Теперь я уверен, он на это способен. "
-    narrator "Парень вспомнил последние слова сестры: \"это все он...\". Это все Онка!"
-    hide black_learned_sad
-    show black_learned_sad
+    narrator "Аш думал про себя. Вот кто помог копии, убить оригинал. Вот, с кем был договор..."
+    narrator "Парень вспомнил последние слова сестры: \"это все он...\". В голове сверкнула, словно молния. Это все Онка!"
+    hide sad_var
+    show sad_var
     black "Хорошо, начали игру, тогда закончим."
-    hide black_learned_sad
+    hide sad_var
     show mouse1
     stub_character "Так просто, готов продолжать?"
     narrator "Черный достал из кармана фиолетовый мяч, похожий на тот, из-за которого лис на конкурсе отгрыз себе лапу."
     narrator "Облачный заерзал на месте."
     hide mouse1
-    show black_learned_sad
+    show sad_var
     black "Самый целеустремленный человек тот, у кого нет выбора."
-    narrator "Видим как в темноте начинают святиться Уши Аша, заливаясь кроваво-красными пятнами, за его спиной появляются светящиеся глаза лис."
+    narrator "В глазах облачного, загорелся безумный огонь."
     #Здесь мы рассказываем о том, где они живую и что это - опасное место. Где бояться нужно не только природы, но и себя. Аш винит себя, что это он подвел Вечну к копированию. В сцене герой должен быть крут и логичен. Он рассказывает о законе копирования.
