@@ -2,6 +2,8 @@ import sqlite3
 import xml.etree.ElementTree as ET
 from html import unescape  
 
+import sys
+
 def get_scenario_xml(filename):
     con = sqlite3.connect(filename)
     cursor = con.cursor()
@@ -50,6 +52,10 @@ characters_mood = {
 }
 
 file = "./Follow The Black Hare [FBH].kitsp"
+
+if(len(sys.argv) > 1):
+    file = sys.argv[1]
+
 scenario = get_scenario_xml(file)
 save_file(scenario, "scenario.xml")
 
