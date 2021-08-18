@@ -75,7 +75,7 @@ for item in root:
     print(text)
     if(text):
         text = text.replace("&quot;", "\\\"")
-
+        text = text.replace("%", "\%")
     if(not text): #skipping empty blocks
         continue
     
