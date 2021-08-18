@@ -90,14 +90,14 @@ image black regular_confused  = 'regular_confused'
 image black regular_angry     = 'black_regular_angry'    
 image black regular_happy2    = 'black_regular_happy2'    
 image black regular_happy1    = 'black_regular_happy1'    
-image black regular_surprised = 'regular_surprised' #
+image black regular_surprised = 'black_regular_surprised'
 image black regular_annoyed   = 'black_regular_annoyed'   
 image black regular_disgust   = 'black_regular_disgust'   
 image black regular_sad       = 'black_regular_sad'       
 image black sad               = 'black_sad'
 image black sad1              = 'black_sad1'         
 image black surprised         = 'black_surprised'
-image black surprised1        = 'black_surprised1'   # 
+image black surprised1        = 'black_surprised1'
 
 
 
