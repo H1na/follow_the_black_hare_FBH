@@ -108,9 +108,9 @@ image fox smile = 'fox_smile'
 image fox neon collar = 'fox_neon_collar'
 
 
-image max         = 'max_regular'
-image max regular = 'max_regular'
-image max fight   = 'max_fight'
+image maks         = 'max_regular'
+image maks regular = 'max_regular'
+image maks fight   = 'max_fight'
 
 
 image onka = 'onka_regular'

@@ -23,7 +23,7 @@ characters = {
     "ВЕЧНА": 'vechna',
     "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'stub_character',
     "ВЕЧНА ЦИФРОВАЯ": 'digital_vechna',
-    "МАКСИМ": 'max',
+    "МАКСИМ": 'maks',
     "ОНКА": 'onka',
     "ОБЛАЧНЫЙ ЛИС": 'fox',
     "ЛИС": 'fox',
@@ -49,6 +49,7 @@ characters_mood = {
     'digital_vechna': 'regular',
     'stub_character': 'mouse1',
     'fox': 'regular',
+    'maks': 'regular'
 }
 
 file = "./Follow The Black Hare [FBH].kitsp"
