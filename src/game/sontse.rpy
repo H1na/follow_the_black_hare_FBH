@@ -88,19 +88,18 @@ image black regular           = 'black_regular'
 image black regular_blood     = 'black_regular_blood'
 image black regular_fear      = 'regular_fear'      #
 image black regular_confused  = 'regular_confused'  #
-image black regular_angry1    = 'regular_angry1'    #
-image black regular_angry2    = 'regular_angry2'    #
+image black regular_angry     = 'black_regular_angry'      #
 image black regular_happy2    = 'regular_happy2'    #
 image black regular_happy1    = 'regular_happy1'    #
 image black regular_surprised = 'regular_surprised' #
-image black regular_annoyed   = 'regular_annoyed'   #
+image black regular_annoyed   = 'black_regular_annoyed'   #
 image black regular_disgusd   = 'regular_disgust'   #
 image black regular_sad       = 'regular_sad'       #
 image black sad               = 'black_sad'
 image black sad1              = 'black_sad1'         # 
 image black surprised         = 'black_surprised'
 image black surprised1        = 'black_surprised1'   # 
-image black veryangry         = 'black_veryangry'
+
 
 
 image fox       = 'fox_smile'
