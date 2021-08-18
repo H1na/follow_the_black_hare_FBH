@@ -37,22 +37,28 @@ characters = {
     "АЛИСА": 'alise',
     "ЖУРНАЛИСТ": 'journalist',
 
-    "НАТАША": 'stub_character',
-    "ДРУГОЙ ЛИС": 'stub_character',
-    "ЛИС ИЗ КАСТЫ 3": 'stub_character',
+    "НАТАША": 'natasha',
+    "ДРУГОЙ ЛИС": 'other_fox',
+    "ЛИС ИЗ КАСТЫ 3": 'fox_from_3',
     
-    "МУЖЧИНА": 'stub_character',
+    "МУЖЧИНА": 'man',
     "ЧЕРНЫЙ ЗАЯЦ": "black",
 }
+
 
 characters_mood = {
     "black": "regular",
     'vechna': 'regular',
     'digital_vechna': 'regular',
-    'stub_character': 'mouse1',
+
     'fox': 'regular',
     'maks': 'regular',
 
+    "natasha": 'tbd',
+    "other_fox": 'tbd',
+    "fox_from_3": 'tbd',
+    "man": 'tbd',
+    
     #characters without
     "robotic_voice": "no_sprite",
     "voice_from_net": "no_sprite",
@@ -63,6 +69,7 @@ characters_mood = {
     "alise": "no_sprite",
     "journalist": "no_sprite",
 
+    
 }
 
 file = "./Follow The Black Hare [FBH].kitsp"

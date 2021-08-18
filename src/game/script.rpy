@@ -10,6 +10,11 @@ define digital_vechna = Character(_('Вечна цифровая'), color="#c8ff
 define fox = Character(_('Лис'), color="#c8ffc8", )
 define maks = Character(_('Макс'), color="#c8ffc8", )
 
+define natasha = Character(_('НАТАША'), color="#c8ffc8", )
+define other_fox = Character(_('ДРУГОЙ ЛИС'), color="#c8ffc8", )
+define fox_from_3 = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#c8ffc8", )
+define man = Character(_('МУЖЧИНА'), color="#c8ffc8", )
+
 #characters with no sprites
 define robotic_voice = Character(_('РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК'), color="#c8ffc8", )
 define voice_from_net = Character(_('ГОЛОС ИЗ СЕТИ'), color="#c8ffc8", )
@@ -19,6 +24,7 @@ define voice_cartoon = Character(_('ГОЛОС МУЛЬТЯШКИ'), color="#c8f
 define mobile_camera = Character(_('МОБИЛЬНАЯ КАМЕРА'), color="#c8ffc8", )
 define alise = Character(_('АЛИСА'), color="#c8ffc8", )
 define journalist = Character(_('ЖУРНАЛИСТ'), color="#c8ffc8", )
+
 
 
 label start:
