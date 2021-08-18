@@ -8,7 +8,7 @@ define vechna = Character(_('Вечна'), color="#c8ffc8")
 define digital_vechna = Character(_('Вечна цифровая'), color="#c8ffc8", )
 
 define fox = Character(_('Лис'), color="#c8ffc8", )
-define max = Character(_('Макс'), color="#c8ffc8", )
+define maks = Character(_('Макс'), color="#c8ffc8", )
 
 label start:
     $ angry = 0
