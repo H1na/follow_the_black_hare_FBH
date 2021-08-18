@@ -125,6 +125,11 @@ for item in root:
             res.append("\tcall {}".format(result[1]))
         elif(command =="emotion"):
             characters_mood[result[1]] = result[2]
+        elif(command =="show_character"):
+            character = result[1]
+            res.append("\tshow {} {}".format(character, characters_mood[character]))
+        elif(command =="hide_character"):
+            res.append("\thide {}".format(result[1]))
         else:
             print("Unknown command: ", text)
 
