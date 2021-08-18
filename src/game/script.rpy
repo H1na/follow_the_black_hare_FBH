@@ -8,7 +8,18 @@ define vechna = Character(_('Вечна'), color="#c8ffc8")
 define digital_vechna = Character(_('Вечна цифровая'), color="#c8ffc8", )
 
 define fox = Character(_('Лис'), color="#c8ffc8", )
-define max = Character(_('Макс'), color="#c8ffc8", )
+define maks = Character(_('Макс'), color="#c8ffc8", )
+
+#characters with no sprites
+define robotic_voice = Character(_('РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК'), color="#c8ffc8", )
+define voice_from_net = Character(_('ГОЛОС ИЗ СЕТИ'), color="#c8ffc8", )
+define help_center = Character(_('ЦЕНТР ПОМОЩИ'), color="#c8ffc8", )
+define camera = Character(_('КАМЕРА'), color="#c8ffc8", )
+define voice_cartoon = Character(_('ГОЛОС МУЛЬТЯШКИ'), color="#c8ffc8", )
+define mobile_camera = Character(_('МОБИЛЬНАЯ КАМЕРА'), color="#c8ffc8", )
+define alise = Character(_('АЛИСА'), color="#c8ffc8", )
+define journalist = Character(_('ЖУРНАЛИСТ'), color="#c8ffc8", )
+
 
 label start:
     $ angry = 0

@@ -28,14 +28,14 @@ characters = {
     "ОБЛАЧНЫЙ ЛИС": 'fox',
     "ЛИС": 'fox',
 
-    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": '',
-    "ГОЛОС ИЗ СЕТИ": '',
-    "ЦЕНТР ПОМОЩИ": '',
-    "КАМЕРА": "",
-    "ГОЛОС МУЛЬТЯШКИ": '',
-    "МОБИЛЬНАЯ КАМЕРА": '',
-    "АЛИСА": '',
-    "ЖУРНАЛИСТ": '',
+    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'robotic_voice',
+    "ГОЛОС ИЗ СЕТИ": 'voice_from_net',
+    "ЦЕНТР ПОМОЩИ": 'help_center',
+    "КАМЕРА": "camera",
+    "ГОЛОС МУЛЬТЯШКИ": 'voice_cartoon',
+    "МОБИЛЬНАЯ КАМЕРА": 'mobile_camera',
+    "АЛИСА": 'alise',
+    "ЖУРНАЛИСТ": 'journalist',
 
     "НАТАША": 'stub_character',
     "ДРУГОЙ ЛИС": 'stub_character',
@@ -51,7 +51,18 @@ characters_mood = {
     'digital_vechna': 'regular',
     'stub_character': 'mouse1',
     'fox': 'regular',
-    'maks': 'regular'
+    'maks': 'regular',
+
+    #characters without
+    "robotic_voice": "no_sprite",
+    "voice_from_net": "no_sprite",
+    "help_center": "no_sprite",
+    "camera": "no_sprite",
+    "voice_cartoon": "no_sprite",
+    "mobile_camera": "no_sprite",
+    "alise": "no_sprite",
+    "journalist": "no_sprite",
+
 }
 
 file = "./Follow The Black Hare [FBH].kitsp"
@@ -114,13 +125,19 @@ for item in root:
             res.append("\tcall {}".format(result[1]))
         elif(command =="emotion"):
             characters_mood[result[1]] = result[2]
+        elif(command =="show_character"):
+            character = result[1]
+            res.append("\tshow {} {}".format(character, characters_mood[character]))
+        elif(command =="hide_character"):
+            res.append("\thide {}".format(result[1]))
         else:
             print("Unknown command: ", text)
 
     elif(item.tag == "character"): #character block
         ch = text.strip().upper()
         # if(ch != character):
-        if characters[ch] == '':
+        if characters_mood[characters[ch]] == 'no_sprite':
+            character = characters[ch]
             continue
 
         if character and (characters[ch] != character):
