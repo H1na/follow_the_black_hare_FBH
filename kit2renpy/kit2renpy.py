@@ -21,26 +21,28 @@ def prepate_renpy_output(res):
 characters = {
     "АШ": "black",
     "ВЕЧНА": 'vechna',
-    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'stub_character',
+    
     "ВЕЧНА ЦИФРОВАЯ": 'digital_vechna',
     "МАКСИМ": 'maks',
     "ОНКА": 'onka',
     "ОБЛАЧНЫЙ ЛИС": 'fox',
     "ЛИС": 'fox',
 
-    "ГОЛОС ИЗ СЕТИ": 'stub_character',
-    "ГОЛОС С ФАБРИКИ": 'stub_character',
-    "ЖУРНАЛИСТ": 'stub_character',
+    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": '',
+    "ГОЛОС ИЗ СЕТИ": '',
+    "ЦЕНТР ПОМОЩИ": '',
+    "КАМЕРА": "",
+    "ГОЛОС МУЛЬТЯШКИ": '',
+    "МОБИЛЬНАЯ КАМЕРА": '',
+    "АЛИСА": '',
+    "ЖУРНАЛИСТ": '',
+
     "НАТАША": 'stub_character',
     "ДРУГОЙ ЛИС": 'stub_character',
     "ЛИС ИЗ КАСТЫ 3": 'stub_character',
-    "ГОЛОС МУЛЬТЯШКИ": 'stub_character',
-    "МОБИЛЬНАЯ КАМЕРА": 'stub_character',
-    "АЛИСА": 'stub_character',
-    "ЦЕНТР ПОМОЩИ": 'stub_character',
+    
     "МУЖЧИНА": 'stub_character',
     "ЧЕРНЫЙ ЗАЯЦ": "black",
-    "КАМЕРА": "stub_character",
 }
 
 characters_mood = {
@@ -118,6 +120,9 @@ for item in root:
     elif(item.tag == "character"): #character block
         ch = text.strip().upper()
         # if(ch != character):
+        if characters[ch] == '':
+            continue
+
         if character and (characters[ch] != character):
             res.append("\thide {}".format(character)) 
         
