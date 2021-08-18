@@ -23,10 +23,11 @@ characters = {
     "ВЕЧНА": 'vechna',
     "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'stub_character',
     "ВЕЧНА ЦИФРОВАЯ": 'digital_vechna',
-    "МАКСИМ": 'stub_character',
-    "ОНКА": 'stub_character',
+    "МАКСИМ": 'max',
+    "ОНКА": 'onka',
     "ОБЛАЧНЫЙ ЛИС": 'fox',
     "ЛИС": 'fox',
+
     "ГОЛОС ИЗ СЕТИ": 'stub_character',
     "ГОЛОС С ФАБРИКИ": 'stub_character',
     "ЖУРНАЛИСТ": 'stub_character',
@@ -43,12 +44,11 @@ characters = {
 }
 
 characters_mood = {
-    "black": "black_regular",
-    'vechna': 'vechna_smile2',
-    'digital_vechna': 'mouse1',
+    "black": "regular",
+    'vechna': 'regular',
+    'digital_vechna': 'regular',
     'stub_character': 'mouse1',
-    'fox': 'mouse1',
-    'stub_character': 'mouse1',
+    'fox': 'regular',
 }
 
 file = "./Follow The Black Hare [FBH].kitsp"
@@ -115,12 +115,12 @@ for item in root:
 
     elif(item.tag == "character"): #character block
         ch = text.strip().upper()
-        if(ch != character):
-            if(character):
-                res.append("\thide {}".format(characters_mood[character])) 
-            
-            character = characters[ch]
-            res.append("\tshow {}".format(characters_mood[character]))
+        # if(ch != character):
+        if character and (characters[ch] != character):
+            res.append("\thide {}".format(character)) 
+        
+        character = characters[ch]
+        res.append("\tshow {} {}".format(character, characters_mood[character]))
 
     elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
