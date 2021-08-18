@@ -14,6 +14,9 @@
 <scene_description>
 <v><![CDATA[Здесь мы рассказываем о том, где они живую и что это - опасное место. Где бояться нужно не только природы, но и себя. Аш винит себя, что это он подвел Вечну к копированию. В сцене герой должен быть крут и логичен. Он рассказывает о законе копирования.]]></v>
 </scene_description>
+<noprintable_text>
+<v><![CDATA[scene black_background]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[]]></v>
 </action>
@@ -201,7 +204,7 @@
 <v><![CDATA[Тремя часами ранее.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Перед глазами Аша высветилось уведомление: &quot;Твоя сестра в Центре Копирования.&quot;]]></v>
@@ -224,6 +227,9 @@
 <noprintable_text>
 <v><![CDATA[emotion black regular_fear]]></v>
 </noprintable_text>
+<noprintable_text>
+<v><![CDATA[scene helpcenter]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[В Центре копирования, по ту сторону стекла, лежала его сестра.]]></v>
 </action>
@@ -234,7 +240,7 @@
 <v><![CDATA[Вечна рассматривала потолок. Ее тело было намертво зафиксировано на кушетке.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black regular_angry2]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Он попытался попасть внутрь, но Центр Копирования был занят - а значит, и доступ закрыт.]]></v>
@@ -315,7 +321,7 @@
 <v><![CDATA[Это были ее собственные глаза, но столь холодные и чужие...]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black regular_angry2]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -614,7 +620,7 @@
 <v><![CDATA[Автоматическая подача газа запущена.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black regular_angry2]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -653,7 +659,7 @@
 <v><![CDATA[Внутрь вошли до блеска чистые роботы и подняли тело девушки.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black regular_angry2]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -671,7 +677,7 @@
 <v><![CDATA[Не плачь! Я же здесь!]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black regular_angry2]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -821,7 +827,7 @@
 <v><![CDATA[Аш смотрел под ноги: песок, но не как лунный грунт и не как любой песок с Земли... ]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[...А как перемолотые кристаллы красно-рубинового цвета. ]]></v>
@@ -854,7 +860,7 @@
 <v><![CDATA[Там такие перепады температур — сдохнуть!]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Парень поднял голову вверх.]]></v>
@@ -905,7 +911,7 @@
 <v><![CDATA[Ты своим Ашиком весь драматизм убила.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[В густых, красных облаках засверкали молнии. ]]></v>
@@ -1079,7 +1085,7 @@
 <v><![CDATA[Эээх!]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1150,7 +1156,7 @@
 <v><![CDATA[Вечна схватила с дивана плюшевую коалу и резко надавила. Голова с громким чпоком отделилась от плюшевого тела.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1279,7 +1285,7 @@
 <v><![CDATA[24 августа в 23:50 2225 года, под куполом было 650 человек, а через пятнадцать минут стало 200.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black_sad]]></v>
+<v><![CDATA[emotion black regular_sad]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1369,7 +1375,7 @@
 <v><![CDATA[Конечно, я оставил светлячков на салат. Они, конечно, симпатичные… но в первую очередь - еда. ]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1420,7 +1426,7 @@
 <v><![CDATA[Я не могу работать меньше… Напротив, стремлюсь делать это как можно больше.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1525,7 +1531,7 @@
 <v><![CDATA[Ты опять не умертвил их в вакуумном шкафу? Это уже слишком. Есть живых запрещено везде, кроме парочки отсталых стран.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Парень тоже перестал есть, рассматривая свою тарелку..]]></v>
@@ -1576,7 +1582,7 @@
 <v><![CDATA[Ну пожалуйста! Ты же мне доверяешь?]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1615,7 +1621,7 @@
 <v><![CDATA[Да, да, да!]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1642,7 +1648,7 @@
 <v><![CDATA[Брат положил палочки на тарелку, сжал концы и те стали разлагаться, сливаясь с остатками еды в вязкую массу. Поднялся на ноги.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -1933,7 +1939,7 @@
 <v><![CDATA[Максим презрительно посмотрел на Онку и пошел в другой угол аудитории.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion onka annoyed]]></v>
+<v><![CDATA[emotion onka thinking]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
@@ -2071,7 +2077,7 @@
 <v><![CDATA[Чую, я буду сегодня на ужин.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion onka annoyed]]></v>
+<v><![CDATA[emotion onka thinking]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
@@ -2097,6 +2103,24 @@
 <dialog>
 <v><![CDATA[Вы и сами неплохо грызетесь.]]></v>
 </dialog>
+<character>
+<v><![CDATA[ОНКА]]></v>
+</character>
+<dialog>
+<v><![CDATA[Я схитрил на счет ошейника, знал что это фикция. Лучше сними его.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[ОНКА]]></v>
+</character>
+<dialog>
+<v><![CDATA[А то потом объясняй в СМИ, когда это выйдет на рынок.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion fox shock]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -2196,6 +2220,9 @@
 <dialog>
 <v><![CDATA[Мне кажется, в нем все прекрасно.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy2]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2281,7 +2308,7 @@
 <v><![CDATA[Приятно было познакомиться.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Аш шел ближе к сцене обдумывая, что хорошие отношения с жюри - это плюс балл к его выступлению.]]></v>
@@ -2365,7 +2392,7 @@
 <v><![CDATA[Свет от камер падал на Аша, находящегося в центре сцены.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
@@ -2380,7 +2407,7 @@
 <v><![CDATA[Лис довольно вывалил язык, в качестве ответа хозяину.]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Никто этого не видел, но глазами Аш пытался найти Вечну. ]]></v>
@@ -2395,7 +2422,7 @@
 <v><![CDATA[Думая про себя: &quot;Важный момент. Соберись…&quot;]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2461,7 +2488,7 @@
 <v><![CDATA[– будут выражать базовые эмоции одинаково. ]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2469,6 +2496,36 @@
 <dialog>
 <v><![CDATA[Но есть смешанные – их испытывают чаще других, и это вызывает сложности.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy1]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Я разрабатываю универсальный язык эмоций. ]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Который сможет интуитивно понятным, визуальным языком показать ваши чувства другим.]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[На данный момент, Искусственный Интеллект Ушей учится узнавать и отображать базовые эмоции. ]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Но получая все больше данных, он сможет интерпретировать и интенсивность эмоций и метаэмоции.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_sad]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2538,6 +2595,9 @@
 <dialog>
 <v><![CDATA[Почему людям так важно понимать друг друга? ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy1]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2571,6 +2631,21 @@
 <dialog>
 <v><![CDATA[Достигнутый за счет универсального, визуального языка.]]></v>
 </dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[И когда узнает, не всегда с 99% степенью уверенности – отображает эмоцию на дисплее.]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Чем менее четкое изображение на имплантах, тем меньше ИИ уверен – что верно определил эмоцию.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka regular]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[По залу прошелся шепот. Это был Илли и Лис.]]></v>
 </action>
@@ -2587,7 +2662,7 @@
 <v><![CDATA[Макс строго на посмотрел на рыжего. Онка как школьник, виновато замолчал и вернул взгляд на сцену. ]]></v>
 </action>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <action>
 <v><![CDATA[Но выступающий сделал паузу, которой и воспользовался член жюри.]]></v>
@@ -2598,11 +2673,23 @@
 <dialog>
 <v><![CDATA[Есть вопрос! Общения в реальности мало. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Импланты в виде Ушей Зайца ведь для неё?]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black black]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[В чем разница, на какое средство вывода информации передавать данные с чипа? ]]></v>
 </dialog>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2631,6 +2718,9 @@
 <dialog>
 <v><![CDATA[Общение это стресс – потому что тоже навык. Но мы не думаем об этом.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2638,7 +2728,7 @@
 <v><![CDATA[Мы не прикладываем усилий, для того чтобы понимать других и себя.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2746,7 +2836,7 @@
 <v><![CDATA[Кто будет это покупать? Частные инвесторы в это не вложатся.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black regular_annoyed]]></v>
+<v><![CDATA[emotion black regular_angry]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2755,7 +2845,7 @@
 <v><![CDATA[Возможность распознавать эмоции работает и в Сети.]]></v>
 </dialog>
 <noprintable_text>
-<v><![CDATA[emotion black black]]></v>
+<v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2832,6 +2922,9 @@
 <action>
 <v><![CDATA[На последних словах он сделал особенно яркий акцент.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[МАКСИМ]]></v>
 </character>
@@ -2931,6 +3024,9 @@
 <dialog>
 <v><![CDATA[Да, тяжелый вышел день! Но неплохой.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_smile2]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Она продолжала улыбаться, но быстро вспомнила про брата и сделала сочувствующее лицо. Но только на секунду.]]></v>
 </action>
@@ -2950,11 +3046,8 @@
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
-<v><![CDATA[Как? Всмысле? Что ты изменила свой иозг?]]></v>
+<v><![CDATA[Как? Всмысле? Ты изменила свой мозг?]]></v>
 </dialog>
-<action>
-<v><![CDATA[Он произнес это резко, чувствуя приближение проблем.]]></v>
-</action>
 <noprintable_text>
 <v><![CDATA[emotion vechna vechna_thinking]]></v>
 </noprintable_text>
@@ -3040,6 +3133,15 @@
 <v><![CDATA[emotion black angry_var]]></v>
 </noprintable_text>
 <character>
+<v><![CDATA[ВЕЧНА]]></v>
+</character>
+<dialog>
+<v><![CDATA[А от слива презентации я бы тебя не спасла.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
+<character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
@@ -3054,6 +3156,9 @@
 <dialog>
 <v><![CDATA[Не знаю, но я точно не виновата в том, что твоя работа не зашла на конкурсе. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
@@ -3084,6 +3189,9 @@
 <dialog>
 <v><![CDATA[...Что больше всего времени уходит на сон, а все остальное по мелочи, занимает час-два.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3096,18 +3204,27 @@
 <dialog>
 <v><![CDATA[Сон я урезать уже не могу, хватило галлюцинаций в прошлом месяце.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[Как разумно.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
 <dialog>
 <v><![CDATA[У меня была идея зафиксировать связи в мозгу, отвечающие за любовь к еде, сериалам и прочей ерунде.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
@@ -3126,6 +3243,9 @@
 <dialog>
 <v><![CDATA[Но главное, когда меняешь много связей в мозге, то больше вероятность ошибок. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
@@ -3138,12 +3258,18 @@
 <dialog>
 <v><![CDATA[Даже не знаю, что на это сказать. Разве что: странно!]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_smile1]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
 <dialog>
 <v><![CDATA[И тогда в голову пришла такая крутая мысль! ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_smile2]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
@@ -3156,12 +3282,18 @@
 <dialog>
 <v><![CDATA[В итоге, сейчас я получаю огромное удовольствия, когда закрываю задачу!]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_confused]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[Я даже не знаю, поздравлять тебя или ругать. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_surprised]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3174,6 +3306,9 @@
 <dialog>
 <v><![CDATA[Очень на это надеюсь!]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black sad_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3184,7 +3319,7 @@
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
-<v><![CDATA[Испытываю очень смешанные чувства, в том числе злость и обиду.]]></v>
+<v><![CDATA[Испытываю очень смешанные чувства, в том числе грусть и злость.]]></v>
 </dialog>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -3198,18 +3333,27 @@
 <dialog>
 <v><![CDATA[Окей, а я работать!]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
 <dialog>
 <v><![CDATA[И прошу, не трогай мои вещи. Их уже мало осталось.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[Hide character vechna]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Девушка легла на пол и закрыла глаза. ]]></v>
 </action>
 <action>
-<v><![CDATA[Ее уже не было в этой комнате, она превращала набор 0 и 1, переданные ровером с далекой планеты в симуляцию, позволяющую пройтись по неизведанному миру каждому. ]]></v>
+<v><![CDATA[Ее уже не было в этой комнате, она превращала набор 0 и 1, переданные ровером с далекой планеты в симуляцию, позволяющую пройтись по неизведанному миру каждому.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed ]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Аш встал из-за стола. ]]></v>
 </action>
@@ -3234,24 +3378,36 @@
 <action>
 <v><![CDATA[Рядом с берегом, о который ударялись невысокие волны Лунной реки, состоящей из миллиардов нано-ботов, думал вслух Илли Онка.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Что создал я? Чип - нет. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Его создал дед. Сеть? Ее отец. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka angry]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[А что сделал я? ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -3261,12 +3417,18 @@
 <action>
 <v><![CDATA[Онка поднял голову вверх. Горький ком встал в горле, когда его взгляд уперся в темный потолок.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion onka regular]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Как велик соблазн жалости к себе и как я хочу дойти до конца. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka angry]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -3282,27 +3444,42 @@
 <action>
 <v><![CDATA[Он стукнул по металлической поверхности и вскрикнул от боли.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[В этот момент Онке в голову прилетела игрушка. ]]></v>
 </action>
 <action>
 <v><![CDATA[Аш и так бесился, еще этот нытик в его любимом месте.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[Не хотел попасть, честно.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka angry]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Онка молча смотрел на парня, он держал в руках прилетевшую в голову плюшевую игрушку.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black regular]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[Шутка. Не слишком больно?]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -3315,6 +3492,9 @@
 <dialog>
 <v><![CDATA[Это твое место силы? Думаю искать ли новое?]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3330,6 +3510,9 @@
 <action>
 <v><![CDATA[Аш смеется.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy1]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3366,20 +3549,47 @@
 <dialog>
 <v><![CDATA[У меня может не быть лишь нескольких решений, но со временем и они находятся.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[И это верно! Если не знаешь что делать — найди тех, кто знает. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[Онка]]></v>
+</character>
+<dialog>
+<v><![CDATA[У меня нет идей? ]]></v>
+</dialog>
 <character>
 <v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[У меня может не быть лишь нескольких решений, но со временем и они находятся.]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[И это верно! Если не знаешь что делать — найди тех, кто знает. ]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy2]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[У кого есть хорошие решения.]]></v>
 </dialog>
 <action>
-<v><![CDATA[Он как бы невзначай провел рукой по Ушкам. Онка следил за движением.]]></v>
+<v><![CDATA[В его взгляде показалось нечто зловещее, но тут же погасло.]]></v>
 </action>
 <character>
 <v><![CDATA[ОНКА]]></v>
@@ -3390,12 +3600,18 @@
 <action>
 <v><![CDATA[В его взгляде показалось нечто зловещее, но тут же погасло.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Хотя будто бывает иначе. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka regular]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -3408,9 +3624,15 @@
 <dialog>
 <v><![CDATA[Я еще не начинал искать инвестиции, но если речь идет о...]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka regular]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Онка приложил палец к губам и обшарил карманы. Не найдя что искал, он и принялся прощупывать карманы Аша. ]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black regular_confused]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Первая реакция — замереть, не потому что Заяц, а потому что непонятно что миллиардер может искать в твоих карманах.]]></v>
 </action>
@@ -3426,6 +3648,9 @@
 <dialog>
 <v><![CDATA[Это чертвово озеро единственное место не утыканное ими. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
@@ -3441,12 +3666,18 @@
 <action>
 <v><![CDATA[Аш растерялся, в непонятках, он отдал ему планшет из кармана.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion onka confused]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Ого! Ты что, воспитывался общественниками в приюте?]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3462,18 +3693,27 @@
 <action>
 <v><![CDATA[Онка молча на него смотрел. Было непонятно, что ему еще нужно.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[Бери раз спрашивал!]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Нет.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3486,6 +3726,9 @@
 <dialog>
 <v><![CDATA[Ты снимай! Я зашел в свой мунтер.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3510,6 +3753,9 @@
 <dialog>
 <v><![CDATA[Слишком простой, я бы даже постеснялся предъявлять претензии.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -3537,6 +3783,9 @@
 <dialog>
 <v><![CDATA[И сегодня я ищу проекты, которые должны увидеть свет. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka victory]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
