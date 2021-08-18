@@ -116,10 +116,13 @@ image max fight   = 'max_fight'
 
 
 image onka = 'onka'
-image onka regular = 'onka'
+image onka regular  = 'onka'
 image onka confused = 'onka_confused'
-image onka annoyed = 'onka_annoyed'
-image onka victory = 'onka_victory'
+image onka thinking = 'onka_thinking'
+image onka victory  = 'onka_victory'
+image onka angry    = 'onka_angry'
+image onka smile    = 'onka_smile'
+image onka sneaky   = 'onka_sneaky'
 
 
 image vechna = 'vechna_thinking'
