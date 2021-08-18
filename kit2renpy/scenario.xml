@@ -2122,6 +2122,24 @@
 <v><![CDATA[emotion fox shock]]></v>
 </noprintable_text>
 <character>
+<v><![CDATA[ОНКА]]></v>
+</character>
+<dialog>
+<v><![CDATA[Я схитрил на счет ошейника, знал что это фикция. Лучше сними его.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka annoyed]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[ОНКА]]></v>
+</character>
+<dialog>
+<v><![CDATA[А то потом объясняй в СМИ, когда это выйдет на рынок.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion fox shock]]></v>
+</noprintable_text>
+<character>
 <v><![CDATA[ОБЛАЧНЫЙ ЛИС]]></v>
 </character>
 <dialog>
@@ -2202,6 +2220,9 @@
 <dialog>
 <v><![CDATA[Мне кажется, в нем все прекрасно.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy2]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2475,6 +2496,36 @@
 <dialog>
 <v><![CDATA[Но есть смешанные – их испытывают чаще других, и это вызывает сложности.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy1]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Я разрабатываю универсальный язык эмоций. ]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Который сможет интуитивно понятным, визуальным языком показать ваши чувства другим.]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[На данный момент, Искусственный Интеллект Ушей учится узнавать и отображать базовые эмоции. ]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Но получая все больше данных, он сможет интерпретировать и интенсивность эмоций и метаэмоции.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_sad]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2544,6 +2595,9 @@
 <dialog>
 <v><![CDATA[Почему людям так важно понимать друг друга? ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_happy1]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2577,6 +2631,21 @@
 <dialog>
 <v><![CDATA[Достигнутый за счет универсального, визуального языка.]]></v>
 </dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[И когда узнает, не всегда с 99% степенью уверенности – отображает эмоцию на дисплее.]]></v>
+</dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[Чем менее четкое изображение на имплантах, тем меньше ИИ уверен – что верно определил эмоцию.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion onka regular]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[По залу прошелся шепот. Это был Илли и Лис.]]></v>
 </action>
@@ -2604,11 +2673,23 @@
 <dialog>
 <v><![CDATA[Есть вопрос! Общения в реальности мало. ]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[Импланты в виде Ушей Зайца ведь для неё?]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black black]]></v>
+</noprintable_text>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[В чем разница, на какое средство вывода информации передавать данные с чипа? ]]></v>
 </dialog>
 <character>
 <v><![CDATA[АШ]]></v>
@@ -2637,6 +2718,9 @@
 <dialog>
 <v><![CDATA[Общение это стресс – потому что тоже навык. Но мы не думаем об этом.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion black regular_annoyed]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[АШ]]></v>
 </character>
@@ -2838,6 +2922,9 @@
 <action>
 <v><![CDATA[На последних словах он сделал особенно яркий акцент.]]></v>
 </action>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_thinking]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[МАКСИМ]]></v>
 </character>
@@ -2937,6 +3024,9 @@
 <dialog>
 <v><![CDATA[Да, тяжелый вышел день! Но неплохой.]]></v>
 </dialog>
+<noprintable_text>
+<v><![CDATA[emotion vechna vechna_smile2]]></v>
+</noprintable_text>
 <action>
 <v><![CDATA[Она продолжала улыбаться, но быстро вспомнила про брата и сделала сочувствующее лицо. Но только на секунду.]]></v>
 </action>
@@ -3033,6 +3123,15 @@
 <dialog>
 <v><![CDATA[На счет эксперимента — все же хорошо, все прошло успешно! ]]></v>
 </dialog>
+<character>
+<v><![CDATA[ВЕЧНА]]></v>
+</character>
+<dialog>
+<v><![CDATA[А от слива презентации я бы тебя не спасла.]]></v>
+</dialog>
+<noprintable_text>
+<v><![CDATA[emotion black angry_var]]></v>
+</noprintable_text>
 <character>
 <v><![CDATA[ВЕЧНА]]></v>
 </character>
@@ -3429,6 +3528,27 @@
 <dialog>
 <v><![CDATA[Тогда понимаю.]]></v>
 </dialog>
+<character>
+<v><![CDATA[АШ]]></v>
+</character>
+<dialog>
+<v><![CDATA[У тебя значит депрессия? Нет идей для изобретений?]]></v>
+</dialog>
+<action>
+<v><![CDATA[]]></v>
+</action>
+<character>
+<v><![CDATA[Онка]]></v>
+</character>
+<dialog>
+<v><![CDATA[У меня нет идей? ]]></v>
+</dialog>
+<character>
+<v><![CDATA[Онка]]></v>
+</character>
+<dialog>
+<v><![CDATA[У меня может не быть лишь нескольких решений, но со временем и они находятся.]]></v>
+</dialog>
 <noprintable_text>
 <v><![CDATA[emotion black regular]]></v>
 </noprintable_text>
@@ -3436,7 +3556,7 @@
 <v><![CDATA[АШ]]></v>
 </character>
 <dialog>
-<v><![CDATA[У тебя значит депрессия? Нет идей для изобретений?]]></v>
+<v><![CDATA[И это верно! Если не знаешь что делать — найди тех, кто знает. ]]></v>
 </dialog>
 <noprintable_text>
 <v><![CDATA[emotion onka thinking]]></v>
@@ -3448,7 +3568,7 @@
 <v><![CDATA[У меня нет идей? ]]></v>
 </dialog>
 <character>
-<v><![CDATA[Онка]]></v>
+<v><![CDATA[АШ]]></v>
 </character>
 <dialog>
 <v><![CDATA[У меня может не быть лишь нескольких решений, но со временем и они находятся.]]></v>
@@ -3463,13 +3583,13 @@
 <v><![CDATA[emotion black regular_happy2]]></v>
 </noprintable_text>
 <character>
-<v><![CDATA[АШ]]></v>
+<v><![CDATA[ОНКА]]></v>
 </character>
 <dialog>
 <v><![CDATA[У кого есть хорошие решения.]]></v>
 </dialog>
 <action>
-<v><![CDATA[Он как бы невзначай провел рукой по Ушкам. Онка следил за движением.]]></v>
+<v><![CDATA[В его взгляде показалось нечто зловещее, но тут же погасло.]]></v>
 </action>
 <character>
 <v><![CDATA[ОНКА]]></v>

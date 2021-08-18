@@ -76,27 +76,36 @@ image black angry2            = 'black_angry2'
 image black annoyed           = 'black_annoyed'
 image black confused          = 'black_confused'
 image black disgust           = 'black_disgust'
-image black disgust1          = 'black_disgust1'     #
+image black disgust1          = 'black_disgust1'     
 image black fear              = 'black_fear'
-image black fear1             = 'black_fear1'        #
-image black happy1            = 'black_happy'
-image black happy2            = 'black_happy2'
+image black fear1             = 'black_fear1'        
 image black mad1              = 'black_mad1'
 image black mad2              = 'black_mad2'
 image black mad3              = 'black_mad3'
+image black mad4              = 'black_mad4'
 image black regular           = 'black_regular'
 image black regular_blood     = 'black_regular_blood'
+image black regular_fear      = 'black_regular_fear'      
+image black regular_confused  = 'regular_confused'  
+image black regular_angry     = 'black_regular_angry'    
+image black regular_happy2    = 'black_regular_happy2'    
+image black regular_happy1    = 'black_regular_happy1'    
+image black regular_surprised = 'regular_surprised' #
+image black regular_annoyed   = 'black_regular_annoyed'   
+image black regular_disgust   = 'black_regular_disgust'   
+image black regular_sad       = 'black_regular_sad'       
 image black sad               = 'black_sad'
-image black sad1              = 'black_sad1'         # 
+image black sad1              = 'black_sad1'         
 image black surprised         = 'black_surprised'
 image black surprised1        = 'black_surprised1'   # 
-image black veryangry         = 'black_veryangry'
+
 
 
 image fox       = 'fox_smile'
 image fox angry = 'fox_angry'
 image fox shock = 'fox_shock'
 image fox smile = 'fox_smile'
+image fox neon collar = 'fox_neon_collar'
 
 
 image max         = 'max_regular'
@@ -105,9 +114,13 @@ image max fight   = 'max_fight'
 
 
 image onka = 'onka'
+image onka regular  = 'onka'
 image onka confused = 'onka_confused'
-image onka annoyed = 'onka_annoyed'
-image onka victory = 'onka_victory'
+image onka thinking = 'onka_thinking'
+image onka victory  = 'onka_victory'
+image onka angry    = 'onka_angry'
+image onka smile    = 'onka_smile'
+image onka sneaky   = 'onka_sneaky'
 
 
 image vechna = 'vechna_thinking'
@@ -115,6 +128,7 @@ image vechna thinking = 'vechna_thinking'
 image vechna angry = 'vechna_angry'
 image vechna smile1 = 'vechna_smile1'
 image vechna smile2 = 'vechna_smile2'
+image vechna sad = 'vechna_sad'  #
 
 image digital_vechna = 'vechna_thinking'
 image digital_vechna thinking = 'vechna_thinking'
