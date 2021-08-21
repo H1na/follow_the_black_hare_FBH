@@ -67,6 +67,30 @@ init python:
         
         return mood
 
+    def show_learned_message():
+        global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
+                        
+        if all((mood == 'angry',angry>=40,not angry_shown )):
+            angry_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Злость') 
+        if all((mood == 'sad',sad>=40,not sad_shown )):
+            sad_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Грусть.') 
+        if all((mood == 'surprised',surprised>=40,not surprised_shown )):
+            surprised_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Удивление.') 
+        if all((mood == 'disgust',disgust>=40,not disgust_shown )):
+            disgust_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Отвращение.') 
+        if all((mood == 'mad',mad>=40,not mad_shown )):
+            mad_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Безумие.') 
+        if all((mood == 'fear',fear>=40,not fear_shown )):
+            fear_shown = True
+            renpy.show_screen('text_message','Изучена новая эмоция: Страх.') 
+        return
+
+
 ###########################################################################
 # Обьявление всех эмоций всех персонажей
 
@@ -136,25 +160,7 @@ image digital_vechna angry = 'vechna_angry'
 image digital_vechna smile1 = 'vechna_smile1'
 image digital_vechna smile2 = 'vechna_smile2'
 
-# болванчики для отсутствующих спрайтов. Удалить когда нарисуем.
-
-image black_fear1:
-    'black_fear'
-    matrixcolor InvertMatrix(value=1.0)
-
-image black_sad1:
-    'black_sad'
-    matrixcolor InvertMatrix(value=1.0)
-  
-image black_disgust1:
-    'black_disgust'
-    matrixcolor InvertMatrix(value=1.0)
-   
-image black_surprised1:
-    'black_surprised'
-    matrixcolor InvertMatrix(value=1.0)
  
-
 # спрайты случайно выбираемые 
 
 image black angry:
@@ -180,32 +186,102 @@ image black mad:
 
 image black angry_var:
     ConditionSwitch('angry>=40','black angry',
-                    'True','black annoyed')
+                    'angry>  0','black annoyed',
+                    'True','black regular_annoyed')
 
 image black sad_var:
     ConditionSwitch('sad>=40','black sad1',
-                    'True','black sad')
+                    'sad>  0','black sad',
+                    'True','black regular_sad')
 
 image black surprised_var:
     ConditionSwitch('surprised>=40','black surprised1',
-                    'True','black surprised')
+                    'True','black surprised',
+                    'True','black regular_surprised')
 
 image black disgust_var:
     ConditionSwitch('disgust>=40','black disgust1',
-                    'True','black disgust')
+                    'disgust>  0','black disgust',
+                    'True','black regular_disgust')
 
 image black mad_var:
     ConditionSwitch('mad>=40','black mad',
-                    'True','black mad1')
+                    'mad>  0','black mad1',
+                    'True','black regular_mad1')
 
 image black fear_var:
     ConditionSwitch('fear>=40','black fear1',
-                    'True','black fear')
+                    'fear>  0','black fear',
+                    'True','black regular_fear')
+                    
+image black mood:
+    ConditionSwitch(
+                    'mood=="angry"','black angry_var',
+                    'mood=="sad"','black sad_var',
+                    'mood=="surprised"','black surprised_var',
+                    'mood=="disgust"','black disgust_var',
+                    'mood=="mad"','black mad_var',
+                    'mood=="fear"','black fear_var',
+                    'True','black regular')
+                    
+                    
+image vechna reaction:
+    ConditionSwitch(
+    "mood == 'angry'",'vechna thinking',
+    "mood == 'sad'"  ,'vechna smile1',
+    "mood == 'surprised'",'vechna smile2'
+    "mood == 'disgust'",   'vechna angry'
+    "mood == 'mad'",    'vechna angry',
+    "mood == 'fear'", 'vechna thinking',
+    "True",'vechna thinking')
+
+image onka reaction:
+    ConditionSwitch(
+    "mood == 'angry'",'onka',
+    "mood == 'sad'",'onka confused',
+    "mood == 'surprised'",'onka victory',
+    "mood == 'disgust'",'onka',
+    "mood == 'mad'",'onka angry',
+    "mood == 'fear'",'onka',
+    "True",'onka')
+
+image fox reaction:
+    ConditionSwitch(
+    "mood == 'angry'",'fox angry',
+    "mood == 'sad'",'fox smile',
+    "mood == 'surprised'",'fox smile',
+    "mood == 'disgust'",'fox shock',
+    "mood == 'mad'",'fox shock',
+    "mood == 'fear'",'fox shock',
+    "True",'fox shock')
+
+image max reaction:
+    ConditionSwitch(
+    "mood == 'angry'", 'max fight',
+    "mood == 'sad'",'max regular',
+    "mood == 'surprised'",'max regular',
+    "mood == 'disgust'",'max fight',
+    "mood == 'mad'",'max fight',
+    "mood == 'fear'",'max regular',
+    'True','max regular')
+
+image natasha reaction:
+    ConditionSwitch(
+    "mood == 'angry'",'natasha sad',
+    "mood == 'sad'",'natasha smile',
+    "mood == 'surprised'",'natasha normal',
+    "mood == 'disgust'",'natasha smile',
+    "mood == 'mad'",'natasha angry',
+    "mood == 'fear'",'natasha smile',
+    "True",'natasha smile')
+
 
 
 #виджет для отслеживания настроения аша
 screen mood_tracker:
-    timer .01 repeat True action SetVariable('mood',get_mood(mood))
+    #timer .01 repeat True action SetVariable('mood',get_mood(mood))
+    text str(renpy.showing('black angry_var'))
+    timer .01 repeat True action Function(show_learned_message)
 
 
 # экран со статами Аша
@@ -259,8 +335,10 @@ label angry_sad:
         'Выбери эмоцию.'                                           
         "Злость":                                               
             $ angry +=10    
+            $ mood = 'angry'
         "Грусть":                                                    
             $ sad +=10                                     
+            $ mood = 'sad'
     return
 
 label surprised_disgust:
@@ -268,8 +346,10 @@ label surprised_disgust:
         'Выбери эмоцию.'                                           
         "Удивление":                                               
             $ surprised +=10    
+            $ mood = 'surprised'
         "Отвращение":                                                    
             $ disgust +=10                                     
+            $ mood = 'disgust'
     return
 
 label mad_fear:
@@ -277,8 +357,10 @@ label mad_fear:
         'Выбери эмоцию.'                                           
         "Безумие":                                               
             $ mad +=10    
+            $ mood = 'mad'
         "Страх":                                                    
             $ fear +=10                                     
+            $ mood = 'fear'
     return
 
 #функции для перезаписи эмоций героев реагирующих на острые эмоции Аша

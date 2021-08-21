@@ -11,7 +11,7 @@
 
 label menu_example:
 
-    scene helpcentre
+    scene helpcenter
     show screen stats
     show black regular
     black 'Я ошибался и не должен был давать тебе то, что ты просила. Все мои действия во благо, стали злом. Все.'
@@ -24,39 +24,45 @@ label menu_example:
 
             "злость":                                                   #cледующий пункт (итд)
                 $ angry +=10                                             #Действия если выбрать этот пункт
-                show black angry_var
-                'Аш может злиться'
-                hide black
-                show vechna smile1
-                call reaction_vechna
-                'Вечна может реагировать'
-                hide vechna
-
+                $ mood = 'angry'
             "грусть":                                                   #cледующий пункт (итд)
                 $ sad +=10                                             #Действия если выбрать этот пункт
-                show black sad_var
+                $ mood = 'sad'
 
             "удивление":                                                   #cледующий пункт (итд)
                 $ surprised +=10                                             #Действия если выбрать этот пункт
-                show black surprised_var
+                $ mood = 'surprised'
 
             "отвращение":                                                   #cледующий пункт (итд)
                 $ disgust +=10                                             #Действия если выбрать этот пункт
-                show black disgust_var
+                $ mood = 'disgust'
 
             "безумие":                                                   #cледующий пункт (итд)
                 $ mad +=10                                             #Действия если выбрать этот пункт
-                show black mad_var
+                $ mood = 'mad'
 
             "страх":                                                    #Пункт меню (кнопка)
                 $ fear +=10                                             #Действия если выбрать этот пункт
-                show black fear_var
+                $ mood = 'fear'
 
                     
             '(cбросить счетчики)':
                 $ fear = 0
                 $ angry = 0
-                show black regular
+                $ surprised = 0
+                $ disgust = 0
+                $ mad = 0
+                $ fear = 0
+                $ mood = regular
+
+        show black mood
+        'Герой что-то сказал'
+        hide black
+        show fox reaction
+        #call reaction_vechna
+        'и ему ответили'
+        hide fox
+
                 
 label fear_angry: #example label called on Choose 
     # 'Страха: [fear], Злости: [angry]'
