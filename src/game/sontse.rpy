@@ -169,6 +169,11 @@ image digital_vechna thinking = 'digital_vechna_thinking'
 image digital_vechna smile1 = 'digital_vechna_smile1'
 image digital_vechna smile2 = 'digital_vechna_smile2'
 
+
+image natasha = 'natasha_regular'
+image natasha smile = 'natasha_smile'
+image natasha angry = 'natasha_angry'
+image natasha sad = 'natasha_sad'
  
 # спрайты случайно выбираемые 
 
