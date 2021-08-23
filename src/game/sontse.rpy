@@ -105,7 +105,17 @@ image fox       = 'fox_smile'
 image fox angry = 'fox_angry'
 image fox shock = 'fox_shock'
 image fox smile = 'fox_smile'
-image fox neon collar = 'fox_neon_collar'
+image fox collar angry = 'fox_collar_angry'
+image fox collar smile = 'fox_collar_smile'
+image fox collar shock = 'fox_collar_shock'
+
+image high fox = 'high_fox_angry'
+image high fox smile = 'high_fox_smile'
+image high fox angry = 'high_fox_angry'
+image high fox shock = 'high_fox_shock'
+
+image wild fox = 'fox_wild_regular'
+image wild fox = 'fox_wild_regular'
 
 
 image maks         = 'max_regular'
@@ -128,15 +138,13 @@ image vechna thinking = 'vechna_thinking'
 image vechna angry = 'vechna_angry'
 image vechna smile1 = 'vechna_smile1'
 image vechna smile2 = 'vechna_smile2'
-image vechna sad = 'vechna_sad'  #
+image vechna sad = 'vechna_sad' 
 
-image digital_vechna = 'vechna_thinking'
-image digital_vechna thinking = 'vechna_thinking'
-image digital_vechna angry = 'vechna_angry'
-image digital_vechna smile1 = 'vechna_smile1'
-image digital_vechna smile2 = 'vechna_smile2'
+image digital_vechna = 'digital_vechna_thinking'
+image digital_vechna thinking = 'digital_vechna_thinking'
+image digital_vechna smile1 = 'digital_vechna_smile1'
+image digital_vechna smile2 = 'digital_vechna_smile2'
 
-# болванчики для отсутствующих спрайтов. Удалить когда нарисуем.
 
 image black_fear1:
     'black_fear'
