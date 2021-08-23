@@ -130,6 +130,8 @@ for item in root:
             res.append("\t{}".format(text))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
+            characters_mood["black"] = "mood"
+
         elif(command =="emotion"):
             characters_mood[result[1]] = result[2]
         elif(command =="show_character"):
