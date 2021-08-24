@@ -139,7 +139,7 @@ image high fox angry = 'high_fox_angry'
 image high fox shock = 'high_fox_shock'
 
 image wild fox = 'fox_wild_regular'
-image wild fox = 'fox_wild_regular'
+image wild fox regular = 'fox_wild_regular'
 
 
 image maks         = 'max_regular'
