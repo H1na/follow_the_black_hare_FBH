@@ -140,11 +140,13 @@ image high fox shock = 'high_fox_shock'
 
 image wild fox = 'fox_wild_regular'
 image wild fox regular = 'fox_wild_regular'
+image wild fox crazy = 'fox_wild_crazy'
 
 
 image maks         = 'max_regular'
 image maks regular = 'max_regular'
 image maks fight   = 'max_fight'
+image maks angry   = 'max_angry'
 
 
 image onka = 'onka_regular'
@@ -155,6 +157,8 @@ image onka victory  = 'onka_victory'
 image onka angry    = 'onka_angry'
 image onka smile    = 'onka_smile'
 image onka sneaky   = 'onka_sneaky'
+image onka danger   = 'onka_danger'
+image onka sad      = 'onka_sad'
 
 
 image vechna = 'vechna_thinking'
