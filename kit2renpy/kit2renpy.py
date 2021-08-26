@@ -125,9 +125,9 @@ for item in root:
         
         #parsing commands
         if(command == "jump"):
-            res.append("\t{}".format(text))
+            res.append("\tjump {}".format(result[1]))
         elif(command == "scene"):
-            res.append("\t{}".format(text))
+            res.append("\tscene {}".format(result[1]))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
             characters_mood["black"] = "mood"
