@@ -7,12 +7,14 @@ define stub_character = Character(_('Заглушка'), color="#c8ffc8")
 define vechna = Character(_('Вечна'), color="#c8ffc8")
 define digital_vechna = Character(_('Вечна цифровая'), color="#c8ffc8", )
 
-define fox = Character(_('Лис'), color="#c8ffc8", )
+
 define maks = Character(_('Макс'), color="#c8ffc8", )
 
 define natasha = Character(_('НАТАША'), color="#c8ffc8", )
-define other_fox = Character(_('ДРУГОЙ ЛИС'), color="#c8ffc8", )
-define fox_from_3 = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#c8ffc8", )
+define fox = Character(_('Облачный Лис'), color="#c8ffc8", )
+define hight_fox = Character(_('ЛИС'), color="#c8ffc8", )
+define wild_fox = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#c8ffc8", )
+
 define man = Character(_('МУЖЧИНА'), color="#c8ffc8", )
 
 #characters with no sprites
