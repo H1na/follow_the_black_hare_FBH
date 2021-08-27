@@ -51,6 +51,8 @@ characters_mood = {
     'digital_vechna': 'regular',
 
     'fox': 'regular',
+    'hight_fox': 'smile',
+    'wild_fox': 'regular',
     'maks': 'regular',
 
     "natasha": 'tbd',
