@@ -26,7 +26,7 @@ characters = {
     "МАКСИМ": 'maks',
     "ОНКА": 'onka',
     "ОБЛАЧНЫЙ ЛИС": 'fox',
-    "ЛИС": 'fox',
+    "ЛИС": 'hight_fox',
 
     "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'robotic_voice',
     "ГОЛОС ИЗ СЕТИ": 'voice_from_net',
@@ -38,8 +38,7 @@ characters = {
     "ЖУРНАЛИСТ": 'journalist',
 
     "НАТАША": 'natasha',
-    "ДРУГОЙ ЛИС": 'other_fox',
-    "ЛИС ИЗ КАСТЫ 3": 'fox_from_3',
+    "ЛИС ИЗ КАСТЫ 3": 'wild_fox',
     
     "МУЖЧИНА": 'man',
     "ЧЕРНЫЙ ЗАЯЦ": "black",
