@@ -126,22 +126,22 @@ image black regular_mad       = 'black_sad'
 
 
 
-image fox       = 'fox_smile'
-image fox angry = 'fox_angry'
-image fox shock = 'fox_shock'
-image fox smile = 'fox_smile'
+image fox              = 'fox_smile'
+image fox angry        = 'fox_angry'
+image fox shock        = 'fox_shock'
+image fox smile        = 'fox_smile'
 image fox collar_angry = 'fox_collar_angry'
 image fox collar_smile = 'fox_collar_smile'
 image fox collar_shock = 'fox_collar_shock'
 
-image hight_fox = 'high_fox_angry'
+image hight_fox       = 'high_fox_angry'
 image hight_fox smile = 'high_fox_smile'
 image hight_fox angry = 'high_fox_angry'
 image hight_fox shock = 'high_fox_shock'
 
-image wild_fox = 'fox_wild_regular'
+image wild_fox         = 'fox_wild_regular'
 image wild_fox regular = 'fox_wild_regular'
-image wild_fox crazy = 'fox_wild_crazy'
+image wild_fox crazy   = 'fox_wild_crazy'
 
 
 image maks         = 'max_regular'
@@ -150,7 +150,7 @@ image maks fight   = 'max_fight'
 image maks angry   = 'max_angry'
 
 
-image onka = 'onka_regular'
+image onka          = 'onka_regular'
 image onka regular  = 'onka_regular'
 image onka confused = 'onka_confused'
 image onka thinking = 'onka_thinking'
@@ -162,23 +162,24 @@ image onka danger   = 'onka_danger'
 image onka sad      = 'onka_sad'
 
 
-image vechna = 'vechna_thinking'
+image vechna          = 'vechna_thinking'
 image vechna thinking = 'vechna_thinking'
-image vechna angry = 'vechna_angry'
-image vechna smile1 = 'vechna_smile1'
-image vechna smile2 = 'vechna_smile2'
-image vechna sad = 'vechna_sad' 
+image vechna angry    = 'vechna_angry'
+image vechna smile1   = 'vechna_smile1'
+image vechna smile2   = 'vechna_smile2'
+image vechna sad      = 'vechna_sad' 
 
-image digital_vechna = 'digital_vechna_thinking'
+image digital_vechna          = 'digital_vechna_thinking'
 image digital_vechna thinking = 'digital_vechna_thinking'
-image digital_vechna smile1 = 'digital_vechna_smile1'
-image digital_vechna smile2 = 'digital_vechna_smile2'
+image digital_vechna smile1   = 'digital_vechna_smile1'
+image digital_vechna smile2   = 'digital_vechna_smile2'
 
 
-image natasha = 'natasha_regular'
-image natasha smile = 'natasha_smile'
-image natasha angry = 'natasha_angry'
-image natasha sad = 'natasha_sad'
+image natasha         = 'natasha_regular'
+image natasha regular = 'natasha_regular'
+image natasha smile   = 'natasha_smile'
+image natasha angry   = 'natasha_angry'
+image natasha sad     = 'natasha_sad'
  
 # спрайты случайно выбираемые 
 
