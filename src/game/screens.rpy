@@ -293,6 +293,42 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+image start_idle:
+    'start'
+    alpha .5
+    
+image continue_idle:
+    'continue'
+    alpha .5
+
+image exit_idle:
+    'exit'
+    alpha .5
+image options_idle:
+    'options'
+    alpha .5
+image progress_idle:
+    'progress'
+    alpha .5
+image savefiles_idle:
+    'savefiles'
+    alpha .5
+    
+
+init +1 python:
+    class LoadMostRecent(Action):
+
+        def __init__(self):
+            self.slot = renpy.newest_slot()
+
+        def __call__(self):
+            renpy.load(self.slot)
+
+        def get_sensitive(self):
+            return self.slot is not None
+  
+
+
 screen navigation():
 
     vbox:
@@ -300,42 +336,44 @@ screen navigation():
 
         xpos gui.navigation_xpos
         yalign 0.5
+        yfill True
 
         spacing gui.navigation_spacing
+        
+        null height 50
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            imagebutton idle 'start_idle' hover 'start' action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            imagebutton idle 'progress_idle' hover 'progress' action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+        imagebutton idle 'continue_idle' hover 'continue' action LoadMostRecent()
 
-        textbutton _("Load") action ShowMenu("load")
+        imagebutton idle 'savefiles_idle' hover 'savefiles' action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        imagebutton idle 'options_idle' hover 'options' action ShowMenu("preferences")
 
-        if _in_replay:
+#        if not main_menu:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+#            textbutton _("Main Menu") action MainMenu()
 
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton idle 'exit_idle' hover 'exit' action Quit(confirm=not main_menu)
+
+    use volume_bar
+    
+screen volume_bar:
+    hbox:
+        align (.0,1.0)
+        add 'no_volume_icon'
+        bar  base_bar 'volume_line' thumb 'volume_cursor' xsize 300 value Preference("music volume")
+        add 'volume_line'
 
 
 style navigation_button is gui_button
@@ -362,11 +400,12 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    add gui.main_menu_background
+    #add gui.main_menu_background
+    add 'main_menu_bg'
 
     ## This empty frame darkens the main menu.
-    frame:
-        pass
+    #frame:
+    #    pass
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
@@ -437,8 +476,9 @@ screen game_menu(title, scroll=None):
         hbox:
 
             ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
+            if main_menu:
+                frame:
+                    style "game_menu_navigation_frame"
 
             frame:
                 style "game_menu_content_frame"
@@ -476,14 +516,17 @@ screen game_menu(title, scroll=None):
 
                     transclude
 
-    use navigation
+    if main_menu:
+        use navigation
+    else:
+        use arrow_back_screen
 
-    textbutton _("Return"):
-        style "return_button"
+#    textbutton _("Return"):
+#        style "return_button"
 
-        action Return()
+#        action Return()
 
-    label title
+    #label title
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -609,6 +652,7 @@ screen file_slots(title):
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
     use game_menu(title):
+    #fixed:
 
         fixed:
 
@@ -630,7 +674,7 @@ screen file_slots(title):
 
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+                #style_prefix "slot"
 
                 xalign 0.5
                 yalign 0.5
@@ -644,15 +688,20 @@ screen file_slots(title):
                     button:
                         action FileAction(slot)
 
-                        has vbox
+                        has hbox
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
+                        text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("empty slot")):
+                            #style "slot_time_text"
+                            size 40
+                            xalign .0
+                            yalign .5
 
                         text FileSaveName(slot):
-                            style "slot_name_text"
+                            #style "slot_name_text"
+                            size 40
+                            xalign .0
 
                         key "save_delete" action FileDelete(slot)
 
@@ -679,6 +728,8 @@ screen file_slots(title):
 
                 textbutton _(">") action FilePageNext()
 
+screen arrow_back_screen:
+    imagebutton idle 'arrow_back' action Return()
 
 style page_label is gui_label
 style page_label_text is gui_label_text
@@ -767,21 +818,21 @@ screen preferences():
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
-                vbox:
-                    style_prefix "radio"
-                    label _("Language")
+#                vbox:
+#                    style_prefix "radio"
+#                    label _("Language")
 
                     # Real languages should go alphabetical order by English name.
-                    textbutton "English" text_font "DejaVuSans.ttf" action Language(None)
-                    textbutton "Français" text_font "DejaVuSans.ttf" action Language("french")
-                    textbutton "Русский" text_font "DejaVuSans.ttf" action Language("russian")
-                    textbutton "Español" text_font "DejaVuSans.ttf" action Language("spanish")
-                    textbutton "한국어" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("korean")
-                    textbutton "日本語" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("japanese")
-                    textbutton "简体中文" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("schinese")
+#                    textbutton "English" text_font "DejaVuSans.ttf" action Language(None)
+#                    textbutton "Français" text_font "DejaVuSans.ttf" action Language("french")
+#                    textbutton "Русский" text_font "DejaVuSans.ttf" action Language("russian")
+#                    textbutton "Español" text_font "DejaVuSans.ttf" action Language("spanish")
+#                    textbutton "한국어" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("korean")
+#                    textbutton "日本語" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("japanese")
+#                    textbutton "简体中文" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("schinese")
 
                     # This should be last.
-                    textbutton "Pig Latin" text_font "DejaVuSans.ttf" action Language("piglatin")
+#                    textbutton "Pig Latin" text_font "DejaVuSans.ttf" action Language("piglatin")
 
 
 #end language_picker
@@ -1474,11 +1525,11 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    #background "gui/phone/overlay/main_menu.png"
 
 style game_menu_outer_frame:
     variant "small"
-    background "gui/phone/overlay/game_menu.png"
+    #background "gui/phone/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     variant "small"

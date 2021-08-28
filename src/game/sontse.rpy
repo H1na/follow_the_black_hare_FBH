@@ -1,8 +1,13 @@
-
-
+init:
+    define config.mouse = { }
+    define config.mouse['default'] = [ ( "gui/mouse0.png", 0, 0),( "gui/mouse1.png", 0, 0),( "gui/mouse2.png", 0, 0) ]
 
 #Функция отслеживания эмоций Аша
 init python:
+    
+    LEARN_CAP = 30
+    
+    
     mood = 'regular'
     #вот тут мне и захотелось в рефакторинг, классы и прочие прелести вкусного кода.
     
@@ -10,7 +15,7 @@ init python:
         global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
                         
         if renpy.showing('black angry_var'):
-            if angry>=40:
+            if angry>=LEARN_CAP:
                 
                 if not angry_shown:
                     angry_shown = True
@@ -21,7 +26,7 @@ init python:
                 return 'regular'
         
         if renpy.showing('black sad_var'):
-            if sad>=40:
+            if sad>=LEARN_CAP:
                 return 'sad'
                 if not sad_shown:
                     sad_shown = True
@@ -30,7 +35,7 @@ init python:
                 return 'regular'
         
         if renpy.showing('black surprised_var'):
-            if surprised>=40:
+            if surprised>=LEARN_CAP:
                 if not surprised_shown:
                     surprised_shown = True
                     renpy.show_screen('text_message','Изучена новая эмоция: Удивление.') 
@@ -39,7 +44,7 @@ init python:
                 return 'regular'
         
         if renpy.showing('black disgust_var'):
-            if disgust>=40:
+            if disgust>=LEARN_CAP:
                 if not disgust_shown:
                     disgust_shown = True
                     renpy.show_screen('text_message','Изучена новая эмоция: Отвращение.') 
@@ -48,7 +53,7 @@ init python:
                 return 'regular'
         
         if renpy.showing('black mad_var'):
-            if mad>=40:
+            if mad>=LEARN_CAP:
                 if not mad_shown:
                     mad_shown = True
                     renpy.show_screen('text_message','Изучена новая эмоция: Безумие.') 
@@ -57,7 +62,7 @@ init python:
                 return 'regular'
         
         if renpy.showing('black fear_var'):
-            if fear>=40:
+            if fear>=LEARN_CAP:
                 if not fear_shown:
                     fear_shown = True
                     renpy.show_screen('text_message','Изучена новая эмоция: Страх.') 
@@ -70,22 +75,22 @@ init python:
     def show_learned_message():
         global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
                         
-        if all((mood == 'angry',angry>=40,not angry_shown )):
+        if all((mood == 'angry',angry>=LEARN_CAP,not angry_shown )):
             angry_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Злость') 
-        if all((mood == 'sad',sad>=40,not sad_shown )):
+        if all((mood == 'sad',sad>=LEARN_CAP,not sad_shown )):
             sad_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Грусть.') 
-        if all((mood == 'surprised',surprised>=40,not surprised_shown )):
+        if all((mood == 'surprised',surprised>=LEARN_CAP,not surprised_shown )):
             surprised_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Удивление.') 
-        if all((mood == 'disgust',disgust>=40,not disgust_shown )):
+        if all((mood == 'disgust',disgust>=LEARN_CAP,not disgust_shown )):
             disgust_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Отвращение.') 
-        if all((mood == 'mad',mad>=40,not mad_shown )):
+        if all((mood == 'mad',mad>=LEARN_CAP,not mad_shown )):
             mad_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Безумие.') 
-        if all((mood == 'fear',fear>=40,not fear_shown )):
+        if all((mood == 'fear',fear>=LEARN_CAP,not fear_shown )):
             fear_shown = True
             renpy.show_screen('text_message','Изучена новая эмоция: Страх.') 
         return
@@ -94,7 +99,7 @@ init python:
 ###########################################################################
 # Обьявление всех эмоций всех персонажей
 
-image black                   = 'black_regular'
+# image black                   = 'black_regular'
 image black angry1            = 'black_angry1'
 image black angry2            = 'black_angry2'
 image black annoyed           = 'black_annoyed'
@@ -181,6 +186,8 @@ image natasha smile   = 'natasha_smile'
 image natasha angry   = 'natasha_angry'
 image natasha sad     = 'natasha_sad'
  
+
+ 
 # спрайты случайно выбираемые 
 
 image black angry:
@@ -205,32 +212,32 @@ image black mad:
 # спрайты зависимые от статов
 
 image black angry_var:
-    ConditionSwitch('angry>=40','black angry',
+    ConditionSwitch('angry>=LEARN_CAP','black angry',
                     'angry>  0','black annoyed',
                     'True','black regular_annoyed')
 
 image black sad_var:
-    ConditionSwitch('sad>=40','black sad1',
+    ConditionSwitch('sad>=LEARN_CAP','black sad1',
                     'sad>  0','black sad',
                     'True','black regular_sad')
 
 image black surprised_var:
-    ConditionSwitch('surprised>=40','black surprised1',
+    ConditionSwitch('surprised>=LEARN_CAP','black surprised1',
                     'True','black surprised',
                     'True','black regular_surprised')
 
 image black disgust_var:
-    ConditionSwitch('disgust>=40','black disgust1',
+    ConditionSwitch('disgust>=LEARN_CAP','black disgust1',
                     'disgust>  0','black disgust',
                     'True','black regular_disgust')
 
 image black mad_var:
-    ConditionSwitch('mad>=40','black mad',
+    ConditionSwitch('mad>=LEARN_CAP','black mad',
                     'mad>  0','black mad1',
                     'True','black regular_mad1')
 
 image black fear_var:
-    ConditionSwitch('fear>=40','black fear1',
+    ConditionSwitch('fear>=LEARN_CAP','black fear1',
                     'fear>  0','black fear',
                     'True','black regular_fear')
                     
@@ -459,3 +466,27 @@ label reaction_natasha:
     elif mood == 'fear':
         show natasha smile
     return
+
+
+
+# экраны
+
+label splashscreen:
+    scene screen_bg
+    show stiame:
+        truecenter
+        alpha .0
+        ease 1 alpha 1.0
+        1.0
+        ease 1 alpha .0
+    pause 3
+    hide stiame
+    show splashscreen_logo:
+        alpha .0
+        ease 1 alpha 1.0
+        2.0
+        ease 1 alpha .0
+    pause 4
+    hide logo_screen
+    return
+    
