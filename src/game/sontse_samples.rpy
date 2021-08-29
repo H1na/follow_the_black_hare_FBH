@@ -18,7 +18,7 @@ label menu_example:
     call screen text_message("Распознавай эмоции героя, это позволит Ушам Зайца показывать эмоции автоматически. От того,  как часто ты узнаешь эмоцию, зависит изображение на имплантах")
 
     while True:
-        'Страха: [fear], Злости: [angry]'
+        'итд'
         menu:                                                           #объявляем меню
             'Выбери эмоцию.'                                            #Вопрос отображаемый вместе с меню (необязательная строчка)
 
@@ -53,12 +53,23 @@ label menu_example:
                 $ disgust = 0
                 $ mad = 0
                 $ fear = 0
-                $ mood = regular
+                $ mood = 'regular'
 
         show black mood
-        'Герой что-то сказал'
+        black 'я что-то сказал'
         hide black
-        show fox reaction
+        show vechna reaction
+        vechna 'а я что-то ответила'
+        hide vechna
+        show maks reaction
+        maks 'соскучился, дружок?'
+        hide maks
+        show onka reaction
+        onka 'зобовно'
+        hide onka
+        show natasha reaction
+        natasha 'пприветик'
+        hide natasha
         #call reaction_vechna
         'и ему ответили'
         hide fox
