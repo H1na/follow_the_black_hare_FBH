@@ -88,6 +88,9 @@ scene_counter = 1
 
 character = None
 
+shown_character = None
+shown_mood = None
+
 for item in root:
     # print(item.tag)
     
@@ -126,6 +129,8 @@ for item in root:
         
         #parsing commands
         if(command == "jump"):
+            shown_character = None
+            shown_mood = None
             res.append("\tjump {}".format(result[1]))
         elif(command == "scene"):
             res.append("\tscene {}".format(result[1]))
@@ -138,6 +143,8 @@ for item in root:
             character = result[1]
             res.append("\tshow {} {}".format(character, characters_mood[character]))
         elif(command =="hide_character"):
+            shown_character = None
+            shown_mood = None
             res.append("\thide {}".format(result[1]))
         elif(command == "change_ash_name"):
             res.append('\t$ash_name="Черный заяц"')
@@ -155,14 +162,19 @@ for item in root:
             res.append("\thide {}".format(character)) 
         
         character = characters[ch]
-        res.append("\tshow {} {}".format(character, characters_mood[character]))
+        
+        if(character != shown_character) and (shown_mood != characters_mood[character]):
+            res.append("\tshow {} {}".format(character, characters_mood[character]))
+            shown_character = character
+            shown_mood = characters_mood[character]
 
     elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
     else:
         print("Found unknown tag: ", item.tag)       
         
-        
+
+
 output = prepate_renpy_output(res)
 
 save_file(output, "../src/game/frb.rpy")
