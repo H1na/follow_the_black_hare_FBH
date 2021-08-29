@@ -1,92 +1,48 @@
 label scene_1:
     #Здесь мы рассказываем о том, где они живую и что это - опасное место. Где бояться нужно не только природы, но и себя. Аш винит себя, что это он подвел Вечну к копированию. В сцене герой должен быть крут и логичен. Он рассказывает о законе копирования.
     scene black_background
-    hide black
     #(Появляется фон.)
     #(Начинается музыка.)
     #(На фоне музыки раздается вздох молодого парня.)
     #(Появляется текст.)
-    hide black
     show black regular
     black "В начале двадцать первого века самыми большими страхами людей были высота и темнота. "
-    hide black
-    show black regular
     black "В 22 веке бо́льшая часть населения Земли вынуждена десять лет жить на Луне. "
-    hide black
-    show black regular
     black "Все – ради науки. "
-    hide black
-    show black regular
     black "А люди больше всего на свете боятся разгерметизации лунных станций. "
-    hide black
-    show black regular
     black "В ту ночь я спал в кроличьем Куполе, созданном для спасения животных при авариях."
     #(CG — спящий кролик. Раздается звук сирены. )
     #(Сменяется: CG — спящий кролик в красном, аварийном освящении.)
-    hide black
-    hide black
-    show black regular
     black "Я услышал, как кто-то закрыл люк моего крошечного купола."
     #(Звук закрытия механического люка на фоне сирены и тишина.)
-    hide black
-    show black regular
     black "Внутрь кто-то проскользнул... Это была моя девятилетняя сестра."
     #(Кролик в аварийном освящении погружается в полную темноту.)
-    hide black
-    show black regular
     black "Вечна ладонями закрыла мне глаза. Кролики вокруг задрожали."
-    hide black
-    show black regular
     black "А поверхность Луны отозвалась вибрацией."
     #(Эффект вибрации. Музыка развивается, становится активной.)
     #(Звук разрушения, крики, звон стекла.)
-    hide black
-    show black regular
     black "Я не мог ничего видеть, но... я слышал."
     #(Стук ладоней по Куполу.)
-    hide black
-    show black regular
     black "Смерть... К нам стучались. К нам ломились! "
-    hide black
-    show black regular
     black "Вечна могла открыть, верно? Но она не сделала этого."
     #(Пауза, темный экран и просто музыка 1 секунду.)
-    hide black
-    show black regular
     black "Это мое самое страшное воспоминание. Но так же и самое любимое."
-    show black regular
     black "Я понял, что есть та, которая найдет меня, даже когда мир рухнет."
-    hide black
-    show black regular
     black "Когда он расщепится на атомы в отголосках памяти."
-    hide black
-    show black regular
     black "Ее погубило мое изобретение. "
-    hide black
-    show black regular
     black "У любой технологии есть темная сторона."
-    hide black
-    show black regular
     black "Желая обучить программный код распознавать эмоции, я создал монстра..."
-    hide black
-    show black regular
     black "...Сделал её монстром... А поплатилась за это она.."
-    hide black
-    show black regular
     black "Поплатилась три часа назад."
     jump scene_2
 
 
 label scene_2 :
-    scene lake
+    scene station_corridor
     #В этой сцене мы должны увидеть, как герой стал крутым парнем из сцены 1. Он шел чтоб спасти девушку от закона копирования, но не смог. Виртуальная Вечна удалила реальную. Как? Это останется загадкой, но потом выясниться – что это Онка
     narrator "Тремя часами ранее."
-    show black regular
-    narrator "Перед глазами Аша высветилось уведомление: \"Твоя сестра в Центре Копирования\"."
     show black regular_confused
     narrator "В голове парня мелькнула мысль: \"Что она там делает?\""
-    hide black
-    scene station_corridor
     show black regular_angry
     narrator "Он несся по коридорам станции, пока не остановился перед дверью."
     show black regular_fear
@@ -113,7 +69,6 @@ label scene_2 :
     narrator "А затем радость сменилась нарастающим чувством тревоги."
     robotic_voice "Причина: копия в сети признана первичной личностью."
     hide robotic_voice
-    show vechna angry
     vechna "Эм, как так? Стоп-стоп-стоп! Обычно все наоборот!"
     show digital_vechna smile1
     narrator "Перед глазами Вечны развернулась голограмма. "
@@ -133,15 +88,12 @@ label scene_2 :
     narrator "Ведь она поступила бы точно так же."
     show vechna angry
     vechna "Не удаляй меня! Слышишь?!"
-    show vechna angry
     vechna "Здесь же Аш, как ты можешь?.."
     narrator "Ее крик взорвал стены Центра Копирования. Но дошли ли ее слова до копии?"
     hide vechna
     show digital_vechna thinking
     digital_vechna "Его не должно здесь быть. К тому же, на моем месте ты поступила бы также. "
-    show digital_vechna thinking
     digital_vechna "Мы обе это понимаем, верно?.. Я не могу делить с кем-то свою индивидуальность."
-    show digital_vechna thinking
     digital_vechna "Мы не можем существовать в двух экземплярах."
     show vechna sad
     narrator "Лежа на кушетке, девушка глубоко дышала, пытаясь собраться с мыслями."
@@ -149,9 +101,7 @@ label scene_2 :
     narrator "Она облизнула губы, и ее голос зазвучал спокойно."
     show vechna smile2
     vechna "Я знаю, почему мы поступаем именно так. "
-    show vechna smile2
     vechna "И ты, так же как и я, знаешь основное допущение. Которое ломает все аргументы."
-    show vechna smile2
     vechna "Зачем тебе индивидуальность? "
     hide vechna
     show digital_vechna thinking
@@ -159,27 +109,21 @@ label scene_2 :
     show vechna sad
     narrator "Эти слова сильно задели девушку на кушетке. "
     narrator "Ирония в том, что это были слова копии в сети, но они удивительно точно передавали ее собственные недавние размышления."
-    show vechna thinking
     vechna "Ты и так получаешь мою мечту, дрянь!"
     show vechna angry
     vechna "Я не смогу сама попасть в сеть! Это можешь сделать только ты — моя копия. "
-    show vechna angry
     vechna "Ты! Ты получишь вычислительные мощности!"
     hide vechna
     show digital_vechna smile1
     digital_vechna "Именно поэтому цифровая копия — ведущее сознание. "
-    show digital_vechna smile1
     digital_vechna "В цифре я сделаю больше, чем две \"настоящие\" Вечны. "
-    show digital_vechna smile1
     digital_vechna "Ты сама знаешь про уговор!"
     hide digital_vechna
     show vechna sad
     vechna "Это ошибка! Такого уговора не было!.."
     narrator "Девушка перешла на шепот, всем лицом выражая мольбу."
     narrator "Пространство вокруг сжалось, и не осталось ничего, кроме слов. Слов входящих и исходящих."
-    show vechna sad
     vechna "Я откажусь от всего. Не убивай меня! "
-    show vechna thinking
     vechna "Это я – исходная личность! Почему решаешь ты?"
     hide vechna
     show digital_vechna smile1
@@ -207,7 +151,6 @@ label scene_2 :
     narrator "Только не здесь. Все это напоминает Луну, где за пределами купола тебя ждут лишь тьма, холод и смерть."
     show vechna thinking
     vechna "Ты в сговоре с этим богатым ублюдком! "
-    show vechna angry
     vechna "Он обманул меня! И тебя ждет такая же участь, не сомневайся!"
     show vechna sad
     narrator "Она взглянула на Аша. На его лицо, искаженное стеклом, заляпанным кровью."
@@ -247,9 +190,7 @@ label scene_2 :
     hide digital_vechna
     show black regular_angry
     black "Как ты это сделала? Как ты стала главной?!"
-    show black regular_angry
     black "Ты мне не сестра! Ты – чудовище!"
-    show black regular_angry
     black "Копии – не люди! Они не принимают решения!"
     hide black
     show digital_vechna thinking
@@ -267,7 +208,6 @@ label scene_2 :
     narrator "Словно ничего и не произошло. "
     narrator "Словно еще несколько минут назад здесь трагически не оборвалась жизнь."
     narrator "Перед ним высветилось сообщение в смешанной реальности: \"Центр Копирования свободен, отправьте запрос...\""
-    narrator "Вдруг, на секунду - быть может, это ему лишь показалось - на периферии зрения промелькнул рыжий хвост."
     jump scene_3
 
 
@@ -279,13 +219,9 @@ label scene_3:
     show black regular_sad
     black "Это все он... Неужели она имела в виду меня?"
     call angry_sad
-    show black mood
     black "Хотя, кому я вру? Это все правда."
-    show black mood
     black "Я просто хотел научить Уши распознавать эмоции. Я совсем не хотел..."
-    show black angry_var
     black "Я не должен был давать тебе то, что ты так просила."
-    show black sad_var
     black "Все мои действия во благо обернулись злом. Все..."
     jump scene_4
 
@@ -303,9 +239,7 @@ label scene_4 :
     hide black
     show vechna smile1
     vechna "Круто, да? "
-    show vechna smile1
     vechna "Такие облака образуются только между темной и светлой сторонами планеты. "
-    show vechna smile2
     vechna "Там такие перепады температур - сдохнуть можно!"
     hide vechna
     show black regular_surprised
@@ -315,11 +249,9 @@ label scene_4 :
     hide black
     show vechna smile2
     vechna "Все, кто под куполом, скучают по небу. "
-    show vechna smile2
     vechna "Но есть сеть: тут тебе и земное небо, и небо, спроектированное мной!"
     narrator "Она сделала несколько движений пальцами - и раскрылась модель галактики. "
     narrator "Вечна отмотала изображение куда-то влево, на периферию Млечного Пути."
-    show vechna smile2
     vechna "Это невообразимо далеко. Ровер добирался туда восемьдесят лет, Ашик!"
     hide vechna
     show black angry_var
@@ -343,7 +275,6 @@ label scene_4 :
     show black regular_fear
     black "Ааа!"
     narrator "Аш испугался. Но кристаллы не коснулись его."
-    show black regular_surprised
     black "Они проходят насквозь?"
     hide black
     show vechna sad
@@ -358,7 +289,6 @@ label scene_4 :
     narrator "Присела на корточки и попыталась зачерпнуть розовый кристальный песок."
     show vechna sad
     vechna "Я не успела проработать все подробно. "
-    show vechna sad
     vechna "За обработку данных с исследовательских устройств мне не платят."
     hide vechna
     show black regular_happy1
@@ -369,7 +299,6 @@ label scene_4 :
     narrator "Словно давно, уже в который раз, пыталась что-то ему объяснить."
     show vechna sad
     vechna "Лучшее, что может быть, — это полное отсутствие причин заниматься чем-то другим, кроме создания далеких миров."
-    show vechna sad
     vechna "А у меня и нет их, этих причин... Но и возможностей заниматься только этим тоже нет."
     hide vechna
     show black sad_var
@@ -385,7 +314,6 @@ label scene_4 :
     hide black
     show vechna thinking
     vechna "Нет. Но и ты тоже не обижайся на меня за мои чувства."
-    show vechna thinking
     vechna "Тем более, что ты можешь мне помочь..."
     hide vechna
     show black angry_var
@@ -399,7 +327,6 @@ label scene_4 :
     hide black
     show vechna sad
     vechna "Как хочешь. "
-    show vechna sad
     vechna "Что ж, пока я тут, нужно закрыть пару задач по работе."
     narrator "Аш вышел из сети."
     jump scene_5
@@ -415,29 +342,23 @@ label scene_5:
     black "Потому что ты любую свободную минуту проводишь в сети."
     #(Девушка гримасничает.)
     narrator "Вечна схватила с дивана плюшевую коалу и резко надавила. Голова с громким \"чпоком\" отделилась от плюшевого тела."
-    show black regular
     black "Я починю, не переживай."
     hide black
     show vechna smile2
     vechna "Ты просто лапушка-коалушка! "
-    show vechna smile2
     vechna "Я хочу вечером начать обработку новых данных от ровера. "
-    show vechna thinking
     vechna "Мой рейтинг ниже, чем у копий в сети! "
-    show vechna thinking
     vechna "Конечно, легко иметь высокие показатели, если можешь работать 24/7. "
-    show vechna thinking
     vechna "Меня хватает только на четырнадцать часов в день! "
-    show vechna angry
     vechna "Да и то через неделю выдыхаюсь."
-    show vechna angry
     vechna "Еще и все эти уборки, уход за собой, спорт..."
     narrator "Ее передернуло."
     hide vechna
     show black angry_var
     black "Ты давно не занималась уборкой."
-    narrator "Она всплеснула руками, раздражаясь."
     hide black
+    show vechna thinking
+    narrator "Она всплеснула руками, раздражаясь."
     show vechna thinking
     vechna "Двадцать второй век на дворе! А пыль все равно не победили. Под куполом, блин, на Луне!"
     hide vechna
@@ -447,7 +368,6 @@ label scene_5:
     show vechna thinking
     vechna "Жестокая жизнь колонистов."
     narrator "Она вздохнула."
-    show vechna thinking
     vechna "Еда готова?"
     hide vechna
     show black regular_happy2
@@ -455,9 +375,7 @@ label scene_5:
     hide black
     show vechna thinking
     vechna "Сегодня день траура, милый. "
-    show vechna thinking
     vechna "24 августа 2025 года, в 23:50, под куполом было шестьсот пятьдесят человек. "
-    show vechna thinking
     vechna "А через пятнадцать минут осталось всего двести."
     hide vechna
     show black regular_sad
@@ -465,11 +383,8 @@ label scene_5:
     hide black
     show vechna thinking
     vechna "Нам скорее повезло, потому что ты спал с животинками. "
-    show vechna thinking
     vechna "Вообще, \"везение\" - веселенькое понятие. "
-    show vechna thinking
     vechna "Смотри, нам \"повезло\" выиграть на Земле в лотерею, чтоб свалить в космос, а потом \"повезло\" чуть не умереть в первый месяц! "
-    show vechna smile1
     vechna "Получается — везение на невезение."
     hide vechna
     show black regular_happy1
@@ -477,7 +392,6 @@ label scene_5:
     hide black
     show vechna smile2
     vechna "Ты со своей едой самым подлым образом отвлекаешь меня от работы."
-    show vechna smile1
     vechna "А-та-та. Три кота. А голова у них - одна."
     narrator "Она залилась смехом."
     hide vechna
@@ -488,13 +402,11 @@ label scene_5:
     hide black
     show vechna smile1
     vechna "Божечки-кошечки! Если можно получить разрыв сердца из-за красоты, я его получу!"
-    show vechna smile1
     vechna "Я хочу есть их в темноте! Ты ведь не всех выпустил их фудрариума? "
     narrator "Младший брат был доволен, что угодил сестре."
     hide vechna
     show black regular_happy1
     black "Конечно, я оставил светлячков на салат. Хотя они и симпатичные, но в первую очередь - еда. "
-    show black regular
     black "Об этом нужно помнить."
     hide black
     show vechna smile1
@@ -511,7 +423,6 @@ label scene_5:
     narrator "Вечна положила пластиковые палочки рядом с тарелкой."
     show vechna sad
     vechna "Мне грустно от твоих слов, что я тут будто бы и не живу..."
-    show vechna sad
     vechna "Я не могу работать меньше... Напротив, стремлюсь делать как можно больше."
     hide vechna
     show black regular
@@ -525,7 +436,6 @@ label scene_5:
     hide black
     show vechna thinking
     vechna "Идея это – фантазия. "
-    show vechna thinking
     vechna "Ну а у тебя - есть готовое решение для меня!"
     hide vechna
     show black regular_annoyed
@@ -533,17 +443,11 @@ label scene_5:
     hide black
     show vechna smile2
     vechna "Ты же написал софт для обучения Ушей, который распознает эмоции и выводит их на импланты. "
-    show vechna smile2
     vechna "Если ты можешь научить распознавать эмоции, значит, можно научить распознавать и другие активности мозга."
-    show vechna smile2
     vechna "А значит, можно что-то засечь. А то, что можно засечь - можно изменить."
-    show vechna smile2
     vechna "Софт Ушей ведь работает на основе чипа, с помощью которого мы выходим в сеть. "
-    show vechna smile2
     vechna "Эта железяка может усиливать или ослаблять связи. "
-    show vechna smile1
     vechna "Я могу хакнуть себя, понимаешь? Могу стать продуктивнее!"
-    show vechna smile2
     vechna "Дашь доступ к коду?"
     hide vechna
     show black regular_confused
@@ -553,7 +457,6 @@ label scene_5:
     hide black
     show vechna thinking
     vechna "Ты опять не умертвил их в вакуумном шкафу? Это уже слишком. "
-    show vechna thinking
     vechna "Есть живых запрещено везде, кроме парочки отсталых стран."
     hide vechna
     show black regular
@@ -569,24 +472,19 @@ label scene_5:
     hide black
     show vechna smile2
     vechna "Ты ведь видел мой проект! Разве он не потрясный?"
-    show vechna smile1
     vechna "По набору нулей и единичек я воссоздаю настолько далекие миры, что мы с тобой умрем, пока долетим туда!"
-    show vechna sad
     vechna "Ну пожалуйста! Ты же мне доверяешь?"
     hide vechna
     show black sad_var
     black "Доверяю... Я поделюсь доступом. "
-    show black sad_var
     black "Но будь на моей презентации."
     hide black
     show vechna smile2
     vechna "Спасибо, спасибо! Ты самый лучший!"
-    show vechna smile2
     vechna "Можно доступ прямо сейчас?"
     hide vechna
     show black regular
     black "Только приходи в реальности, не в сети. Мне так спокойней. "
-    show black regular_happy1
     black "Я могу получить отличные инвестиции, и сделать Уши массовым продуктом на Луне и Земле."
     hide black
     show vechna smile2
@@ -595,7 +493,6 @@ label scene_5:
     show black regular_annoyed
     black "Мне нужны, и тебе. Хоть ты в этом и не признаешься."
     narrator "Брат положил палочки на тарелку, сжал концы, и те стали разлагаться, сливаясь с остатками еды в общую вязкую массу. Затем встал."
-    show black regular
     black "Мне пора. "
     narrator "Он остановился у выхода."
     hide black
@@ -604,7 +501,6 @@ label scene_5:
     hide vechna
     show black regular
     black "Уже дал. "
-    show black regular_confused
     black "Жаль, ведь чем более проработанной будет твоя симуляция, тем мучительнее будет находиться там человеку."
     hide black
     show vechna smile2
@@ -635,15 +531,10 @@ label scene_6 :
     hide black
     show maks regular
     maks "Автоматическая система озеленения: дроны, которые самостоятельно решают.."
-    show maks regular
     maks "..Где и какие растения нужно рассадить, в какое время года это лучше делать. "
-    show maks regular
     maks "Они смогут сами заказывать необходимые семена из банков..."
-    show maks regular
     maks "..Отслеживать процент успешных всходов и, конечно, возвращаться на станцию для зарядки. "
-    show maks regular
     maks "Во второй версии предусматривается возможность самодиагностики, чтобы в случае необходимости прибыть на станцию техобслуживания."
-    show maks regular
     maks "Технология актуальна для Земли..."
     hide maks
     show black regular_annoyed
@@ -653,10 +544,8 @@ label scene_6 :
     hide black
     show maks regular
     maks "Значит, есть сформированный рынок и спрос. "
-    show maks regular
     maks "Прикинь, в бизнесе это \"плюс\", а не \"минус\". "
     narrator "Он рассмеялся."
-    show maks regular
     maks "Нужно искать занятие на будущее, уже на Земле. "
     hide maks
     hide maks
@@ -679,7 +568,6 @@ label scene_6 :
     show black angry_var
     black "Что ты, как дикарь какой-то? Я это забираю."
     narrator "Парень убрал моток в карман и развернулся."
-    show black angry_var
     black "Все такие нервные."
     hide black
     show maks regular
@@ -718,7 +606,6 @@ label scene_7:
     hide maks
     show onka thinking
     onka "Воспитание у парня хуже, чем его настроение."
-    show onka thinking
     onka "Вас папа манерам не учил?"
     hide onka
     show maks angry
@@ -767,7 +654,6 @@ label scene_7:
     narrator "Хозяин засмеялся."
     show onka smile
     onka "Вот это технологии! "
-    show onka sneaky
     onka "Ошейник не нужно выключать? Или он удерживает на километры, а не на полтора метра?"
     hide onka
     show fox collar_shock
@@ -779,18 +665,13 @@ label scene_7:
     show onka thinking
     onka "Я не..."
     narrator "Онка закатывает глаза и терпеливо продолжает."
-    show onka smile
     onka "Я не скармливаю вас друг другу. Хватит читать бред в сети. "
-    show onka sneaky
     onka "Вы и сами неплохо грызетесь."
-    show onka sneaky
     onka "Я схитрил насчет ошейника, знал, что это фикция. Лучше сними его."
-    show onka sneaky
     onka "А то потом объясняйся в СМИ, когда это выйдет на рынок."
     hide onka
     show fox shock
     fox "С ошейником так вышло. "
-    show fox shock
     fox "Высшие лисы сказали, он должен быть, но проект не закончен!"
     hide fox
     show black regular_happy1
@@ -806,12 +687,10 @@ label scene_7:
     narrator "Аш с азартом рассматривал Лиса, нагнувшись, чтоб заглянуть ему в мордочку."
     show black regular_happy2
     black "Моя сестра такого хотела. Любит всех пушистых. "
-    show black sad_var
     black "Но черт знает, где ее сейчас носит..."
     hide black
     show fox angry
     fox "Некрасиво перебивать! "
-    show fox angry
     fox "Я, между прочим, объяснялся с хозяином Фабрики Чипов, с Самим..."
     hide fox
     show onka danger
@@ -837,7 +716,6 @@ label scene_7:
     hide fox
     show onka sneaky
     onka "Очень разумных мы не продаем. "
-    show onka smile
     onka "А этого забирай бесплатно."
     hide onka
     show fox shock
@@ -845,20 +723,16 @@ label scene_7:
     hide fox
     show onka smile
     onka "Фокус группа показала, что люди хотят иметь молчаливых друзей."
-    show onka smile
     onka "А не как в том древнем меме с собакой, которая делает больно по-другому."
     #(Прозвенел старт.)
-    show onka smile
     onka "Мне пора в жюри. Судить, разумеется."
     #(Улыбается.)
     hide onka
     show black regular_happy2
     black "А мне, похоже, пора быть судимым."
-    show black regular_happy2
     black "Приятно было познакомиться."
     show black regular
     narrator "Аш шел ближе к сцене, обдумывая, что хорошие отношения с жюри - это плюс балл к его выступлению."
-    show black sad_var
     black "И все-таки, где Вечна?"
     hide black
     show onka sneaky
@@ -869,7 +743,6 @@ label scene_7:
     show fox angry
     fox "Лучше бы лисьи Уши сделал."
     narrator "Онка засмеялся."
-    show fox smile
     fox "Нам пора начинать судить."
     hide fox
     hide fox
@@ -918,37 +791,21 @@ label scene_8:
     hide onka
     show black regular
     black "Всем привет! Меня зовут Аш Хом. Я студент первого курса биопротезирования."
-    show black regular_happy1
     black "Сегодня я расскажу об инструменте, который позволяет интерпретировать чужие чувства."
-    show black regular_happy1
     black "И демонстрировать ваши."
-    show black regular
     black "Люди верят, будто эмоции у всех одинаковые. Но так ли это?"
-    show black regular_happy1
     black "Пол Экман нашел подтверждение теории, что базовые эмоции универсальны для всех."
-    show black regular_happy1
     black "Страх, радость, удивление, отвращение, злость и грусть."
-    show black regular_happy2
     black "Человеческие общества, не связанные единой культурой и развивающиеся параллельно..."
-    show black regular_happy2
     black "...Будут выражать базовые эмоции одинаково. "
-    show black regular
     black "Но есть смешанные эмоции. Их испытывают чаще других, и это вызывает сложности."
-    show black regular
     black "Потому что интерпретация смешанных эмоций в разных культурах отличается. "
-    show black regular
     black "Мы не всегда даже можем понять, что чувствуем сами. "
-    show black regular_confused
     black "А выразить свои чувства для других – вообще отдельная задача."
-    show black regular_happy1
     black "Я разрабатываю универсальный язык эмоций. "
-    show black regular_happy1
     black "Который сможет интуитивно понятным, визуальным языком показать ваши чувства другим."
-    show black regular_happy1
     black "На данный момент Искусственный Интеллект Ушей учится узнавать и отображать базовые эмоции. "
-    show black regular_happy1
     black "Но, получая все больше данных, он сможет интерпретировать и интенсивность эмоций, и мета-эмоции."
-    show black regular_sad
     black "Например, смесь гнева с отчаянием, или - любви с ненавистью."
     narrator "Он сделал драматическую паузу и встретился с Онкой взглядом."
     hide black
@@ -961,17 +818,12 @@ label scene_8:
     hide maks
     show black regular_sad
     black "Почему людям так важно понимать друг друга? "
-    show black regular_sad
     black "Сложность интерпретации чужих эмоций приводит к конфликтам на Земле."
-    show black regular_confused
     black "А ведь люди уже на Луне. "
-    show black regular
     black "Что же мы принесем новым мирам, когда займем их? Войны?"
     narrator "Он вышел ближе к зрителям, замолчал, и медленно обвел их взглядом, нагнетая атмосферу."
     narrator "Он знал, в сети их – сотни. И они его слышат. Каждый. "
-    show black regular_happy1
     black "Или мы принесем мир? "
-    show black regular_happy1
     black "Достигнутый за счет универсального визуального языка?"
     narrator "В зале послышался шепот. Это были Илли и Лис."
     hide black
@@ -991,12 +843,10 @@ label scene_8:
     hide black
     show onka thinking
     onka "Есть вопрос! Общения в реальности действительно мало. "
-    show onka thinking
     onka "Импланты в виде Ушей Зайца ведь предназначены для неё?"
     hide onka
     show black regular
     black "Живое общение – это стресс."
-    show black regular_happy1
     black "Есть даже слово, означающее пресыщение людьми – \"аумбук\"."
     hide black
     show onka thinking
@@ -1004,19 +854,12 @@ label scene_8:
     hide onka
     show black regular_happy1
     black "Именно поэтому общению тоже нужно учиться. "
-    show black regular_happy1
     black "Это не врожденный навык."
-    show black regular
     black "Но мы не думаем об этом."
-    show black regular
     black "Мы не прикладываем усилий для того, чтобы понимать других и себя."
-    show black regular
     black "Я вижу, что проблема недопонимания является комплексной. "
-    show black regular
     black "Импланты, выражающие эмоции, - это неплохой проект для популяризации данной идеи."
-    show black regular
     black "Глядя на человека с имплантами, мы будем помнить, как его нужно понять."
-    show black regular_happy2
     black "Его можно понять."
     hide black
     show maks regular
@@ -1029,18 +872,13 @@ label scene_8:
     hide black
     show onka victory
     onka "Я в восторге!"
-    show onka victory
     onka "Бредово, но при этом — все так и есть."
-    show onka regular
     onka "Довольно интересно узнать, как работает устройство?"
     hide onka
     show black regular_happy2
     black "Конечно, стоит поблагодарить Вас за то, что чип, выпускаемой вашей Фабрикой Чипов, стал открытым."
-    show black regular
     black "Запустив на нем свой код ИИ, я смог задать параметры, по которым программа учится различать и отслеживать эмоции в мозгу. "
-    show black regular
     black "И когда распознает эмоцию (с уверенностью в девяносто девять процентов), то отображает ее на дисплее."
-    show black regular
     black "Чем менее четкое изображение на имплантах, тем меньше ИИ уверен, что верно определил эмоцию."
     hide black
     show onka sneaky
@@ -1050,35 +888,24 @@ label scene_8:
     show maks fight
     maks "Тенденция к увеличению сетевого дня говорит о том, что ты провалишься."
     narrator "Это было сказано хладнокровно и уверенно."
-    show maks fight
     maks "Кто будет это покупать? Частные инвесторы не станут вкладывать в это деньги."
     hide maks
     show black regular_angry
     black "Возможность распознавать эмоции работает и в сети."
-    show black regular_angry
     black "В чем разница, на какое средство вывода информации передавать данные с чипа? "
-    show black regular_angry
     black "Что имплатны, что аватар в сети. Устройство универсально."
-    show black regular
     black "И это не важно. "
-    show black regular
     black "Важно то, что с момента появления первых станций на Луне прошло двести лет."
-    show black regular
     black "И мы идем дальше."
-    show black regular
     black "Скорее всего, основная коммуникация будет строиться в Вашей, Илли Онка, Чудесной сети."
-    show black regular
     black "Мы там работаем, развлекаемся, учимся и получаем новую информацию."
-    show black regular
     black "Скоро войну в соседней галактике сможет обеспечить одна строчка кода, выпустившая ракету."
-    show black angry_var
     black "Нет разницы, где мы общаемся. Важно, - как мы это делаем."
     narrator "На последних словах он сделал особенно яркий акцент."
     hide black
     hide black
     show maks angry
     maks "В итоге, ты стимулируешь людей к увеличению сетевого дня. "
-    show maks angry
     maks "Ведь в реале никто не захочет ставить себе импланты."
     voice_from_net "Время на вопросы вышло."
     jump scene_9
@@ -1097,11 +924,8 @@ label scene_9:
     hide vechna
     show black angry_var
     black "Все эти графики, финансовые показатели..."
-    show black regular
     black "Хотя кому я вру? С точки зрения бизнеса, идея у меня - так себе."
-    show black sad_var
     black "Это все равно, что физикам выбивать деньги на фундаментальные исследования..."
-    show black sad_var
     black "...Которые, может быть, пригодятся только лет через триста."
     hide black
     show vechna smile1
@@ -1111,7 +935,6 @@ label scene_9:
     narrator "Она продолжала улыбаться, но быстро вспомнила про брата и сделала сочувствующее лицо."
     show vechna smile2
     vechna "Но у меня радость! "
-    show vechna smile2
     vechna "Всего четыре часа и сотня мелких задач - и я смогла удачно хакнуть мозг!"
     hide vechna
     call angry_sad
@@ -1123,19 +946,14 @@ label scene_9:
     hide black
     show vechna thinking
     vechna "Как бы я ни любила свою работу - мне тоже лень, и я устаю."
-    show vechna smile2
     vechna "Но нашлось изящное решение."
     narrator "Ей не терпелось поделиться своим открытием."
-    show vechna thinking
     vechna "Нейрохакинг. Ты забыл? "
-    show vechna thinking
     vechna "Я провела первый тест! "
-    show vechna smile1
     vechna "Я знаю, ты был против, но все ок! Задача выполнена! Это прорыв!"
     hide vechna
     show black sad_var
     black "Значит, ты этим занималась, пока я так отчаянно тебя ждал?"
-    show black regular
     black "Я же ненавижу сцену, ты была мне так нужна!"
     hide black
     show vechna smile1
@@ -1146,9 +964,7 @@ label scene_9:
     hide black
     show vechna thinking
     vechna "Насчет эксперимента... "
-    show vechna thinking
     vechna "Все же хорошо, все прошло успешно!"
-    show vechna angry
     vechna "А от слива презентации я бы тебя не спасла."
     hide vechna
     show black angry_var
@@ -1156,15 +972,10 @@ label scene_9:
     hide black
     show vechna angry
     vechna "Не знаю, но я точно не виновата в том, что твоя работа не \"зашла\" на конкурсе. "
-    show vechna thinking
     vechna "Там же был супер-пупер Макс."
-    show vechna smile2
     vechna "Но только послушай! "
-    show vechna smile2
     vechna "Моей целью было выкроить себе еще часика четыре для работы. "
-    show vechna smile2
     vechna "Собрала статистику, чтобы посмотреть, на что я трачу время в реальности, и вышло..."
-    show vechna thinking
     vechna "..Что больше всего времени уходит на сон, а все остальное, по мелочи, занимает час-два."
     hide vechna
     show black angry_var
@@ -1178,13 +989,9 @@ label scene_9:
     hide black
     show vechna smile1
     vechna "У меня была идея зафиксировать в мозгу связи, отвечающие за любовь к еде, сериалам и прочей ерунде."
-    show vechna smile1
     vechna "Но! Чтобы изменить три параметра в мозгу, нужно их определить."
-    show vechna thinking
     vechna "А это в три раза больше времени, чем определять связи для чего-то одного. "
-    show vechna thinking
     vechna "Но, главное - когда меняешь много связей в мозгу, то возрастает вероятность ошибок. "
-    show vechna smile2
     vechna "Все-таки, я думаю о своем здоровье!"
     hide vechna
     show black regular_confused
@@ -1192,14 +999,11 @@ label scene_9:
     hide black
     show vechna smile1
     vechna "И тогда в голову пришла такая крутая мысль! "
-    show vechna smile2
     vechna "Не нужно уменьшать любовь к чему-то, когда я могу увеличить любовь к выполнению задач!"
-    show vechna smile2
     vechna "В итоге, сейчас я получаю огромное удовольствие, когда закрываю задачу!"
     hide vechna
     show black regular_surprised
     black "Я даже не знаю, поздравлять тебя или ругать. "
-    show black regular_surprised
     black "Тоесть теперь, кроме работы тебе вообще ничего не интересно?"
     hide black
     show vechna smile2
@@ -1207,16 +1011,12 @@ label scene_9:
     hide vechna
     show black sad_var
     black "Я хочу уйти. "
-    show black sad_var
     black "Испытываю очень смешанные чувства, в том числе злость и обиду."
-    show black sad_var
     black "Поэтому я просто пойду пройдусь."
     hide black
     show vechna smile2
     vechna "Окей, а я буду работать!"
-    show vechna thinking
     vechna "И, прошу, не трогай мои вещи."
-    show vechna thinking
     vechna "Доставка с Земли – это очень дорого!"
     hide vechna
     narrator "Девушка легла на пол и закрыла глаза. "
@@ -1236,20 +1036,13 @@ label scene_10 :
     narrator "Рядом с берегом, о который ударялись невысокие волны Лунной реки, состоящей из миллиардов нано-ботов, Илли Онка думал вслух."
     show onka sad
     onka "Что создал я? Чип? Нет."
-    show onka sad
     onka "Его создал дед. Сеть? Ее создал отец. "
-    show onka angry
     onka "А что сделал я? "
-    show onka sad
     onka "Я просто неудачник, который не может заселить космос."
     narrator "Онка поднял голову вверх. Горький ком застрял в горле, когда его взгляд уткнулся в темный потолок."
-    show onka sad
     onka "Как велик соблазн жалости к себе, и как я хочу дойти до конца."
-    show onka sad
     onka "Но ничего не получается. Для моих целей не хватает вычислительных мощностей..."
-    show onka sad
     onka "У меня нет столько ресурсов, чтобы заселять планеты. "
-    show onka sad
     onka "Ни у кого их нет."
     narrator "Он стукнул по металлической поверхности пола и вскрикнул от боли."
     show onka sad
@@ -1269,7 +1062,6 @@ label scene_10 :
     hide black
     show onka sneaky
     onka "Не больнее, чем критика твоего проекта."
-    show onka sneaky
     onka "Это твое место силы? Думаю, стоит ли искать новое?"
     hide onka
     show black regular
@@ -1290,12 +1082,10 @@ label scene_10 :
     hide black
     show onka sad
     onka "У меня нет идей? "
-    show onka thinking
     onka "У меня может не быть лишь нескольких решений, но со временем и они находятся."
     hide onka
     show black regular_happy1
     black "Если не знаешь, что делать, — найди тех, кто знает. "
-    show black regular_happy2
     black "У кого есть хорошие решения."
     narrator "Он как бы невзначай провел рукой по Ушкам. Онка следил за его движениями."
     hide black
@@ -1306,7 +1096,6 @@ label scene_10 :
     hide onka
     show onka thinking
     onka "Хотя, разве бывает иначе?"
-    show onka sneaky
     onka "Ты мне очень пригодился, молодой человек!"
     hide onka
     show black regular_happy2
@@ -1325,11 +1114,8 @@ label scene_10 :
     hide black
     show onka confused
     onka "Пожалуйста, скажи, у тебя есть камера? "
-    show onka confused
     onka "Это чертова река - единственное место, не утыканное ими. "
-    show onka thinking
     onka "Самое обидное, я сам об этом попросил. "
-    show onka angry
     onka "Мне необходимо сделать трансляцию!"
     hide onka
     show black regular_confused
@@ -1341,7 +1127,6 @@ label scene_10 :
     hide onka
     show black angry_var
     black "Представь себе. "
-    show black angry_var
     black "И не все хотят каждый раз отрубаться на полу, чтобы войти в сеть."
     hide black
     show onka thinking
@@ -1365,9 +1150,7 @@ label scene_10 :
     hide black
     show onka smile
     onka "Это лисы."
-    show onka smile
     onka "Твой пароль - четыре одинаковые цифры, два слова и символ."
-    show onka sneaky
     onka "Слишком простой, я бы даже постеснялся предъявлять претензии."
     hide onka
     show black angry_var
@@ -1381,11 +1164,8 @@ label scene_10 :
     hide onka
     show onka smile
     onka "Фабрика Чипов создана ради воплощения и внедрения в нашу жизнь великих инновационных идей."
-    show onka smile
     onka "И сегодня я ищу проекты, которые должны увидеть свет. "
-    show onka victory
     onka "Объявляю хакатон!"
-    show onka smile
     onka "Обязательное условие — использование в проекте чипа с Фабрики Чипов как ключевого составляющего элемента."
     hide onka
     show black regular_confused
@@ -1407,9 +1187,7 @@ label scene_10 :
     hide black
     show onka smile
     onka "Конечно, ты же навел меня на мысль."
-    show onka smile
     onka "Но попасть туда можно только через тест. "
-    show onka sneaky
     onka "Очень сложный!"
     hide onka
     show black angry_var
@@ -1426,7 +1204,6 @@ label scene_10 :
     hide black
     show black sad_var
     black "Как глупо думать, что он в меня инвестирует."
-    show black sad_var
     black "Хотя, ради конкурса, Вечна может вылезти из сети."
     narrator "Он вызвал девушку с планшета. "
     narrator "Перед ним высветилось сообщение: \"Готовлюсь к экзамену на Конкурс Фабрики\", и куча эмодзи: шок, истерика, счастье."
@@ -1459,19 +1236,14 @@ label scene_11 :
     hide black
     show onka smile
     onka "Фабрика чипов приветствует юных изобретателей! "
-    show onka victory
     onka "Сегодня мы объявляем итоги отбора!"
-    show onka victory
     onka "Решим же, кто достоин вступить на территорию инноваций и успеха! "
-    show onka smile
     onka "Территорию, где изобретатель сможет потягаться за приз — ресурсы для развития своего изобретения!"
     narrator "Знакомый голос затих. "
     hide onka
     show onka smile
     onka "Сейчас вы получите жетоны, решающие судьбу. "
-    show onka sneaky
     onka "Синий жетон. Через годы напомнит вам о неудаче. "
-    show onka smile
     onka "Зеленый напомнит о шансе, а возможно... о победе! Фабрика желает вам удачи!"
     scene audience
     narrator "Голос так и не сказал, что же им делать. Все сидели в ожидании."
@@ -1501,7 +1273,6 @@ label scene_11 :
     hide fox
     show black regular_happy1
     black "Если я попаду на конкурс с сестрой, у нас будут отличные каникулы. "
-    show black regular_happy1
     black "Не лишайте меня их."
     hide black
     show fox angry
@@ -1542,9 +1313,7 @@ label scene_11 :
     hide fox
     show black regular
     black "Удобно всем, кроме меня."
-    show black regular_annoyed
     black "Я не могу ждать, пока ты сделаешь свои непотребства в аудитории университета. "
-    show black regular_confused
     black "Попрошу заменить жетон. Так ведь можно?"
     narrator "Лис вжался в пол."
     hide black
@@ -1553,19 +1322,16 @@ label scene_11 :
     hide fox
     show black regular_confused
     black "Но?"
-    show black regular_confused
     black "Почему ты сразу не предложил этот вариант?"
     hide black
     show fox shock
     narrator "Лис дернулся от \"ТЫ\", но его внимание переключилось на вопрос студента."
     show fox angry
     fox "Хозяин спишет меня как брак. "
-    show fox angry
     fox "У нас говорят: \"Ты не создан совершать ошибки\"."
     hide fox
     show black angry_var
     black "Это очень, очень жестоко. "
-    show black regular_fear
     black "Надеюсь, конкурсантам ничего не угрожает?"
     narrator "Лис посмотрел в пол. В помещении оставались лишь они вдвоем, остальные уже разошлись."
     hide black
@@ -1574,16 +1340,13 @@ label scene_11 :
     hide fox
     show black regular_fear
     black "Ладно, ждать так ждать. Но мне нужно найти кое-кого."
-    show black regular_surprised
     black "Она ведь только что была тут?"
     narrator "Он развернулся, чуть не столкнувшись лицом с сестрой. "
     narrator "На ее лице была широченная улыбка, совсем как у Чеширского кота."
     hide black
     show vechna smile2
     vechna "Я прошла! Целых сто восемьдесят шесть баллов! "
-    show vechna smile2
     vechna "У остальных, кто прошел меньше!"
-    show vechna smile2
     vechna "Я спросила почти у всех! Я выиграю и буду работать на фабрике!"
     hide vechna
     show black regular_happy1
@@ -1628,6 +1391,7 @@ label scene_11 :
     hide fox
     show vechna smile2
     vechna "Ой, прошу прощения. Где мои манеры."
+    hide vechna
     show fox smile
     narrator "Лис смущенно махнул лапкой. А Вечна бросила взгляд в сторону брата..."
     show vechna smile1
@@ -1639,22 +1403,20 @@ label scene_11 :
     show fox smile
     fox "Что же я люблю?"
     narrator "Он расплылся в улыбке."
-    show fox smile
     fox "Например, я люблю коал. Они..."
     hide fox
     show black regular_happy1
     black "Они вымерли."
     hide black
+    show vechna smile1
     narrator "Вечна протянула руки в сторону лиса, намереваясь обнять и потискать."
-    hide black
     show vechna smile1
     vechna "О! Это мои любимые животные. Я обязана обнять тебя!"
-    show vechna smile1
     vechna "Ой! Обнять Вас!"
     hide vechna
     show fox angry
-    hide fox
     narrator "Лис ловко перекатился от Вечны где-то на метр."
+    hide fox
     narrator "Аш закатил глаза, но тут ему пришла в голову одна мысль."
     hide fox
     show black regular_disgust
@@ -1668,9 +1430,7 @@ label scene_11 :
     black "Тогда давайте, достопочтенный господин, посмотрим зарисовки из жизни этих благородных животных."
     narrator "Парень передразнивал манеру речи лиса."
     narrator "Он снова достал свой старенький планшет, весь усыпанный затершимися от времени наклейками."
-    show black regular_happy1
     black "В первую очередь, хочу посмотреть, как они заботились о потомстве."
-    show black regular_happy1
     black "Видите ли, чтобы передать детенышам полезные бактерии, им приходилось..."
     hide black
     hide black
@@ -1695,14 +1455,13 @@ label scene_11 :
     hide fox
     show black regular_happy2
     black "Очень остроумно. "
-    show black regular_disgust
     black "Но доставать, многоуважаемый сударь, придется Вам."
     hide black
     show fox shock
     narrator "Лис брезгливо поднял жетон. Достал из-за воротничка салфетку."
     hide fox
+    show black regular_disgust
     narrator "Аш немного отодвинулся, желая держаться подальше от предмета."
-    hide fox
     show black regular_confused
     black "Он ведь должен быть синий или зеленый?"
     hide black
@@ -1753,7 +1512,6 @@ label scene_12 :
     narrator "Вечна трепетала и подпрыгивала. Кроме них, здесь было двадцать детей и множество дронов, транслирующих все в сеть."
     show vechna smile2
     vechna "Я так завидую, что ты уже знаешь Онку! "
-    show vechna smile2
     vechna "Вселенная тебя просто облизывает."
     hide vechna
     show black regular_confused
@@ -1779,20 +1537,13 @@ label scene_12 :
     narrator "Кроме Аша, который специально отошел, чтобы не попадать в его поле зрения и лишний раз не общаться."
     show onka smile
     onka "Добро пожаловать на Конкурс Фабрики Чипов! "
-    show onka smile
     onka "Именно здесь может ожить ваш проект."
-    show onka sneaky
     onka "А может и не ожить, а может ожить и сразу умереть..."
-    show onka smile
     onka "Ну да ладно. Мы отвлеклись."
-    show onka smile
     onka "По правилам конкурса, вы должны пробыть на Фабрике два дня."
-    show onka smile
     onka "Если готовы, идите за мной."
     narrator "Он развернулся. И сразу повернулся обратно, отчего его шея хрустнула."
-    show onka smile
     onka "Ах, да! Все свои вещи оставляйте у входа. "
-    show onka thinking
     onka "Хорьки с ними ничего не сделают, их последнее время интересует одна архитектура."
     hide onka
     show black regular
@@ -1814,7 +1565,6 @@ label scene_12 :
     hide onka
     show onka sneaky
     onka "Отправляя заявку на участие, вы подписали договор о неразглашении того, что увидите и услышите внутри. "
-    show onka sneaky
     onka "Это значит, что при нарушении договора вы станете бессильны."
     narrator "Он сочувственно пожал плечами, словно не сам придумал такие правила."
     jump scene_13
@@ -1832,9 +1582,7 @@ label scene_13 :
     narrator "Хозяин заправил волосы за ухо и пожал плечами:"
     show onka thinking
     onka "Думаете, я не смотрел Чарли и Шоколадную Фабрику?"
-    show onka sneaky
     onka "Приходя сюда, все ожидают увидеть что-то подобное."
-    show onka victory
     onka "Но у меня намного круче! В миллион раз!"
     hide onka
     show black regular
@@ -1847,7 +1595,6 @@ label scene_13 :
     hide black
     show onka sneaky
     onka "Удивлен? Конечно, нет. "
-    show onka sneaky
     onka "Я же делал тест, исходя из того, какими сильными будут конкурсанты."
     hide onka
     show onka danger
@@ -1857,25 +1604,17 @@ label scene_13 :
     narrator "Они пошли по коридору. Хозяин Фабрики остановился у одной из дверей."
     show onka thinking
     onka "Еще раз про договор. "
-    show onka thinking
     onka "Никто, никогда не должен рассказывать о том, что тут произошло. "
-    show onka smile
     onka "Все могут входить, куда им захочется, лисы в помещениях расскажут вам о назначении всего, что вас заинтересует."
-    show onka danger
     onka "Есть места ОПАСНЫЕ, боюсь, есть риск некоторых увечий. "
-    show onka sneaky
     onka "Прошу заметить, это не покрывается страховкой по документу, который вы подписали."
     scene chip_factory_corridor2
     narrator "Онка закончил фразу, на ходу пропуская конкурсантов в одну из дверей."
     scene chip_factory_audience
     narrator "Все вошли в огромную аудиторию."
-    show onka sneaky
     onka "В ходе конкурса вы должны создать или улучшить свое изобретение."
-    show onka sneaky
     onka "Конкурс субъективный. "
-    show onka sneaky
     onka "Цель фабрики — найти потенциально коммерчески успешный проект на основе чипа, выпускаемого моей компанией."
-    show onka smile
     onka "Не важно, идея у вас или прототип. Важно, как сильно вы меня впечатлите."
     narrator "Вечна смотрела на Онку влюбленными глазами."
     hide onka
@@ -1920,7 +1659,6 @@ label scene_13 :
     hide onka
     show black angry_var
     black "Он точно врал, когда говорил, что поверил в меня. "
-    show black angry_var
     black "Такая интонация была, знаешь..."
     hide black
     show natasha smile
@@ -1930,24 +1668,18 @@ label scene_13 :
     hide natasha
     show vechna thinking
     vechna "Она же не могла научиться заранее так крутить! "
-    show vechna thinking
     vechna "Неужели успела за ночь? Как ты думаешь?"
     hide vechna
     show natasha regular
     narrator "Девушка с длинными волосами остановилась и оглядела присутствующих презрительным взглядом."
     show natasha regular
     natasha "Здравствуйте, меня зовут Наташа, и я собираю команду для конкурса."
-    show natasha smile
     natasha "Мой проходной балл – сто девяносто девять. "
-    show natasha smile
     natasha "Что подтверждает особенный, красный жетон."
     narrator "Она несколько раз повертела его на пальце."
-    show natasha smile
     natasha "Буду рада приветствовать в своей команде сильных конкурсантов."
-    show natasha smile
     natasha "Подробный чек-лист, как попасть в нее, вы можете посмотреть в моем блоге."
     narrator "Девушка опустила руки и сомкнула за спиной в замок."
-    show natasha smile
     natasha "У кого из вас самые высокие баллы после меня?"
     hide natasha
     show black angry_var
@@ -1964,12 +1696,10 @@ label scene_13 :
     narrator "Все наблюдали за неофициальным поединком. Поэтому каждый услышал:"
     show black regular_happy1
     black "Я приглашаю к себе в команду трех человек с самым низким проходным баллом. "
-    show black regular_happy1
     black "Кстати, мой балл - двести."
     hide black
     show natasha angry
     natasha "Вау! Двести! Разница целый один балл. "
-    show natasha angry
     natasha "Все очень эпично, но моя цель - победить."
     hide natasha
     show onka regular
@@ -1977,7 +1707,6 @@ label scene_13 :
     show onka regular
     onka "Для тех, кто пропустил инструктаж: узнаете подробности у других конкурсантов."
     narrator "Он перевел взгляд на Наташу."
-    show onka thinking
     onka "Конечно, если они захотят вам что-то рассказывать."
     hide onka
     show maks regular
@@ -1992,11 +1721,8 @@ label scene_13 :
     narrator "К присутствующим обратился владелец фабрики."
     show onka smile
     onka "Я рад, что вы столь инициативны и успели разделиться на команды. "
-    show onka sneaky
     onka "Хотя, еще час, - и были бы жертвы."
-    show onka thinking
     onka "Но вы играете каждый за себя."
-    show onka thinking
     onka "Сейчас у нас будет питч проектов — за минуту вам нужно рассказать о том, что вы создаете, и что собираетесь делать на конкурсе. "
     narrator "Все молча смотрели на Онку. Он в ответ молча смотрел на конкурсантов."
     hide onka
@@ -2011,30 +1737,18 @@ label scene_13 :
     narrator "Остановившись в центре, она развернулась на небольших острых каблучках лицом к публике."
     show natasha smile
     natasha "В наше мирное и спокойное время, когда ресурсов для живых организмов может быть в избытке..."
-    show natasha smile
     natasha "..Люди сталкиваются с необходимостью сокращения или истребления некоторых видов животных."
-    show natasha regular
     natasha "Например, на нашей любимой Земле нужен более эффективный способ сокращения количества медуз."
-    show natasha regular
     natasha "Несмотря на увеличение популяций их естественных хищников..."
-    show natasha regular
     natasha "...Потепление Мирового океана и кормовая база, создает благоприятную среду для медуз. "
-    show natasha regular
     natasha "Они парализуют электростанции, попадая в системы охлаждения, в которых используется морская вода."
-    show natasha sad
     natasha "Оставляя города без энергии. "
-    show natasha sad
     natasha "Мы боремся с ними почти двести лет."
-    show natasha regular
     natasha "В качестве решения, я предлагаю"
     natasha "программируемые вирусы. "
-    show natasha smile
     natasha "Они могут внедряться в клетку и быть неактивными до того момента, пока не поступит триггер. "
-    show natasha smile
     natasha "Вот и все."
-    show natasha smile
     natasha "Презентацию можно скачать в моем мунтере. "
-    show natasha smile
     natasha "Он, разумеется, открыт, как и мое сердечко."
     hide natasha
     show onka sneaky
@@ -2051,46 +1765,31 @@ label scene_13 :
     hide onka
     show natasha smile
     natasha "Для каждого организма - разный."
-    show natasha smile
     natasha "Когда происходит триггер, вирус сокращает популяцию."
-    show natasha smile
     natasha "Хотите знать, как это связано с чипом Фабрики?"
     hide natasha
-    show onka smile
     onka "Вы читаете мои мысли!"
     hide onka
-    show natasha smile
     natasha "Триггером для запуска умерщвления может являться импульс от чипа."
-    show natasha smile
     natasha "Один чипированный организм может получить импульс для активации вируса и запустить цепную реакцию внутри своей популяции. "
-    show natasha smile
     natasha "Можно сказать, они будут заражать друг друга."
     hide natasha
     show onka danger
     onka "Очень жизнеутверждающий проект!"
     narrator "Лис рядом поперхнулся."
-    show onka danger
     onka "Кто следующий?"
     hide onka
     show vechna smile1
     narrator "Хлопнув большой пузырь жвачки, который переливался всеми цветами нефти, на сцену поднялась Вечна."
     show vechna smile2
     vechna "Всем привет, меня зовут Вечна Хом и я заканчиваю факультет обработки данных космических объектов."
-    show vechna smile2
     vechna "Несмотря на мою основную специальность... "
-    show vechna smile2
     vechna "..Недавно я опубликовала исследование о технологии нейрохакинга мозга."
-    show vechna smile2
     vechna "Возможности изменения связей между нейронами. "
-    show vechna smile1
     vechna "Да, такое уже есть, но у меня лучше."
-    show vechna smile2
     vechna "Отмечу, что мозг работает по принципу: какие связи сильнее, по ним и пойдет импульс, и, соответственно, такое решение вы примите."
-    show vechna smile2
     vechna "Все наши хорошие и плохие привычки — это определенные, закрепленные связи в мозге."
-    show vechna smile1
     vechna "Но чип... спасибо Илли Онке! "
-    show vechna smile1
     vechna "Вы, кстати, сегодня отлично выглядите!"
     narrator "Она улыбнулась и покраснела."
     hide vechna
@@ -2099,14 +1798,10 @@ label scene_13 :
     hide black
     show vechna smile2
     vechna "Значит, на основе Чипа можно изменить \"мощность\" связей в мозге."
-    show vechna smile2
     vechna "Можно стать любым человеком, приобрести страхи или же избавиться от них. "
-    show vechna smile2
     vechna "На данном конкурсе я хочу подтвердить работоспособность технологии. "
-    show vechna smile2
     vechna "Я покажу, что связи в мозге действительно можно изменить при помощи чипа, а вслед за ними, - и поведение!"
     narrator "Она осмотрела зал, ожидая вопросы. Все хлопали глазами."
-    show vechna smile2
     vechna "Всем спасибо за внимание!"
     narrator "Она бросила взгляд на Онку. "
     hide vechna
@@ -2122,9 +1817,7 @@ label scene_13 :
     hide onka
     show fox smile
     fox "Определенно."
-    show fox smile
     fox "Опережая Ваш вопрос, в исследовании она писала..."
-    show fox smile
     fox "...Что определяет связи в мозгу то же программное обеспечение, которое определяет и эмоции у его имплантов."
     hide fox
     show onka danger
@@ -2148,44 +1841,31 @@ label scene_13 :
     narrator "Хозяин Фабрики, активно жестикулируя, разговаривал с конкурсантами."
     show onka victory
     onka "Я очень впечатлен вашими проектами. "
-    show onka victory
     onka "Это талантливые и оригинальные применения чипа! "
-    show onka smile
     onka "Но у нас остался последний участник."
-    show onka sneaky
     onka "Питч обязателен. Надеюсь, это Ваша скромность, а не страх?"
     hide onka
     show black regular_happy2
     black "А может, мой способ привлечь внимание?"
     narrator "Сегодня Аш был не в настроении выступать. "
     narrator "Но что делать, он сам заварил эту кашу. В прямом смысле. Конкурсант медленно поднялся на сцену. Выдохнул."
-    show black regular
     black "Аш — первый курс биопротезирования."
-    show black regular
     black "Использую технологические возможности чипа, чтобы решить проблему отсутствия взаимопонимания между людьми."
     narrator "По залу разнеслись звуки непонимания. "
     narrator "Он на автомате пересказывал свою недавнюю презентацию, следя за Вечной."
-    show black regular
     black "Мой ИИ позволяет обучить чип распознавать эмоции и чувства, и выдавать на них специфическую реакцию."
     show black regular_annoyed
     narrator "Он посмотрел на сестру, та с кем-то увлеченно болтала, не глядя в его сторону."
-    show black angry_var
     black "На конкурсе я обучу какую-нибудь эмоцию. Надеюсь, не ярость."
-    show black angry_var
     black "Конец."
     hide black
     show onka victory
     onka "Будем очень ждать!"
-    show onka confused
     onka "И мне кажется, кого-то здесь не хватает..."
-    show onka thinking
     onka "Вы видели парня в костюме с галстуком?"
     narrator "Он повернулся лицом ко всем."
-    show onka thinking
     onka "Ладно. Дальше."
-    show onka regular
     onka "Я объявляю старт Конкурса! До 18:00 найдите на Фабрике все необходимое для представления и разработки своей технологии."
-    show onka regular
     onka "Напоминаю, что лисы вам помогут."
     jump scene_14
 
@@ -2196,11 +1876,8 @@ label scene_14:
     narrator "В 18:00 участники конкурса стояли в аудитории."
     show onka regular
     onka "Я рад, после выдачи первого задания, появилось столько вопросов. "
-    show onka sneaky
     onka "Я уж было испугался, что вам все понятно."
-    show onka sneaky
     onka "Вашей задачей была подготовка материалов для работы над проектами."
-    show onka sneaky
     onka "Что вы нашли для себя на Фабрике?"
     hide onka
     show natasha regular
@@ -2213,10 +1890,8 @@ label scene_14:
     show vechna smile2
     vechna "Мне потребуются сорок лис и один фиолетовый мячик. "
     narrator "Она повертела мячик в руках."
-    show vechna thinking
     vechna "Я хотела бы сохранить предполагаемые итоги эксперимента в тайне."
     narrator "Девушка кинула мячик вниз, в руки брата."
-    show vechna thinking
     vechna "Ты - следующий. Я работать."
     hide vechna
     show black regular_surprised
@@ -2244,7 +1919,6 @@ label scene_14:
     hide onka
     show fox smile
     fox "Это не запрещено правилами. "
-    show fox smile
     fox "Конкурсантам было позволено использовать оборудование Фабрики."
     hide fox
     show onka angry
@@ -2260,15 +1934,10 @@ label scene_14:
     hide onka
     show black regular
     black "Это было оборудование, требующее переработки. "
-    show black regular
     black "Нашлись места, где нужны подобные материалы."
-    show black regular_surprised
     black "Так что считайте, что я просто вынес мусор."
-    show black regular_happy1
     black "Деньги требуются для добровольцев."
-    show black regular_happy1
     black "Распознавать эмоции в полукибернетическом мозгу лис - "
-    show black regular_happy1
     black "...Это не то же самое, что распознавать человеческий мозг."
     hide black
     show onka sneaky
@@ -2279,9 +1948,7 @@ label scene_14:
     hide onka
     show black regular_happy1
     black "Я планирую обучить Уши удивлению или отвращению..."
-    show black regular_happy1
     black "...И научить распознавать эмоцию хотя бы три раза из десяти."
-    show black regular_happy1
     black "Уверен, на Фабрике найдется то, что сможет удивить меня. Или наоборот."
     hide black
     show natasha smile
@@ -2289,12 +1956,10 @@ label scene_14:
     narrator "Она ехидно смотрела на Аша, и, когда он закончил, медленно похлопала в ладоши."
     show natasha regular
     natasha "Ты хочешь выйти за пределы Фабрики и попросить людей зафиксировать активность мозга твоим софтом?"
-    show natasha regular
     natasha "Хочу тебя расстроить. Очень хочу!"
     narrator "Девушка смотрела снизу вверх, сложив руки за идеально ровной спиной."
     narrator "Она остановилась перед сценой, наслаждаясь своим торжеством."
     narrator "Ей нравилось, что это - торжество ниже стоящего над тем, кто стоит выше."
-    show natasha smile
     natasha "Это против правил."
     narrator "Она широко улыбнулась."
     hide natasha
@@ -2325,13 +1990,9 @@ label scene_14:
     narrator "Потому что думал о таком развитии событий, но надеялся, что ему повезет. "
     show black sad_var
     narrator "В голове мелькнула мысль: \"Слово \"обойдется\" - точно не про тебя\"."
-    show black sad_var
     black "Соберу всю информацию на себе самом."
-    show black regular
     black "А что? Устрою марафон удивления или другой эмоции. Как пойдет."
-    show black angry_var
     black "А может, научиться не удивлению, а радости? "
-    show black angry_var
     black "Для этого придется проверить, сколько человек я смогу убить за время конкурса."
     hide black
     show onka danger
@@ -2355,18 +2016,13 @@ label scene_14:
     onka "Мне нравится настрой! Но, во избежание жертв, могу помочь с удивлением."
     show onka sad
     narrator "Настроение Онки изменилось. Он сел на пол."
-    show onka sad
     onka "Что-то мне нехорошо."
     narrator "Он взял воду у лиса и через пару минут пришел в себя."
-    show onka sad
     onka "Все участники получили необходимую информацию о точках проживания, питания и прочие нужные сведения? "
     narrator "Ему никто не ответил."
-    show onka sad
     onka "Прекрасно. Завтра, в 18.00, подводим итоги."
     narrator "Хозяин обратился к подопечному."
-    show onka sad
     onka "Зафиксируй требования остальных участников."
-    show onka thinking
     onka "И не совершай ошибок."
     hide onka
     show fox angry
@@ -2406,13 +2062,11 @@ label scene_15:
     hide black
     show onka confused
     onka "Ты можешь выбрать любое направление работы Фабрики. "
-    show onka confused
     onka "Я покажу тебе, как это устроено."
     narrator "Лицо Онки выражало торжество."
     hide onka
     show black surprised_var
     black "А, да..."
-    show black surprised_var
     black "Я все равно не знаю, куда мне нужно."
     hide black
     show onka confused
@@ -2420,7 +2074,6 @@ label scene_15:
     hide onka
     show black sad_var
     black "У тебя высокие требования. "
-    show black sad_var
     black "Это все, на что я способен."
     hide black
     show onka confused
@@ -2428,27 +2081,21 @@ label scene_15:
     hide onka
     show black sad_var
     black "Я всего лишь хотел, чтобы у людей был шанс понять меня. "
-    show black sad_var
     black "Думаешь, чтение мыслей сделает мир лучше?"
     hide black
     show onka sneaky
     onka "Смотря как использовать. "
-    show onka sneaky
     onka "Сейчас Чудесная сеть настолько эффективна, что вредит людям."
-    show onka sneaky
     onka "Они должны меньше в ней сидеть."
-    show onka thinking
     onka "Сеть - это не место для жизни, а инструмент для осуществления действительно великих проектов."
     narrator "Аш посмотрел на Илли другими глазами."
     hide onka
     show black surprised_var
     black "Сложно это говорить, но я с тобой согласен."
-    show black surprised_var
     black "И еще. Почему, находясь наедине, мы говорим друг с другом на “ты”?"
     hide black
     show onka sad
     onka "Иногда мне нужен хотя бы один такой человек. "
-    show onka confused
     onka "Хотя, достаточно того, что ты - человек, а не лис."
     hide onka
     show black sad_var
@@ -2456,35 +2103,26 @@ label scene_15:
     hide black
     show onka smile
     onka "Разнообразие необходимо. Мозг всегда требует новую информацию."
-    show onka thinking
     onka "Но он такой глупый! Для него насыщенная жизнь – то же самое, что и видеоряд в сети. "
-    show onka smile
     onka "Поэтому, я не переживаю из-за того, что мой мозг заставляет меня чувствовать. "
-    show onka sad
     onka "Чувства - это иллюзия."
     hide onka
     show black sad_var
     black "Очень хорошо, что у тебя получается игнорировать чувства."
-    show black sad_var
     black "Только простые смертные – такие, как я – не могут их игнорировать. "
-    show black regular
     black "Поэтому мне приходится их учитывать. Я живу не среди лис."
     hide black
     show onka sneaky
     onka "Очень остроумно. Нужно внести в договор запрет на шуточки."
-    show onka sneaky
     onka "Куда мы пойдем?"
     hide onka
     show black angry_var
     black "Я уже говорил, что не знаю, куда мне нужно идти. "
-    show black angry_var
     black "Я ищу сестру."
     hide black
     show onka smile
     onka "Эх! Дай ей спокойно поработать."
-    show onka smile
     onka "Если человек хочет хакнуть свои мозги, то его уже не остановить."
-    show onka smile
     onka "А ты - идешь со мной."
     hide onka
     show black regular_disgust
@@ -2519,7 +2157,6 @@ label scene_16:
     hide black
     show onka sneaky
     onka "Света нет только в служебных помещениях, не беспокойся."
-    show onka smile
     onka "На Фабрике обычно тоже темно."
     hide onka
     show black regular
@@ -2546,11 +2183,8 @@ label scene_16:
     hide black
     show onka sad
     onka "Лисы появились очень давно. Задолго до меня."
-    show onka sad
     onka "Фабрика Чипов – это же технологическая династия."
-    show onka thinking
     onka "У лис есть культура, связанная с Фабрикой. "
-    show onka thinking
     onka "Ты должен понимать, что те, кто варится в изоляции, живут по очень причудливым правилам."
     hide onka
     show black disgust_var
@@ -2566,7 +2200,6 @@ label scene_16:
     show onka regular
     onka "Только Высших и Низших. Третья и вторая - неразумные. "
     narrator "Илли остановился и посмотрел на Аша."
-    show onka regular
     onka "Другие лисы даже не назвали те касты. Они — другие. Увидишь. Просто три и два."
     hide onka
     scene chip_factory_foxs
@@ -2577,12 +2210,10 @@ label scene_16:
     hide onka
     show black surprised_var
     black "Целый лисий улей!"
-    show black surprised_var
     black "Но я себе все не так представлял. Они же такие важные, с ланчбоксами."
     hide black
     show onka sneaky
     onka "О! Тут есть кухня и прачечные. Куда ж без этого. "
-    show onka smile
     onka "Шучу, все автоматизировано."
     hide onka
     narrator "Вокруг было шумно, лисы бегали по лестницам, носили что-то в руках и зубах, шумно обсуждали новости на скамейках."
@@ -2644,15 +2275,10 @@ label scene_16:
     hide black
     show onka confused
     onka "Веру в Фабрику? Это ведь тоже фантазия. "
-    show onka thinking
     onka "Убери из Фабрики всех лис, - разве при этом она закроется? "
-    show onka thinking
     onka "Убери все здания - Фабрика при этом юридически все равно будет существовать. "
-    show onka thinking
     onka "А юридическое существование – просто фантазия, о которой люди договорились между собой. "
-    show onka sneaky
     onka "Если подпишем бумаги, то будем в них верить."
-    show onka sneaky
     onka "Религия и компании основаны на вере. Это коллективные фантазии."
     hide onka
     show black surprised_var
@@ -2660,9 +2286,7 @@ label scene_16:
     hide black
     show onka smile
     onka "Искусственный интеллект Фабрики считает это оптимальным вариантом. "
-    show onka smile
     onka "Кстати, это именно Фабрика управляет судьбой лис в момент рождения."
-    show onka smile
     onka "Судьбой, а значит, и кастами."
     hide onka
     show black surprised_var
@@ -2676,21 +2300,13 @@ label scene_16:
     hide black
     show onka confused
     onka "И растут вместе. "
-    show onka confused
     onka "Их разница - в уровне образования."
-    show onka confused
     onka "Любой Низший может стать Высшим."
-    show onka confused
     onka "Лисятами они растут вместе, получая базовое воспитание."
-    show onka confused
     onka "Затем получают имплант развитого неокортекса и специализацию."
-    show onka confused
     onka "Высшие специализируются на научных дисциплинах. "
-    show onka confused
     onka "Низшие - на обслуживании Фабрики."
-    show onka confused
     onka "Хотя, там тоже куча инженерии."
-    show onka confused
     onka "Те из Низших, кто хочет попасть в Высшую касту – сдают экзамен, если находят для этого время."
     hide onka
     show black regular_confused
@@ -2738,7 +2354,6 @@ label scene_17:
     show black regular_fear
     black "У экрана? Ты чувствуешь запах дыма?"
     narrator "Хозяин Фабрики снова вел парня вперед."
-    show black disgust_var
     black "Здесь я и сам вижу."
     hide black
     show onka thinking
@@ -2760,7 +2375,6 @@ label scene_17:
     show hight_fox smile
     hight_fox "Само потухнет."
     narrator "Аш подошел к двери, ведущей внутрь."
-    show hight_fox shock
     hight_fox "Я благоразумно рекомендую не трогать..."
     hide hight_fox
     show black angry_var
@@ -2779,9 +2393,7 @@ label scene_17:
     hide black
     show onka thinking
     onka "Похоже, произошла авария в блоке Третьей и Второй каст. "
-    show onka thinking
     onka "Но Фабрика все починит."
-    show onka thinking
     onka "Вопрос - в причине аварии."
     hide onka
     show black angry_var
@@ -2789,7 +2401,6 @@ label scene_17:
     hide black
     show hight_fox smile
     hight_fox "Это же Третьи и Вторые! Расходный материал. "
-    show hight_fox smile
     hight_fox "Вот оборудование действительно жаль, оно дорогое."
     call surprised_disgust
     hide hight_fox
@@ -2806,9 +2417,7 @@ label scene_17:
     hide black
     show hight_fox smile
     hight_fox "Да они на Фабрику выходят из-за стекла только года в четыре - хуже роботов!"
-    show hight_fox angry
     hight_fox "Годятся только для экспериментов над ними, да для расчетов."
-    show hight_fox angry
     hight_fox "Когда запретили есть их мозги, они стали совсем бесполезными."
     hide hight_fox
     show black disgust_var
@@ -2819,7 +2428,6 @@ label scene_17:
     narrator "Из темного угла помещения вышел Максим."
     show maks angry
     maks "А что ты удивляешься?"
-    show maks angry
     maks "Я знаю, что он их использует, как живые компьютеры."
     hide maks
     show black sad_var
@@ -2833,7 +2441,6 @@ label scene_17:
     narrator "Он закричал."
     show black regular_blood
     black "Ты меня убьешь!"
-    show black regular_blood
     black "Идиот! Они же вживлены в голову!"
     narrator "Кровь продолжала стекать по лицу, а Максим все тянул Уши вверх."
     hide black
@@ -2845,9 +2452,7 @@ label scene_17:
     narrator "Онка молча наблюдал за сценой, дав лисам сигнал не вмешиваться."
     show onka thinking
     onka "Я вижу, ты многое узнал, пока тут шастал. "
-    show onka angry
     onka "Сжег бы тут все, чего мелочиться. Даже - всю лунную станцию."
-    show onka angry
     onka "А то ведь сколько тут зла, наверное, творится!"
     hide onka
     show black regular_blood
@@ -2856,9 +2461,7 @@ label scene_17:
     hide black
     show maks angry
     maks "Твоя сеть..."
-    show maks angry
     maks "Почему в ней пропадают копии людей, а?"
-    show maks angry
     maks "Почему мой отец скопировался в нее и пропал, не подскажешь?"
     hide maks
     show black regular_blood
@@ -2868,7 +2471,6 @@ label scene_17:
     hide black
     show maks angry
     maks "Все, кто поддерживают рыжего ублюдка, сгорят! "
-    show maks angry
     maks "И, да! Может, и вся станция!"
     narrator "Максим хотел броситься на Онку, но Аш сбил его с ног."
     hide maks
@@ -2881,15 +2483,12 @@ label scene_17:
     narrator "Он пытался сопротивляться, но Аш уже накрепко залепил ему рот... "
     narrator "...И всё сильнее обматывал голову скотчем, перекрывая доступ к кислороду."
     narrator "А когда ты живешь на лунной станции, задохнуться – твой самый большой страх."
-    show black regular_blood
     black "Помнишь свой подарок мне на презентации? Пригодился!"
     hide black
     show onka confused
     onka "Ого! У меня будут из-за этого проблемы?"
     narrator "Он задал этот вопрос Облачному, но забыл, что того нет рядом. И вызвал его в сети."
-    show onka thinking
     onka "Наверняка, будут."
-    show onka thinking
     onka "Оттащите парня."
     hide onka
     show black regular_blood
@@ -2917,14 +2516,11 @@ label scene_17:
     hide hight_fox
     show black regular_blood
     black "Но ведь маленькие лисы Высшей и Низшей касты тоже неразумные! "
-    show black regular_blood
     black "Разве нет? Но о них вы заботитесь!"
     hide black
     show hight_fox smile
     hight_fox "Производство Третьих и Вторых автоматизировано. "
-    show hight_fox smile
     hight_fox "Они, пока не достигнут взрослого состояния, растут в аквариумах."
-    show hight_fox smile
     hight_fox "Логично, что мы к ним не привязываемся."
     narrator "Аш посмотрел на Онку."
     hide hight_fox
@@ -2935,16 +2531,11 @@ label scene_17:
     hide black
     show onka angry
     onka "Я думал ты про это забыл, пока бил белобрысого."
-    show onka thinking
     onka "Но это подпольное лисье развлечение. "
-    show onka thinking
     onka "Они сами иногда специально так делают."
-    show onka angry
     onka "Именно поэтому данному “недоразумению” удалось попасть только сюда."
     narrator "Он указал рукой на Макса, который сидел на полу. Тот уже не выглядел таким самоуверенным."
-    show onka angry
     onka "Из преступлений - только нерациональная трата ресурсов. "
-    show onka thinking
     onka "Этих лис все-таки и кормили, и поили."
     hide onka
     show black regular_blood
@@ -2953,9 +2544,7 @@ label scene_17:
     show onka thinking
     onka "А ты…"
     narrator "Он повернулся к Максу."
-    show onka thinking
     onka "Исключен из конкурса. "
-    show onka danger
     onka "И, поверь, лучше тебе молчать о том, что здесь произошло."
     hide onka
     show fox angry
@@ -2971,9 +2560,7 @@ label scene_17:
     hide fox
     show onka angry
     onka "Кто? Кто находится в зале с моими лианами?!"
-    show onka angry
     onka "Почему сработала безопасность? "
-    show onka angry
     onka "Там кто-то без лис! Без присмотра!"
     narrator "Лисы подпрыгнули на месте и разбежались в разные стороны. Облачный остался на месте."
     hide onka
@@ -2981,7 +2568,6 @@ label scene_17:
     show fox angry
     fox "Что случилась?"
     hide fox
-    show onka angry
     onka "Очевидно, решили разрушить всю мою Фабрику!"
     hide onka
     show black regular_blood
@@ -2993,7 +2579,6 @@ label scene_17:
     hide black
     show fox angry
     fox "Третья каста — просто живые компьютеры, а Вторая - просто лабораторные животные. "
-    show fox angry
     fox "Они даже не говорят."
     hide fox
     show black regular_blood
@@ -3001,15 +2586,11 @@ label scene_17:
     hide black
     show fox angry
     fox "Фабрика вырастит новых, у нас регулярно какие-то аварии. "
-    show fox angry
     fox "Это же Луна."
     narrator "Успокаивал его Облачный."
     hide fox
-    show onka angry
     onka "Пойдешь с нами, пушистый."
-    show onka angry
     onka "И еще расскажешь, где ты был!"
-    show onka angry
     onka "И этого тоже, бери с собой!"
     narrator "Он с презрением посмотрел на потрепанного Максима, на лицо которого уже вернулась ухмылка."
     jump scene_18
@@ -3037,44 +2618,34 @@ label scene_18 :
     hide black
     show maks angry
     maks "Ты дурак? Да! "
-    show maks angry
     maks "Он сделал сеть и чип открытыми, но ядро ведь принадлежит ему!"
-    show maks angry
     maks "Непонятно, чем он здесь занимается."
-    show maks angry
     maks "Одна из пятидесяти копий пропадает! И никаких следов!"
     hide maks
     show black disgust_var
     black "Очень надуманно."
-    show black disgust_var
     black "Ты же не можешь узнать, пропали они или нет, на сто процентов."
-    show black disgust_var
     black "Могли специально скрыться от семьи."
     hide black
     show maks regular
     maks "Мой отец не мог. "
-    show maks regular
     maks "Он и ушел туда, чтобы закрыть все \"хотелки\" этой..."
     narrator "Парень остановил себя и сменил тему."
-    show maks regular
     maks "А могли копии, как и лисы, стать функциями? Нет?"
     narrator "Онка остановился у одной из дверей."
     hide maks
     show onka thinking
     onka "Лис, отвечаешь за белобрысого головой. "
-    show onka thinking
     onka "Стойте оба здесь."
     scene chip_factory_vines2
     narrator "Затем Онка вошел внутрь. "
     show onka confused
     narrator "Помещение освещалось бледно-голубым светом растений. Оно напоминало ботанический сад."
-    show onka thinking
     onka "Смотри под ноги!"
     hide onka
     show black surprised_var
     black "Ого!"
     narrator "Он споткнулся о лиану, испачкавшись чем-то липким и теплым."
-    show black disgust_var
     black "Фэ!"
     hide black
     narrator "Свет ламп отражался от корнеобразных растений, стелющихся высоким ковром по большому залу."
@@ -3144,7 +2715,6 @@ label scene_18 :
     narrator "Наташа заметила Онку и Аша. И ярко улыбнулась, забыв в порыве радости об их отношениях."
     show natasha smile
     natasha "У меня получилось! Все прекрасно сработало! "
-    show natasha smile
     natasha "Думаю, ролик будет эффектный!"
     hide natasha
     show onka angry
@@ -3154,17 +2724,13 @@ label scene_18 :
     hide onka
     show natasha smile
     natasha "Конечно, в качестве триггера на самоубийство, я взяла сильное разрушение. "
-    show natasha smile
     natasha "Оно все и запустило! Это отличная демонстрация моей концепции."
     hide natasha
     show onka angry
     onka "Это было единственное растение, которое смогло жить хоть сколько-то на RDF-13!"
-    show onka thinking
     onka "А ты его убила из-за ролика?!"
     narrator "Он схватился за волосы."
-    show onka sad
     onka "Это кошмар. Кто допустил Вас до этого помещения?"
-    show onka sad
     onka "Мне и так постоянно плохо, еще Вы!"
     hide onka
     show natasha sad
@@ -3174,14 +2740,10 @@ label scene_18 :
     show onka angry
     onka "Я исключаю вас."
     hide onka
-    show natasha angry
     natasha "Что? Нет! Вы не можете просто так взять и нарушить правила."
     hide natasha
-    show onka thinking
     onka "О! Раз я не могу их нарушить, то, может быть, млечный сок лиан это сделает? "
-    show onka danger
     onka "В нем хватит яда на десять Лун. Надеюсь, что-то попало Вам в рот!"
-    show onka danger
     onka "А если не попало, я помогу!"
     narrator "Аш понял, что дело плохо."
     hide onka
@@ -3201,12 +2763,10 @@ label scene_18 :
     hide onka
     show onka thinking
     onka "Могу."
-    show onka sad
     onka "Я даже подумать не мог, что у кого-то рука поднимется на такое..."
     hide onka
     show black angry_var
     black "Это же твои правила. Как Это же твои собственные правила."
-    show black angry_var
     black "Как говорится, выбирая игру, ты выбираешь правила."
     hide black
     show onka angry
@@ -3215,9 +2775,7 @@ label scene_18 :
     hide onka
     show natasha sad
     natasha "Не выгоняйте меня! Это же все было по правилам!"
-    show natasha sad
     natasha "Я спросила у лис, где и что может умереть по цепной реакции..."
-    show natasha sad
     natasha "Сказали..."
     narrator "Ее остановил новый друг."
     hide natasha
@@ -3241,13 +2799,10 @@ label scene_18 :
     hide natasha
     show black regular
     black "Нет, дело действительно в лианах, а не в тебе. "
-    show black sad_var
     black "Похоже, ими он дорожит больше, чем другими подопечными."
     narrator "Он снова зацепился за растение, но теперь уже не теплая, а холодная жижа стекала по его ноге."
-    show black disgust_var
     black "Как же мерзко! Как же мерзко!"
     hide black
-    show natasha regular
     natasha "Аккуратней! Там же яд!"
     hide natasha
     show black regular_happy1
@@ -3278,7 +2833,6 @@ label scene_19 :
     narrator "Ребята разговаривали, двигаясь по коридору."
     show black sad_var
     black "Этот придурок сжег сегодня лис..."
-    show black angry_var
     black "Главное, для Онки это - нормально!"
     hide black
     show natasha regular
@@ -3289,18 +2843,13 @@ label scene_19 :
     hide black
     show natasha sad
     natasha "Многое бы отдала за интервью с одним из них для блога..."
-    show natasha sad
     natasha "Только они не особо хотят со мной говорить."
     hide natasha
     show black disgust_var
     black "У них очень закрытое сообщество. "
-    show black disgust_var
     black "И далеко не все понравится широкой общественности."
-    show black confused_regular
     black "Не могу даже понять, хорошие они или нет..."
-    show black confused_regular
     black "А еще, я видел, как Макс на тебя посмотрел. "
-    show black confused_regular
     black "Что между вами?"
     hide black
     show natasha sad
@@ -3322,11 +2871,8 @@ label scene_19 :
     narrator "Они шли незнакомыми коридорами. Вокруг никого не было."
     show natasha sad
     natasha "Прости за ненормальное поведение вчера. "
-    show natasha sad
     natasha "И за то, что сорвала твои планы."
-    show natasha sad
     natasha "Насчет обучения ИИ на людях... "
-    show natasha sad
     natasha "Ради Которого ты продал оборудование Фабрики."
     hide natasha
     show black regular_happy2
@@ -3334,19 +2880,15 @@ label scene_19 :
     hide black
     show natasha sad
     natasha "Просто у меня проблемы. "
-    show natasha angry
     natasha "Еще этот Онка, который вечно критикует."
     hide natasha
     show black regular_happy1
     black "Не переживай, это не связано с тем, что твой проект плохой."
-    show black regular
     black "Людям тяжело говорить о смерти, о возможности использования средств массового убийства. "
-    show black regular
     black "И о том, что это может быть полезно."
     hide black
     show natasha smile
     natasha "Да! Знаешь, как много можно заработать, выключив половину медуз?"
-    show natasha smile
     natasha "Электростанции и очистные сооружения, бассейны — все забивается медузами."
     hide natasha
     show black regular_happy2
@@ -3366,22 +2908,26 @@ label scene_19 :
     natasha "Там кто-то из наших! В смысле - это точно человек!"
     hide natasha
     narrator "Аш замолк, и они заглянули за приоткрытую дверь."
-    scene chip_Factory_room
-    narrator "В комнате с имитацией окна на голом полу стояла клетка. А в ней сидел лис из третьей касты. "
+    scene chip_factory_room
     show wild_fox regular
-    narrator "Напротив клетки, на мягком пуфике, сидела Вечна и делала в смешанной реальности заметки, невидимые другим."
+    narrator "В комнате с имитацией окна на голом полу стояла клетка. А в ней сидел лис из третьей касты. "
     hide wild_fox
     show vechna thinking
+    narrator "Напротив клетки, на мягком пуфике, сидела Вечна и делала в смешанной реальности заметки, невидимые другим."
+    scene chip_factory_corridor3
     hide vechna
     show natasha regular
     natasha "Эта выскочка - это же твоя сестра?"
+    hide natasha
     show black angry_var
     narrator "Парень посмотрел на Наташу с упреком. В ответ она виновато пожала плечами."
     hide black
     show natasha sad
     hide natasha
-    show vechna thinking
+    scene chip_factory_room
+    show wild_fox regular
     narrator "Сестра обратила внимание на лиса в клетке: тот махал хвостом из стороны в сторону. Его взгляд не отрывался от сидящей девушки. Он был просто поглощен ею."
+    hide wild_fox
     show vechna smile1
     narrator "Ребята увидели, как Вечна достала из-за спины мячик. Обычный фиолетовый мяч. "
     narrator "Такой же она бросила в руки Ашу, приглашая его на сцену."
@@ -3393,7 +2939,6 @@ label scene_19 :
     hide wild_fox
     show vechna smile2
     vechna "Насколько сильно ты его хочешь? Посчитай от одного до десяти. "
-    show vechna smile2
     vechna "Тебе ведь поставили имплант для речи?"
     narrator "Зрачки лиса расширились. Изо рта потекла слюна."
     hide vechna
@@ -3411,10 +2956,8 @@ label scene_19 :
     hide wild_fox
     show vechna thinking
     vechna "Жаль, что речь так скудна... "
-    show vechna thinking
     vechna "Скажи, как сильно хочешь его – по шкале от одного до десяти!"
     narrator "В ответ лис зарычал и начал грызть клетку."
-    show vechna angry
     vechna "Я же говорила правила: без команды \"встать\" двигаться нельзя."
     hide vechna
     show wild_fox crazy
@@ -3424,9 +2967,7 @@ label scene_19 :
     narrator "Вечна смотрела на лиса с досадой."
     show vechna thinking
     vechna "Значит, нужно сделать синоптические связи слабее... "
-    show vechna thinking
     vechna "Хмм… В два раза?"
-    show vechna thinking
     vechna "Дели или умножай на два: так хоть будет ясно, меняется что-то или нет."
     narrator "Сказала она самой себе. Сестра подошла к клетке и снова аппетитно помяла мячик."
     hide vechna
@@ -3440,7 +2981,6 @@ label scene_19 :
     show vechna angry
     vechna "Долго пришлось тебя ждать."
     hide vechna
-    show fox angry
     fox "Пришел, как только смог. И можно на “Вы”?"
     hide fox
     show vechna smile1
@@ -3455,9 +2995,7 @@ label scene_19 :
     hide vechna
     show fox shock
     fox "На это нужна хотя бы неделя. "
-    show fox angry
     fox "Мы не можем поставить ему более развитый неокортекс, как, например, у меня или у Высших. "
-    show fox angry
     fox "Это решает ИИ Фабрики."
     hide fox
     show vechna sad
@@ -3493,13 +3031,9 @@ label scene_19 :
     narrator "А затем сделала заметки, проговаривая вслух:"
     show vechna thinking
     vechna "Данные по образцу номер семь демонстрируют сильную психологическую зависимость. "
-    show vechna thinking
     vechna "Надо изучить данные более подробно."
-    show vechna thinking
     vechna "Важно! Нужно собрать данные, чтобы такое больше не повторялось. "
-    show vechna thinking
     vechna "А чтобы изучить, требуется повторить."
-    show vechna angry
     vechna "Что же делать?"
     hide vechna
     show fox angry
@@ -3515,24 +3049,21 @@ label scene_19 :
     hide fox
     show vechna thinking
     vechna "Да, конечно. К сожалению, с ним не вышло."
-    show vechna thinking
     vechna "Мне нужен подопытный с навыками речи."
     narrator "Она на секунду остановилась."
-    show vechna thinking
     vechna "Будешь следующим?"
+    hide vechna
     show fox shock
-    narrator "И после этих слов Вечна скрылась из вида."
-    scene Chip_Factory_corridor3
+    scene chip_factory_corridor3
     show natasha sad
     narrator "Наташа с сочувствием посмотрела на Аша и потянула его скорее прочь."
-    narrator "По щекам Наташи потекли слезы. Из комнаты слышались грызущие, чавкающие звуки."
+    narrator "По щекам девушки потекли слезы. Из комнаты слышались грызущие, чавкающие звуки."
     show natasha sad
     natasha "Что за жесть!"
-    call surprised_disgust
     hide natasha
-    show black mood
+    show black sad_var
     black "Это был лис из Второй или Третьей касты, не говорящий..."
-    show black mood
+    call surprised_disgust
     black "Пока Вечна не попросила."
     narrator "Аш молчал. Из-за двери еще слышались поскуливания. "
     narrator "Он вспоминал, как в детстве сестра спасла его и кроликов во время аварии."
@@ -3545,22 +3076,19 @@ label scene_19 :
     narrator "Он решил, что главное - быть - для нее важнее, чем эти люди, чем все эти открытия и сеть."
     narrator "Они шли по коридору. Яд на одежде парня высох."
     hide black
+    hide black
     show natasha sad
     natasha "Я знаю, каково это, когда твои близкие отдаляются. "
-    show natasha sad
     natasha "С моим братом - похожая история."
     hide natasha
     show black sad_var
     black "Сочувствую. Но у меня все не так плохо. "
-    show black sad_var
     black "Я для нее важнее всего."
     narrator "Наташа обняла его."
     hide black
-    show natasha smile
+    show natasha sad
     natasha "Я тоже очень на это надеюсь."
-    show natasha sad
     natasha "Но думаю... "
-    show natasha sad
     natasha "Что о сумасшедшем лисе никто не позаботится..."
     jump scene_20
 
@@ -3568,51 +3096,47 @@ label scene_19 :
 label scene_20:
     scene chip_factory_audience
     #Аш видит изменения Вечны, и чувствует свою вину - не нужно было давать ей код. Наташа его поддерживает (может за руку берет), а он поддерживает ее - Онка сливает девушку за несоответствие теме конкурса. Аш побеждает, но отдает победу Вечне. Предварительно спрашивая, позволяют ли это правила.
-    #(Последний день на конкурсе.)
+    narrator "Последний день на конкурсе."
     show black sad_var
     black "Можно?"
     hide black
-    show vechna thinking
+    show vechna smile1
     vechna "Почему ты спрашиваешь о таком?"
     hide vechna
     show black sad_var
     black "Надеюсь, что на остальные вопросы ты будет отвечать охотнее."
     narrator "От вчерашних воспоминаний на душе скребли кошки. \"Бедные лисы\" — подумал он про себя."
-    show black angry_var
     black "Всех лис \"починила\"?"
     hide black
     show vechna thinking
     vechna "Ты это о чем?"
     narrator "Аш вспомнил, что вчера он лишь подсматривал, но в комнате с Вечной не находился."
-    show vechna thinking
     vechna "Ты слишком часто психуешь. Даже шутить об этом не хочется."
     hide vechna
     show black sad_var
     black "Хотел узнать, сколько лис ушло в утиль."
-    narrator "Вечна пожала плечами, потом задумалась."
     hide black
-    show vechna thinking
+    show vechna smile2
+    narrator "Вечна пожала плечами, потом задумалась."
+    show vechna smile2
     vechna "Двадцать три лисы, пока я не поняла, в чем проблема."
-    show vechna smile2
     vechna "Ты был прав, - мне повезло не спалить свой мозг!"
+    hide vechna
+    show black sad_var
     narrator "В глубине души Аш был уверен, что Вечна вправит мозги всем лисам. "
+    hide black
+    show vechna smile1
     narrator "Сестра продолжала говорить."
-    show vechna smile2
+    show vechna smile1
     vechna "Я достигла прогресса в изменении мозга. "
-    show vechna smile2
     vechna "Теперь можно менять в нем все, что хочешь."
-    show vechna thinking
     vechna "Естественно, как всегда, самое долгое — это обучение. "
-    show vechna thinking
     vechna "Найти именно те связи, которые нужно усилить."
-    show vechna thinking
     vechna "Но кое-что вышло. "
-    show vechna smile2
     vechna "И все - благодаря тебе!"
     hide vechna
     show black disgust_var
     black "Класс, я очень горжусь, что лисы свихнулись благодаря мне. "
-    show black sad_var
     black "И ты тоже свихнулась."
     hide black
     show vechna smile2
@@ -3620,70 +3144,82 @@ label scene_20:
     hide vechna
     show black angry_var
     black "Еще недавно ты бы никогда так не поступила с животными. "
-    show black angry_var
     black "Если бы не твоя радость от выполнения задач, достигнутая за счет нейрохакинга."
     hide black
-    show vechna smile2
+    show vechna thinking
     vechna "С Облачным все прошло ок."
     narrator "Девушка задумалась и пожала плечами."
-    show vechna angry
     vechna "Может, я, наконец, именно та, кем и хотела быть? "
-    show vechna angry
     vechna "А может, я такой и была?"
+    hide vechna
+    show black regular
     narrator "Аш хотел что-то сказать, но девушка дала знак молчать."
     narrator "Её отвлек звук шагов. Это Онка поднялся на сцену."
-    hide vechna
+    hide black
+    hide black
     show onka angry
     onka "Сегодня мы выслушаем итоговые презентации, и я выберу победителя."
-    show onka confused
     onka "Конечно, не сразу. После выступлений лисы разберут ваши данные по проектам."
+    hide onka
     show natasha smile
     narrator "Наташа поднялась с места. Она лучезарно улыбнулась Онке."
+    hide natasha
+    show black regular
     narrator "Аш сочувственно подумал: \"Думаю, это тебе уже не поможет\". "
     show black surprised_var
     narrator "Его мысли сразу же перескочили на собственный проект: готов ли он сам к тому, чтобы участники видели его эмоции? "
     narrator "Почему он об этом волнуется? Да потому, что пусть он и не сблизится с сестрой, но хотя бы продвинется по работе."
     hide black
+    hide black
     show natasha smile
     natasha "Вы не против, если я начну?"
     hide natasha
-    show onka thinking
+    show onka sneaky
     onka "Разве Вас кто-то сможет остановить?"
+    hide onka
+    show natasha regular
     narrator "Наташа проигнорировала сарказм Онки. "
     narrator "Что еще она могла сделать? Девушка поднялась на сцену."
-    hide onka
     show natasha smile
     natasha "Прошу всех подключиться к сети. Я начну трансляцию презентации в смешанной реальности."
     narrator "Перед аудиторией появилось окно с презентацией. "
     narrator "В самом конце, она открыла видео. "
+    hide natasha
+    show black surprised_var
     narrator "Аш замотал головой: \"Надеюсь ты не покажешь Онке, как убила его лианы, выживающие даже на астероидах?\". "
+    hide black
+    show natasha smile
     narrator "Но у нее хватило ума так не делать."
     show natasha smile
     natasha "Внутри Фабрики я еще раз протестировала распространение вируса, но не для животных, а для ландышей. "
-    show natasha regular
     natasha "Триггером запуска цепной реакции, назовем это самоуничтожением, являлся холод."
-    show natasha smile
     natasha "Пришлось напечатать базовый прототип моего вируса за ночь, но я успела!"
     narrator "Девушка указала рукой на невидимую для нечипированных презентацию, в которой открылось видео. "
+    hide natasha
     show onka thinking
     narrator "Онка молчал, вертя в пальцах крупную засахаренную саранчу, которую взял из вазы со снеками."
+    hide onka
     show onka thinking
     onka "Сама концепция биологического оружия противоречит нашим ценностям открытия и создания новых возможностей для жизни."
     hide onka
     show natasha angry
     natasha "Я не веду речи о полном истреблении. Речь о регуляции численности."
+    hide natasha
     show onka angry
     narrator "Хозяин Фабрики положил в рот хрустящее насекомое."
+    hide onka
     show natasha regular
     narrator "Девушка твердо смотрела перед собой. Аш чувствовал себя неловко, он боялся, что подруга заплачет."
     hide natasha
+    hide natasha
     show onka sneaky
     onka "Спасибо за выход. Не обижайтесь, конкурс субъективный. "
-    show onka sneaky
-    onka "Кто выступает следующим?"
     narrator "К Илли снова вернулся интерес."
+    onka "Кто выступает следующим?"
+    hide onka
     show natasha sad
     narrator "Наташа в расстроенных чувствах спустилась со сцены. Аш ждал у лестницы."
+    hide natasha
     hide natasha
     show black surprised_var
     black "Меня тоже недавно Онка слил."
@@ -3691,65 +3227,59 @@ label scene_20:
     show natasha sad
     natasha "Все из-за вчерашнего..."
     narrator "На глазах Наташи наворачивались слезы."
-    show natasha sad
     natasha "Хотя бы в одной сфере жизни было так, как хочется! "
-    show natasha angry
     natasha "И я все транслировала в сеть! Вот позор!"
     hide natasha
     show black surprised_var
     black "Ничего страшного нет, даже если это кто-то и увидит."
-    show black regular_happy1
     black "Наоборот, больше шансов найти инвестора. "
-    show black regular_happy1
     black "Глядишь, какой-нибудь Онка-ненавистник решит дать тебе денег, чтобы насолить ему."
+    hide black
+    show natasha angry
     narrator "Наташа подняла глаза на сцену. Там стояла Вечна."
+    hide natasha
     show black regular
     narrator "Аш не отрывал взгляд от сестры. Подруга это заметила."
+    hide black
     hide black
     show natasha angry
     natasha "Останься с сестрой, мне нужно побыть одной."
     show natasha sad
     narrator "На глаза девушки опять навернулись слезы, она старалась глубоко дышать. "
+    hide natasha
     show black regular
     narrator "Только Аш не обращал на нее внимания."
+    hide black
     show vechna smile2
     narrator "Вечна стояла на сцене в сопровождении Облачного лиса."
     show vechna smile2
     vechna "Рада вас приветствовать!"
     narrator "Перед глазами конкурсантов появился полупрозрачный слой с презентацией. Оратор стояла прямо перед ним."
-    show vechna smile2
     vechna "На снимках можно видеть активность мозга при любви к фиолетовым мячам."
     narrator "Показывает новый кадр."
-    show vechna smile2
     vechna "Перед вами - мозг моего ассистента-лиса."
     show fox angry
     hide fox
-    show vechna smile2
     vechna "Если кратко, то за одну ночь я смогла научить мозг лиса любить неодушевленный предмет до дрожи. "
-    show vechna smile2
     vechna "Очень сильно любить. "
-    show vechna smile2
     vechna "Конечно, есть данные \"до\" и \"после\"."
-    show vechna smile2
     vechna "Они хранятся в открытом доступе..."
-    show vechna smile2
     vechna "...Поэтому вы можете ознакомиться с уровнем активности мозга до нейрохакинга и после него."
-    show vechna smile2
     vechna "Перспективы применения данной разработки огромные, вплоть до изменения психики. "
-    show vechna thinking
     vechna "Конечно, первые применения спорных технологий, — это всегда медицина."
     narrator "Она обратилась к Илли."
-    show vechna thinking
     vechna "Исследование монетизации и рынка для подобных инноваций требует больше времени, чем было доступно."
-    show vechna smile2
     vechna "Но я верю, что сфера применения нейрохакинга огромна, и это может действительно изменить мир."
+    hide vechna
     show onka victory
     narrator "Онка аплодировал стоя."
+    hide onka
     show black sad_var
     narrator "С момента ухода Наташи Аш смотрел лишь в одну точку на сцене и думал про свою сестру. "
     narrator "Краем глаза он заметил, что Вечна движется к выходу, и пошел за ней. "
-    narrator "Его под руку поймал Облачный."
     hide black
+    show fox angry
+    narrator "Его под руку поймал Облачный."
     show fox angry
     fox "Ай, ай, ай! Сейчас Ваш выход, молодой человек!"
     hide fox
@@ -3760,45 +3290,44 @@ label scene_20:
     fox "Вы же последний! Как всегда!"
     narrator "С этими словами он взял его зубами за рукав и повел за собой."
     hide fox
+    hide fox
     show black disgust_var
     black "А как же манеры?"
     narrator "Лис выпустил рукав из пасти."
     hide black
     show fox angry
     fox "Что Вы знаете о нашей культуре?"
-    narrator "Парень вздохнул и попробовал собраться с мыслями. "
-    narrator "Перед глазами был только лис в клетке."
     hide fox
     show black sad_var
+    narrator "Парень вздохнул и попробовал собраться с мыслями. "
+    scene chip_factory_room
+    show wild_fox crazy
+    narrator "Перед глазами был только лис в клетке."
+    scene chip_factory_audience
+    hide wild_fox
+    show black regular
     black "После таких открытий, как у Наташи или Вечны, моя работа не выглядит такой революционной."
-    show black sad_var
     black "Конечно, можно найти полезное применение нейрохакингу, но я хочу разобраться с проблемами наших чувств. "
-    show black sad_var
     black "За эту ночь я смог немного обучить ИИ распознавать удивление и отвращение."
-    show black sad_var
     black "Кроме этого, внедрил автогенерацию дизайна: с помощью сторонней программы Уши ищут изображения, которые максимально ассоциируются с эмоцией и выводят их на себя."
-    show black sad_var
     black "Технически они представляют собой интерфейс, подключенный к чипу, находящемуся в голове. Дисплеи — сами Уши."
-    show black sad_var
     black "Из-за автогенерации изображений, Уши сами, без моего участия, создают визуальный язык."
-    narrator "Илли слушал не отрываясь."
     hide black
+    show onka confused
+    narrator "Илли слушал не отрываясь."
     show onka confused
     onka "Ваша теория заключается в том, что одни люди, наблюдая эмоции других людей, будут менять свое отношение к ним?"
     hide onka
-    show black sad_var
-    black "Да, это позволит быть человеку более открытым с самим собой и с другими людьми. "
-    show black sad_var
+    show black regular
+    black "Да, это позволит человеку быть  более открытым с самим собой и с другими людьми. "
     black "Часто мы сами не хотим признаваться себе в собственных чувствах."
     hide black
     show onka sneaky
     onka "Если все будут видеть мои эмоции, это приведет к серьезному изменению образа жизни. "
-    show onka sneaky
     onka "Я тогда с Фабрики носа не покажу."
     hide onka
     show black angry_var
     black "Это изменение культуры. "
-    show black angry_var
     black "Как мы знаем, минимальный шаг значимых культурных изменений — одно поколение."
     hide black
     show fox angry
@@ -3806,112 +3335,106 @@ label scene_20:
     hide fox
     show black angry_var
     black "Это решение необоснованно технически. "
-    show black angry_var
     black "Можно сделать дисплеи в форме разных Ушей. Дело вкуса."
+    hide black
     show fox smile
     narrator "Скрестив руки на груди и чувствуя себя неимоверно важным, Облачный внимательно выслушал ответ и утвердительно покачал головой, говоря самому себе, что так он и думал."
+    hide fox
     hide fox
     show onka sneaky
     onka "И значит, у Вас есть патент на софт?"
     hide onka
     show black angry_var
     black "Да, я дал его в безвозмездное пользование сестре."
-    show black angry_var
     black "Думаю, Вы и так все уже знаете."
-    narrator "Онка повернулся к другим участникам."
     hide black
+    show onka regular
+    narrator "Онка повернулся к другим участникам."
     show onka smile
     onka "Через два часа отдел контроля проверит данные ваших проектов и сообщит результаты. "
-    show onka smile
     onka "Победитель сможет присоединиться к любой исследовательской группе на Фабрике. "
+    hide onka
     show black surprised_var
     narrator "Через пару часов все были поражены тем, что выиграл Аш. "
+    hide black
     show vechna sad
     narrator "Второе место принадлежало Вечне. "
     show vechna angry
     narrator "От досады она рвала на голове волосы."
+    hide vechna
     hide vechna
     show black regular_happy1
     black "Я отказываюсь от победы. И я прочел правила – так можно."
     hide black
     show onka sneaky
     onka "Ожидаемо... Но не расстраивайся!"
-    show onka sneaky
     onka "Занявший второе место получит утешительный приз — ужин с самым выдающимся инноватором нашего поколения – ..."
     hide onka
     show black angry_var
     black "...Со мной."
     narrator "Договорил за него Аш и закатил глаза."
-    show vechna smile2
+    hide black
+    show vechna smile1
     narrator "Вечна сидела, не шевелясь, красная, как помидор, от приливающей к лицу крови."
-    show vechna smile2
+    show vechna smile1
     vechna "Я победила! Задача выполнена!"
     jump scene_21
 
 
 label scene_21:
-    scene black_background
+    scene home
     #Девушка продолжает нейрохакинг. Аш отговаривает его, напоминая, сколько лис она убила ради этого на конкурсе...
+    show black regular
     narrator "Прошел месяц."
     #(Черный экран. Появляется кнопка с текстом.)
-    show black angry_var
+    show black regular
     black "Соединить с Вечной."
     scene planet
+    show black surprised_var
     narrator "Мир вокруг изменился: парень стоял на планете, чувствуя резкий запах кислот. "
     narrator "Они обжигали легкие. Звучали свист и раскаты грома. "
     narrator "Руку резко прибило к земле. Аш понял – что-то падает с неба."
     narrator "\"Кристаллы\" — мелькнуло в голове. И снова боль пробила руку."
-    narrator " Оглядевшись, он начал двигаться в сторону невысокой пещеры."
+    narrator "Оглядевшись, он начал двигаться в сторону невысокой пещеры."
     narrator "Дойдя до нее, Аш попробовал вытащить один из кристаллов."
-    narrator "Никак не получалось нащупать их конец, чтоб подцепить и вытащить из руки."
+    narrator "Никак не получалось нащупать его конец, чтобы подцепить и вытащить из руки."
     narrator "На глаза ему попались рубины, лежащие у входа в укрытие, они были сантиметров пять в длину и острые, как иглы."
-    show black regular_fear
     black "Ааа, я такие длинные не вытащу!"
     narrator "Из-под рубинов, застрявших в руке, стали выделяться капли крови."
-    show black disgust_var
     black "Что за жесть! "
     narrator "\"Красиво\" — успел подумать парень, пока рука не онемела. Ему казалось, что пробиты даже кости."
     narrator "Вытащить из себя пятигранные клинки казалось невозможным. "
-    show black angry_var
     black "Вечна! Фак! Выключи это все нафиг!"
     narrator "Но никто не ответил."
-    show black angry_var
     black "Все, я тогда пас! Выйти из сети."
     voice_cartoon "Пожалуйста, закончите симуляцию."
     hide voice_cartoon
-    show black surprised_var
     black "Что?"
     voice_cartoon "Вход в симуляцию подразумевает подписание пользовательского соглашения."
     narrator "Перед Ашем появилось соглашение."
     hide voice_cartoon
-    show black angry_var
     black "Так не пойдет. Я присоединился не к симуляции, а к пользователю."
     voice_cartoon "Для минимизации получения нежелательного опыта в сети рекомендуется перед переходом ознакомиться с локацией."
     narrator "Аш злился на себя за то, что всегда пропускал этот шаг, настроив мгновенный переход после одобрения запроса."
     hide voice_cartoon
-    show black angry_var
     black "Ладно, как закончить игру?"
     narrator "Перед ним высветились правила."
     narrator "\"Наблюдай за Нихалом и найди новое открытие — свое серендипити\"."
     call surprised_disgust
-    show black mood
     black "О, то, что нужно для человека с раздробленной рукой! "
-    show black mood
     black "Самое оно, мать вашу."
     narrator "Рука заныла."
-    show black surprised_var
     black "А если я умру?"
     voice_cartoon "Симуляция закончиться."
     hide voice_cartoon
-    show black surprised_var
     black "Выбор очевиден. Кристаллы еще сыплются с неба?"
     narrator "Он посмотрел на небо - дождь из рубинов закончился."
-    show black angry_var
     black "Не вовремя."
     show black regular
     narrator "Спустя десять минут он сидел в позе лотоса у входа в пещеру и глубоко дышал, наблюдая за ландшафтом."
-    narrator "Появилась Вечна."
     hide black
+    show vechna smile2
+    narrator "Появилась Вечна."
     show vechna smile2
     vechna "Прости, я только-только включила уведомления. Не знала, что ты тут."
     hide vechna
@@ -3920,49 +3443,47 @@ label scene_21:
     narrator "Он хотел выругаться, что из симуляции просто так не выйти, но вспомнил, что, будь он сам внимательнее, мог бы этого избежать."
     narrator "Она бы точно на это указала."
     hide black
-    show vechna smile2
+    show vechna smile1
+    show vechna smile1
     vechna "Прости! Планета с атмосферой из синильной кислоты и дождями из драгоценных камней..."
-    show vechna smile2
     vechna "..Может показаться неприветливой в первое время."
     hide vechna
     show black disgust_var
     black "То-то я чувствую, что легких уже нет. Почему я жив?"
     hide black
-    show vechna smile2
+    show vechna smile1
     vechna "Если я все буду включать на полную катушку, то не продержусь тут и пары минут. "
-    show vechna smile2
     vechna "Поэтому, обычно, то, что разрабатываю сейчас,- включаю полностью, а остальные внешние факторы – приглушаю."
     hide vechna
     show black surprised_var
     black "Что за фишка с серендипити?"
     hide black
-    show vechna smile2
+    show vechna smile1
     vechna "Ааа, ну это мое упражнение, перед выходом из симуляции."
-    show vechna smile2
     vechna "Я наблюдаю за миром вокруг и записываю какое-то потенциальное открытие."
-    show vechna smile2
     vechna "Я понимаю под серендипити глубокий вывод из случайных наблюдений."
+    hide vechna
+    show black regular
     narrator "Девушка сделала несколько манипуляций рукой, и Аш облегченно вздохнул. "
     narrator "Боль пропала, но чувствовался холод рубинов, когда дотрагиваешься пальцами."
-    show vechna smile2
+    hide black
+    show vechna thinking
+    show vechna thinking
     vechna "У тебя какое-то дело? А то у меня..."
     hide vechna
     show black sad_var
     black "...Еще столько задач незакрытых есть."
     hide black
-    show vechna smile2
+    show vechna thinking
     vechna "Именно."
     hide vechna
     show black regular_fear
     black "Ты что, все это сейчас на себе тестишь?"
-    show black surprised_var
     black "Почему не на модели? Ты вон вся какая драная."
     hide black
-    show vechna smile2
+    show vechna angry
     vechna "Сам ты \"драная\"! Я подвожу итоги."
-    show vechna thinking
     vechna "Когда поставлена задача - сделать дожди, как на других планетах..."
-    show vechna thinking
     vechna "...то удар камня по голове может обрадовать тебя больше, чем рождество!"
     hide vechna
     show black disgust_var
@@ -3970,27 +3491,24 @@ label scene_21:
     hide black
     show vechna thinking
     vechna "Я делаю великие вещи."
+    hide vechna
+    show black regular_confused
     narrator "Аш пристально на нее посмотрел. Одна рука девушки была выбита из плеча. На теле виднелись ожоги."
+    hide black
     show vechna angry
     vechna "Это не вредит мне!"
     hide vechna
     show black angry_var
     black "А не вредит ли? Пусть тело это не проживает, но зато проживает мозг."
-    narrator "Девушка была недовольна непредвиденным конфликтом на пустом месте."
     hide black
-    show vechna angry
-    vechna "Для меня это просто инструмент, понимаешь? "
-    show vechna angry
-    vechna "Может быть, странный, но это новая культура. "
-    show vechna angry
-    vechna "Хоть умри, с этим уже ничего не сделаешь. "
-    show vechna angry
-    vechna "Новое можно направить, но нельзя заставить исчезнуть."
-    show vechna angry
-    vechna "Оглянись, мы на другой планете. "
-    show vechna angry
-    vechna "Где люди даже жить не могут. "
     show vechna thinking
+    narrator "Девушка была недовольна непредвиденным конфликтом на пустом месте."
+    show vechna thinking
+    vechna "Для меня это просто инструмент, понимаешь? "
+    vechna "Может быть, странный, но это новая культура. "
+    vechna "Хоть умри, с этим уже ничего не сделаешь. "
+    vechna "Оглянись, мы на другой планете. "
+    vechna "Где люди даже жить не могут. "
     vechna "Остальное – е-рун-да. Я бы за это сотни раз умирала без притупления чувств."
     hide vechna
     narrator "С неба снова сыпались кристаллы."
@@ -3999,49 +3517,41 @@ label scene_21:
     narrator "Сквозь минералы преломлялись лучи, на секунду зажигая камни яркими вспышками."
     narrator "Словно блестящие звезды падают с неба."
     narrator "В такие моменты все кажется неважным, никчемным, в сравнении с вселенной и её чудесами. И грусть отпускает."
+    show black sad_var
     narrator "А позже, от осознания этой никчемности, становится еще хуже."
-    hide vechna
     show black sad_var
     black "Ты делаешь великие вещи."
-    show black sad_var
     black "Но ты постоянно лежишь, подключившись к Фабрике, работаешь по семнадцать часов."
     hide black
     show vechna thinking
     vechna "Ты сюда подключился просто так? На мозг мне капать?"
     hide vechna
-    show black regular_happy2
+    show black sad_var
     black "Пообщаться, узнать как дела."
     hide black
     show vechna thinking
-    vechna "Нет. Хотел пообщаться, узнать, как дела."
-    show vechna thinking
+    vechna "Отлично дела! Были!"
     vechna "Я работаю в месте своей мечты. "
-    show vechna thinking
     vechna "Мне теперь платят за моделирование других планет. "
-    show vechna thinking
     vechna "Счастливое везение, что Онка просто помешан на космосе."
-    show vechna angry
     vechna "И, опережая твои комментарии, я очень благодарна, что ты отдал мне победу!"
-    show vechna sad
     vechna "Пойми, у меня правда загруженный период. Потом будет проще."
-    show vechna sad
     vechna "Я использую нейрохакинг. И буду успевать то же, что и сейчас, часов за тринадцать-четырнадцать."
     hide vechna
-    show black regular_happy2
+    show black sad_var
     black "Только не говори, что подключишь себя к системе жизнеобеспечения."
-    show black angry_var
     black "Тогда и на зрение ресурсы мозга не тратятся, и легкие от аппарата смогут работать!"
-    narrator "Вечна засмеялась."
     hide black
-    show vechna sad
+    show vechna smile2
+    narrator "Вечна засмеялась."
+    show vechna smile2
     vechna "Я хочу повысить производительность мозга, убрать какую-нибудь внешнюю информацию, которую ему требуется обрабатывать. "
-    show vechna sad
     vechna "Я не отключу свои легкие."
     hide vechna
     show black regular_confused
     black "Если честно, звучит плохо."
     hide black
-    show vechna sad
+    show vechna thinking
     vechna "Ты доверяешь мне?"
     hide vechna
     show black sad_var
@@ -4066,21 +3576,16 @@ label scene_22:
     black "Ты должна разбираться не только в микробиологии, но и в других смежных дисциплинах, быть в тренде."
     narrator "Они сидели на застеленном пледом полу, где были разложены печенье b чашечки. "
     narrator "У них был настоящий пикник. "
-    show black regular_happy2
     black "Нельзя так долго грустить из-за проекта. "
-    show black regular_happy2
     black "Ты все равно хорошо шаришь в микробиологии. "
-    show black regular_happy2
     black "Чем занимаются у тебя в семье?"
     hide black
     show natasha angry
     natasha "Что ты все время спрашиваешь про семью?"
-    show natasha angry
     natasha "Я думала, что воспитанных обществом это не интересует."
     hide natasha
     show black regular_happy2
     black "У меня есть семья, просто в ней не было родителей. "
-    show black regular_happy2
     black "И я вижу, что моя психика вышла более устойчивой."
     hide black
     show natasha angry
@@ -4088,43 +3593,35 @@ label scene_22:
     hide natasha
     show black regular_happy2
     black "Только 17/7."
-    show black sad_var
     black "И это было очень грубо."
     hide black
-    show natasha angry
+    show natasha sad
     natasha "Да. Прости. "
-    show natasha angry
     natasha "Просто я со своей традиционной семьей общаюсь еще хуже."
     narrator "Она поджала под себя колени, длинные волосы свесились цветными волнами на лицо."
     hide natasha
+    hide natasha
     show black regular_happy1
     black "Тебе все равно нужно решить, чем ты хочешь заниматься. "
-    show black regular_happy1
     black "Какие у тебя баллы на учебе?"
     hide black
-    show natasha angry
+    show natasha sad
     natasha "Мы с тобой познакомились на конкурсе для ботанов. Догадайся."
     hide natasha
     show black regular_confused
     black "Что тебе еще интересно?"
     hide black
     show natasha sad
-    natasha "Вот новость для тебя: "
-    show natasha sad
+    natasha "Вот новость для тебя:"
     natasha "Я учусь, как и большинство, не потому, что хочу собирать звезды, а чтобы выдержать всю эту бешеную конкуренцию! "
-    show natasha sad
     natasha "Иногда кажется, эта гонка словно... "
-    show natasha sad
     natasha "Словно, чем сложнее тебе двигаться, тем быстрее приходится это делать, чтобы не выбыть из игры. "
-    show natasha angry
     natasha "Безумие, но даже дело моей жизни пришло не изнутри, а извне."
-    show natasha angry
     natasha "Сказали: \"Наташ, факультет оки-доки\". А мне ни оки это и ни доки."
-    show natasha angry
     natasha "Я не знаю, чем мне заниматься. "
-    show natasha sad
     natasha "Где, блин, моя кьюти-марка??? Я хочу быть пони..."
     narrator "Наташа схватилась за голову."
+    hide natasha
     hide natasha
     show black regular_happy1
     black "У тебя есть блог. Кажется, тебе реально интересно им заниматься."
@@ -4133,23 +3630,25 @@ label scene_22:
     natasha "Интересно. Но это же не так круто, как наука."
     narrator "Она мило вытерла носик."
     hide natasha
+    hide natasha
     show black regular_happy1
     black "У тебя действительно проблема с чужим мнением."
-    show black regular_happy1
     black "Есть сюрприз: сейчас придет лис — он готов рассказать про самые внутренности Фабрики! "
-    show black regular_happy1
     black "Но без видео, анонимно."
+    hide black
     show natasha smile
     narrator "Наташа сложила руки перед лицом, словно сейчас прочитает Ашу молитву. "
     narrator "Девушка подползла к нему на коленях, и по ее взгляду было не понятно, заплачет она сейчас или упадет в обморок."
+    hide black
     show natasha smile
     natasha "Спасибо! Я не верю, что кто-то что-то сделал для меня!"
-    narrator "За их спиной кто-то прочистил горло со всей возможной важностью."
     hide natasha
-    show fox smile
+    show fox angry
+    narrator "За их спиной кто-то прочистил горло со всей возможной важностью."
+    show fox angry
     fox "Кхм-кхм… Простите, я не знал, что у вас время молитвы. "
-    show fox smile
     fox "Какую религию вы исповедуете?"
+    hide fox
     show black regular_happy2
     narrator "Аш засмеялся и подал Нате руку."
     hide black
@@ -4157,15 +3656,14 @@ label scene_22:
     show natasha angry
     natasha "Мы не молимся! Это жуткая глупость."
     hide natasha
-    show fox angry
     fox "Неверное, нахальное утверждение!"
-    show fox angry
     fox "Это полезно для нервов."
     hide fox
     show natasha smile
     narrator "Наташа жестом пригласила Облачного сесть рядом. "
     narrator "Она уже не выглядела вялой и апатичной. "
     narrator "Громко хлопнула в ладоши. От неожиданности ее друг вздрогнул. "
+    hide natasha
     show black regular_fear
     narrator "Аш вспомнил, что сестра всегда хлопала в ладоши, чтобы вокруг замолчали."
     hide black
@@ -4175,55 +3673,56 @@ label scene_22:
     hide fox
     show natasha smile
     natasha "Конечно. Только мне нужно придумать вопросы. "
-    show natasha smile
     natasha "Буду импровизировать."
     narrator "Про себя она ругала Аша, которого больше волновал \"вау\" эффект сюрприза, чем ее подготовка к интервью."
     hide natasha
+    hide natasha
     show fox angry
     fox "Заранее оговариваю: никто не должен знать источник. "
-    show fox angry
     fox "Я возвращаю старый долг."
     hide fox
     show black regular_happy2
     black "Лис имеет в виду, что съел входной жетон на конкурс, а я не стал жаловаться и подождал, когда он из него выйдет."
     narrator "Лис смешался и поправил воротник."
     hide black
+    hide black
     show fox angry
     fox "\"Выйдет\" — это очень грубо звучит, можно подумать..."
     hide fox
     show black disgust_var
     black "Тут ничего эстетичного все равно не подумаешь."
-    narrator "Наташа заметила, что гость чувствует себя некомфортно."
     hide black
+    show natasha angry
+    narrator "Наташа заметила, что гость чувствует себя некомфортно."
     show natasha smile
     natasha "Мы очень признательны, что Вы тут."
-    show natasha smile
     natasha "Скажите, Вы — разумный лис, потому что имеете имплант неокортекса? "
-    show natasha smile
     natasha "Как ваше имя?"
-    narrator "Девушка попыталась опустить ноги в массу нанороботов, но Аш успел привлечь ее внимание. Наташа очень не хотела бы остаться без ногтей."
+    narrator "Девушка попыталась опустить ноги в массу нанороботов, но Аш успел привлечь ее внимание. Наташа очень не хотела бы остаться без ногтей. Мертвые ткани наноботы расщепляют быстро."
+    hide natasha
     hide natasha
     show fox angry
     fox "Я предпочитаю скрыть свое имя."
     narrator "Сердито ответил лис."
-    show fox angry
     fox "Щенками мы проходим процедуру имплантации."
     hide fox
     show natasha smile
     natasha "Вы знаете, как работает имплант?"
     hide natasha
-    show hight_fox smile
-    hight_fox "Не знаю. Если б я был распределен в касту Высших, может знал бы."
-    hide hight_fox
+    show fox shock
+    fox "Не знаю. Если б я был распределен в касту Высших, может знал бы."
+    hide fox
     show natasha smile
     natasha "Как вы говорите?"
     hide natasha
     show fox shock
     fox "С помощью имплантов. "
-    show fox angry
     fox "После установки неокортекса, Высшие и Низшие получают возможность говорить."
-    narrator "Аш все это знал, поэтому сидел молча и старался не мешать."
     hide fox
+    show black regular
+    narrator "Аш все это знал, поэтому сидел молча и старался не мешать."
+    hide black
+    hide black
     show natasha smile
     natasha "Можно ли сменить касту?"
     hide natasha
@@ -4237,12 +3736,11 @@ label scene_22:
     show fox angry
     fox "Стараюсь, очень стараюсь."
     narrator "Наташа отправила в реку помятое печенье, и зеркальные капли попали на воротник лиса."
-    show fox shock
     fox "Аккуратнее! Никто не должен знать, что я тут был!"
-    show fox angry
     fox "Это Вам не кожа, а фабричная ткань! Ее разъест!"
     narrator "Лис судорожно счищал капли наноботов с воротника, но в некоторых местах всё же остались маленькие дырочки."
     narrator "Наташа кивнула головой на реку."
+    hide natasha
     hide fox
     show natasha smile
     natasha "Наноботы Онки тоже имеют касты?"
@@ -4251,57 +3749,60 @@ label scene_22:
     fox "Что за глупость?"
     narrator "В ответ она пожала плечами."
     hide fox
-    show natasha smile
+    show natasha regular
     natasha "Значит, Вы правда молитесь? "
     hide natasha
     show fox angry
     fox "Да, мы молимся, нас так воспитала Фабрика. "
     hide fox
-    show natasha smile
+    show natasha regular
     natasha "Почему одни лисы ходят на задних лапах, а другие - нет?"
     hide natasha
-    show fox angry
+    show fox smile
     fox "Часто Высшие лисы могут ходить на задних лапах "
-    show fox angry
     fox "Но это - не ограничение, а привычка. Поэтому Низшие тоже ходят на задних."
-    narrator "Наташа толкнула парня в бок, привлекая его внимание."
-    show fox angry
     fox "Мне пора. "
+    hide fox
+    show natasha angry
+    narrator "Наташа толкнула парня в бок, привлекая его внимание."
+    hide natasha
+    hide natasha
     show fox angry
     fox "В моей касте: сколько часов за день ты отработал, плюс шесть часов на сон, — столько времени ты проживешь."
-    narrator "Наташа одним прыжком встала на ноги. Даже Аш вернулся из своих мыслей."
     hide fox
+    show natasha angry
+    narrator "Наташа одним прыжком встала на ноги. Даже Аш вернулся из своих мыслей."
     show natasha angry
     natasha "Вы зарабатываете часы жизни?"
     hide natasha
     show fox shock
     fox "Все справедливо. "
-    show fox shock
     fox "Содержание каждого лиса требует ресурсов."
-    show fox angry
     fox "Как будто люди содержат детей, чтобы те потом ушли на все четыре стороны, и ничего им не дали."
     narrator "Лис встал и стал внимательно себя оглядывать."
+    hide fox
     hide fox
     show natasha sad
     natasha "Уходите?"
     hide natasha
     show fox angry
     fox "Завтра я проживу десять часов, плюс шесть часов на сон. "
-    show fox angry
     fox "А я не хочу, чтобы мой день длился одиннадцать часов! Имейте совесть."
     hide fox
+    show natasha regular
     narrator "Наташа не нашлась, что ответить. Лис уже удалялся. Девушка обняла Аша со спины."
-    hide fox
-    show natasha angry
+    show natasha smile
     natasha "А этот Онка - чистое зло!"
-    show natasha sad
     natasha "Теперь я не удивляюсь, почему он позволил Вечне ставить эксперименты на лисах."
+    hide natasha
     show black sad_var
     narrator "Аш отвернул голову, ему было стыдно за сестру."
+    hide black
     hide black
     show natasha angry
     natasha "Сделал на заводе свою собственную страну, где он - Бог!"
     narrator "Она встала и начала собирать свои вещи: баночку для воды, чашки."
+    hide natasha
     hide natasha
     show black surprised_var
     black " Ты уходишь?"
@@ -4311,51 +3812,65 @@ label scene_22:
     hide natasha
     show black sad_var
     black "Хорошо."
+    hide black
     narrator "Но вечером девушка была занята."
     jump scene_23
 
 
 label scene_23:
-    scene lake
+    scene home
     #Парень поддерживает как может, рассказываем, что он вырос без родителей
+    show black sad_var
     narrator "Темноволосый точно знал, какую эмоцию он может научить распознавать ИИ сегодня. "
-    narrator "С самого утра он испытывал тревогу. Его мысли прервал поток сообщений с одинаковым содержанием: \"Ты не идешь на учебу, ты идешь со мной к реке.\""
+    narrator "С самого утра он испытывал тревогу. "
+    narrator "Его мысли прервал поток сообщений с одинаковым содержанием: \"Ты не идешь на учебу, ты идешь со мной к реке.\""
+    scene station_corridor
+    show black regular_fear
     narrator "Парень вышел из жилого отсека. Ему потребовалось время, чтобы убедить себя, что поводов для тревоги нет."
+    scene lake
     narrator "Наташа сидела на пледе там же, где и в прошлый раз."
+    hide black
     show natasha sad
     natasha "Она умерла. Она убила себя."
     hide natasha
     show black surprised_var
     black "О ком ты говоришь? "
-    show black surprised_var
     black "Ты рассказывала про семью: отца, брата, мать..."
-    narrator "По щекам Наташи потекли слезы."
+    hide black
     show natasha sad
-    narrator "Аш догадался."
+    narrator "По щекам Наташи потекли слезы."
     hide natasha
-    show black surprised_var
+    show black sad_var
+    narrator "Аш догадался."
+    show black sad_var
     black "Прости. У меня не было родителей, никогда."
     narrator "Ему было очень стыдно, что он не испытывает жалости к родителям, только - к Наташе."
     narrator "Хотя знал, что это нормально. У него же не было традиционной модели семьи."
     narrator "Множество взрослых, и - сестра. Но его беспокоило, что Наташа видит, что ему не жаль."
     narrator "Уши молчали. Был бы на Ушах стыд, — она хотя бы знала, что у него есть совесть."
-    show black sad_var
     black "Я бы хотел разделить с тобой, но..."
     hide black
     show natasha sad
     natasha "Ничего, я понимаю. "
     hide natasha
-    show black sad_var
+    show black regular
     black "Хочешь поговорить? Это твоя мать убила себя?"
+    hide black
     show natasha sad
     narrator "Наташа сильнее заплакала."
     hide natasha
-    show black sad_var
+    hide natasha
+    show black regular
     black "А где твой отец, брат?"
+    hide black
     show natasha sad
     narrator "Девушка зарыдала и начала задыхаться."
+    hide natasha
+    show black sad_var
     narrator "Он решил ничего не спрашивать. Аш вспомнил, что такое \"паническая атака\". Вспомнил про термос в рюкзаке."
     narrator "Аш обнял ее так, что она не видела ничего, и уткнулась лицом ему в плечо."
+    hide black
+    show natasha sad
     narrator "Спустя несколько минут Наташа перестала реветь и начала говорить."
     show natasha sad
     natasha "Отца тоже нет, уже год. После копировании в сеть он пропал."
@@ -4365,9 +3880,7 @@ label scene_23:
     hide black
     show natasha sad
     natasha "Ты делаешь копию в сеть – и убиваешь тело, чтобы решить парадокс двойников."
-    show natasha sad
     natasha "Потому что мы верим, что человек должен быть индивидуален. "
-    show natasha sad
     natasha "Он должен быть единственным."
     hide natasha
     show black angry_var
@@ -4375,22 +3888,21 @@ label scene_23:
     hide black
     show natasha angry
     natasha "Если он при жизни отдаст права на личность копии, то нет."
+    hide natasha
     show natasha sad
     narrator "Она вытирала лицо салфетками, слезы так и текли из глаз, но девушка стала спокойней. "
-    narrator "Внутри Аша все перевернулось."
     hide natasha
     show black angry_var
+    narrator "Внутри Аша все перевернулось. Он сделал глубокий вход."
+    show black regular
     black "Нужно выпить что-нибудь сладкое."
-    narrator "Наташа вытерла красный нос."
-    show black angry_var
+    narrator "Наташа смотрела в пол."
     black "А где твой брат? Вы нужны друг другу."
     hide black
     show natasha sad
-    natasha "Он проснулся, как ни в чем не бывало, и пошел по своим делам."
-    show natasha sad
     natasha "Мы не общаемся с тех пор, как отец пропал."
     hide natasha
-    show black angry_var
+    show black regular
     black "Наверное, ему нужно время."
     narrator "Девушка одобрительно качнула головой и вытерла нос."
     scene station_corridor
@@ -4398,52 +3910,58 @@ label scene_23:
     show natasha sad
     natasha "Куда мы идем?"
     hide natasha
-    show black angry_var
-    black "В кафе в парке, если его можно так назвать. "
-    show black regular_happy2
+    show black regular
+    black "В кафе рядом с универом, если его можно так назвать. "
     black "Выпьем густой горячий шоколад. Это, конечно, яд, но помогает."
+    hide black
     show natasha sad
     narrator "Наташа взяла его за руку и шла, тихо плача себе под нос."
-    narrator "Еще издалека была заметна какая-то шумиха рядом с аудиторией университета. Аш хотел уйти."
+    narrator "Еще издалека была заметна какая-то шумиха рядом с аудиторией университета. "
     hide natasha
+    show black regular
+    narrator "Аш хотел уйти."
     show black surprised_var
     black "На станции так просто толпы не собираются. "
-    show black surprised_var
     black "Пойдем другим путем."
+    hide black
     show natasha angry
     narrator "Но Наташа, как дикая, побежала в сторону скопления роботов и нескольких человек, все еще держа его за руку."
     narrator "Они вошли внутрь."
     scene audience
+    show black regular_fear
     narrator "Наташа сбавила шаг, и Аш заметил кровь среди людей и устройств. "
+    hide black
     show natasha sad
     narrator "Подруга отпустила его руку и медленно подошла поближе."
     narrator "Почему-то ему захотелось остановить ее. Но он не решился, просто шел вслед."
     show natasha angry
     narrator "Совсем рядом кто-то сказал ей, чтобы она ушла, но девушка оттолкнула человека."
     show natasha sad
-    narrator "Там лежало что-то, накрытое черной тканью. Если вы думаете, что на темной ткани не видно кровь — вы ошибаетесь."
-    narrator "Инстинктивно, она все поняла. "
+    narrator "На скамейке лежало что-то, накрытое черной тканью. Если вы думаете, что на темной ткани не видно кровь — вы ошибаетесь."
+    narrator "В стороне лежал галстук. Инстинктивно, девушка все поняла. "
     narrator "Кто-то до последнего отказывается верить в происходящее, но она была не тем человеком. "
-    narrator "Несчастная выросла той – кто верит в худшее."
+    narrator "Несчастная выросла среди людей – которые верят в худшее."
     show natasha sad
     natasha "Зачем?! Теперь я совсем одна!"
+    hide natasha
     show black sad_var
     narrator "Кто-то из присутствующих заплакал. А Аш вспомнил слова Макса: \"У меня отец пропал в сети...\"."
-    show black angry_var
+    show black surprised_var
     narrator "Как же он раньше не догадался? "
-    show natasha sad
     narrator "Наташу, бьющуюся в истерике, увели. "
+    show black sad_var
     narrator "Ему не позволили пойти с ней."
-    show natasha sad
+    show black angry_var
     narrator "Аш уже был готов идти следом, в Медцентр. "
-    narrator "Он же, при необходимости, выполнял функцию Центра Копирования во время копирования в сеть, и Центра Помощи - при проблемах с психикой."
+    narrator "Он же, при необходимости, выполнял функцию Центра Копирования во время переноса в сеть, и Центра Помощи - при проблемах с психикой."
+    show black regular
     show black surprised_var
     narrator "Но ему пришло уведомление. Тот же Медцентр, комната №33."
     jump scene_24
 
 
 label scene_24:
-    scene helpcentere_3
+    scene helpcentre
     #Аш пытается дозвониться до Вечны, но выясняется, что та в больнице из-за неудачного теста с нейрохакингом. Девушка заходит все дальше. Оставаясь в тишине она думает, что сегодня могла лишиться всего (тела). И она готова, готова оставить брату оригинал. Она отправляет Онке запрос, можно ли так сделать
     narrator "В палате №33 без сознания лежала Вечна."
     show black sad_var
@@ -4455,92 +3973,76 @@ label scene_24:
     mobile_camera "Лечение: нет. Профилактика: прекращение неквалифицированного вмешательства в мозг."
     narrator "Парень схватился за волосы."
     hide mobile_camera
-    show black surpised_var
+    show black surprised_var
     black "Как она могла отключить свою кожу и скелетные мышцы? Как?"
     mobile_camera "Могу найти информацию в сети. Отправить запрос?"
     hide mobile_camera
-    show black regular_fear
     black "Нет. Она в коме?"
     narrator "Он стал быстро ходить туда-сюда."
     mobile_camera "По текущим прогнозам, пациент придет в сознание через несколько часов."
     narrator "Аш начал вытирать слезы трясущимися руками."
     hide mobile_camera
-    show black sad_var
     black "Как она поступила к вам?"
     mobile_camera "Она отправила запрос из сети."
     narrator "Парень развернулся к кровати сестры, пытаясь осознать ситуацию."
     hide mobile_camera
-    show black sad_angry
     black "Думала, что все контролируешь?"
     narrator "У него появился порыв дернуть сестру за руку, сбросить с кушетки, разбудить."
     narrator "Вместо этого, он почувствовал холодную ладонь сестры и одернул свою. "
     narrator "На секунду перестав дышать, он постарался отогнать страшную мысль."
     narrator "В голове загудело. Сердце стало биться громче, адреналин выплескивал ярость, разжигая кровь."
-    show black disgust_var
     black "Как у тебя хватило смелости сделать все это?"
     call surprised_disgust
-    show black mood
     black "Как у тебя хватило совести?"
     narrator "Он игнорировал ответы на свои вопросы: \"Что тут такого? Врачи бы приехали, в сети я в сознании...\"."
-    show black angry_var
     black "Почему? Почему из всего, что есть в этом мире, ты выбираешь различные способы покончить с собой?"
     narrator "У него появилось желание поступить с ней так же, как и она с ним. Взять шприц, взять нож: \"Интересно, тут есть, чем убить себя?\""
-    show black angry_var
     black "Хай, Алиса, чем себя можно убить в радиусе двух метров?"
     alise "Острый угол тумбы. Рекомендуется удариться виском с расстояния десяти шагов от нее."
     hide alise
-    show black angry_var
     black "Совсем не то."
     alise "Вы можете придавить паховую область ножкой кушетки и умереть от болевого шока."
     narrator "Парня передернуло."
     alise "Вариант №3. Вы можете съесть плед и умереть."
+    show black regular_happy1
     narrator "Ашу стало смешно. Он решил про себя: \"Понятно, почему разработчикам разрешили ввести такую функцию\"."
     narrator "Он услышал шелест ткани. Вечна очнулась. "
     show black sad_var
     narrator "Ему было сложно сдержаться и не обнять сестру, но она зашла слишком далеко."
     narrator "Он думал, что не должен поощрять такие действия."
     narrator "Руки еще дрожали, ноги стали подкашиваться, и он сел на пол рядом с кушеткой. Посмотрел на нее снизу вверх."
-    show black angry_var
     black "Ты просто не знаешь меру. "
-    show black angry_var
     black "Может, все же, подключиться к аппарату жизнеобеспечения? "
-    show black angry_var
     black "Например, можно выключить легкие, или сердце. "
-    show black angry_var
     black "Интересно, как это повлияет на твою производительность?"
+    hide black
     show vechna thinking
     narrator "Вечна задумалась. Осторожно села на постели."
     hide vechna
     show black angry_var
     black "Хорошо, что можешь двигаться. "
-    show black angry_var
     black "Но это уже глупо. Если хочешь уйти в сеть, - уходи."
-    show black angry_var
     black "Только какая тебе от этого польза?"
-    show black angry_var
     black "Жизнью в сети будет наслаждаться копия."
     show vechna thinking
+    hide black
     narrator "Вечна молча смотрела на брата. Она словно выжидала: сказать или нет? Брат продолжал."
     hide vechna
     show black angry_var
     black "Удел настоящих людей - жизнь в реальности. "
-    show black angry_var
     black "И если что-то нельзя сделать в ней - делать в сети."
     hide black
     show vechna thinking
     vechna "Ты не против моего копирования в сеть?"
     narrator "Парень закатил глаза."
     hide vechna
-    show black dusgust_var
+    show black disgust_var
     black "Не судьба тебе оптимизироваться на сто процентов, или даже на девяносто пять."
-    show black dusgust_var
     black "Копия - это уже не жизнь. "
-    show black dusgust_var
     black "Что это вообще? Ее симуляция?"
     hide black
     show vechna thinking
     vechna "Симуляция как раз полностью ее повторяет. "
-    show vechna thinking
     vechna "То, что похоже на жизнь, называется «эмуляция»."
     hide vechna
     show black surprised_var
@@ -4551,9 +4053,7 @@ label scene_24:
     hide vechna
     show black sad_var
     black "Все плохо закончится."
-    show black sad_var
     black "Как ты смогла отключить импульсы от кожи и мышц? "
-    show black angry_var
     black "Там же столько расчетов! Даже начни ты это до конкурса – не успела бы!"
     hide black
     show vechna thinking
@@ -4561,22 +4061,17 @@ label scene_24:
     hide vechna
     show black angry_var
     black "Начинаю понимать Макса..."
-    show black angry_var
     black "Парень из университета, оказывается, брат Наташи. "
-    show black angry_var
     black "И он умер. "
-    show black angry_var
     black "К слову, после конфликта на Фабрике."
     hide black
     show vechna angry
     vechna "Оставь свои домыслы. "
-    show vechna angry
     vechna "Если я и покорю дальний космос, то только за ресурсы Онки."
     hide vechna
     show black angry_var
     black "Одно другому не мешает."
     narrator "Он поднялся на ноги."
-    show black angry_var
     black "Я подожду пока ты оденешься."
     hide black
     show vechna thinking
@@ -4595,17 +4090,14 @@ label scene_24:
     show vechna angry
     vechna "А ты понимаешь, каково мне?"
     narrator "Она приподнялась на кушетке. Руки дрожали, но злость придавала сил."
-    show vechna angry
     vechna "Я делаю то, что считаю верным!"
     mobile_camera "Не рекомендуется вставать с кровати в ближайшие три-пять часов."
     hide mobile_camera
-    show vechna thinking
     vechna "Вот видишь? Все решилось само. Я остаюсь."
     narrator "Голос парня дрожал."
     hide vechna
     show black angry_var
     black "Ты считаешь, что у тебя все нормально? "
-    show black angry_var
     black "Ты можешь не восстановить чувствительность многих мышц и рецепторов."
     hide black
     show vechna thinking
@@ -4616,28 +4108,26 @@ label scene_24:
     hide black
     show vechna angry
     vechna "Это побочный эффект!"
+    hide vechna
+    show black angry_var
     narrator "Зубы Аша скрипели друг о друга."
     narrator "Он пнул кушетку. Аппаратура для измерения показателей жизнеобеспечения затряслась. Вечна испугалась."
     mobile_camera "Законные разрушения невозможны в медицинском учреждения."
     narrator "Парень не обращал внимание на автоматического помощника. Вечна кричала."
+    hide black
     hide mobile_camera
     show vechna angry
     vechna "Что ты делаешь? Успокойся!"
-    narrator "Он стал задыхаться, злость отступала. Но снова нарастала в его сестре."
+    narrator "Он стал задыхаться, злость отступала. Но нарастала в его сестре."
     narrator "Она снова приподнялась на постели."
-    show vechna angry
     vechna "Ты лицемер. Ты сам..."
     narrator "В ее голосе слышалась желчь."
-    show vechna angry
     vechna "Ты цифровизируешь чувства. Твои Уши..."
-    show vechna angry
     vechna "Ты запрещаешь мне жить так, как я хочу! Где я хочу!"
     hide vechna
     show black angry_var
     black "Потому что ты выбрала самый короткий путь в могилу!"
-    show black angry_var
     black "Ты просто не доживешь до отлета на Землю! "
-    show black angry_var
     black "А, Вечна? Ты не вечна! Очнись уже!"
     hide black
     show vechna smile2
@@ -4645,13 +4135,15 @@ label scene_24:
     hide vechna
     show black angry_var
     black "Хочешь, делай копию в сеть."
-    show black angry_var
     black "Все равно, как только ты поймешь, что та копия лучше тебя, – ты сама ее удалишь."
-    show black angry_var
     black "Больше открытий! Ты, похоже, любишь только свое эго!"
-    show vechna thinking
-    narrator "Он вышел в коридор. Сестра долго смотрела в стену, она и забыла, что ее сознание не живет в сети, оно лишь заходит в нее."
+    show black angry_var
+    narrator "Он вылетел в коридор. "
+    hide black
+    show vechna sad
+    narrator "Сестра долго смотрела в стену, она и забыла, что ее сознание не живет в сети, оно лишь заходит в нее."
     show vechna smile2
+    show vechna smile1
     narrator "Ей пришло уведомление. Прочитав, девушка улыбнулась. Она смотрела в потолок и шептала сама себе: \"Скоро, задача будет выполнена\"."
     jump scene_25
 
@@ -4659,15 +4151,14 @@ label scene_24:
 label scene_25 :
     scene lake
     #Раскрываются карты, что Макс ее брат. Он винит в своей смерти Онку и Аша (чисто из вредности. А еще, саму Наташу в смерти отца, это ей нужны были ресурсы. Из-за этого, он пропал в сети
+    show black angry_var
     narrator "Со стороны Аш выглядел, как сумасшедший. Наташа сидела на пледе, скрестив ноги."
     show black angry_var
     black "Куда ты? Луна маленькая."
     hide black
     show natasha angry
     natasha "Я не могу и не хочу тут находиться."
-    show natasha angry
     natasha "Мой брат вынес себе мозги в университете. "
-    show natasha angry
     natasha "Как мне тут жить?"
     hide natasha
     show black angry_var
@@ -4675,112 +4166,115 @@ label scene_25 :
     hide black
     show natasha angry
     natasha "Что, прости, пройдет? "
-    show natasha angry
     natasha "Люди стали оживать? О, как-то я пропустила эту новость!"
-    show natasha angry
     natasha "Ты действительно не можешь поставить себя на мое место?"
     hide natasha
     show black angry_var
     black "Знаешь, я более, чем на твоем месте."
-    show black regular
     black "Разве мы должны ругаться, а не поддержать друг друга?"
-    show black regular
     black "Разве я - не твой родной человек?"
     hide black
     show natasha angry
     natasha "Кто тебе родной? Для общественников родной - любой, с кем знаком месяц."
-    narrator "Аш сделал шаг вперед. Наташа подалась назад."
     hide natasha
-    show black surprised_var
+    show black regular
+    narrator "Аш сделал шаг вперед. Наташа подалась назад."
+    show black sad_var
     black "Почему ты не рассказала про свои проблемы?"
     hide black
     show natasha sad
     natasha "Для чего?"
-    show natasha sad
     natasha "Расскажи я, что отец пропал во время копирования в сеть, а свое тело при этом сам умертвил... "
-    show natasha angry
     natasha "Что бы ты делал? "
-    show natasha angry
     natasha "Ходил бы за своей сестрой! А мне тоже нужно было внимание!"
-    show natasha sad
     natasha "Расскажи я, что мать, которая при попытке удалить воспоминания экспериментальным нейрохакингом..."
-    show natasha angry
     natasha "...Спалила себе мозг, что бы ты сделал?"
-    narrator "Аш молчал. Никогда он не чувствовал такого разочарования."
     hide natasha
+    show black angry_var
+    narrator "Аш молчал. Никогда он не чувствовал такого разочарования."
     show black angry_var
     black "Почему ты не сказала про Максима?"
     hide black
     show natasha angry
     natasha "Он во всем винил меня! "
-    show natasha sad
     natasha "Что я требовала себе и факультет получше, и вещи, и вообще..."
-    narrator "По ее щекам снова покатились слезы. Аш стоял напротив. За ним серебрилась река по переработке. "
-    narrator "Девушка стояла и смотрела в глаза Аша."
+    narrator "По ее щекам снова покатились слезы. "
     hide natasha
     show black angry_var
+    narrator "Аш стоял напротив. За ним серебрилась река по переработке. "
+    narrator "Девушка стояла и смотрела в глаза Аша."
+    show black angry_var
     black "Теперь ты точно одна."
-    narrator "Плечи девушки на секунду опустились, но автоматически вытянулись в струну. Она вздернула подбородок."
     hide black
+    show natasha regular
+    narrator "Плечи девушки на секунду опустились, но автоматически вытянулись в струну. Она вздернула подбородок."
     show natasha angry
     natasha "Ты хоть иногда думаешь о том, каково другим? "
-    show natasha angry
     natasha "Не о том, что они сделают тебе, и как ты себя будешь чувствовать, а о том, что будут чувствовать они?"
     hide natasha
     show black disgust_var
     black "Ты неадекватная. "
-    show black disgust_var
     black "Ты, как и все, кто пережил подростковый возраст под Лунным Куполом – психованная."
-    show black angry_var
     black "Ведь ты молчала, зная, что светит Вечне от самопального нейрохакинга!"
-    show black angry_var
     black "Не пытайся выставить меня виноватым."
+    show black fear_regular
     narrator "Темноволосый почувствовал толчок в грудь. Он понял, что стоит на краю. "
+    hide black
     show natasha angry
     narrator "Наташа прижалась к нему. И он испугался, что она его столкнет."
+    hide natasha
+    show black fear_regular
+    hide black
+    hide black
     show natasha angry
     natasha "Стоило бы сбросить тебя. "
-    show natasha angry
     natasha "Оставить с повреждениями мозга от переработанного протеза."
     hide natasha
-    show black angry_var
+    show black regular
     black "Импланта. "
-    show black angry_var
     black "И я даже не против."
-    narrator "Она говорила сквозь зубы. Четко произнося каждый звук. "
     hide black
+    show natasha angry
+    narrator "Она говорила сквозь зубы. Четко произнося каждый звук. "
     show natasha angry
     natasha "Пусть ты и твои идеи будут никому не нужны."
     hide natasha
     show black regular_happy2
     black "Это и есть, моя текущая ситуация."
+    hide black
     show natasha angry
     narrator "Наташа держала парня за толстовку, потом резко дернула на себя, заставив сделать несколько шагов вперед."
     show natasha angry
     natasha "Еще объяснительные писать."
-    show natasha angry
     natasha "И без моей помощи сгниешь."
+    hide black
+    show black regular
     call surprised_disgust
-    hide natasha
     show black mood
     black "Кто бы мог подумать, что вместо трогательных прощаний, я познакомлюсь с тобой настоящей."
-    show natasha angry
+    hide black
+    show natasha regular
     narrator "Девушка сложила плед, собрала влажные от слез платки и бросила в реку."
-    show natasha angry
+    show natasha regular
     natasha "Не пытайся всех контролировать! Я – не твоя сестра!"
-    narrator "Уходя, она не подняла глаз на Аша. Аш повернулся лицом к массе наноботов, подался вперед, словно намереваясь броситься вниз."
+    show natasha angry
+    narrator "Уходя, она не подняла глаза на Аша. "
     hide natasha
     show black sad_var
-    black "Живого они меня не переработают, но Уши в голове расщипят."
+    narrator "Он повернулся лицом к массе наноботов, подался вперед, словно намереваясь броситься вниз."
     show black sad_var
+    black "Живого они меня не переработают, но Уши в голове расщипят."
     black "Смысл оставаться овощем и радовать Наташу?"
-    narrator "Аш получил уведомление из сети, и, подумал было, что это Онка вспомнил про \"утешительный приз – ужин\"."
-    narrator "Он поставил ногу, нависшую над субстанцией, назад на берег и собрался домой."
+    show black sad_var
+    narrator "Он получил уведомление, и, подумал было, что это Онка вспомнил про \"утешительный приз – ужин\"."
+    show black surprised_var
+    narrator "Темноволосый поставил ногу, нависшую над субстанцией, назад на берег и собрался домой."
+    show black regular_sad
     narrator "Когда открыл сообщение – пришел в ужас и со всех ног помчался в Медцентр, выполняющий функцию Центра Копирования."
     scene station_corridor
     narrator "В голове стучал быстрый пульс и звучали слова: «Твоя сестра в Центре Копирования... Говорят, копии пропадают»."
-    show black surprised_var
     #Показываем полную сцену копирования Вечны. Она не хотела убивать оригинал, но что-то пошло не так. Почему-то рядом с Ашем оказался Лис. После этого, лиса повысит онка
+    show black regular_fear
     narrator "Аш чувствовал, что плохой конец ближе, чем он думал."
     jump scene_26
 
@@ -4788,84 +4282,73 @@ label scene_25 :
 label scene_26:
     scene helpcenter
     narrator "Спустя 30 минут."
-    narrator "(Отрывок из сцены 2)"
     show vechna sad
     narrator "Вечна повернула голову к Ашу, лицо брата искажалось сквозь стекло, заляпанное кровью. Он бился лбом и руками. Зря."
+    show black regular_blood
+    hide black
     hide black
     show vechna angry
     vechna "Это все он... !"
+    show vechna sad
     narrator "Ее заглушил голос станции:"
     robotic_voice "Автоматическая подача газа запущена."
-    show vechna sad
     jump scene_27
 
 
 label scene_27:
-    scene helpcenter_2
+    scene helpcentere_3
     narrator "Настоящее время."
     show black sad_var
     black "Это все я? Неужели, она так думала? "
-    show black angry_var
     black "Что это я во всем виноват?"
-    show black angry_var
     black "Как я жалею, что дал код Ушей..."
-    show black angry_var
     black "Не только сестра должна платить. Я - тоже."
-    show black angry_var
     black "Здесь и закончу. "
     narrator "Он видит перед собой дверь, в смешанной реальности на ней выведено: \"Центр Помощи. Особые услуги. Статус: Ожидается Аш Хом.\""
+    show black sad_var
     narrator "Аш с сидит с мешками под глазами. "
     help_center "Я должен произнести речь о красоте жизни."
     narrator "Ашу показывают фото их и Вечны."
     hide help_center
-    show black sad_var
     black "Разве я давал разрешение на обработку этих данных?"
     help_center "Да. Я не произвожу оценочных суждений, поэтому можете чувствовать себя комфортно. "
     hide help_center
-    show black sad_var
     black "Мне бы хотелось быстрее начать."
     help_center "Пройдите."
-    narrator "Аш подходит к металлической двери. Нажимает «вход» и заходит. Дверь сразу закрывается."
+    narrator "Аш подходит к металлической двери. Нажимает «вход» и заходит. "
     scene blood_room
-    narrator "Раздается мужской голос."
-    hide help_center
-    show man tbd
+    narrator "Дверь сразу закрывается. Раздается мужской голос."
     man "На таком заказе нужен живой человек. Ну ты, парень, и удумал."
     show black regular_fear
-    narrator "Внутри, парень не может ничего разглядеть. Но слышит рычание. "
-    narrator "Глаза привыкают к темноте. "
-    narrator "На него бросаются три собаки."
+    narrator "Внутри, парень не может ничего разглядеть. "
+    show black regular
+    narrator "Глаза привыкают к темноте. Он слышит рычание. "
+    show black regular_sad
     narrator "Тело парализует страх, но в следующий момент его охватывает адреналиновая эйфория, и он чувствует отчаяние и злость."
+    narrator "На него бросаются три собаки."
     call mad_fear
-    show black mood
     black "Не только я виноват! Ты меня бросила!"
     show black mad_var
     narrator "Он сам не понимает, как под зубами оказывается пульсирующая шея пса."
     narrator "Все происходит быстро, у него во рту словно лопается помидорка-черри, забрызгав своим соком-кровью все вокруг."
     narrator "Вцепившаяся мертвой хваткой в руку собака остается без глаза, еще одна спешно убегает в соседний угол и начинает скулить."
-    narrator "Уши заливаются красным, Аша качает, он чувствует тошноту."
+    show black fear_var
+    narrator "Аша качает, он чувствует тошноту."
     narrator "Открывается дверь."
     narrator "Вбегает мужчина с аптечкой в руке. "
     narrator "Он бросается к псам, обрабатывает рану одному из них и пытается остановить кровь."
-    hide black
-    show man tbd
     man "Ты ему артерию перегрыз!"
-    show man tbd
     man "Не по договору! Сиди! Надолго здесь останешься!"
-    show man tbd
     man "Решил сдохнуть - так бы и делал!"
     narrator "Пес, оставшийся без глаза, жалобно скулит. Мужчина, чуть не плача, осматривает голову пса, с любовью гладя его по морде."
     show black fear_var
     narrator "Аш начинает приходить в себя. Руки стали трястись только сейчас."
     narrator "Мужчина держит голову пса и гладит."
-    hide black
-    show man tbd
     man "Помощь скоро будет."
-    show man tbd
     man "Псы не должны были пострадать. Ты же сам заплатил, чтобы тебя съели!"
     show black sad_var
     narrator "Аш молчит. Что здесь можно сказать?"
-    scene Chip_Factory_laboratory
+    scene chip_factory_laboratory
     narrator "В лаборатории Онки: он и лисы смотрят на экран. Видят на нем Аша в крови и мужчину, бинтующего псов."
     hide black
     show onka danger
@@ -4876,12 +4359,12 @@ label scene_27:
     hide fox
     show onka sneaky
     onka "Ну, чисто теоретически: что вы думаете о боях?"
+    hide onka
     show fox angry
     narrator "Лис показывает всем своим видом, что он не будет это обсуждать."
     hide fox
     show onka thinking
     onka "Ладно. Пора провести обещанный ужин. "
-    show onka smile
     onka "Он же все-таки выиграл утешительный приз."
     jump scene_28
 
@@ -4890,35 +4373,31 @@ label scene_28:
     #Онка связывается с Ашем. Рассказывая, как с помощью кода ушей можно жить вечно. Аш задачется вопросом, почему сейчас тот говорит ему это все? Но соглашается - ведь это способ вернуть сестру. Но ему кое-что нужно (тело)
     scene blood_room
     show black sad_var
-    narrator "Сидя в комнате изоляции, Аш проваливается в сон. Он получает приглашение — в сети. Забыв, где и по каким обстоятельствам находится, он автоматически принимает вызов и заходит в сеть."
+    narrator "Сидя в комнате изоляции, Аш проваливается в сон. Заключенный получает приглашение — в сети. "
+    narrator "Забыв, где и по каким обстоятельствам находится, он автоматически принимает вызов и заходит в сеть."
     scene planet
     narrator "Виртуальный мир и понимание происходящего захлестывают его с головой."
     show black surprised_var
     black "Что мы тут делаем? Как ты получил доступ?"
     hide black
-    show onka sneaky_var
+    show onka sneaky
     onka "Это работа моей сотрудницы. Почему бы не зайти?"
     hide onka
     show black angry_var
     black "Что тебе нужно? Все это чертовски странно. "
-    show black angry_var
     black "Мне же должны были заблокировать сеть."
     hide black
-    show onka smile_var
+    show onka smile
     onka "Я, что - зря в ней главный? Код, может, и открытый, а ядро - мое."
-    show onka smile_var
     onka "Это очень серьезно, если нельзя связаться с человеком в сети."
-    show onka sneaky_var
     onka "Поэтому я сразу принялся тебя искать."
-    show onka sneaky_var
     onka "Решил, здесь тебе будет уютно. "
-    show onka smile_var
     onka "Не бойся, разрушающие факторы окружающего мира отключены."
     hide onka
     show black angry_var
     black "Я принял все наказания, которые мне дали."
     hide black
-    show onka smile_var
+    show onka smile
     onka "Да, охранник сообщил, что ты даже не пытался торговаться по праву субъективной оценки для личностей со здоровыми моральными ценностями."
     hide onka
     show black digust_var
@@ -4926,15 +4405,16 @@ label scene_28:
     hide black
     show onka danger
     onka "У нас здоровые, моральные ценности! "
-    show onka smile
     onka "Мое и твое понимание хорошего и плохого совпадает с пониманием большей части людей."
-    narrator "Аш смеется."
     hide onka
-    show black digust_var
+    show black regular_happy1
+    narrator "Аш смеется."
+    show black regular_happy1
     black "Что, если наоборот? Мы все - больные?"
     hide black
     show onka smile
     onka "Думал, и считаю маловероятным, что сумасшедшие - почти девяносто пять процентов всех жителей Луны и Земли."
+    hide onka
     show black sad_var
     hide black
     show onka smile
@@ -4952,34 +4432,33 @@ label scene_28:
     hide black
     show onka thinking
     onka "Мои предки видели в чипе лишь способ заработка, с помощью которого они финансировали борьбу с голодом и покорение Луны. "
-    show onka thinking
     onka "Ерунду, одним словом."
     hide onka
     show black angry_var
     black "Поскольку, с недавних пор, мне наплевать на манеры... К чему ты ведешь?"
     hide black
-    show onka thinking
-    onka "Я вижу в чипе большее. Кое-что сумасшедшее - возможность жить вечно."
-    show onka thinking
-    onka "Возможность жить вечно."
+    show onka angry
+    onka "Я вижу в чипе большее."
+    onka "Кое-что сумасшедшее - возможность жить вечно."
+    hide onka
     show black surprised_var
     narrator "Аш не находит, что сказать. Он изо всех сил пытается понять, что говорит Илли."
     hide black
-    show onka thinking
+    hide black
+    show onka victory
     onka "Чип - это то, что фиксирует карту активности мозга, вплоть до мощности сигналов в нем. И может передавать эти сигналы обратно в мозг."
-    show onka thinking
     onka "Теоретически, цифровую копию можно использовать, как прослойку, - между переносом из одного тела в другое."
-    show onka danger
     onka "Сейчас люди могут уйти в сеть, но не вернуться в реальность."
+    hide onka
     hide onka
     show black surprised_var
     black "Ты предлагаешь это исправить?"
     narrator "Аша прошибает пот."
+    hide onka
     show onka sneaky
     narrator "Онка еле сдерживается, чтобы не похвалить себя."
     show onka sneaky
     onka "Но мне нужен кто-то, кто готов заниматься проектом. "
-    show onka sneaky
     onka "Раз ты уже знаком с чипом, и написал для него прекрасный ИИ..."
     hide onka
     show black angry_var
@@ -4987,34 +4466,28 @@ label scene_28:
     hide black
     show onka thinking
     onka "Ладно. Ты знаешь, в душе я – монополист, и занимаюсь дальним космосом."
-    show onka thinking
     onka "Мне нравится концепция универсального языка: она может объединить людей из разных галактик лет через триста-пятьсот."
-    show black surprised_var
+    hide onka
     show black surprised_var
     black "То есть, за работу над проектом по возвращению копий из сети, ты просто хочешь ИИ ушей? Он же простой."
     hide black
     show onka thinking
     onka "Он работает, и это главное. Считай, такая прихоть."
-    show onka thinking
     onka "Конечно, всегда можно остаться в одиночке."
     narrator "Он выжидающе смотрит на парня."
-    show onka victory
     onka "Мы сделаем тебя очень популярным. Имплантируем Уши детям, вместе с чипом. А?"
-    show onka victory
     onka "Права – мне, а популярность – тебе."
     hide onka
     show black regular_confused
     black "Неплохо."
-    show black fear_var
     black "Но с возвращением копии в тело столько технических моментов... И экспериментов..."
+    hide black
     show onka danger
     narrator "Улыбка Илли становится все шире. Он поднимает руки и поправляет цилиндр."
     show onka danger
     onka "Сложный проект, но благой. Возможно, ты решишь за счет него некоторые проблемы..."
-    show onka danger
     onka "Ради вечной жизни в теле, а не в сети, стоит попробовать."
-    show onka danger
-    onka "Ведь разве это жизнь? В сети?"
+    onka "Ведь разве это жизнь? В цифре?"
     hide onka
     show black regular
     black "Ты прав..."
@@ -5022,41 +4495,34 @@ label scene_28:
     narrator "Он вспоминает ее последние слова: \"Это все он...\"."
     narrator "Сердце Аша снова сжимается."
     call mad_fear
-    show black mood
     black "Я виноват."
     hide black
     show onka danger
     onka "Что?"
     hide onka
-    show black mad_var
-    black "Хорошо, Уши Зайца станут твоей дочерней компанией. "
-    show black mad_var
+    show black mood
+    black "Хорошо, Уши Зайца станут твоей дочерней компанией."
     black "Но ты должен дать мне кучу ресурсов для возвращения..."
     narrator "Он оборвал себя."
-    show black mad_var
     black "Для загрузки копий в живое тело."
     hide black
     show onka danger
     onka "Я так и хотел! "
-    show onka confused
     onka "Придумаем тебе крутой псевдоним."
-    show onka danger
     onka "Уже придумал! Черный Заяц! А как тебе?"
     show black mad_var
     narrator "Аш смеется, вспоминая пасти псов."
     hide black
-    show onka sneaky
     onka "Кстати, Черного Зайца отпустят, как только он выйдет из сети."
-    show onka sneaky
     onka "Сразу иди на Фабрику Чипов. "
-    show onka danger
     onka "Жду не дождусь подписания документов."
     jump scene_29
 
 
 label scene_29:
-    scene Chip_factory_Laboratory
+    scene chip_factory_laboratory
     narrator "Войдя в помещение на Фабрике Чипов, им не приходится зажигать свет. Все вокруг светится причудливым образом. Помещение представляет собой лабиринт, разделенный панелями с жидкостью — плоскими аквариумами с разноцветными сгустками слизи. Каждый аквариум уникален по цвету, подсветке и наполнению."
+    show onka victory
     narrator "Глаза владельца Фабрики горят."
     show onka victory
     onka "Добро пожаловать домой!"
@@ -5084,7 +4550,6 @@ label scene_29:
     hide black
     show onka thinking
     onka "Лисы из Высшей касты знают. А я — это космос, деньги и видение развития компании."
-    show onka thinking
     onka "Я верю, что только эти бактерии способны стать космосу родными."
     hide onka
     show black regular_happy2
@@ -5094,6 +4559,7 @@ label scene_29:
     onka "Если есть вычислительные мощности и время — нет нерешаемых задач."
     narrator "Илли Онка стоит посреди дела всей-всей своей жизни."
     hide onka
+    hide onka
     show black regular_happy2
     black "Исследуя Фабрику на конкурсе, я не нашел тут сухих лабораторий. Ну, таких, чтобы кто-то мог выйти в сеть и обработать там данные."
     hide black
@@ -5102,7 +4568,6 @@ label scene_29:
     hide onka
     show black regular_happy2
     black "Все это, конечно, мило, но давай ближе к делу."
-    show black fear_var
     black "Ты сам понимаешь, что нужно для создания технологии копирования из сети в тело?"
     hide black
     show onka danger
@@ -5111,25 +4576,24 @@ label scene_29:
     narrator "Аш обводит взглядом помещение и продолжает шепотом:"
     show black fear_var
     black "Где взять живого человека, который согласится, чтобы в его тело посадили чужое сознание? Это же нелегально... И смертельно!"
-    show black fear_var
     black "Копировать в лис? На первой стадии - ок, но нужен и человек."
     narrator "Онка наклоняется к Ашу. Тот чувствует запах манго."
     hide black
     show onka sneaky
     onka "А что - тело смертельно больного мужчины может не подойти?"
-    show onka danger
     onka "Или нужна молодая девушка?"
     show black regular_confused
     narrator "Аш серьезно смотрит на Онку. Тот точно знает, зачем он согласился на эту работу. Смысл кривить душой?"
     call mad_fear
     show black mood
     black "Раз так, то - да. Лет восемнадцати. Когда поймем, что все точно работает."
-    show black mood
     black "До этого даже дед подойдет."
     hide black
     show onka danger
     onka "Придумай эксперимент, все его стадии, а там – подумаем."
-    narrator "Илли очаровательно улыбается, и у Аша мелькает в голове мысль, что у Онки зубов больше, чем у Пеннивайза."
+    narrator "Илли хищно улыбается, и у Аша мелькает в голове мысль, что у Онки зубов больше, чем у Пеннивайза."
+    hide black
+    show black mad_var
     narrator "Но ради сестры он готов на любую сделку."
     jump scene_30
 
@@ -5147,26 +4611,16 @@ label scene_30:
     narrator "Когда он выбирал - жить или умереть, да или нет, один или ноль - Аш первый раз почувствовал ту эмоцию - безумие."
     narrator "Автоматическая генерация дизайна живет своей жизнью."
     narrator "Аш знает, что в конце концов Уши выберут тот дизайн, который лучшего всего ассоциируется у людей с эмоцией. Но еще рано."
-    show black sad_var
     black "Вечнуть Вечну... "
     narrator "Он вспоминает, как она любила каламбуры. Пока не захакала свой мозг до неузнаваемости."
-    show black sad_var
     black "Дьявол в деталях. И этих деталей тысячи..."
-    show black sad_var
     black "Для того, чтобы понять, возвращается копия в тело или нет..."
-    show black sad_var
     black "..Нужно провести эксперимент статистически достоверное количество раз."
-    show black sad_var
     black "А это - сотни, в идеале - тысячи раз."
-    show black fear_var
     black "Тысячи, мать его, людей!"
-    show black angry_var
     black "Понятно, почему Онка не хочет брать это на себя."
-    show black fear_var
     black "Он точно знает о Вечне. "
-    show black fear_var
     black "Как-никак она у него работала. Поэтому и пришел ко мне."
-    show black fear_var
     black "Очевидно, без его помощи я ничего не смогу..."
     narrator "Человек, который может позволить себе самую большую роскошь..."
     narrator "..Возможность собственным умом и ресурсами реализовывать свои дикие идеи и добиться успеха."
@@ -5178,25 +4632,23 @@ label scene_30:
     narrator "Приятный голос сообщает, что корабль отправляется, и скоро они вернутся на Землю."
     narrator "Из мечтаний его вырывает рычание лиса. Перед парнем - Облачный, он стоит на четвереньках."
     hide black
+    hide black
     show fox angry
     fox "Мне конец! Видео с интервью попало в сеть."
-    show fox angry
     fox "За мной и так есть другие грехи."
     hide fox
     show black disgust_var
     black "Успокойся, не убить же ты его пытался."
+    hide black
     show fox angry
     narrator "Лис рассердился."
     hide fox
     show black surprised_var
     black "Или пытался?"
-    show black regular_confused
     black "Расскажи, что за видео?"
     narrator "Ответ сразу приходит ему в голову. Лис ложится на пол и закрывает лапами голову."
-    show black surprised_var
     black "Она не могла так поступить! Покажи."
     narrator "Да. Это действительно был тот замечательный день, когда Наташа брала у Лиса интервью."
-    show black angry_var
     black "Как может быть настолько на всех наплевать?"
     hide black
     show fox shock
@@ -5204,36 +4656,33 @@ label scene_30:
     hide fox
     show black regular_happy
     black "Месть уже в ее стиле..."
-    show black regular_happy
     black "А ты словно ненавидишь Онку! Раз показал ей его сокровища!"
     hide black
     show fox angry
     fox "Не важно, мой путь - на переработку."
     narrator "Зверь обреченно смотрит на реку с расщепляющими наноботами."
-    show fox angry
     fox "Вам, скорее всего, тоже."
     hide fox
     show black angry_var
     black "До сих пор не верю. После всего того, что произошло с ее семьей, с моей…"
-    show black angry_var
     black "Она должна лучше всех меня понимать, но осознанно делает хуже и хуже!"
-    narrator "Лис нервно машет хвостом и оглядывается по сторонам."
     hide black
     show fox angry
+    narrator "Лис нервно машет хвостом и оглядывается по сторонам."
+    show fox angry
     fox "Все труды насмарку! Я сбегу. Сбегу."
-    narrator "Друг опускается на колени рядом с лисом."
     hide fox
-    show black angry_var
+    show black regular
+    narrator "Друг опускается на колени рядом с лисом."
+    show black regular
     black "Ты напуган, это мешает тебе здраво рассуждать."
-    show black angry_var
     black "Мы на Луне, в сети пещер, а над нами - купол."
-    show black angry_var
     black "За ним – радиация, и нет атмосферы."
     narrator "Аш дотрагивается до Лиса."
-    show black regular_happy2
     black "Куда ты хочешь сбежать?"
-    narrator "Лис поднимает свою мордочку и рисует носом в воздухе круг."
     hide black
+    show fox smile
+    narrator "Лис поднимает свою мордочку и рисует носом в воздухе круг."
     show fox smile
     fox "На Землю."
     hide fox
@@ -5245,21 +4694,21 @@ label scene_30:
     hide fox
     show black regular_confused
     black "Как можно не заметить лиса?"
-    show black regular_happy1
     black "Но я мог бы взять тебя с собой. Как неразумное домашнее животное."
     hide black
     show fox angry
     fox "Унизительно!"
-    narrator "Парень пожимает плечами."
     hide fox
-    show black regular_happy1
+    show black regular_confused
+    narrator "Парень пожимает плечами."
+    show black regular_confused
     black "Зато не смертельно!"
     narrator "Лис перестает драматизировать."
     hide black
     show fox angry
     fox "Когда? Когда мы сможем вылететь?"
     hide fox
-    show black regular_happy1
+    show black regular_confused
     black "Через год. Я ручаюсь, что Онка тебя не тронет."
     hide black
     show fox angry
@@ -5279,7 +4728,6 @@ label scene_30:
     hide fox
     show black angry_var
     black "Ты же хотел в высшую касту?"
-    show black angry_var
     black "На счет видео..."
     hide black
     show fox angry
@@ -5293,58 +4741,45 @@ label scene_30:
     hide fox
     show black mad_var
     black "У твоего хозяина, я уверен, рыльце тоже в пушку."
-    show black mad_var
     black "Именно поэтому он, должно быть, сам все решил."
     narrator "Парень подталкивает Лиса в сторону выхода, и тот понуро плетется за ним на Фабрику Чипов."
     jump scene_31
 
 
 label scene_31:
-    scene Chip_factory_Laboratory
+    scene chip_factory_laboratory
+    show black sad_var
     narrator "Ученый осматривает лабораторию, не глядя никуда конкретно. Аш сосредоточен на мыслях."
     show black fear_var
     black "Значит, пункт один: решить, что такое «сознание»."
-    show black fear_var
     black "Эксперимент будет успешен, если мы сможем понять: в новом теле - оригинал сознания или химера? "
-    show black regular_confused
     black "Значит, мне вообще не обязательно понимать, что такое «сознание»."
-    show black regular_confused
     black "Нужно лишь сравнить оригинал и копию в теле."
-    show black regular_confused
     black "Если они будут считать себя одним человеком, тогда сделаем допущение – это успех."
     narrator "Аш водит пальцем по панели со светящимися бактериями. От тепла они меняют цвет на малиновый."
-    show black regular_confused
     black "Ладно, значит, с этим разобрались."
-    show black regular_confused
-    black "Пункт два: провести эксперимент по пересадке сознания. "
-    show black regular_confused
+    black "Пункт два: провести эксперимент по пересадке сознания. Безумный."
     black "Трудности: нужно пересадить сознание примерно в тысячу людей, чтобы удостовериться, что это работает. "
-    show black sad_var
     black "На тысячу испытуемых, однозначно, будут ошибки. Вопрос: один процент или девяносто девять?"
     narrator "Он устало протирает глаза. Как хороший брат, он бы никогда не стал переселять сознание Вечны в качестве теста в тысячу непонятных тел. Мне нужна всего одна сестра."
-    show black sad_var
     black "Копии Вечны, наверное, будет плевать, что ее еще раз скопируют в тело."
     call black
-    show black mood
     black "Но что скажет Вечна в новом теле?"
-    show black mood
     black "Стоит ли этим заниматься?"
     narrator "Панель с бактериями перед ним становится холодной, движение сгустков бактерий останавливается. На поверхности появляется конденсат."
-    show black mood
     black "Ценой тысяч испытуемых. Тысяч жертв."
-    show black mood
     black "Я действительно - зло?"
     narrator "Аш рисует перед собой единицу. А потом еще, и еще одну. Прошло минут десять, а он, как в трансе, все рисует и рисует. В зале слышатся шаги."
     hide black
+    hide black
     show onka danger
     onka "Забыл кое-что!"
-    narrator "Хозяин Фабрики удивленно рассматривает Аша, который отрешенно рисует палочки."
     show onka confused
+    narrator "Хозяин Фабрики удивленно рассматривает Аша, который отрешенно рисует палочки."
     onka "Все хорошо?"
     hide onka
     show black sad_var
     black "Хочу прочувствовать. Как много это – тысяча жертв."
-    show black sad_var
     black "Примерно столько нужно народа для эксперимента. А лис - еще больше."
     hide black
     show onka sneaky
@@ -5355,9 +4790,7 @@ label scene_31:
     hide black
     show onka smile
     onka "Я забыл предложить закрепить сделку. Устрою обещанный ужин."
-    show onka smile
     onka "Не знаю как ты, но в таких ситуациях пьют что-то одурманивающее."
-    show onka smile
     onka "Лучше друг друга узнаем."
     hide onka
     show black surprised_var
@@ -5365,9 +4798,7 @@ label scene_31:
     hide black
     show onka thinking
     onka "ИИ Фабрики им не позволяет. Они же сотрудники."
-    show onka danger
     onka "Я не спросил, как ты предпочитаешь веселиться: алкоголь, галлюциногены, убийства? "
-    show onka smile
     onka "Я имею в виду игры, конечно."
     hide onka
     show black surprised_var
@@ -5378,50 +4809,45 @@ label scene_31:
     hide onka
     show black surprised_var
     black "Куда я попал?"
-    narrator "Онка отмахивается рукой и наклоняется к парню."
     hide black
     show onka danger
-    onka "Всем регулярно бывает невыносимо — это здоровое состояние человека."
+    narrator "Онка отмахивается рукой и наклоняется к парню."
     show onka danger
+    onka "Всем регулярно бывает невыносимо — это здоровое состояние человека."
     onka "Особенно в космосе. "
-    show onka regular
     onka "Луна никогда не станет такой, как Земля. Разве что - для бактерий."
     hide onka
-    show black surprised_var
+    show black regular
     black "Надеюсь, у тебя есть другие темы для разговоров."
+    show black disgust_var
     narrator "Илли продолжает держаться рядом, и Аш чувствует приторный фруктовый запах."
+    hide black
     hide black
     show onka regular
     onka "Самое сложное для меня в реализации научных причуд - делиться ими."
-    show onka regular
     onka "Например, хочу я розовых крыс — это генетика."
-    show onka regular
     onka "Хочу, чтобы светились – это системная биология."
-    show onka regular
     onka "Хочешь, чтобы они играли с тобой в шашки и жгли твое электричество —"
-    show onka regular
     onka "– умей работать с железяками. "
-    show onka thinking
     onka "Одному это сделать нереально."
     hide onka
-    show black surprised_var
+    show black disgust_var
     black "А с лисами - реально?"
+    hide black
     show fox smile
     narrator "В дверь заходят лисы с подносами, японским столиком и подушками. Расставляют в центре комнаты."
     narrator "Облачный остается, остальные выходят за дверь."
+    hide fox
     show black regular
     narrator "Аш напрягается, ожидая, когда Илли отреагирует на видео в сети."
+    hide black
     show onka smile
     narrator "Илли качает головой в сторону подушки рядом со столиком, жестом приглашая Аша сесть."
     show onka smile
     onka "Я с ними рос. Рядом, не среди них. Как я говорил, судьба лис — это Фабрика. "
-    show onka smile
     onka "ИИ которой заботиться о производстве лис. "
-    show onka smile
     onka "Она выбрала буддизм для одних каст и выращивание в загонах - для других."
-    show onka smile
     onka "Иначе они хуже будут выполнять свои функции."
-    show onka danger
     onka "Ты знал, что не так давно Высшая каста ела мозг Второй и Третьей каст?"
     hide onka
     show black disgust_var
@@ -5435,45 +4861,46 @@ label scene_31:
     hide black
     show onka sneaky
     onka "Для разнообразия. Дед, который сделал чип массовым, был японцем."
-    narrator "Аш пытается разрядить обстановку, избегая неприятных разговоров, которые могут возникнуть во время паузы."
-    narrator "Лис наполняет отёко."
     hide onka
     show black regular_happy2
+    narrator "Аш пытается разрядить обстановку, избегая неприятных разговоров, которые могут возникнуть во время паузы."
+    narrator "Лис наполняет отёко."
+    show black regular_happy2
     black "О, ты лучше, чем первая гейся Осаки."
+    hide black
     show fox angry
     narrator "Лис недовольно смотрит на парня, он явно нервничает, но старается не подавать виду."
     show fox angry
     fox "Лисята надоели: убегают по ночам к Онке."
-    show fox angry
     fox " Они могут попасть в беду."
+    hide fox
     show onka thinking
     narrator "Онка цыкает на лиса, показывая взглядом, что разговоров достаточно."
+    hide onka
     show fox smile
-    narrator "Тот дожидается, когда хозяин отвернется, и лакает саке из его чашечки."
+    narrator "Тот дожидается, когда хозяин отвернется, и лакает подогретое саке из его чашечки."
+    hide fox
     show black surprised_var
     narrator "Аш удивляется, думая при этом, что со стороны ничего не видно. Но Уши выдают его."
+    hide black
     hide black
     show onka confused
     onka "Что такое?"
     hide onka
-    show black surprised_var
+    show black regular_happy2
     black "Я, знаешь, тоже ребенком спал среди кроликов."
-    show black surprised_var
     black "Когда попал на Луну."
-    show black surprised_var
     black "Как-то раз это спасло мне жизнь."
-    show black surprised_var
     black "Основной купол разгерметизировался, но загоны для животных имеют отдельную систему жизнеобеспечения."
     hide black
     show onka smile
     onka "Помню эту аварию. Я на Луне уже двадцать пять лет."
     hide onka
-    show black surprised_var
+    show black regular_happy2
     black "И как себя чувствуешь?"
     hide black
     show onka angry
     onka "Последний месяц - ужасно! Думаю, это стресс."
-    show onka angry
     onka "Еще вопросы?"
     hide onka
     show black regular_confused
@@ -5485,17 +4912,18 @@ label scene_31:
     hide onka
     show black regular_confused
     black "Думаю, ты ответил на мой вопрос."
-    narrator "Хозяин Фабрики пожимает плечами. Раздается лакающий звук – это лис."
     hide black
+    show onka confused
+    narrator "Хозяин Фабрики пожимает плечами. Раздается лакающий звук – это лис."
     show onka victory
     onka "Этот сад! Он кишит жизнью для разных космических объектов."
     narrator "Илли краснеет и упирается взглядом в один из стендов - с зелеными замерзшими бактериями."
     hide onka
-    show black regular_confused
+    show black angry_var
     black "Сменим тему..."
-    show black regular_confused
     black "Почему от тебя пахнет манго? Ты специально прыскаешься?"
     narrator "Онка медленно отворачивает голову от бактерий, его глаза заметно округляются."
+    hide black
     hide black
     show onka confused
     onka "Манго? Ты не путаешь?"
@@ -5506,46 +4934,49 @@ label scene_31:
     hide black
     show onka thinking
     onka "Я не чувствую запахи."
-    show onka angry
     onka "Но теперь ясно, почему мне все время плохо."
     narrator "Онка встает и начинает снимать с себя одежду. "
     hide onka
+    hide onka
     show black surprised_var
     black "Думал, что уже привыкаю к тебе."
-    narrator "Стоящему рядом лису Онка бросает:"
     hide black
     show onka angry
-    onka "Проверь мою комнату! Найди на Фабрике манго или эфирные масло, все, что возможно! "
+    narrator "Стоящему рядом лису Онка бросает:"
     show onka angry
+    onka "Проверь мою комнату! Найди на Фабрике манго или эфирные масло, все, что возможно! "
     onka "Никому не рассказывай, записи тоже все собери."
-    show onka thinking
     onka "И без интервью, будь добр."
+    hide black
     show fox smile
-    narrator "Лис, немного покачиваясь, делает реверанс. Теперь он уже не так сильно нервничает."
+    narrator "Лис, немного покачиваясь, делает реверанс. Теперь он не так сильно нервничает."
+    hide fox
     hide fox
     show black regular_confused
     black "Мне не то чтобы сильно интересно, но для чего ты разделся?"
     hide black
     show onka thinking
-    onka "Нашел нам развлечение. Нужно это сжечь. У меня – аллергия!"
-    narrator "Аш хлопает себя по коленке."
+    onka "Нашел нам развлечение. Нужно это сжечь. "
+    onka "У меня – аллергия!"
     hide onka
     show black regular_happy2
-    black "На Фабрике есть возможность жечь? И горючее?"
+    narrator "Аш хлопает себя по коленке."
+    show black regular_happy2
+    black "На Фабрике есть возможность жечь?"
     hide black
-    show onka danger
+    show onka sneaky
     onka "Значит, такое веселье подходит?"
     hide onka
     show black regular_happy2
     black "То, что обыденность - на Земле, в закрытом куполе - дорогое удовольствие."
     hide black
-    show onka sneaky
+    show onka danger
     onka "У меня есть бензин!"
     hide onka
     show black regular_happy1
     black "Это действительно хорошая идея!"
-    narrator "Весело произносит Аш, потом серьезно добавляет:"
     show black mad_var
+    narrator "Весело произносит Аш, потом серьезно добавляет:"
     black "Для того, кто пару дней назад пытался скормить себя псам."
     hide black
     show onka sneaky
@@ -5555,8 +4986,9 @@ label scene_31:
     black "Поэтому ты миллиардер?"
     narrator "Онка сделал испуганные глаза."
     hide black
+    hide black
     show onka smile
-    onka "Что ты, не дай Фабрика, чтобы я остался миллиардером."
+    onka "Что ты, не дай Фабрика, чтоб я остался миллиардером."
     scene black_background
     narrator "Спустя несколько часов, Аш вспоминает, как Илли жег свою одежду в костре, и последнее, что они сказали друг другу:"
     hide onka
@@ -5571,24 +5003,19 @@ label scene_31:
 
 
 label scene_32:
-    scene Chip_factory_Laboratory
+    scene chip_factory_laboratory
     #Аш получает триггер заняться разработкой, не только ради сестры, но и ради остальных, кто может прожить не двойную жизнь в сети, а в другом теле
     narrator "Спустя несколько недель."
     show onka thinking
     narrator "Онка вместе с лисом наблюдают за Ашем, который лежит на полу в лаборатории. Он в сети."
     show onka angry
     onka "Я думал, что после того, как получит добро, он восстановит сестру и начнет эксперимент по копированию в тело."
-    show onka thinking
     onka "Но он медлит."
-    show onka thinking
     onka "Когда я смогу получить столько ресурсов для обработки данных, что совершу революцию? "
     hide onka
-    show fox angry
     fox "По вашему запросу - насчет пяти-шести тысяч испытуемых. Мы нашли три варианта их получения."
-    show fox angry
     fox "С разной тяжестью последствий, так как закон не поощряет такие испытания. Тем более, на живых. Даже на добровольцах."
     hide fox
-    show onka angry
     onka "Какая разница. Наш Заяц все равно тянет время. "
     hide onka
     show fox smile
@@ -5596,13 +5023,14 @@ label scene_32:
     hide fox
     show onka thinking
     onka "Да. Но я до последнего надеялся, что он - самостоятельный мальчик. Зря."
-    show onka thinking
     onka "Поэтому..."
+    hide onka
     show fox shock
     narrator "Здание заметно вздрагивает. Лисы тревожно шепчутся. Снова чувствуется толчок."
     hide fox
     show onka danger
     onka "Скоро вернусь."
+    hide onka
     show black sad
     narrator "Аш вышел из сети. Первые секунды тело не двигается."
     narrator "Вокруг все трясется. Парень выбегает в коридор. Лисы спокойно перемещаются по Фабрике, явно зная, что делать."
@@ -5617,18 +5045,19 @@ label scene_32:
     hide black
     show fox angry
     fox "На периферии... И он продолжает разрушаться."
+    hide fox
     show black fear_var
     narrator "Аш, ошеломленный новостью, хватает себя за Уши и тянет их вниз. Его ноги подкашиваются. Он вспоминает крики людей, стучавших в отчаянии по куполу, под которым он когда-то сидел вместе с кроликами."
     show black fear_var
     black "Обвал пещеры на периферии — это стопроцентная разгерметизация!"
-    show black fear_var
     black "Но я должен узнать, что там происходит!"
+    hide black
     show fox angry
     narrator "Лис отворачивает мордочку."
     show fox angry
     fox "В аудитории есть окно. "
-    show fox angry
     fox "Но я боюсь, что зрелище может оказаться не из приятных."
+    hide fox
     scene chip_factory_audience
     narrator "Аш поднимается в знакомое помещение. Лис отключает затемнение стекла."
     show black surprised_var
@@ -5641,9 +5070,11 @@ label scene_32:
     narrator "Аш чувствует, как нарастает давление в голове. Перед ним, опираясь на одно колено, сидит Илли."
     narrator "Он смотрит Ашу в лицо и что-то говорит, но Аш его не слышит. Он лишь сжимает кулаки, ощущая под ногтями кровь."
     hide black
+    hide black
     show onka danger
     onka "Это паническая атака."
     narrator "Он берет Аша за плечи, когда тот начинает заваливаться вперед. Холодные-холодные руки Илли приводят Аша в чувство."
+    hide onka
     hide onka
     show black fear_var
     black "Нужно помочь остальным!"
@@ -5656,23 +5087,13 @@ label scene_32:
     hide black
     show onka thinking
     onka "Это лунная станция, тут все знают, что надо делать в такой ситуации."
-    show onka thinking
     onka "Сейчас все должны оставаться в помещениях."
+    hide onka
+    show black sad_var
+    call mad_fear
     narrator "Аш смотрит в окно, на площадь. Над ней клубится пыль, повисая в воздухе."
     narrator "И он точно знает, что, когда ее отфильтруют, все будет покрыто телами."
-    call mad_fear
-    narrator "Он точно знает, что ему теперь делать. Выбрать тысячу трупов или миллионы? Он должен провести эксперимент."
-    show onka thinking
-    onka "Дыши глубоко."
-    narrator "Он обхватывает руками голову Зайца, закрыв ему глаза, как когда-то это делала Вечна."
-    show black fear_var
-    narrator "Дыхание парня понемногу успокаивается."
-    hide black
-    show onka confused
-    onka "Ты, похоже, и правда, как Заяц — ничего не видишь, значит, ничего и нет."
-    narrator "За окном рушится город. Облачный сидит рядом."
-    show onka smile
-    onka "Положите своего коллегу выспаться вместе с лисятами."
+    narrator "Он точно знает, что ему теперь делать. Выбрать тысячу трупов или победу над смертью?"
     jump scene_33
 
 
@@ -5681,42 +5102,45 @@ label scene_33:
     #Онка предлагает как тело – Наташу. и не принимает отговорки, Аш мечется
     narrator "На следующий день."
     narrator "Онка лежит в углу, не двигается. Голова безжизненно свешивается вниз."
+    show black surprised_var
     narrator "Аш входит вместе с Облачным, но тут же отскакивает назад."
-    show fox angry
+    hide black
+    hide black
+    show fox shock
     fox "Неужели! Получилось?"
+    hide fox
+    show black regular
     narrator "Аш стоит, как вкопанный. Только думает: «Так не вовремя»!"
     narrator "Илли резко подскакивает и вскрикивает от испуга. Он смотрит на Аша заспанными, непонимающими глазами."
-    show fox angry
+    hide black
+    hide black
+    show fox shock
     fox "Я решил, Вы мертвы..."
     hide fox
-    show black fear_var
+    show black angry_var
     black "Ты прикидывался мертвым?"
     hide black
-    show onka smile
+    show onka angry
     onka "Что? Нет. Я всего лишь долго работал."
-    show onka smile
     onka "Ты не видел спящих людей?"
+    show onka smile
     narrator "Онка щурит взгляд и расплывается в широкой улыбке."
-    show onka danger
     onka "Ты успел испугаться!"
     narrator "Он довольно потягивается."
     hide onka
-    show black fear_var
-    black "Есть что обсудить: наши дальнейшие шаги."
-    hide black
-    show onka danger
-    onka "С удовольствием слушаю."
     hide onka
-    show black fear_var
-    black "Есть план. Мы обязаны рассмотреть следующую возможность из-за последних событий. "
-    show black mad_var
+    show black angry_var
+    black "Потому что отдал Фабрике свое изобретение!"
+    hide black
+    show onka smile
+    onka "Но я не о том."
+    hide onka
+    show black angry_var
+    black "Есть план. "
     black "Нам нужно поместить одну копию в большое количество человек – от девятисот до двух тысяч."
-    show black mad_var
     black "Потом проверяем, сколько из них соответствуют оригиналу. "
-    show black mad_var
     black "Будет здорово, если хотя бы семьдесят процентов людей, оказавшихся в новом теле, будут считать себя исходной личностью."
     narrator "Илли сделал потрясенное лицо."
-    show black mad_var
     black "Потом нужен итоговый тест — копию из сети поместить в тело. Да, это..."
     hide black
     show onka danger
@@ -5730,52 +5154,50 @@ label scene_33:
     hide onka
     show black fear_var
     black "Столько людей погибло вчера."
-    narrator "Онка подходит к Ашу. Как всегда, неприятно близко, отчего Аш чувствует дискомфорт."
     hide black
-    show onka danger
+    show onka sneaky
+    narrator "Онка подходит к Ашу. Как всегда, неприятно близко, отчего Аш чувствует дискомфорт."
+    show onka sneaky
     onka "Что бы ты ни потерял, распространение Ушей..."
-    show onka danger
     onka "..И возможность пересадить сознание в тело сделают жизнь людей намного лучше."
-    show onka danger
     onka "Ты сможешь довести дело до конца?"
     hide onka
-    show black fear_var
+    show black sad_var
     black "Идя на съедение к собакам, я не имел цели, надежды и желания."
-    show black fear_var
     black "Но сейчас все это - не только для меня."
     narrator "Заяц не хочет говорить Илли обо всем. Он ему не доверяет, слишком все гладко..."
     hide black
+    hide black
     show onka sneaky
     onka "Я нашел то, что ты просил. "
-    show onka sneaky
     onka "Для итогового теста \"копия-тело\" я выбрал кандидата. "
-    show onka danger
-    onka "Одинока, доверчива, восемнадцать лет. "
-    show onka danger
-    onka "Станет испытуемой или умрет"
-    show onka danger
+    onka "Одинока, доверчива и та еще заноза. "
+    onka "Станет испытуемой или умрет."
     onka "Наташа."
-    scene Chip_Factory_vines2
+    scene chip_factory_vines2
     show natasha smile
     narrator "В голове Аша возникает образ девушки, стоящей в комнате с инопланетными растениями."
-    scene Chip_Factory_Laboratory
+    scene chip_factory_laboratory
     hide natasha
     show black fear_var
     black "Это как-то связано с видео?"
-    show black mad_var
-    black "Не удивительно. "
-    show black mad_var
+    black "Не удивительно."
+    hide black
+    show onka thinking
+    onka "Связана с целой трансляцией с конкурса!"
+    hide onka
+    show black angry_var
     black "Может, ты и с Максимом связан?"
+    hide black
     show onka sneaky
     narrator "Илли сжимает губы, плохо сдерживая улыбку, и пожимает плечами."
     show onka sneaky
     onka "Эта информация не нужна для принятия решения. "
-    show onka danger
     onka "Ты отказываешься?"
     narrator "За спиной хозяина Фабрики появляются лисы из Высшей касты, они скалятся."
-    show onka sneaky
     onka "А еще я нашел манго."
     narrator "Из толпы лис вырывается Облачный."
+    hide onka
     hide onka
     show fox angry
     fox "Это он разрушил туннель!"
@@ -5783,20 +5205,25 @@ label scene_33:
     show onka danger
     onka "Я же не кричу: «Это он хотел меня отравить»!"
     hide onka
-    show black angry_var
+    show black surprised_var
     black "Что ты сделал?"
-    narrator "Но Хозяин Фабрики улыбается, показывая острые зубы."
     hide black
     show onka danger
+    narrator "Но Хозяин Фабрики улыбается, показывая острые зубы."
+    show onka danger
     onka "Разве это что-то изменит для всех тех людей?"
+    hide onka
     show black angry_var
     narrator "\"Кроме того, что они были бы живы\" — сказал Заяц сам себе."
-    show black mad_var
+    show black angry_var
     black "От тебя пришло сообщение, что Вечна копируется?"
+    hide black
     show onka sneaky
     narrator "Онка молчит."
-    narrator "Парень вспоминает последние слова сестры: \"Это все он...\". В голове сверкает, словно молния: «Это все Онка»!"
+    hide onka
     show black angry_var
+    narrator "Парень вспоминает последние слова сестры: \"Это все он...\". В голове сверкает, словно молния: «Это все Онка»!"
+    show black regular
     narrator "Аш думает про себя: «Вот кто помог копии убить оригинал. Вот с кем был договор...»"
     call mad_fear
     show black mood
@@ -5804,7 +5231,7 @@ label scene_33:
     hide black
     show onka confused
     onka "Так просто, готов продолжать?"
-    show black fear_var
+    show black mad_var
     narrator "Черный Заяц достает из кармана фиолетовый мяч, похожий на тот, из-за которого лис на конкурсе отгрыз себе лапу."
     narrator "В глазах Облачного загорается безумный огонь."
     show black mad_var

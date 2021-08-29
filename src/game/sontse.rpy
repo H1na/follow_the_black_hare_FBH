@@ -420,6 +420,8 @@ image natasha sad:
 
 # дефолтная анимация появления/исчезновения
 transform tr_default:
+    # ypos 0.9
+    # yanchor 1.0
     on show:
         alpha .0
         ease .2 alpha 1.0
