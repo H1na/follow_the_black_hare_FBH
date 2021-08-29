@@ -58,7 +58,7 @@ characters_mood = {
     "natasha": 'tbd',
     "other_fox": 'tbd',
     "fox_from_3": 'tbd',
-    "man": 'tbd',
+    
     
     #characters without
     "robotic_voice": "no_sprite",
@@ -69,7 +69,7 @@ characters_mood = {
     "mobile_camera": "no_sprite",
     "alise": "no_sprite",
     "journalist": "no_sprite",
-
+    "man": 'no_sprite',
     
 }
 
