@@ -28,7 +28,7 @@ characters = {
     "ОБЛАЧНЫЙ ЛИС": 'fox',
     "ЛИС": 'hight_fox',
 
-    "РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК": 'robotic_voice',
+    "ЦЕНТР КОПИРОВАНИЯ": 'robotic_voice',
     "ГОЛОС ИЗ СЕТИ": 'voice_from_net',
     "ЦЕНТР ПОМОЩИ": 'help_center',
     "КАМЕРА": "camera",

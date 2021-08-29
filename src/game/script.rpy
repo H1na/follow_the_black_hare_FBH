@@ -18,7 +18,7 @@ define wild_fox = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#c8ffc8", )
 define man = Character(_('МУЖЧИНА'), color="#c8ffc8", )
 
 #characters with no sprites
-define robotic_voice = Character(_('РОБОТИЗИРОВАННЫЙ ГОЛОС ЦК'), color="#c8ffc8", )
+define robotic_voice = Character(_('ЦЕНТР КОПИРОВАНИЯ'), color="#c8ffc8", )
 define voice_from_net = Character(_('ГОЛОС ИЗ СЕТИ'), color="#c8ffc8", )
 define help_center = Character(_('ЦЕНТР ПОМОЩИ'), color="#c8ffc8", )
 define camera = Character(_('КАМЕРА'), color="#c8ffc8", )
