@@ -132,7 +132,6 @@ for item in root:
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
             characters_mood["black"] = "mood"
-
         elif(command =="emotion"):
             characters_mood[result[1]] = result[2]
         elif(command =="show_character"):
@@ -140,6 +139,8 @@ for item in root:
             res.append("\tshow {} {}".format(character, characters_mood[character]))
         elif(command =="hide_character"):
             res.append("\thide {}".format(result[1]))
+        elif(command == "change_ash_name"):
+            res.append('\t$ash_name="Черный заяц"')
         else:
             print("Unknown command: ", text)
 
