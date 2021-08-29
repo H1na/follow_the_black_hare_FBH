@@ -1,12 +1,11 @@
 ﻿
 define narrator = Character(None, window_left_padding=0)
-define black = Character(_('Аш'), color="#FF0000") 
+define black = DynamicCharacter(_("ash_name"), color="#FF0000") 
 define onka = Character(_('Онка'), color="#c8ffc8") 
 define stub_character = Character(_('Заглушка'), color="#c8ffc8") 
 
 define vechna = Character(_('Вечна'), color="#c8ffc8")
 define digital_vechna = Character(_('Вечна цифровая'), color="#c8ffc8", )
-
 
 define maks = Character(_('Макс'), color="#c8ffc8", )
 
@@ -223,4 +222,5 @@ label start:
 
     $text_msg = 'Тестовое послание'
 
+    $ash_name = "Аш"
     jump scene_1
