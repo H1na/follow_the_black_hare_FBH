@@ -1,0 +1,9 @@
+./transparent_trimmer.sh ../src/game/images/characters/Black
+./transparent_trimmer.sh ../src/game/images/characters/Digital_vechna
+./transparent_trimmer.sh ../src/game/images/characters/Fox
+./transparent_trimmer.sh ../src/game/images/characters/High_fox
+./transparent_trimmer.sh ../src/game/images/characters/Max
+./transparent_trimmer.sh ../src/game/images/characters/Natasha
+./transparent_trimmer.sh ../src/game/images/characters/Onka
+./transparent_trimmer.sh ../src/game/images/characters/Vechna
+./transparent_trimmer.sh ../src/game/images/characters/Wild_fox
