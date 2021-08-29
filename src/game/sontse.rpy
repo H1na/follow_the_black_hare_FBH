@@ -422,10 +422,10 @@ image natasha sad:
 transform tr_default:
     on show:
         alpha .0
-        ease .3 alpha 1.0
+        ease .2 alpha 1.0
     on hide:
         alpha 1.0
-        ease .3 alpha .0
+        ease .2 alpha .0
  
 # спрайты случайно выбираемые 
 
