@@ -71,6 +71,29 @@ init python:
                 return 'regular'
         
         return mood
+        
+    def get_highest_mood():
+        global mood, angry, sad, surprised, disgust, mad, fear
+        stat_max = max((angry, sad, surprised, disgust, mad, fear))
+        if stat_max == 0:
+            return 'regular'
+        moodlist = []
+
+        if angry == stat_max:
+            moodlist.append('angry')
+        if sad == stat_max:
+            moodlist.append('sad')
+        if surprised == stat_max:
+            moodlist.append('surprised')
+        if disgust == stat_max:
+            moodlist.append('disgust')
+        if mad == stat_max:
+            moodlist.append('mad')
+        if fear == stat_max:
+            moodlist.append('fear')
+
+        return renpy.random.choice(moodlist)
+        
 
     def show_learned_message():
         global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
@@ -420,12 +443,15 @@ image natasha sad:
 
 # дефолтная анимация появления/исчезновения
 transform tr_default:
+    alpha .8
+    ease .2 alpha 1.0
+    
     on show:
-        alpha .0
-        ease .3 alpha 1.0
+        alpha .8
+        ease .2 alpha 1.0
     on hide:
-        alpha 1.0
-        ease .3 alpha .0
+        alpha .2
+        ease .2 alpha .0
  
 # спрайты случайно выбираемые 
 
@@ -489,6 +515,17 @@ image black mood:
                     'mood=="mad"',        'black mad_var',
                     'mood=="fear"',       'black fear_var',
                     'True',               'black regular')
+
+image black highest_mood:
+    ConditionSwitch(
+                    'get_highest_mood()=="angry"',      'black angry_var',
+                    'get_highest_mood()=="sad"',        'black sad_var',
+                    'get_highest_mood()=="surprised"',  'black surprised_var',
+                    'get_highest_mood()=="disgust"',    'black disgust_var',
+                    'get_highest_mood()=="mad"',        'black mad_var',
+                    'get_highest_mood()=="fear"',       'black fear_var',
+                    'True',                             'black regular')
+
                     
                     
 image vechna reaction:
@@ -544,15 +581,16 @@ image natasha reaction:
 
 
 #виджет для отслеживания настроения аша
+
+
 screen mood_tracker:
     #timer .01 repeat True action SetVariable('mood',get_mood(mood))
     #text str(renpy.showing('black angry_var'))
-    timer .01 repeat True action Function(show_learned_message)
+    timer .1 repeat True action Function(show_learned_message)
 
 
 # экран со статами Аша
 screen stats:
-    use mood_tracker
     vbox:
         align (.9,.1)
         label mood
@@ -584,15 +622,23 @@ screen stats:
 
 
 #Окошко для отображения произвольных сообщений
+
+image message_box = Frame('gui/textbox.png',left=26,right=26,bottom=26,top=43)
+
 screen text_message(text_msg):
     add '#0006'
-    vbox:
-        align (.5,.5)
-        hbox:
-            xsize 600
-            add Text(text_msg) xalign .5
-        textbutton ('ОКЕЙ') xalign .5 action [Hide('text_message'),Return()]
-    
+    fixed:
+        xysize (700,400)
+        align (.5,.3)
+        add 'message_box'
+        vbox:
+            align (.5,.5)
+            hbox:
+                xsize 600
+                add Text(text_msg,text_align = .5) xalign .5
+            null height 40
+            textbutton ('ОКЕЙ') xalign .5 action [Hide('text_message'),Return()]
+        
             
 #менюшки выбора эмоций по тз
             
@@ -605,6 +651,7 @@ label angry_sad:
         "Грусть":                                                    
             $ sad +=10                                     
             $ mood = 'sad'
+    $ show_learned_message()
     return
 
 label surprised_disgust:
@@ -616,6 +663,7 @@ label surprised_disgust:
         "Отвращение":                                                    
             $ disgust +=10                                     
             $ mood = 'disgust'
+    $ show_learned_message()
     return
 
 label mad_fear:
@@ -627,6 +675,7 @@ label mad_fear:
         "Страх":                                                    
             $ fear +=10                                     
             $ mood = 'fear'
+    $ show_learned_message()
     return
 
 #функции для перезаписи эмоций героев реагирующих на острые эмоции Аша
@@ -708,6 +757,11 @@ label reaction_natasha:
 
 
 
+#вероятно неверно набранные картинки
+image helpcentre = 'helpcenter'
+
+
+
 # экраны
 
 label splashscreen:
@@ -727,5 +781,9 @@ label splashscreen:
         ease 1 alpha .0
     pause 4
     hide logo_screen
+    return
+    
+label first_choice:
+    call screen text_message("Распознавай эмоции героя, это позволит Ушам Зайца показывать эмоции автоматически. От того,  как часто ты узнаешь эмоцию, зависит изображение на имплантах")
     return
     

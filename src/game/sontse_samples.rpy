@@ -15,8 +15,7 @@ label menu_example:
     show screen stats
     show black regular
     black 'Я ошибался и не должен был давать тебе то, что ты просила. Все мои действия во благо, стали злом. Все.'
-    call screen text_message("Распознавай эмоции героя, это позволит Ушам Зайца показывать эмоции автоматически. От того,  как часто ты узнаешь эмоцию, зависит изображение на имплантах")
-
+    call first_choice
     while True:
         'итд'
         menu:                                                           #объявляем меню
@@ -54,6 +53,8 @@ label menu_example:
                 $ mad = 0
                 $ fear = 0
                 $ mood = 'regular'
+
+        $ show_learned_message()
 
         show black mood
         black 'я что-то сказал'

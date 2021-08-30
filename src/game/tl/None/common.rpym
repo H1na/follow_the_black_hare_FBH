@@ -464,6 +464,70 @@ translate None strings:
     # renpy/common/00keymap.rpy:312
     old "Saved screenshot as %s."
     new "Скриншот сохранён как %s."
+    
+    old "Display"
+    new "Экран"
+    
+    old "Window"
+    new "Окно"
+    
+    old "Skip"
+    new "Пропуск"
+    
+    old "Text Speed"
+    new "Скорость текста"
+    
+    old "Auto-Forward Time"
+    new "Время авторежима"
+    
+    old "Music Volume"
+    new "Громкость музыки"
+    
+    old "Sound Volume"
+    new "Громкость звуков"
+    
+    old "Unseen Text"
+    new "Непрочитанное"
+
+    old "After Choices"
+    new "После выборов"
+
+    old "Transitions"
+    new "Переходов"
+    
+    old "Back"
+    new "Назад"
+
+    
+    old "Auto"
+    new "Авто"
+
+    
+    old "Save"
+    new "Сохр"
+
+    
+    old "Q.Save"
+    new "Б.Сохр"
+
+    
+    old "Q.Load"
+    new "Б.Загр"
+
+    
+    old "Prefs"
+    new "Настр"
+
+    
+    old "empty slot"
+    new "пустой слот"
+    
+
+    old "Mute All"
+    new "Режим без звука"
+
+#    old ""
+#    new ""
 
     # renpy/common/00library.rpy:195
     old "Skip Mode"
@@ -494,8 +558,10 @@ translate None strings:
     new "показывать пустое окно диалога"
 
     # renpy/common/00preferences.rpy:281
-    old "text speed"
+    old "text Speed"
     new "скорость текста"
+    old "Text speed"
+    new "Cкорость текста"
 
     # renpy/common/00preferences.rpy:289
     old "joystick"
@@ -652,10 +718,6 @@ translate None strings:
     # renpy/common/_compat/gamemenu.rpym:198
     old "Empty Slot."
     new "Пустой слот"
-
-    old "empty slot"
-    new "пустой слот"
-
 
     # renpy/common/_compat/gamemenu.rpym:355
     old "Previous"
@@ -1084,90 +1146,6 @@ translate None strings:
     # renpy/common/00gamepad.rpy:71
     old "Back (B)"
     new "Back (B)"
-
-    # renpy/common/_errorhandling.rpym:542
-    old "Open"
-    new "Журнал"
-
-    # renpy/common/_errorhandling.rpym:544
-    old "Opens the traceback.txt file in a text editor."
-    new "Открывает файл traceback.txt в текстовом редакторе."
-
-    # renpy/common/_errorhandling.rpym:546
-    old "Copy BBCode"
-    new "Скопировать как BBCode"
-
-    # renpy/common/_errorhandling.rpym:548
-    old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new "Копирует файл traceback.txt в буфер обмена как BBCode для форумов типа https://lemmasoft.renai.us/."
-
-    # renpy/common/_errorhandling.rpym:550
-    old "Copy Markdown"
-    new "Скопировать как Markdown"
-
-    # renpy/common/_errorhandling.rpym:552
-    old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
-    new "Копирует файл traceback.txt в буфер обмена как Markdown для Дискорда."
-
-    # renpy/common/_errorhandling.rpym:581
-    old "An exception has occurred."
-    new "Возникло исключение."
-
-    # renpy/common/_errorhandling.rpym:604
-    old "Rollback"
-    new "Назад"
-
-    # renpy/common/_errorhandling.rpym:606
-    old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    new "Пытается вернуться назад, позволяя вам сохраниться или принять другой выбор."
-
-    # renpy/common/_errorhandling.rpym:609
-    old "Ignore"
-    new "Игнорировать"
-
-    # renpy/common/_errorhandling.rpym:613
-    old "Ignores the exception, allowing you to continue."
-    new "Игнорирует это исключение, позволяя вам продолжить."
-
-    # renpy/common/_errorhandling.rpym:615
-    old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new "Игнорирует это исключение, позволяя вам продолжить. Зачастую это ведёт к дополнительным ошибкам."
-
-    # renpy/common/_errorhandling.rpym:619
-    old "Reload"
-    new "Перезагрузить"
-
-    # renpy/common/_errorhandling.rpym:621
-    old "Reloads the game from disk, saving and restoring game state if possible."
-    new "Перезагружает игру с диска, сохраняя и восстанавливая её состояние, если это возможно."
-
-    # renpy/common/_errorhandling.rpym:624
-    old "Console"
-    new "Консоль"
-
-    # renpy/common/_errorhandling.rpym:626
-    old "Opens a console to allow debugging the problem."
-    new "Открывает консоль, позволяющую отладить проблему."
-
-    # renpy/common/_errorhandling.rpym:639
-    old "Quits the game."
-    new "Выходит из игры."
-
-    # renpy/common/_errorhandling.rpym:660
-    old "Parsing the script failed."
-    new "Обработка сценария завершилась неудачно."
-
-    # renpy/common/_errorhandling.rpym:686
-    old "Opens the errors.txt file in a text editor."
-    new "Открывает файл errors.txt в текстовом редакторе."
-
-    # renpy/common/_errorhandling.rpym:690
-    old "Copies the errors.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new "Копирует файл errors.txt в буфер обмена как BBCode для форумов типа https://lemmasoft.renai.us/."
-
-    # renpy/common/_errorhandling.rpym:694
-    old "Copies the errors.txt file to the clipboard as Markdown for Discord."
-    new "Копирует файл errors.txt в буфер обмена как Markdown для Дискорда."
 
     # renpy/common/00console.rpy:492
     old "Press <esc> to exit console. Type help for help.\n"

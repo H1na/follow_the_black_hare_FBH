@@ -106,6 +106,7 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
+    #use mood_tracker
 
     window:
         id "window"
@@ -367,13 +368,19 @@ screen navigation():
             imagebutton idle 'exit_idle' hover 'exit' action Quit(confirm=not main_menu)
 
     use volume_bar
-    
+
+transform zoom04:
+    zoom .4
+
 screen volume_bar:
-    hbox:
-        align (.0,1.0)
-        add 'no_volume_icon'
-        bar  base_bar 'volume_line' thumb 'volume_cursor' xsize 300 value Preference("music volume")
-        add 'volume_line'
+    fixed:
+        xysize (400,27) 
+        pos (20,.96)
+        hbox:
+            align (.0,.5)
+            add 'no_volume_icon' at zoom04
+            bar  base_bar 'volume_line' thumb 'volume_cursor' xsize 300 value Preference("music volume")
+            add 'volume_icon' at zoom04
 
 
 style navigation_button is gui_button
@@ -385,6 +392,65 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+
+
+
+screen navigation2():
+
+    vbox:
+        style_prefix "navigation2"
+
+        xpos gui.navigation_xpos
+        yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            textbutton _("НАЧАТЬ АНАЛИЗ") action Start()
+            textbutton _("ПРОДОЛЖИТЬ АНАЛИЗ") action LoadMostRecent()
+
+        else:
+
+            textbutton _("ПРОГРЕСС ЭМОЦИЙ") action ShowMenu("show_stats")
+
+            textbutton _("ИСТОРИЯ") action ShowMenu("history")
+
+            textbutton _("СОХРАНИТЬ") action ShowMenu("save")
+
+        textbutton _("ЗАГРУЗИТЬ") action ShowMenu("load")
+
+        textbutton _("НАСТРОИТЬ СИГНАЛЫ") action ShowMenu("preferences")
+
+        if _in_replay:
+
+            textbutton _("ЗАВЕРШИТЬ ПОВТОР") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("ГЛАВНОЕ МЕНЮ") action MainMenu()
+
+        textbutton _("ОБ ИГРЕ") action ShowMenu("about")
+
+        if renpy.variant("pc"):
+
+
+            textbutton _("ОТКЛЮЧИТЬСЯ") action Quit(confirm=not main_menu)
+
+    use volume_bar
+
+
+style navigation2_button is gui_button
+style navigation2_button_text is gui_button_text
+
+style navigation2_button:
+    size_group "navigation2"
+    properties gui.button_properties("navigation2_button")
+
+style navigation2_button_text:
+    properties gui.button_text_properties("navigation2_button")
+    size 52
+
 
 
 ## Main Menu screen ############################################################
@@ -476,7 +542,7 @@ screen game_menu(title, scroll=None):
         hbox:
 
             ## Reserve space for the navigation section.
-            if main_menu:
+            if True: #main_menu:
                 frame:
                     style "game_menu_navigation_frame"
 
@@ -516,10 +582,10 @@ screen game_menu(title, scroll=None):
 
                     transclude
 
-    if main_menu:
+    if False:
         use navigation
     else:
-        use arrow_back_screen
+        use navigation2
 
 #    textbutton _("Return"):
 #        style "return_button"
@@ -547,12 +613,12 @@ style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
     bottom_padding 30
-    top_padding 120
+    top_padding 20
 
-    background "gui/overlay/game_menu.png"
+    #background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 280
+    xsize 500
     yfill True
 
 style game_menu_content_frame:
@@ -591,6 +657,14 @@ style return_button:
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
+image email_idle:
+    'email'
+    alpha .5
+
+image vk_idle:
+    'vk'
+    alpha .5
+
 screen about():
 
     tag menu
@@ -598,20 +672,23 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    #use game_menu(_("About")):#, scroll="viewport"):
 
-        style_prefix "about"
+    style_prefix "about"
+    
+    add 'about_us_screen'
+    
 
-        vbox:
+    vbox:
+        yfill True
+        xalign .8
+        null height 50
+        imagebutton idle 'email_idle' hover 'email' action OpenURL('mailto://black_hare@stia.me') xalign .5
+        imagebutton idle 'vk_idle' hover 'vk' action OpenURL('https://vk.com/black_haree') xalign .5
+        null height 50
+    use arrow_back_screen
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
 
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 
@@ -622,6 +699,64 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
+
+#################
+#
+###########
+
+transform black_offset:
+    zoom 1.1
+    align (.1,1.0)
+    yoffset 150
+
+screen show_stats:
+    add 'black_background'
+    add 'black highest_mood' at black_offset
+    style_prefix 'stats'
+    vbox:
+        align (.9,.1)
+        yfill True
+        null height 50
+        hbox:
+            xalign 1.0
+            text 'Злость'
+            null width 10
+            bar value angry range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+        hbox:
+            xalign 1.0
+            text 'Грусть'
+            null width 10
+            bar value sad range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+        hbox:
+            xalign 1.0
+            text 'Удивление'
+            null width 10
+            bar value surprised range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+        hbox:
+            xalign 1.0
+            text 'Отвращение'
+            null width 10
+            bar value disgust range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+        hbox:
+            xalign 1.0
+            text 'Безумие'
+            null width 10
+            bar value mad range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+        hbox:
+            xalign 1.0
+            text 'Страх'
+            null width 10
+            bar value fear range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            
+    use arrow_back_screen
+            
+style stats_text:
+    size 50
+
+style stats_bar:
+    ysize 50
+    left_bar '#fffa'
+    right_bar '#fff3'
 
 
 ## Load and Save screens #######################################################
@@ -661,22 +796,23 @@ screen file_slots(title):
             order_reverse True
 
             ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
+#            button:
+#                style "page_label"
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+#                key_events True
+#                xalign 0.5
+#                yalign 0.0
+#                action page_name_value.Toggle()
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+#                input:
+#                    style "page_label_text"
+#                    value page_name_value
 
             ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
+            vbox:
                 #style_prefix "slot"
 
-                xalign 0.5
+                xalign 0.9
                 yalign 0.5
 
                 spacing gui.slot_spacing
@@ -687,49 +823,58 @@ screen file_slots(title):
 
                     button:
                         action FileAction(slot)
+                        xysize (1000,190)
 
-                        has hbox
+                        add Solid('#f0a2',xysize = (1000,190))
 
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("empty slot")):
-                            #style "slot_time_text"
-                            size 40
-                            xalign .0
-                            yalign .5
-
-                        text FileSaveName(slot):
-                            #style "slot_name_text"
-                            size 40
-                            xalign .0
+                        hbox:
+                            null width 20
+                            add FileScreenshot(slot) yalign 0.5
+                            null width 20
+                            vbox:
+                                yfill True
+                                
+                                null height 50
+        
+                                text FileTime(slot, format=_("{#file_time}%A, %d %B %Y, %H:%M"), empty=_("empty slot")):
+                                    #style "slot_time_text"
+                                    size 40
+                                    xalign .0
+                                    yalign .5
+        
+                                text FileSaveName(slot):
+                                    #style "slot_name_text"
+                                    size 40
+                                    xalign .0
 
                         key "save_delete" action FileDelete(slot)
 
             ## Buttons to access other pages.
-            hbox:
-                style_prefix "page"
+#            hbox:
+#                style_prefix "page"
 
-                xalign 0.5
-                yalign 1.0
+#                xalign 0.5
+#                yalign 1.0
 
-                spacing gui.page_spacing
+#                spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious()
+#                textbutton _("<") action FilePagePrevious()
 
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
+#                if config.has_autosave:
+#                    textbutton _("{#auto_page}A") action FilePage("auto")
 
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
+#                if config.has_quicksave:
+#                    textbutton _("{#quick_page}Q") action FilePage("quick")
 
-                ## range(1, 10) gives the numbers from 1 to 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
+#                ## range(1, 10) gives the numbers from 1 to 9.
+#                for page in range(1, 10):
+#                    textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+#                textbutton _(">") action FilePageNext()
 
 screen arrow_back_screen:
-    imagebutton idle 'arrow_back' action Return()
+    imagebutton idle 'arrow_back' action Return() align (.02,.02)
+    #textbutton 'В главное меню' action MainMenu() align (.02,.98) 
 
 style page_label is gui_label
 style page_label_text is gui_label_text
@@ -779,12 +924,15 @@ screen preferences():
     else:
         $ cols = 4
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences")):#, scroll="viewport"):
 
         vbox:
+            
+            null height 500
 
             hbox:
-                box_wrap True
+                #box_wrap True
+                null width 200
 
                 if renpy.variant("pc") or renpy.variant("web"):
 
@@ -794,13 +942,6 @@ screen preferences():
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
-#                 vbox:
-#                     style_prefix "radio"
-#                     label _("Rollback Side")
-#                     textbutton _("Disable") action Preference("rollback side", "disable")
-#                     textbutton _("Left") action Preference("rollback side", "left")
-#                     textbutton _("Right") action Preference("rollback side", "right")
-
                 vbox:
                     style_prefix "check"
                     label _("Skip")
@@ -808,42 +949,9 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
-
+                null width 50
                 vbox:
-                    style_prefix "check"
-                    label _("Examples")
-                    textbutton _("Translations") action ToggleField(persistent, "show_translation_marker")
-
-#begin language_picker
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
-
-#                vbox:
-#                    style_prefix "radio"
-#                    label _("Language")
-
-                    # Real languages should go alphabetical order by English name.
-#                    textbutton "English" text_font "DejaVuSans.ttf" action Language(None)
-#                    textbutton "Français" text_font "DejaVuSans.ttf" action Language("french")
-#                    textbutton "Русский" text_font "DejaVuSans.ttf" action Language("russian")
-#                    textbutton "Español" text_font "DejaVuSans.ttf" action Language("spanish")
-#                    textbutton "한국어" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("korean")
-#                    textbutton "日本語" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("japanese")
-#                    textbutton "简体中文" text_font "../../launcher/game/fonts/SourceHanSansLite.ttf" action Language("schinese")
-
-                    # This should be last.
-#                    textbutton "Pig Latin" text_font "DejaVuSans.ttf" action Language("piglatin")
-
-
-#end language_picker
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
+                    xmaximum 400
 
                     label _("Text Speed")
 
@@ -853,7 +961,7 @@ screen preferences():
 
                     bar value Preference("auto-forward time")
 
-                vbox:
+                #vbox:
 
                     if config.has_music:
                         label _("Music Volume")
@@ -872,14 +980,6 @@ screen preferences():
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
-
-                        hbox:
-                            bar value Preference("voice volume")
-
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -887,8 +987,8 @@ screen preferences():
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
-
-
+                null width 200
+                
 style pref_label is gui_label
 style pref_label_text is gui_label_text
 style pref_vbox is vbox
@@ -1513,6 +1613,10 @@ screen quick_menu():
         textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
         textbutton _("Auto") action Preference("auto-forward", "toggle")
         textbutton _("Menu") action ShowMenu()
+        
+        
+style quick_button_text:
+    size 30
 
 
 style window:
