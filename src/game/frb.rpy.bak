@@ -218,7 +218,7 @@ label scene_3:
     #(Показываем героя в центре помощи. Он сидит на полу и проверяет свою очередь. Еще пять человек до него.)
     show black regular_sad
     black "Это все он... Неужели она имела в виду меня?"
-    call angry_sad from _call_angry_sad
+    call angry_sad
     black "Хотя, кому я вру? Это все правда."
     black "Я просто хотел научить Уши распознавать эмоции. Я совсем не хотел..."
     black "Я не должен был давать тебе то, что ты так просила."
@@ -451,7 +451,7 @@ label scene_5:
     vechna "Дашь доступ к коду?"
     hide vechna
     show black regular_confused
-    call angry_sad from _call_angry_sad_1
+    call angry_sad
     narrator "Аш подавился светлячком и выплюнул его в тарелку. "
     narrator "Тот, конечно, постарался улизнуть. Вечна с омерзением отодвинула свой салат."
     hide black
@@ -777,7 +777,7 @@ label scene_8:
     hide fox
     show black regular
     narrator "Аш пытался найти глазами Вечну, хотя никто этого и не видел. "
-    call angry_sad from _call_angry_sad_2
+    call angry_sad
     narrator "Аш пытался сосредоточиться: \"Важный момент. Соберись…\""
     show black regular
     black "Спасибо, что дождались последнего выступления."
@@ -937,7 +937,7 @@ label scene_9:
     vechna "Но у меня радость! "
     vechna "Всего четыре часа и сотня мелких задач - и я смогла удачно хакнуть мозг!"
     hide vechna
-    call angry_sad from _call_angry_sad_3
+    call angry_sad
     hide vechna
     show black mood
     black "Как? Всмысле? Ты изменила свой мозг?"
@@ -1222,7 +1222,7 @@ label scene_11 :
     show maks regular
     narrator "В конце аудитории Аш разглядел знакомый костюм и крашенные волосы Макса."
     hide maks
-    call angry_sad from _call_angry_sad_4
+    call angry_sad
     hide maks
     show black mood
     black "Ну конечно, куда же без тебя!"
@@ -1691,7 +1691,7 @@ label scene_13 :
     natasha "Это ты что, намекаешь на себя?"
     hide natasha
     show black regular
-    call angry_sad from _call_angry_sad_5
+    call angry_sad
     narrator "Аш ничего ей не ответил, он повернулся к остальным участникам."
     narrator "Все наблюдали за неофициальным поединком. Поэтому каждый услышал:"
     show black regular_happy1
@@ -1964,7 +1964,7 @@ label scene_14:
     narrator "Она широко улыбнулась."
     hide natasha
     show black regular_confused
-    call angry_sad from _call_angry_sad_6
+    call angry_sad
     show black mood
     black "Правда?"
     hide black
@@ -2042,7 +2042,7 @@ label scene_15:
     show onka smile
     narrator "Нос уловил слабый запах манго. Это Илли тянул Аша за собой, в другую сторону."
     hide onka
-    call surprised_disgust from _call_surprised_disgust
+    call surprised_disgust
     hide onka
     show black mood
     black "Эм... Проводить тебя ко врачу? Он, кстати, тоже лис?"
@@ -2259,7 +2259,7 @@ label scene_16:
     hide black
     show onka smile
     onka "Они молятся, что же еще?"
-    call surprised_disgust from _call_surprised_disgust_1
+    call surprised_disgust
     hide onka
     show black mood
     black "Что-что?"
@@ -2402,7 +2402,7 @@ label scene_17:
     show hight_fox smile
     hight_fox "Это же Третьи и Вторые! Расходный материал. "
     hight_fox "Вот оборудование действительно жаль, оно дорогое."
-    call surprised_disgust from _call_surprised_disgust_2
+    call surprised_disgust
     hide hight_fox
     show black mood
     black "Вы совсем дикие?"
@@ -3063,7 +3063,7 @@ label scene_19 :
     hide natasha
     show black sad_var
     black "Это был лис из Второй или Третьей касты, не говорящий..."
-    call surprised_disgust from _call_surprised_disgust_3
+    call surprised_disgust
     black "Пока Вечна не попросила."
     narrator "Аш молчал. Из-за двери еще слышались поскуливания. "
     narrator "Он вспоминал, как в детстве сестра спасла его и кроликов во время аварии."
@@ -3420,7 +3420,7 @@ label scene_21:
     black "Ладно, как закончить игру?"
     narrator "Перед ним высветились правила."
     narrator "\"Наблюдай за Нихалом и найди новое открытие — свое серендипити\"."
-    call surprised_disgust from _call_surprised_disgust_4
+    call surprised_disgust
     black "О, то, что нужно для человека с раздробленной рукой! "
     black "Самое оно, мать вашу."
     narrator "Рука заныла."
@@ -3992,7 +3992,7 @@ label scene_24:
     narrator "На секунду перестав дышать, он постарался отогнать страшную мысль."
     narrator "В голове загудело. Сердце стало биться громче, адреналин выплескивал ярость, разжигая кровь."
     black "Как у тебя хватило смелости сделать все это?"
-    call surprised_disgust from _call_surprised_disgust_5
+    call surprised_disgust
     black "Как у тебя хватило совести?"
     narrator "Он игнорировал ответы на свои вопросы: \"Что тут такого? Врачи бы приехали, в сети я в сознании...\"."
     black "Почему? Почему из всего, что есть в этом мире, ты выбираешь различные способы покончить с собой?"
@@ -4249,7 +4249,7 @@ label scene_25 :
     natasha "И без моей помощи сгниешь."
     hide black
     show black regular
-    call surprised_disgust from _call_surprised_disgust_6
+    call surprised_disgust
     show black mood
     black "Кто бы мог подумать, что вместо трогательных прощаний, я познакомлюсь с тобой настоящей."
     hide black
@@ -4326,7 +4326,7 @@ label scene_27:
     show black regular_sad
     narrator "Тело парализует страх, но в следующий момент его охватывает адреналиновая эйфория, и он чувствует отчаяние и злость."
     narrator "На него бросаются три собаки."
-    call mad_fear from _call_mad_fear
+    call mad_fear
     black "Не только я виноват! Ты меня бросила!"
     show black mad_var
     narrator "Он сам не понимает, как под зубами оказывается пульсирующая шея пса."
@@ -4493,7 +4493,7 @@ label scene_28:
     narrator "Ему кажется, что что-то тут не так, но возможность вернуть сестру заглушает все остальное."
     narrator "Он вспоминает ее последние слова: \"Это все он...\"."
     narrator "Сердце Аша снова сжимается."
-    call mad_fear from _call_mad_fear_1
+    call mad_fear
     black "Я виноват."
     hide black
     show onka danger
@@ -4593,7 +4593,7 @@ label scene_29:
     hide onka
     show black regular_confused
     narrator "Аш серьезно смотрит на Онку. Тот точно знает, зачем он согласился на эту работу. Смысл кривить душой?"
-    call mad_fear from _call_mad_fear_2
+    call mad_fear
     show black mood
     black "Раз так, то - да. Лет восемнадцати. Когда поймем, что все точно работает."
     black "До этого даже дед подойдет."
@@ -4614,7 +4614,7 @@ label scene_30:
     narrator "Аш смотрит на свое отражение в зеркальной поверхности реки из наноботов."
     show black mad_var
     narrator "Он смотрит в отражение своих глаз и понимает, каким был его взгляд, когда он решил убить собак. Автоматически, бессознательно, глупо..."
-    call mad_fear from _call_mad_fear_3
+    call mad_fear
     show black mood
     black "Это всегда во мне было?"
     narrator "Когда он выбирал - жить или умереть, да или нет, один или ноль - Аш первый раз почувствовал ту эмоцию - безумие."
@@ -4999,7 +4999,7 @@ label scene_31:
     scene black_background
     narrator "Спустя несколько часов, Аш вспоминает, как Илли жег свою одежду в костре, и последнее, что они сказали друг другу:"
     onka "Готов начать?"
-    call mad_fear from _call_mad_fear_4
+    call mad_fear
     hide onka
     show black mood
     black "Чтобы добиться вечной жизни, нам нужно нарушить все законы."
@@ -5098,7 +5098,7 @@ label scene_32:
     onka "Сейчас все должны оставаться в помещениях."
     hide onka
     show black sad_var
-    call mad_fear from _call_mad_fear_5
+    call mad_fear
     narrator "Аш смотрит в окно, на площадь. Над ней клубится пыль, повисая в воздухе."
     narrator "И он точно знает, что, когда ее отфильтруют, все будет покрыто телами."
     narrator "Он точно знает, что ему теперь делать. Выбрать тысячу трупов или победу над смертью?"
@@ -5233,7 +5233,7 @@ label scene_33:
     narrator "Парень вспоминает последние слова сестры: \"Это все он...\". В голове сверкает, словно молния: «Это все Онка»!"
     show black regular
     narrator "Аш думает про себя: «Вот кто помог копии убить оригинал. Вот с кем был договор...»"
-    call mad_fear from _call_mad_fear_6
+    call mad_fear
     show black mood
     black "Хорошо - начали игру, значит, и закончим."
     hide black
