@@ -123,321 +123,322 @@ init python:
 # Обьявление всех эмоций всех персонажей
 
 # image black                   = 'black_regular'
-#image black angry1            = 'black_angry1'
-#image black angry2            = 'black_angry2'
-#image black annoyed           = 'black_annoyed' 
-#image black confused          = 'black_confused' 
-#image black disgust           = 'black_disgust'
-#image black disgust1          = 'black_disgust1' 
-#image black fear              = 'black_fear'
-#image black fear1             = 'black_fear1'        
-#image black mad1              = 'black_mad1'
-#image black mad2              = 'black_mad2'
-#image black mad3              = 'black_mad3'
-#image black mad4              = 'black_mad4'
-#image black regular           = 'black_regular'
-#image black regular_blood     = 'black_regular_blood'
-#image black regular_fear      = 'black_regular_fear'      
-#image black regular_confused  = 'black_regular_confused'  
-#image black regular_angry     = 'black_regular_angry'    
-#image black regular_happy2    = 'black_regular_happy2'    
-#image black regular_happy1    = 'black_regular_happy1'    
-#image black regular_surprised = 'black_regular_surprised'
-#image black regular_annoyed   = 'black_regular_annoyed'   
-#image black regular_disgust   = 'black_regular_disgust'   
-#image black regular_sad       = 'black_regular_sad'       
-#image black sad               = 'black_sad'
-#image black sad1              = 'black_sad1'         
-#image black surprised         = 'black_surprised'
-#image black surprised1        = 'black_surprised1'
-#image black regular_mad       = 'black_sad'
+
+image black angry1            = 'black_angry1'
+image black angry2            = 'black_angry2'
+image black annoyed           = 'black_annoyed' 
+image black confused          = 'black_confused' 
+image black disgust           = 'black_disgust'
+image black disgust1          = 'black_disgust1' 
+image black fear              = 'black_fear'
+image black fear1             = 'black_fear1'        
+image black mad1              = 'black_mad1'
+image black mad2              = 'black_mad2'
+image black mad3              = 'black_mad3'
+image black mad4              = 'black_mad4'
+image black regular           = 'black_regular'
+image black regular_blood     = 'black_regular_blood'
+image black regular_fear      = 'black_regular_fear'      
+image black regular_confused  = 'black_regular_confused'  
+image black regular_angry     = 'black_regular_angry'    
+image black regular_happy2    = 'black_regular_happy2'    
+image black regular_happy1    = 'black_regular_happy1'    
+image black regular_surprised = 'black_regular_surprised'
+image black regular_annoyed   = 'black_regular_annoyed'   
+image black regular_disgust   = 'black_regular_disgust'   
+image black regular_sad       = 'black_regular_sad'       
+image black sad               = 'black_sad'
+image black sad1              = 'black_sad1'         
+image black surprised         = 'black_surprised'
+image black surprised1        = 'black_surprised1'
+image black regular_mad       = 'black_sad'
 
 
 
-#image fox              = 'fox_smile'
-#image fox angry        = 'fox_angry'
-#image fox shock        = 'fox_shock'
-#image fox smile        = 'fox_smile'
-#image fox collar_angry = 'fox_collar_angry'
-#image fox collar_smile = 'fox_collar_smile'
-#image fox collar_shock = 'fox_collar_shock'
+image fox              = 'fox_smile'
+image fox angry        = 'fox_angry'
+image fox shock        = 'fox_shock'
+image fox smile        = 'fox_smile'
+image fox collar_angry = 'fox_collar_angry'
+image fox collar_smile = 'fox_collar_smile'
+image fox collar_shock = 'fox_collar_shock'
 
-#image hight_fox       = 'high_fox_angry'
-#image hight_fox smile = 'high_fox_smile'
-#image hight_fox angry = 'high_fox_angry'
-#image hight_fox shock = 'high_fox_shock'
+image hight_fox       = 'high_fox_angry'
+image hight_fox smile = 'high_fox_smile'
+image hight_fox angry = 'high_fox_angry'
+image hight_fox shock = 'high_fox_shock'
 
-#image wild_fox         = 'fox_wild_regular'
-#image wild_fox regular = 'fox_wild_regular'
-#image wild_fox crazy   = 'fox_wild_crazy'
-
-
-#image maks         = 'max_regular'
-#image maks regular = 'max_regular'
-#image maks fight   = 'max_fight'
-#image maks angry   = 'max_angry'
+image wild_fox         = 'fox_wild_regular'
+image wild_fox regular = 'fox_wild_regular'
+image wild_fox crazy   = 'fox_wild_crazy'
 
 
-#image onka          = 'onka_regular'
-#image onka regular  = 'onka_regular'
-#image onka confused = 'onka_confused'
-#image onka thinking = 'onka_thinking'
-#image onka victory  = 'onka_victory'
-#image onka angry    = 'onka_angry'
-#image onka smile    = 'onka_smile'
-#image onka sneaky   = 'onka_sneaky'
-#image onka danger   = 'onka_danger'
-#image onka sad      = 'onka_sad'
+image maks         = 'max_regular'
+image maks regular = 'max_regular'
+image maks fight   = 'max_fight'
+image maks angry   = 'max_angry'
 
 
-#image vechna          = 'vechna_thinking'
-#image vechna thinking = 'vechna_thinking'
-#image vechna angry    = 'vechna_angry'
-#image vechna smile1   = 'vechna_smile1'
-#image vechna smile2   = 'vechna_smile2'
-#image vechna sad      = 'vechna_sad' 
+image onka          = 'onka_regular'
+image onka regular  = 'onka_regular'
+image onka confused = 'onka_confused'
+image onka thinking = 'onka_thinking'
+image onka victory  = 'onka_victory'
+image onka angry    = 'onka_angry'
+image onka smile    = 'onka_smile'
+image onka sneaky   = 'onka_sneaky'
+image onka danger   = 'onka_danger'
+image onka sad      = 'onka_sad'
 
-#image digital_vechna          = 'digital_vechna_thinking'
-#image digital_vechna thinking = 'digital_vechna_thinking'
-#image digital_vechna smile1   = 'digital_vechna_smile1'
-#image digital_vechna smile2   = 'digital_vechna_smile2'
+
+image vechna          = 'vechna_thinking'
+image vechna thinking = 'vechna_thinking'
+image vechna angry    = 'vechna_angry'
+image vechna smile1   = 'vechna_smile1'
+image vechna smile2   = 'vechna_smile2'
+image vechna sad      = 'vechna_sad' 
+
+image digital_vechna          = 'digital_vechna_thinking'
+image digital_vechna thinking = 'digital_vechna_thinking'
+image digital_vechna smile1   = 'digital_vechna_smile1'
+image digital_vechna smile2   = 'digital_vechna_smile2'
 
 
-#image natasha         = 'natasha_regular'
-#image natasha regular = 'natasha_regular'
-#image natasha smile   = 'natasha_smile'
-#image natasha angry   = 'natasha_angry'
-#image natasha sad     = 'natasha_sad'
+image natasha         = 'natasha_regular'
+image natasha regular = 'natasha_regular'
+image natasha smile   = 'natasha_smile'
+image natasha angry   = 'natasha_angry'
+image natasha sad     = 'natasha_sad'
  
 # c дефолтными анимациями
 
-image black angry1:
-    'black_angry1'
-    tr_default
-image black angry2:
-    'black_angry2'
-    tr_default
-image black annoyed:
-    'black_annoyed'
-    tr_default
-image black confused:
-    'black_confused'
-    tr_default
-image black disgust:
-    'black_disgust'
-    tr_default
-image black disgust1:
-    'black_disgust1'
-    tr_default
-image black fear:
-    'black_fear'
-    tr_default
-image black fear1:
-    'black_fear1'
-    tr_default
-image black mad1:
-    'black_mad1'
-    tr_default
-image black mad2:
-    'black_mad2'
-    tr_default
-image black mad3:
-    'black_mad3'
-    tr_default
-image black mad4:
-    'black_mad4'
-    tr_default
-image black regular:
-    'black_regular'
-    tr_default
-image black regular_blood:
-    'black_regular_blood'
-    tr_default
-image black regular_fear:
-    'black_regular_fear'
-    tr_default
-image black regular_confused:
-    'black_regular_confused'
-    tr_default
-image black regular_angry:
-    'black_regular_angry'
-    tr_default
-image black regular_happy2:
-    'black_regular_happy2'
-    tr_default
-image black regular_happy1:
-    'black_regular_happy1'
-    tr_default
-image black regular_surprised:
-    'black_regular_surprised'
-    tr_default
-image black regular_annoyed:
-    'black_regular_annoyed'
-    tr_default
-image black regular_disgust:
-    'black_regular_disgust'
-    tr_default
-image black regular_sad:
-    'black_regular_sad'
-    tr_default
-image black sad:
-    'black_sad'
-    tr_default
-image black sad1:
-    'black_sad1'
-    tr_default
-image black surprised:
-    'black_surprised'
-    tr_default
-image black surprised1:
-    'black_surprised1'
-    tr_default
-image black regular_mad:
-    'black_sad'
-    tr_default
+#image black angry1:
+#    'black_angry1'
+#    tr_default
+#image black angry2:
+#    'black_angry2'
+#    tr_default
+#image black annoyed:
+#    'black_annoyed'
+#    tr_default
+#image black confused:
+#    'black_confused'
+#    tr_default
+#image black disgust:
+#    'black_disgust'
+#    tr_default
+#image black disgust1:
+#    'black_disgust1'
+#    tr_default
+#image black fear:
+#    'black_fear'
+#    tr_default
+#image black fear1:
+#    'black_fear1'
+#    tr_default
+#image black mad1:
+#    'black_mad1'
+#    tr_default
+#image black mad2:
+#    'black_mad2'
+#    tr_default
+#image black mad3:
+#    'black_mad3'
+#    tr_default
+#image black mad4:
+#    'black_mad4'
+#    tr_default
+#image black regular:
+#    'black_regular'
+#    tr_default
+#image black regular_blood:
+#    'black_regular_blood'
+#    tr_default
+#image black regular_fear:
+#    'black_regular_fear'
+#    tr_default
+#image black regular_confused:
+#    'black_regular_confused'
+#    tr_default
+#image black regular_angry:
+#    'black_regular_angry'
+#    tr_default
+#image black regular_happy2:
+#    'black_regular_happy2'
+#    tr_default
+#image black regular_happy1:
+#    'black_regular_happy1'
+#    tr_default
+#image black regular_surprised:
+#    'black_regular_surprised'
+#    tr_default
+#image black regular_annoyed:
+#    'black_regular_annoyed'
+#    tr_default
+#image black regular_disgust:
+#    'black_regular_disgust'
+#    tr_default
+#image black regular_sad:
+#    'black_regular_sad'
+#    tr_default
+#image black sad:
+#    'black_sad'
+#    tr_default
+#image black sad1:
+#    'black_sad1'
+#    tr_default
+#image black surprised:
+#    'black_surprised'
+#    tr_default
+#image black surprised1:
+#    'black_surprised1'
+#    tr_default
+#image black regular_mad:
+#    'black_sad'
+#    tr_default
 
 
 
-image fox:
-    'fox_smile'
-    tr_default
-image fox angry:
-    'fox_angry'
-    tr_default
-image fox shock:
-    'fox_shock'
-    tr_default
-image fox smile:
-    'fox_smile'
-    tr_default
-image fox collar_angry:
-    'fox_collar_angry'
-    tr_default
-image fox collar_smile:
-    'fox_collar_smile'
-    tr_default
-image fox collar_shock:
-    'fox_collar_shock'
-    tr_default
+#image fox:
+#    'fox_smile'
+#    tr_default
+#image fox angry:
+#    'fox_angry'
+#    tr_default
+#image fox shock:
+#    'fox_shock'
+#    tr_default
+#image fox smile:
+#    'fox_smile'
+#    tr_default
+#image fox collar_angry:
+#    'fox_collar_angry'
+#    tr_default
+#image fox collar_smile:
+#    'fox_collar_smile'
+#    tr_default
+#image fox collar_shock:
+#    'fox_collar_shock'
+#    tr_default
 
-image hight_fox:
-    'high_fox_angry'
-    tr_default
-image hight_fox smile:
-    'high_fox_smile'
-    tr_default
-image hight_fox angry:
-    'high_fox_angry'
-    tr_default
-image hight_fox shock:
-    'high_fox_shock'
-    tr_default
+#image hight_fox:
+#    'high_fox_angry'
+#    tr_default
+#image hight_fox smile:
+#    'high_fox_smile'
+#    tr_default
+#image hight_fox angry:
+#    'high_fox_angry'
+#    tr_default
+#image hight_fox shock:
+#    'high_fox_shock'
+#    tr_default
 
-image wild_fox:
-    'fox_wild_regular'
-    tr_default
-image wild_fox regular:
-    'fox_wild_regular'
-    tr_default
-image wild_fox crazy:
-    'fox_wild_crazy'
-    tr_default
-
-
-image maks:
-    'max_regular'
-    tr_default
-image maks regular:
-    'max_regular'
-    tr_default
-image maks fight:
-    'max_fight'
-    tr_default
-image maks angry:
-    'max_angry'
-    tr_default
+#image wild_fox:
+#    'fox_wild_regular'
+#    tr_default
+#image wild_fox regular:
+#    'fox_wild_regular'
+#    tr_default
+#image wild_fox crazy:
+#    'fox_wild_crazy'
+#    tr_default
 
 
-image onka:
-    'onka_regular'
-    tr_default
-image onka regular:
-    'onka_regular'
-    tr_default
-image onka confused:
-    'onka_confused'
-    tr_default
-image onka thinking:
-    'onka_thinking'
-    tr_default
-image onka victory:
-    'onka_victory'
-    tr_default
-image onka angry:
-    'onka_angry'
-    tr_default
-image onka smile:
-    'onka_smile'
-    tr_default
-image onka sneaky:
-    'onka_sneaky'
-    tr_default
-image onka danger:
-    'onka_danger'
-    tr_default
-image onka sad:
-    'onka_sad'
-    tr_default
+#image maks:
+#    'max_regular'
+#    tr_default
+#image maks regular:
+#    'max_regular'
+#    tr_default
+#image maks fight:
+#    'max_fight'
+#    tr_default
+#image maks angry:
+#    'max_angry'
+#    tr_default
 
 
-image vechna:
-    'vechna_thinking'
-    tr_default
-image vechna thinking:
-    'vechna_thinking'
-    tr_default
-image vechna angry:
-    'vechna_angry'
-    tr_default
-image vechna smile1:
-    'vechna_smile1'
-    tr_default
-image vechna smile2:
-    'vechna_smile2'
-    tr_default
-image vechna sad:
-    'vechna_sad'
-    tr_default
+#image onka:
+#    'onka_regular'
+#    tr_default
+#image onka regular:
+#    'onka_regular'
+#    tr_default
+#image onka confused:
+#    'onka_confused'
+#    tr_default
+#image onka thinking:
+#    'onka_thinking'
+#    tr_default
+#image onka victory:
+#    'onka_victory'
+#    tr_default
+#image onka angry:
+#    'onka_angry'
+#    tr_default
+#image onka smile:
+#    'onka_smile'
+#    tr_default
+#image onka sneaky:
+#    'onka_sneaky'
+#    tr_default
+#image onka danger:
+#    'onka_danger'
+#    tr_default
+#image onka sad:
+#    'onka_sad'
+#    tr_default
 
-image digital_vechna:
-    'digital_vechna_thinking'
-    tr_default
-image digital_vechna thinking:
-    'digital_vechna_thinking'
-    tr_default
-image digital_vechna smile1:
-    'digital_vechna_smile1'
-    tr_default
-image digital_vechna smile2:
-    'digital_vechna_smile2'
-    tr_default
+
+#image vechna:
+#    'vechna_thinking'
+#    tr_default
+#image vechna thinking:
+#    'vechna_thinking'
+#    tr_default
+#image vechna angry:
+#    'vechna_angry'
+#    tr_default
+#image vechna smile1:
+#    'vechna_smile1'
+#    tr_default
+#image vechna smile2:
+#    'vechna_smile2'
+#    tr_default
+#image vechna sad:
+#    'vechna_sad'
+#    tr_default
+
+#image digital_vechna:
+#    'digital_vechna_thinking'
+#    tr_default
+#image digital_vechna thinking:
+#    'digital_vechna_thinking'
+#    tr_default
+#image digital_vechna smile1:
+#    'digital_vechna_smile1'
+#    tr_default
+#image digital_vechna smile2:
+#    'digital_vechna_smile2'
+#    tr_default
 
 
-image natasha:
-    'natasha_regular'
-    tr_default
-image natasha regular:
-    'natasha_regular'
-    tr_default
-image natasha smile:
-    'natasha_smile'
-    tr_default
-image natasha angry:
-    'natasha_angry'
-    tr_default
-image natasha sad:
-    'natasha_sad'
-    tr_default
+#image natasha:
+#    'natasha_regular'
+#    tr_default
+#image natasha regular:
+#    'natasha_regular'
+#    tr_default
+#image natasha smile:
+#    'natasha_smile'
+#    tr_default
+#image natasha angry:
+#    'natasha_angry'
+#    tr_default
+#image natasha sad:
+#    'natasha_sad'
+#    tr_default
 
  
 
