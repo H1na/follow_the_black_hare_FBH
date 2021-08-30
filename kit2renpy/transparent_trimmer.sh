@@ -21,12 +21,12 @@ fi
 
 cd $DIR
 
-# Check for target directory, create if it doesn't already exist 
-if [ ! -d $TDIR ]; then
-    mkdir -p $TDIR
-else
-    echo "Directory $TDIR already exists"
-fi
+# # Check for target directory, create if it doesn't already exist 
+# if [ ! -d $TDIR ]; then
+#     mkdir -p $TDIR
+# else
+#     echo "Directory $TDIR already exists"
+# fi
 
 for img in *; do  
     # Check we're working with images 

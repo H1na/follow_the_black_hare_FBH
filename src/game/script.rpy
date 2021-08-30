@@ -1,25 +1,25 @@
 ﻿
-define narrator = Character(None, window_left_padding=0)
-define black = DynamicCharacter(_("ash_name"), color="#FF0000") 
-define onka = Character(_('Онка'), color="#c8ffc8") 
-define stub_character = Character(_('Заглушка'), color="#c8ffc8") 
+define narrator = Character(None, window_left_padding=0, color="#ffffff")
 
-define vechna = Character(_('Вечна'), color="#c8ffc8")
-define digital_vechna = Character(_('Вечна цифровая'), color="#c8ffc8", )
+define black = DynamicCharacter(_("ash_name"), color="#ff00f0") 
+define onka = Character(_('Онка'), color="#ff3600") 
 
-define maks = Character(_('Макс'), color="#c8ffc8", )
+define vechna = Character(_('Вечна'), color="#3abf0a")
+define digital_vechna = Character(_('Вечна цифровая'), color="#66e56c", )
 
-define natasha = Character(_('НАТАША'), color="#c8ffc8", )
-define fox = Character(_('Облачный Лис'), color="#c8ffc8", )
-define hight_fox = Character(_('ЛИС'), color="#c8ffc8", )
-define wild_fox = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#c8ffc8", )
+define maks = Character(_('Макс'), color="#5a9de9", )
+
+define natasha = Character(_('НАТАША'), color="#fe84ff", )
+define fox = Character(_('Облачный Лис'), color="#1d92be", )
+define hight_fox = Character(_('ЛИС'), color="#ff2929", )
+define wild_fox = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#dcbc27", )
 
 define man = Character(_('МУЖЧИНА'), color="#c8ffc8", )
 
 #characters with no sprites
-define robotic_voice = Character(_('ЦЕНТР КОПИРОВАНИЯ'), color="#c8ffc8", )
+define robotic_voice = Character(_('ЦЕНТР КОПИРОВАНИЯ'), color="#5ebdff", )
 define voice_from_net = Character(_('ГОЛОС ИЗ СЕТИ'), color="#c8ffc8", )
-define help_center = Character(_('ЦЕНТР ПОМОЩИ'), color="#c8ffc8", )
+define help_center = Character(_('ЦЕНТР ПОМОЩИ'), color="#5ebdff", )
 define camera = Character(_('КАМЕРА'), color="#c8ffc8", )
 define voice_cartoon = Character(_('ГОЛОС МУЛЬТЯШКИ'), color="#c8ffc8", )
 define mobile_camera = Character(_('МОБИЛЬНАЯ КАМЕРА'), color="#c8ffc8", )
