@@ -15,7 +15,7 @@ label menu_example:
     show screen stats
     show black regular
     black 'Я ошибался и не должен был давать тебе то, что ты просила. Все мои действия во благо, стали злом. Все.'
-    call first_choice from _call_first_choice
+    call first_choice
     while True:
         'итд'
         menu:                                                           #объявляем меню
