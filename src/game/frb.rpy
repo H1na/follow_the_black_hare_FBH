@@ -1,11 +1,12 @@
 label scene_1:
     #Здесь мы рассказываем о том, где они живую и что это - опасное место. Где бояться нужно не только природы, но и себя. Аш винит себя, что это он подвел Вечну к копированию. В сцене герой должен быть крут и логичен. Он рассказывает о законе копирования.
-    scene black_background
+    scene blood_room
     #(Появляется фон.)
     #(Начинается музыка.)
     #(На фоне музыки раздается вздох молодого парня.)
     #(Появляется текст.)
-    show black regular with Dissolve(.3)
+    show black regular_sad with Dissolve(.3)
+    show black regular_sad with Dissolve(.3)
     black "В начале двадцать первого века самыми большими страхами людей были высота и темнота. "
     black "В 22 веке бо́льшая часть населения Земли вынуждена десять лет жить на Луне. "
     black "Все – ради науки. "
@@ -32,7 +33,7 @@ label scene_1:
     black "Ее погубило мое изобретение. "
     black "У любой технологии есть темная сторона."
     black "Желая обучить программный код распознавать эмоции, я создал монстра..."
-    black "...Сделал её монстром... А поплатилась за это она.."
+    black "...Сделал её монстром... А поплатилась за это она..."
     black "Поплатилась три часа назад."
     jump scene_2
 
@@ -199,6 +200,11 @@ label scene_2 :
     narrator "А затем, внезапно, даже цифровая копия сестры покинула его. "
     show black regular_surprised with Dissolve(.3)
     narrator "Исчезла, словно не по своей воле."
+    jump scene_3
+
+
+label scene_3:
+    show black sad with Dissolve(.3)
     narrator "Его разум никак не мог осознать произошедшее. "
     narrator "В голове раз за разом крутилась лишь одна фраза: \"Это все он…\"."
     show black regular_sad with Dissolve(.3)
@@ -208,21 +214,6 @@ label scene_2 :
     narrator "Словно ничего и не произошло. "
     narrator "Словно еще несколько минут назад здесь трагически не оборвалась жизнь."
     narrator "Перед ним высветилось сообщение в смешанной реальности: \"Центр Копирования свободен, отправьте запрос...\""
-    jump scene_3
-
-
-label scene_3:
-    scene helpcentere_3
-    narrator "Прошел час, после копирования Вечны."
-    #(Показываем уведомление для игрока: Распознайте эмоции героя – от этого зависит, какие эмоции увидят на Ушах другие персонажи)
-    #(Показываем героя в центре помощи. Он сидит на полу и проверяет свою очередь. Еще пять человек до него.)
-    show black regular_sad with Dissolve(.3)
-    black "Это все он... Неужели она имела в виду меня?"
-    call angry_sad
-    black "Хотя, кому я вру? Это все правда."
-    black "Я просто хотел научить Уши распознавать эмоции. Я совсем не хотел..."
-    black "Я не должен был давать тебе то, что ты так просила."
-    black "Все мои действия во благо обернулись злом. Все..."
     jump scene_4
 
 
@@ -452,6 +443,7 @@ label scene_5:
     hide vechna
     show black regular_confused with Dissolve(.3)
     call angry_sad
+    show black mood with Dissolve(.3)
     narrator "Аш подавился светлячком и выплюнул его в тарелку. "
     narrator "Тот, конечно, постарался улизнуть. Вечна с омерзением отодвинула свой салат."
     hide black
@@ -778,6 +770,7 @@ label scene_8:
     show black regular with Dissolve(.3)
     narrator "Аш пытался найти глазами Вечну, хотя никто этого и не видел. "
     call angry_sad
+    show black mood with Dissolve(.3)
     narrator "Аш пытался сосредоточиться: \"Важный момент. Соберись…\""
     show black regular with Dissolve(.3)
     black "Спасибо, что дождались последнего выступления."
@@ -938,7 +931,7 @@ label scene_9:
     vechna "Всего четыре часа и сотня мелких задач - и я смогла удачно хакнуть мозг!"
     hide vechna
     call angry_sad
-    hide vechna
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Как? Всмысле? Ты изменила свой мозг?"
     narrator "Он произнес это резко, чувствуя приближение проблем."
@@ -1223,7 +1216,7 @@ label scene_11 :
     narrator "В конце аудитории Аш разглядел знакомый костюм и крашенные волосы Макса."
     hide maks
     call angry_sad
-    hide maks
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Ну конечно, куда же без тебя!"
     narrator "Он нащупал в кармане моток армированной изоленты BRUTAL, которую в него бросил Максим в этой же аудитории..."
@@ -1692,6 +1685,7 @@ label scene_13 :
     hide natasha
     show black regular with Dissolve(.3)
     call angry_sad
+    show black mood with Dissolve(.3)
     narrator "Аш ничего ей не ответил, он повернулся к остальным участникам."
     narrator "Все наблюдали за неофициальным поединком. Поэтому каждый услышал:"
     show black regular_happy1 with Dissolve(.3)
@@ -1966,6 +1960,7 @@ label scene_14:
     show black regular_confused with Dissolve(.3)
     call angry_sad
     show black mood with Dissolve(.3)
+    show black mood with Dissolve(.3)
     black "Правда?"
     hide black
     show onka confused with Dissolve(.3)
@@ -2043,7 +2038,7 @@ label scene_15:
     narrator "Нос уловил слабый запах манго. Это Илли тянул Аша за собой, в другую сторону."
     hide onka
     call surprised_disgust
-    hide onka
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Эм... Проводить тебя ко врачу? Он, кстати, тоже лис?"
     hide black
@@ -2260,7 +2255,7 @@ label scene_16:
     show onka smile with Dissolve(.3)
     onka "Они молятся, что же еще?"
     call surprised_disgust
-    hide onka
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Что-что?"
     narrator "Он уже не смотрел на лис, а пытался понять по глазам Онки, смеется тот или нет. "
@@ -2403,7 +2398,7 @@ label scene_17:
     hight_fox "Это же Третьи и Вторые! Расходный материал. "
     hight_fox "Вот оборудование действительно жаль, оно дорогое."
     call surprised_disgust
-    hide hight_fox
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Вы совсем дикие?"
     hide black
@@ -3064,6 +3059,7 @@ label scene_19 :
     show black sad_var with Dissolve(.3)
     black "Это был лис из Второй или Третьей касты, не говорящий..."
     call surprised_disgust
+    show black mood with Dissolve(.3)
     black "Пока Вечна не попросила."
     narrator "Аш молчал. Из-за двери еще слышались поскуливания. "
     narrator "Он вспоминал, как в детстве сестра спасла его и кроликов во время аварии."
@@ -3421,6 +3417,7 @@ label scene_21:
     narrator "Перед ним высветились правила."
     narrator "\"Наблюдай за Нихалом и найди новое открытие — свое серендипити\"."
     call surprised_disgust
+    show black mood with Dissolve(.3)
     black "О, то, что нужно для человека с раздробленной рукой! "
     black "Самое оно, мать вашу."
     narrator "Рука заныла."
@@ -3993,6 +3990,7 @@ label scene_24:
     narrator "В голове загудело. Сердце стало биться громче, адреналин выплескивал ярость, разжигая кровь."
     black "Как у тебя хватило смелости сделать все это?"
     call surprised_disgust
+    show black mood with Dissolve(.3)
     black "Как у тебя хватило совести?"
     narrator "Он игнорировал ответы на свои вопросы: \"Что тут такого? Врачи бы приехали, в сети я в сознании...\"."
     black "Почему? Почему из всего, что есть в этом мире, ты выбираешь различные способы покончить с собой?"
@@ -4251,6 +4249,7 @@ label scene_25 :
     show black regular with Dissolve(.3)
     call surprised_disgust
     show black mood with Dissolve(.3)
+    show black mood with Dissolve(.3)
     black "Кто бы мог подумать, что вместо трогательных прощаний, я познакомлюсь с тобой настоящей."
     hide black
     show natasha regular with Dissolve(.3)
@@ -4327,6 +4326,7 @@ label scene_27:
     narrator "Тело парализует страх, но в следующий момент его охватывает адреналиновая эйфория, и он чувствует отчаяние и злость."
     narrator "На него бросаются три собаки."
     call mad_fear
+    show black mood with Dissolve(.3)
     black "Не только я виноват! Ты меня бросила!"
     show black mad_var with Dissolve(.3)
     narrator "Он сам не понимает, как под зубами оказывается пульсирующая шея пса."
@@ -4494,6 +4494,7 @@ label scene_28:
     narrator "Он вспоминает ее последние слова: \"Это все он...\"."
     narrator "Сердце Аша снова сжимается."
     call mad_fear
+    show black mood with Dissolve(.3)
     black "Я виноват."
     hide black
     show onka danger with Dissolve(.3)
@@ -4590,10 +4591,11 @@ label scene_29:
     show onka sneaky with Dissolve(.3)
     onka "А что - тело смертельно больного мужчины может не подойти?"
     onka "Или нужна молодая девушка?"
-    hide black
+    hide onka
     show black regular_confused with Dissolve(.3)
     narrator "Аш серьезно смотрит на Онку. Тот точно знает, зачем он согласился на эту работу. Смысл кривить душой?"
     call mad_fear
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Раз так, то - да. Лет восемнадцати. Когда поймем, что все точно работает."
     black "До этого даже дед подойдет."
@@ -4615,6 +4617,7 @@ label scene_30:
     show black mad_var with Dissolve(.3)
     narrator "Он смотрит в отражение своих глаз и понимает, каким был его взгляд, когда он решил убить собак. Автоматически, бессознательно, глупо..."
     call mad_fear
+    show black mood with Dissolve(.3)
     show black mood with Dissolve(.3)
     black "Это всегда во мне было?"
     narrator "Когда он выбирал - жить или умереть, да или нет, один или ноль - Аш первый раз почувствовал ту эмоцию - безумие."
@@ -4954,7 +4957,7 @@ label scene_31:
     onka "Проверь мою комнату! Найди на Фабрике манго или эфирные масло, все, что возможно! "
     onka "Никому не рассказывай, записи тоже все собери."
     onka "И без интервью, будь добр."
-    hide black
+    hide onka
     show fox smile with Dissolve(.3)
     narrator "Лис, немного покачиваясь, делает реверанс. Теперь он не так сильно нервничает."
     hide fox
@@ -4998,13 +5001,14 @@ label scene_31:
     onka "Что ты, не дай Фабрика, чтоб я остался миллиардером."
     scene black_background
     narrator "Спустя несколько часов, Аш вспоминает, как Илли жег свою одежду в костре, и последнее, что они сказали друг другу:"
-    hide onka
-    show black mad_var with Dissolve(.3)
+    onka "Готов начать?"
+    call mad_fear
+    show black mood with Dissolve(.3)
+    show black mood with Dissolve(.3)
     black "Чтобы добиться вечной жизни, нам нужно нарушить все законы."
     hide black
     show onka danger with Dissolve(.3)
     onka "С какого начнем?"
-    call mad_fear
     narrator "Аш смотрит в черноту и думает, готов ли взять на себя ответственность за смерть тысячи людей? А то и больше тысячи?"
     jump scene_32
 
@@ -5098,6 +5102,7 @@ label scene_32:
     hide onka
     show black sad_var with Dissolve(.3)
     call mad_fear
+    show black mood with Dissolve(.3)
     narrator "Аш смотрит в окно, на площадь. Над ней клубится пыль, повисая в воздухе."
     narrator "И он точно знает, что, когда ее отфильтруют, все будет покрыто телами."
     narrator "Он точно знает, что ему теперь делать. Выбрать тысячу трупов или победу над смертью?"
@@ -5105,7 +5110,7 @@ label scene_32:
 
 
 label scene_33:
-    scene Chip_factory_Laboratory
+    scene chip_factory_laboratory
     #Онка предлагает как тело – Наташу. и не принимает отговорки, Аш мечется
     narrator "На следующий день."
     narrator "Онка лежит в углу, не двигается. Голова безжизненно свешивается вниз."
@@ -5230,14 +5235,21 @@ label scene_33:
     hide onka
     show black angry_var with Dissolve(.3)
     narrator "Парень вспоминает последние слова сестры: \"Это все он...\". В голове сверкает, словно молния: «Это все Онка»!"
+    scene helpcenter
+    hide black
+    show vechna angry with Dissolve(.3)
+    vechna "Это все он... !"
+    scene chip_factory_laboratory
     show black regular with Dissolve(.3)
     narrator "Аш думает про себя: «Вот кто помог копии убить оригинал. Вот с кем был договор...»"
     call mad_fear
     show black mood with Dissolve(.3)
+    show black mood with Dissolve(.3)
     black "Хорошо - начали игру, значит, и закончим."
     hide black
-    show onka confused with Dissolve(.3)
+    show onka danger with Dissolve(.3)
     onka "Так просто, готов продолжать?"
+    hide onka
     show black mad_var with Dissolve(.3)
     narrator "Черный Заяц достает из кармана фиолетовый мяч, похожий на тот, из-за которого лис на конкурсе отгрыз себе лапу."
     narrator "В глазах Облачного загорается безумный огонь."
