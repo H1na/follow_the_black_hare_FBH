@@ -327,7 +327,16 @@ init +1 python:
 
         def get_sensitive(self):
             return self.slot is not None
-  
+
+init:
+    default angry = 0
+    default sad = 0
+    
+    default surprised = 0
+    default disgust = 0
+    
+    default mad = 0
+    default fear = 0      
 
 
 screen navigation():
@@ -347,9 +356,9 @@ screen navigation():
 
             imagebutton idle 'start_idle' hover 'start' action Start()
 
-        else:
+        #else:
 
-            imagebutton idle 'progress_idle' hover 'progress' action ShowMenu("history")
+        imagebutton idle 'progress_idle' hover 'progress' action Show("show_stats")
 
         imagebutton idle 'continue_idle' hover 'continue' action LoadMostRecent()
 
@@ -686,7 +695,7 @@ screen about():
         imagebutton idle 'email_idle' hover 'email' action OpenURL('mailto://black_hare@stia.me') xalign .5
         imagebutton idle 'vk_idle' hover 'vk' action OpenURL('https://vk.com/black_haree') xalign .5
         null height 50
-    use arrow_back_screen
+    use arrow_back_screen('about')
 
 
 
@@ -748,7 +757,7 @@ screen show_stats:
             null width 10
             bar value fear range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
             
-    use arrow_back_screen
+    use arrow_back_screen('show_stats')
             
 style stats_text:
     size 50
@@ -872,8 +881,8 @@ screen file_slots(title):
 
 #                textbutton _(">") action FilePageNext()
 
-screen arrow_back_screen:
-    imagebutton idle 'arrow_back' action Return() align (.02,.02)
+screen arrow_back_screen(parent):
+    imagebutton idle 'arrow_back' action [Hide(parent),Return()] align (.02,.02)
     #textbutton 'В главное меню' action MainMenu() align (.02,.98) 
 
 style page_label is gui_label
