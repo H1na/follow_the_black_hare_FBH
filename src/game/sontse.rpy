@@ -1,6 +1,6 @@
-init:
-    define config.mouse = { }
-    define config.mouse['default'] = [ ( "gui/mouse.png", 0, 0)]
+#init:
+#    define config.mouse = { }
+#    define config.mouse['default'] = [ ( "gui/mouse.png", 0, 0)]
 
 #Функция отслеживания эмоций Аша
 init python:

@@ -354,7 +354,7 @@ screen navigation():
 
         if main_menu:
 
-            imagebutton idle 'start_idle' hover 'start' action Start()
+            imagebutton idle 'start_idle' hover 'start' xoffset 80 action Start()
 
         #else:
 
