@@ -107,7 +107,7 @@ style frame:
 screen say(who, what):
     style_prefix "say"
     #use mood_tracker
-
+    add "gui/textbox.png" xalign 0.5 yalign 1.0 alpha .8
     window:
         id "window"
 
@@ -141,7 +141,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    #background Image("gui/textbox.png", xalign=0.5, yalign=1.0,alpha=.5)
 
 style namebox:
     xpos gui.name_xpos
