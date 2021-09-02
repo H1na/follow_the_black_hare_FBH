@@ -107,7 +107,7 @@ style frame:
 screen say(who, what):
     style_prefix "say"
     #use mood_tracker
-
+    #add "gui/textbox.png" xalign 0.5 yalign 1.0 alpha .8
     window:
         id "window"
 
@@ -141,7 +141,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.0,alpha=.5)
 
 style namebox:
     xpos gui.name_xpos
@@ -354,11 +354,11 @@ screen navigation():
 
         if main_menu:
 
-            imagebutton idle 'start_idle' hover 'start' action Start()
+            imagebutton idle 'start_idle' hover 'start' xoffset 80 action Start()
 
         #else:
 
-        imagebutton idle 'progress_idle' hover 'progress' action Show("show_stats")
+        imagebutton idle 'progress_idle' hover 'progress' action ShowMenu("show_stats")
 
         imagebutton idle 'continue_idle' hover 'continue' action LoadMostRecent()
 

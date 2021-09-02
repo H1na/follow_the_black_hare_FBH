@@ -1,12 +1,13 @@
-init:
-    define config.mouse = { }
-    define config.mouse['default'] = [ ( "gui/mouse.png", 0, 0)]
+#init:
+#    define config.mouse = { }
+#    define config.mouse['default'] = [ ( "gui/mouse.png", 0, 0)]
 
 #Функция отслеживания эмоций Аша
 init python:
     
     LEARN_CAP = 30
-    
+    DISSOLVE_TIME = .4
+    config.keymap['hide_windows'] = [] 
     
     mood = 'regular'
     #вот тут мне и захотелось в рефакторинг, классы и прочие прелести вкусного кода.
@@ -155,22 +156,22 @@ image black regular_mad       = 'black_sad'
 
 
 
-image fox              = 'fox_smile'
-image fox angry        = 'fox_angry'
-image fox shock        = 'fox_shock'
-image fox smile        = 'fox_smile'
-image fox collar_angry = 'fox_collar_angry'
-image fox collar_smile = 'fox_collar_smile'
-image fox collar_shock = 'fox_collar_shock'
+#image fox              = 'fox_smile'
+#image fox angry        = 'fox_angry'
+#image fox shock        = 'fox_shock'
+#image fox smile        = 'fox_smile'
+#image fox collar_angry = 'fox_collar_angry'
+#image fox collar_smile = 'fox_collar_smile'
+#image fox collar_shock = 'fox_collar_shock'
 
-image hight_fox       = 'high_fox_angry'
-image hight_fox smile = 'high_fox_smile'
-image hight_fox angry = 'high_fox_angry'
-image hight_fox shock = 'high_fox_shock'
+#image hight_fox       = 'high_fox_angry'
+#image hight_fox smile = 'high_fox_smile'
+#image hight_fox angry = 'high_fox_angry'
+#image hight_fox shock = 'high_fox_shock'
 
-image wild_fox         = 'fox_wild_regular'
-image wild_fox regular = 'fox_wild_regular'
-image wild_fox crazy   = 'fox_wild_crazy'
+#image wild_fox         = 'fox_wild_regular'
+#image wild_fox regular = 'fox_wild_regular'
+#image wild_fox crazy   = 'fox_wild_crazy'
 
 
 image maks         = 'max_regular'
@@ -299,50 +300,50 @@ image natasha sad     = 'natasha_sad'
 
 
 
-#image fox:
-#    'fox_smile'
-#    tr_default
-#image fox angry:
-#    'fox_angry'
-#    tr_default
-#image fox shock:
-#    'fox_shock'
-#    tr_default
-#image fox smile:
-#    'fox_smile'
-#    tr_default
-#image fox collar_angry:
-#    'fox_collar_angry'
-#    tr_default
-#image fox collar_smile:
-#    'fox_collar_smile'
-#    tr_default
-#image fox collar_shock:
-#    'fox_collar_shock'
-#    tr_default
+image fox:
+    'fox_smile'
+    tr_fox_offset
+image fox angry:
+    'fox_angry'
+    tr_fox_offset
+image fox shock:
+    'fox_shock'
+    tr_fox_offset
+image fox smile:
+    'fox_smile'
+    tr_fox_offset
+image fox collar_angry:
+    'fox_collar_angry'
+    tr_fox_offset
+image fox collar_smile:
+    'fox_collar_smile'
+    tr_fox_offset
+image fox collar_shock:
+    'fox_collar_shock'
+    tr_fox_offset
 
-#image hight_fox:
-#    'high_fox_angry'
-#    tr_default
-#image hight_fox smile:
-#    'high_fox_smile'
-#    tr_default
-#image hight_fox angry:
-#    'high_fox_angry'
-#    tr_default
-#image hight_fox shock:
-#    'high_fox_shock'
-#    tr_default
+image hight_fox:
+    'high_fox_angry'
+    tr_fox_offset
+image hight_fox smile:
+    'high_fox_smile'
+    tr_fox_offset
+image hight_fox angry:
+    'high_fox_angry'
+    tr_fox_offset
+image hight_fox shock:
+    'high_fox_shock'
+    tr_fox_offset
 
-#image wild_fox:
-#    'fox_wild_regular'
-#    tr_default
-#image wild_fox regular:
-#    'fox_wild_regular'
-#    tr_default
-#image wild_fox crazy:
-#    'fox_wild_crazy'
-#    tr_default
+image wild_fox:
+    'fox_wild_regular'
+    tr_fox_offset
+image wild_fox regular:
+    'fox_wild_regular'
+    tr_fox_offset
+image wild_fox crazy:
+    'fox_wild_crazy'
+    tr_fox_offset
 
 
 #image maks:
@@ -453,6 +454,9 @@ transform tr_default:
     on hide:
         alpha .2
         ease .2 alpha .0
+        
+transform tr_fox_offset:
+    yoffset 40
  
 # спрайты случайно выбираемые 
 
@@ -470,9 +474,9 @@ image black happy:
         
 image black mad:
     choice:
-        'black mad2'
-    choice:
         'black mad3'
+    choice:
+        'black mad4'
 
 
 # спрайты зависимые от статов
@@ -782,9 +786,17 @@ label splashscreen:
         ease 1 alpha .0
     pause 4
     hide logo_screen
+    return 
+    
+label main_menu:
+    call screen main_menu() with dissolve
     return
     
 label first_choice:
-    call screen text_message("Распознавай эмоции героя, это позволит Ушам Зайца показывать эмоции автоматически. От того,  как часто ты узнаешь эмоцию, зависит изображение на имплантах")
+    "Обучите искусственный интеллект Ушей Зайца распознавать все эмоции."
+    "Прогресс распознавания доступен в меню, во вкладке “прогресс эмоций"
+    call screen text_message("Обучите искусственный интеллект Ушей Зайца распознавать все эмоции.")
+    call screen text_message("Прогресс распознавания доступен в меню, во вкладке “прогресс эмоций")
     return
     
+
