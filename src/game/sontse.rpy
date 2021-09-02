@@ -474,9 +474,9 @@ image black happy:
         
 image black mad:
     choice:
-        'black mad2'
-    choice:
         'black mad3'
+    choice:
+        'black mad4'
 
 
 # спрайты зависимые от статов
