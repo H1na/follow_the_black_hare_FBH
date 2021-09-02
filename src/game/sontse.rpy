@@ -6,6 +6,7 @@
 init python:
     
     LEARN_CAP = 30
+    DISSOLVE_TIME = .5
     
     
     mood = 'regular'

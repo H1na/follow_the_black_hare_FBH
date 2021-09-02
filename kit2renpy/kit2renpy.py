@@ -145,7 +145,7 @@ for item in root:
             character = result[1]
             shown_character = character
             shown_mood = characters_mood[character]
-            res.append("\tshow {} {} with Dissolve(.3)".format(character, characters_mood[character]))
+            res.append("\tshow {} {} with Dissolve(DISSOLVE_TIME)".format(character, characters_mood[character]))
         elif(command =="hide_character"):
             shown_character = None
             shown_mood = None
@@ -170,11 +170,11 @@ for item in root:
         character = characters[ch]
         
         if(character != shown_character):
-            res.append("\tshow {} {} with Dissolve(.3)".format(character, characters_mood[character]))
+            res.append("\tshow {} {} with Dissolve(DISSOLVE_TIME)".format(character, characters_mood[character]))
             shown_character = character
             shown_mood = characters_mood[character]
         elif(shown_mood != characters_mood[character]):
-            res.append("\tshow {} {} with Dissolve(.3)".format(character, characters_mood[character]))
+            res.append("\tshow {} {} with Dissolve(DISSOLVE_TIME)".format(character, characters_mood[character]))
             shown_character = character
             shown_mood = characters_mood[character]
 
