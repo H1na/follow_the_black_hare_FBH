@@ -358,7 +358,7 @@ screen navigation():
 
         #else:
 
-        imagebutton idle 'progress_idle' hover 'progress' action Show("show_stats")
+        imagebutton idle 'progress_idle' hover 'progress' action ShowMenu("show_stats")
 
         imagebutton idle 'continue_idle' hover 'continue' action LoadMostRecent()
 
