@@ -6,7 +6,7 @@
 init python:
     
     LEARN_CAP = 30
-    DISSOLVE_TIME = .5
+    DISSOLVE_TIME = .4
     config.keymap['hide_windows'] = [] 
     
     mood = 'regular'
