@@ -786,6 +786,10 @@ label splashscreen:
         ease 1 alpha .0
     pause 4
     hide logo_screen
+    return 
+    
+label main_menu:
+    call screen main_menu() with dissolve
     return
     
 label first_choice:
