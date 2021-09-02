@@ -7,7 +7,7 @@ init python:
     
     LEARN_CAP = 30
     DISSOLVE_TIME = .5
-    
+    config.keymap['hide_windows'] = [] 
     
     mood = 'regular'
     #вот тут мне и захотелось в рефакторинг, классы и прочие прелести вкусного кода.
@@ -156,18 +156,18 @@ image black regular_mad       = 'black_sad'
 
 
 
-image fox              = 'fox_smile'
-image fox angry        = 'fox_angry'
-image fox shock        = 'fox_shock'
-image fox smile        = 'fox_smile'
-image fox collar_angry = 'fox_collar_angry'
-image fox collar_smile = 'fox_collar_smile'
-image fox collar_shock = 'fox_collar_shock'
+#image fox              = 'fox_smile'
+#image fox angry        = 'fox_angry'
+#image fox shock        = 'fox_shock'
+#image fox smile        = 'fox_smile'
+#image fox collar_angry = 'fox_collar_angry'
+#image fox collar_smile = 'fox_collar_smile'
+#image fox collar_shock = 'fox_collar_shock'
 
-image hight_fox       = 'high_fox_angry'
-image hight_fox smile = 'high_fox_smile'
-image hight_fox angry = 'high_fox_angry'
-image hight_fox shock = 'high_fox_shock'
+#image hight_fox       = 'high_fox_angry'
+#image hight_fox smile = 'high_fox_smile'
+#image hight_fox angry = 'high_fox_angry'
+#image hight_fox shock = 'high_fox_shock'
 
 image wild_fox         = 'fox_wild_regular'
 image wild_fox regular = 'fox_wild_regular'
@@ -300,40 +300,40 @@ image natasha sad     = 'natasha_sad'
 
 
 
-#image fox:
-#    'fox_smile'
-#    tr_default
-#image fox angry:
-#    'fox_angry'
-#    tr_default
-#image fox shock:
-#    'fox_shock'
-#    tr_default
-#image fox smile:
-#    'fox_smile'
-#    tr_default
-#image fox collar_angry:
-#    'fox_collar_angry'
-#    tr_default
-#image fox collar_smile:
-#    'fox_collar_smile'
-#    tr_default
-#image fox collar_shock:
-#    'fox_collar_shock'
-#    tr_default
+image fox:
+    'fox_smile'
+    tr_fox_offset
+image fox angry:
+    'fox_angry'
+    tr_fox_offset
+image fox shock:
+    'fox_shock'
+    tr_fox_offset
+image fox smile:
+    'fox_smile'
+    tr_fox_offset
+image fox collar_angry:
+    'fox_collar_angry'
+    tr_fox_offset
+image fox collar_smile:
+    'fox_collar_smile'
+    tr_fox_offset
+image fox collar_shock:
+    'fox_collar_shock'
+    tr_fox_offset
 
-#image hight_fox:
-#    'high_fox_angry'
-#    tr_default
-#image hight_fox smile:
-#    'high_fox_smile'
-#    tr_default
-#image hight_fox angry:
-#    'high_fox_angry'
-#    tr_default
-#image hight_fox shock:
-#    'high_fox_shock'
-#    tr_default
+image hight_fox:
+    'high_fox_angry'
+    tr_fox_offset
+image hight_fox smile:
+    'high_fox_smile'
+    tr_fox_offset
+image hight_fox angry:
+    'high_fox_angry'
+    tr_fox_offset
+image hight_fox shock:
+    'high_fox_shock'
+    tr_fox_offset
 
 #image wild_fox:
 #    'fox_wild_regular'
@@ -454,6 +454,9 @@ transform tr_default:
     on hide:
         alpha .2
         ease .2 alpha .0
+        
+transform tr_fox_offset:
+    yoffset 40
  
 # спрайты случайно выбираемые 
 
