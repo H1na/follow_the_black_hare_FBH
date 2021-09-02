@@ -118,7 +118,7 @@ for item in root:
         
     elif(item.tag == "action"): #action/author block
         if(not text):
-            res.append('\tnarrator ""')    
+            res.append('\tnarrator ""')
             continue
         else:
             res.append('\tnarrator "{}"'.format(text))
@@ -152,6 +152,8 @@ for item in root:
             res.append("\thide {}".format(result[1]))
         elif(command == "change_ash_name"):
             res.append('\t$ash_name="Черный заяц"')
+        elif(command == "skip"):
+            res.append('\tnarrator ""')
         else:
             print("Unknown command: ", text)
 
@@ -175,7 +177,7 @@ for item in root:
             res.append("\tshow {} {} with Dissolve(.3)".format(character, characters_mood[character]))
             shown_character = character
             shown_mood = characters_mood[character]
-            
+
     elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
     else:
