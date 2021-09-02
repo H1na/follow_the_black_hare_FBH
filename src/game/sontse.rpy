@@ -169,9 +169,9 @@ image black regular_mad       = 'black_sad'
 #image hight_fox angry = 'high_fox_angry'
 #image hight_fox shock = 'high_fox_shock'
 
-image wild_fox         = 'fox_wild_regular'
-image wild_fox regular = 'fox_wild_regular'
-image wild_fox crazy   = 'fox_wild_crazy'
+#image wild_fox         = 'fox_wild_regular'
+#image wild_fox regular = 'fox_wild_regular'
+#image wild_fox crazy   = 'fox_wild_crazy'
 
 
 image maks         = 'max_regular'
@@ -335,15 +335,15 @@ image hight_fox shock:
     'high_fox_shock'
     tr_fox_offset
 
-#image wild_fox:
-#    'fox_wild_regular'
-#    tr_default
-#image wild_fox regular:
-#    'fox_wild_regular'
-#    tr_default
-#image wild_fox crazy:
-#    'fox_wild_crazy'
-#    tr_default
+image wild_fox:
+    'fox_wild_regular'
+    tr_fox_offset
+image wild_fox regular:
+    'fox_wild_regular'
+    tr_fox_offset
+image wild_fox crazy:
+    'fox_wild_crazy'
+    tr_fox_offset
 
 
 #image maks:
