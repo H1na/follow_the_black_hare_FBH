@@ -133,6 +133,8 @@ for item in root:
             shown_mood = None
             res.append("\tjump {}".format(result[1]))
         elif(command == "scene"):
+            shown_character = None
+            shown_mood = None
             res.append("\tscene {}".format(result[1]))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
