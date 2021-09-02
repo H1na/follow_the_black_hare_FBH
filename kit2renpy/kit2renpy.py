@@ -118,7 +118,7 @@ for item in root:
         
     elif(item.tag == "action"): #action/author block
         if(not text):
-            res.append('\tnarrator ""')    
+            res.append('\tnarrator ""')
             continue
         else:
             res.append('\tnarrator "{}"'.format(text))
@@ -133,6 +133,8 @@ for item in root:
             shown_mood = None
             res.append("\tjump {}".format(result[1]))
         elif(command == "scene"):
+            shown_character = None
+            shown_mood = None
             res.append("\tscene {}".format(result[1]))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
@@ -148,6 +150,8 @@ for item in root:
             res.append("\thide {}".format(result[1]))
         elif(command == "change_ash_name"):
             res.append('\t$ash_name="Черный заяц"')
+        elif(command == "pause"):
+            res.append('\tpause')
         else:
             print("Unknown command: ", text)
 
