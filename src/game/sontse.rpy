@@ -15,7 +15,7 @@ init python:
     def get_mood(mood):
         global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
                         
-        if renpy.showing('black angry_var'):
+        if renpy.showing('black_hare angry_var'):
             if angry>=LEARN_CAP:
                 
                 if not angry_shown:
@@ -26,7 +26,7 @@ init python:
             else:
                 return 'regular'
         
-        if renpy.showing('black sad_var'):
+        if renpy.showing('black_hare sad_var'):
             if sad>=LEARN_CAP:
                 return 'sad'
                 if not sad_shown:
@@ -35,7 +35,7 @@ init python:
             else:
                 return 'regular'
         
-        if renpy.showing('black surprised_var'):
+        if renpy.showing('black_hare surprised_var'):
             if surprised>=LEARN_CAP:
                 if not surprised_shown:
                     surprised_shown = True
@@ -44,7 +44,7 @@ init python:
             else:
                 return 'regular'
         
-        if renpy.showing('black disgust_var'):
+        if renpy.showing('black_hare disgust_var'):
             if disgust>=LEARN_CAP:
                 if not disgust_shown:
                     disgust_shown = True
@@ -53,7 +53,7 @@ init python:
             else:
                 return 'regular'
         
-        if renpy.showing('black mad_var'):
+        if renpy.showing('black_hare mad_var'):
             if mad>=LEARN_CAP:
                 if not mad_shown:
                     mad_shown = True
@@ -62,7 +62,7 @@ init python:
             else:
                 return 'regular'
         
-        if renpy.showing('black fear_var'):
+        if renpy.showing('black_hare fear_var'):
             if fear>=LEARN_CAP:
                 if not fear_shown:
                     fear_shown = True
@@ -125,34 +125,34 @@ init python:
 
 # image black                   = 'black_regular'
 
-image black angry1            = 'black_angry1'
-image black angry2            = 'black_angry2'
-image black annoyed           = 'black_annoyed' 
-image black confused          = 'black_confused' 
-image black disgust           = 'black_disgust'
-image black disgust1          = 'black_disgust1' 
-image black fear              = 'black_fear'
-image black fear1             = 'black_fear1'        
-image black mad1              = 'black_mad1'
-image black mad2              = 'black_mad2'
-image black mad3              = 'black_mad3'
-image black mad4              = 'black_mad4'
-image black regular           = 'black_regular'
-image black regular_blood     = 'black_regular_blood'
-image black regular_fear      = 'black_regular_fear'      
-image black regular_confused  = 'black_regular_confused'  
-image black regular_angry     = 'black_regular_angry'    
-image black regular_happy2    = 'black_regular_happy2'    
-image black regular_happy1    = 'black_regular_happy1'    
-image black regular_surprised = 'black_regular_surprised'
-image black regular_annoyed   = 'black_regular_annoyed'   
-image black regular_disgust   = 'black_regular_disgust'   
-image black regular_sad       = 'black_regular_sad'       
-image black sad               = 'black_sad'
-image black sad1              = 'black_sad1'         
-image black surprised         = 'black_surprised'
-image black surprised1        = 'black_surprised1'
-image black regular_mad       = 'black_sad'
+image black_hare angry1            = 'black_angry1'
+image black_hare angry2            = 'black_angry2'
+image black_hare annoyed           = 'black_annoyed' 
+image black_hare confused          = 'black_confused' 
+image black_hare disgust           = 'black_disgust'
+image black_hare disgust1          = 'black_disgust1' 
+image black_hare fear              = 'black_fear'
+image black_hare fear1             = 'black_fear1'        
+image black_hare mad1              = 'black_mad1'
+image black_hare mad2              = 'black_mad2'
+image black_hare mad3              = 'black_mad3'
+image black_hare mad4              = 'black_mad4'
+image black_hare regular           = 'black_regular'
+image black_hare regular_blood     = 'black_regular_blood'
+image black_hare regular_fear      = 'black_regular_fear'      
+image black_hare regular_confused  = 'black_regular_confused'  
+image black_hare regular_angry     = 'black_regular_angry'    
+image black_hare regular_happy2    = 'black_regular_happy2'    
+image black_hare regular_happy1    = 'black_regular_happy1'    
+image black_hare regular_surprised = 'black_regular_surprised'
+image black_hare regular_annoyed   = 'black_regular_annoyed'   
+image black_hare regular_disgust   = 'black_regular_disgust'   
+image black_hare regular_sad       = 'black_regular_sad'       
+image black_hare sad               = 'black_sad'
+image black_hare sad1              = 'black_sad1'         
+image black_hare surprised         = 'black_surprised'
+image black_hare surprised1        = 'black_surprised1'
+image black_hare regular_mad       = 'black_sad'
 
 
 
@@ -460,76 +460,76 @@ transform tr_fox_offset:
  
 # спрайты случайно выбираемые 
 
-image black angry:
+image black_hare angry:
     choice:
-        'black angry1'
+        'black_hare angry1'
     choice:
-        'black angry2'
+        'black_hare angry2'
 
-image black happy:
+image black_hare happy:
     choice:
-        'black happy1'
+        'black_hare happy1'
     choice:
-        'black happy2'
+        'black_hare happy2'
         
-image black mad:
+image black_hare mad:
     choice:
-        'black mad3'
+        'black_hare mad3'
     choice:
-        'black mad4'
+        'black_hare mad4'
 
 
 # спрайты зависимые от статов
 
-image black angry_var:
-    ConditionSwitch('angry>=LEARN_CAP','black angry',
-                    'angry>  0','black annoyed',
-                    'True','black regular_annoyed')
+image black_hare angry_var:
+    ConditionSwitch('angry>=LEARN_CAP','black_hare angry',
+                    'angry>  0','black_hare annoyed',
+                    'True','black_hare regular_annoyed')
 
-image black sad_var:
-    ConditionSwitch('sad>=LEARN_CAP','black sad1',
-                    'sad>  0','black sad',
-                    'True','black regular_sad')
+image black_hare sad_var:
+    ConditionSwitch('sad>=LEARN_CAP','black_hare sad1',
+                    'sad>  0','black_hare sad',
+                    'True','black_hare regular_sad')
 
-image black surprised_var:
-    ConditionSwitch('surprised>=LEARN_CAP','black surprised1',
-                    'True','black surprised',
-                    'True','black regular_surprised')
+image black_hare surprised_var:
+    ConditionSwitch('surprised>=LEARN_CAP','black_hare surprised1',
+                    'True','black_hare surprised',
+                    'True','black_hare regular_surprised')
 
-image black disgust_var:
-    ConditionSwitch('disgust>=LEARN_CAP','black disgust1',
-                    'disgust>  0','black disgust',
-                    'True','black regular_disgust')
+image black_hare disgust_var:
+    ConditionSwitch('disgust>=LEARN_CAP','black_hare disgust1',
+                    'disgust>  0','black_hare disgust',
+                    'True','black_hare regular_disgust')
 
-image black mad_var:
-    ConditionSwitch('mad>=LEARN_CAP','black mad',
-                    'mad>  0','black mad1',
-                    'True','black regular_mad1')
+image black_hare mad_var:
+    ConditionSwitch('mad>=LEARN_CAP','black_hare mad',
+                    'mad>  0','black_hare mad1',
+                    'True','black_hare regular_mad1')
 
-image black fear_var:
-    ConditionSwitch('fear>=LEARN_CAP','black fear1',
-                    'fear>  0','black fear',
-                    'True','black regular_fear')
+image black_hare fear_var:
+    ConditionSwitch('fear>=LEARN_CAP','black_hare fear1',
+                    'fear>  0','black_hare fear',
+                    'True','black_hare regular_fear')
                     
-image black mood:
+image black_hare mood:
     ConditionSwitch(
-                    'mood=="angry"',      'black angry_var',
-                    'mood=="sad"',        'black sad_var',
-                    'mood=="surprised"',  'black surprised_var',
-                    'mood=="disgust"',    'black disgust_var',
-                    'mood=="mad"',        'black mad_var',
-                    'mood=="fear"',       'black fear_var',
-                    'True',               'black regular')
+                    'mood=="angry"',      'black_hare angry_var',
+                    'mood=="sad"',        'black_hare sad_var',
+                    'mood=="surprised"',  'black_hare surprised_var',
+                    'mood=="disgust"',    'black_hare disgust_var',
+                    'mood=="mad"',        'black_hare mad_var',
+                    'mood=="fear"',       'black_hare fear_var',
+                    'True',               'black_hare regular')
 
-image black highest_mood:
+image black_hare highest_mood:
     ConditionSwitch(
-                    'get_highest_mood()=="angry"',      'black angry_var',
-                    'get_highest_mood()=="sad"',        'black sad_var',
-                    'get_highest_mood()=="surprised"',  'black surprised_var',
-                    'get_highest_mood()=="disgust"',    'black disgust_var',
-                    'get_highest_mood()=="mad"',        'black mad_var',
-                    'get_highest_mood()=="fear"',       'black fear_var',
-                    'True',                             'black regular')
+                    'get_highest_mood()=="angry"',      'black_hare angry_var',
+                    'get_highest_mood()=="sad"',        'black_hare sad_var',
+                    'get_highest_mood()=="surprised"',  'black_hare surprised_var',
+                    'get_highest_mood()=="disgust"',    'black_hare disgust_var',
+                    'get_highest_mood()=="mad"',        'black_hare mad_var',
+                    'get_highest_mood()=="fear"',       'black_hare fear_var',
+                    'True',                             'black_hare regular')
 
                     
                     

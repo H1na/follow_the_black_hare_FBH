@@ -1,7 +1,7 @@
 ﻿
 define narrator = Character(None, window_left_padding=0, color="#ffffff")
 
-define black = DynamicCharacter(_("ash_name"), color="#ff00f0") 
+define black_hare = DynamicCharacter(_("ash_name"), color="#ff00f0") 
 define onka = Character(_('Онка'), color="#ff3600") 
 
 define vechna = Character(_('Вечна'), color="#3abf0a")

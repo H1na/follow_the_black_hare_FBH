@@ -19,7 +19,7 @@ def prepate_renpy_output(res):
     return output.replace("\t", "    ")
 
 characters = {
-    "АШ": "black",
+    "АШ": "black_hare",
     "ВЕЧНА": 'vechna',
     
     "ВЕЧНА ЦИФРОВАЯ": 'digital_vechna',
@@ -41,12 +41,12 @@ characters = {
     "ЛИС ИЗ КАСТЫ 3": 'wild_fox',
     
     "МУЖЧИНА": 'man',
-    "ЧЕРНЫЙ ЗАЯЦ": "black",
+    "ЧЕРНЫЙ ЗАЯЦ": "black_hare",
 }
 
 
 characters_mood = {
-    "black": "regular",
+    "black_hare": "regular",
     'vechna': 'regular',
     'digital_vechna': 'regular',
 
@@ -138,7 +138,7 @@ for item in root:
             res.append("\tscene {}".format(result[1]))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
-            characters_mood["black"] = "mood"
+            characters_mood["black_hare"] = "mood"
         elif(command =="emotion"):
             characters_mood[result[1]] = result[2]
         elif(command =="show_character"):
@@ -167,7 +167,11 @@ for item in root:
         
         character = characters[ch]
         
-        if(character != shown_character) and (shown_mood != characters_mood[character]):
+        if(character != shown_character):
+            res.append("\tshow {} {}".format(character, characters_mood[character]))
+            shown_character = character
+            shown_mood = characters_mood[character]
+        elif (shown_mood != characters_mood[character]):
             res.append("\tshow {} {}".format(character, characters_mood[character]))
             shown_character = character
             shown_mood = characters_mood[character]
