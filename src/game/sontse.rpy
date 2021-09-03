@@ -561,7 +561,7 @@ transform tr_default:
         
     on show:
         alpha .0
-        linear .2 alpha 1.0
+        easeout_quint .2 alpha 1.0
     
         
 transform tr_fox_offset:
