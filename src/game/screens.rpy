@@ -720,7 +720,7 @@ transform black_offset:
 
 screen show_stats:
     add 'black_background'
-    add 'black highest_mood' at black_offset
+    add 'black_hare highest_mood' at black_offset
     style_prefix 'stats'
     vbox:
         align (.9,.1)
