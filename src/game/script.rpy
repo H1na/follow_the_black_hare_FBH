@@ -9,22 +9,22 @@ define digital_vechna = Character(_('Вечна цифровая'), color="#66e5
 
 define maks = Character(_('Макс'), color="#5a9de9", )
 
-define natasha = Character(_('НАТАША'), color="#fe84ff", )
+define natasha = Character(_('Наташа'), color="#fe84ff", )
 define fox = Character(_('Облачный Лис'), color="#1d92be", )
-define hight_fox = Character(_('ЛИС'), color="#ff2929", )
-define wild_fox = Character(_('ЛИС ИЗ КАСТЫ 3'), color="#dcbc27", )
+define hight_fox = Character(_('Лис'), color="#ff2929", )
+define wild_fox = Character(_('Лис из касты 3'), color="#dcbc27", )
 
-define man = Character(_('МУЖЧИНА'), color="#c8ffc8", )
+define man = Character(_('Мужской голос'), color="#c8ffc8", )
 
 #characters with no sprites
-define robotic_voice = Character(_('ЦЕНТР КОПИРОВАНИЯ'), color="#5ebdff", )
-define voice_from_net = Character(_('ГОЛОС ИЗ СЕТИ'), color="#c8ffc8", )
-define help_center = Character(_('ЦЕНТР ПОМОЩИ'), color="#5ebdff", )
+define robotic_voice = Character(_('Центр Копирования'), color="#5ebdff", )
+define voice_from_net = Character(_('Голос из сети'), color="#c8ffc8", )
+define help_center = Character(_('Центр Помощи'), color="#5ebdff", )
 define camera = Character(_('КАМЕРА'), color="#c8ffc8", )
-define voice_cartoon = Character(_('ГОЛОС МУЛЬТЯШКИ'), color="#c8ffc8", )
-define mobile_camera = Character(_('МОБИЛЬНАЯ КАМЕРА'), color="#c8ffc8", )
-define alise = Character(_('АЛИСА'), color="#c8ffc8", )
-define journalist = Character(_('ЖУРНАЛИСТ'), color="#c8ffc8", )
+define voice_cartoon = Character(_('Голос мультяшки'), color="#c8ffc8", )
+define mobile_camera = Character(_('Мобильная камера '), color="#c8ffc8", )
+define alise = Character(_('Алиса'), color="#c8ffc8", )
+define journalist = Character(_('Журналист'), color="#c8ffc8", )
 
 label start:
     $ angry = 0
