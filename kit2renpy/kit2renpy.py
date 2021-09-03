@@ -161,9 +161,10 @@ for item in root:
         if characters_mood[characters[ch]] == 'no_sprite':
             character = characters[ch]
             continue
-
-        if character and (characters[ch] != character):
-            res.append("\thide {}".format(character)) 
+        
+        tchar = character
+        tch = ch
+        
         
         character = characters[ch]
         
@@ -175,6 +176,9 @@ for item in root:
             res.append("\tshow {} {}".format(character, characters_mood[character]))
             shown_character = character
             shown_mood = characters_mood[character]
+        
+        if tchar and (characters[tch] != tchar):
+            res.append("\thide {}".format(tchar)) 
 
     elif(item.tag in ("parenthetical", "scene_description")): #comments block
         res.append("\t#{}".format(text))  
