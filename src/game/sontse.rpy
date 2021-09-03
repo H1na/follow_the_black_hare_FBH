@@ -555,13 +555,13 @@ transform tr_default:
     # alpha .8
     # ease .2 alpha 1.0
     
-    on hide:
-        alpha 1.0
-        ease .1 alpha .0
+    # on hide:
+    #     alpha 1.0
+    #     ease .1 alpha .0
         
     on show:
         alpha .0
-        ease .2 alpha 1.0
+        linear .2 alpha 1.0
     
         
 transform tr_fox_offset:
@@ -574,18 +574,21 @@ image black_hare angry:
         'black_hare angry1'
     choice:
         'black_hare angry2'
+    tr_default
 
 image black_hare happy:
     choice:
         'black_hare happy1'
     choice:
         'black_hare happy2'
+    tr_default
         
 image black_hare mad:
     choice:
         'black_hare mad3'
     choice:
         'black_hare mad4'
+    tr_default
 
 
 # спрайты зависимые от статов
@@ -594,31 +597,38 @@ image black_hare angry_var:
     ConditionSwitch('angry>=LEARN_CAP','black_hare angry',
                     'angry>  0','black_hare annoyed',
                     'True','black_hare regular_annoyed')
+    tr_default
+    
 
 image black_hare sad_var:
     ConditionSwitch('sad>=LEARN_CAP','black_hare sad1',
                     'sad>  0','black_hare sad',
                     'True','black_hare regular_sad')
+    tr_default
 
 image black_hare surprised_var:
     ConditionSwitch('surprised>=LEARN_CAP','black_hare surprised1',
                     'surprised> 0','black_hare surprised',
                     'True','black_hare regular_surprised')
+    tr_default
 
 image black_hare disgust_var:
     ConditionSwitch('disgust>=LEARN_CAP','black_hare disgust1',
                     'disgust>  0','black_hare disgust',
                     'True','black_hare regular_disgust')
+    tr_default
 
 image black_hare mad_var:
     ConditionSwitch('mad>=LEARN_CAP','black_hare mad',
                     'mad>  0','black_hare mad1',
                     'True','black_hare regular_sad') # REGULAR MAD ОТСУТСТВУЕТ В КАРТИНКАХ!!!
+    tr_default
 
 image black_hare fear_var:
     ConditionSwitch('fear>=LEARN_CAP','black_hare fear1',
                     'fear>  0','black_hare fear',
                     'True','black_hare regular_fear')
+    tr_default
                     
 image black_hare mood:
     ConditionSwitch(
@@ -629,6 +639,7 @@ image black_hare mood:
                     'mood=="mad"',        'black_hare mad_var',
                     'mood=="fear"',       'black_hare fear_var',
                     'True',               'black_hare regular')
+    tr_default
 
 image black_hare highest_mood:
     ConditionSwitch(
@@ -639,6 +650,7 @@ image black_hare highest_mood:
                     'get_highest_mood()=="mad"',        'black_hare mad_var',
                     'get_highest_mood()=="fear"',       'black_hare fear_var',
                     'True',                             'black_hare regular')
+    tr_default
 
                     
                     
@@ -651,6 +663,7 @@ image vechna reaction:
     "mood == 'mad'",       'vechna angry',
     "mood == 'fear'",      'vechna thinking',
     "True",                'vechna thinking')
+    tr_default
 
 image onka reaction:
     ConditionSwitch(
@@ -661,6 +674,7 @@ image onka reaction:
     "mood == 'mad'",        'onka angry',
     "mood == 'fear'",       'onka',
     "True",'onka')
+    tr_default
 
 image fox reaction:
     ConditionSwitch(
@@ -671,6 +685,7 @@ image fox reaction:
     "mood == 'mad'",        'fox shock',
     "mood == 'fear'",       'fox shock',
     "True",                 'fox shock')
+    tr_default
 
 image maks reaction:
     ConditionSwitch(
@@ -681,6 +696,7 @@ image maks reaction:
     "mood == 'mad'",        'maks fight',
     "mood == 'fear'",       'maks regular',
     'True',                 'maks regular')
+    tr_default
 
 image natasha reaction:
     ConditionSwitch(
@@ -691,6 +707,7 @@ image natasha reaction:
     "mood == 'mad'",        'natasha angry',
     "mood == 'fear'",       'natasha smile',
     "True",                 'natasha smile')
+    tr_default
 
 
 
