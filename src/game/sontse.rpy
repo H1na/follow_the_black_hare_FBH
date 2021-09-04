@@ -555,13 +555,13 @@ transform tr_default:
     # alpha .8
     # ease .2 alpha 1.0
     
-    # on hide:
-    #     alpha 1.0
-    #     ease .1 alpha .0
+    on hide:
+        alpha 1.0
+        ease .2 alpha .0
         
     on show:
         alpha .0
-        easeout_quint .2 alpha 1.0
+        easeout_quint .3 alpha 1.0
     
         
 transform tr_fox_offset:
