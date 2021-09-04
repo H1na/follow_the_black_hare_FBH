@@ -135,6 +135,7 @@ for item in root:
         elif(command == "scene"):
             shown_character = None
             shown_mood = None
+            res.append("\tpause 0.2")
             res.append("\tscene {}".format(result[1]))
         elif(command == "choose"):
             res.append("\tcall {}".format(result[1]))
