@@ -153,6 +153,9 @@ for item in root:
             res.append('\t$ash_name="Черный Заяц"')
         elif(command == "pause"):
             res.append('\tpause')
+        elif(command == "embed"):
+            proc = " ".join(result[1:])
+            res.append('\t{}'.format(proc))
         else:
             print("Unknown command: ", text)
 
