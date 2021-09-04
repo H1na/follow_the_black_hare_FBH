@@ -149,7 +149,7 @@ for item in root:
             shown_mood = None
             res.append("\thide {}".format(result[1]))
         elif(command == "change_ash_name"):
-            res.append('\t$ash_name="Черный заяц"')
+            res.append('\t$ash_name="Черный Заяц"')
         elif(command == "pause"):
             res.append('\tpause')
         else:
