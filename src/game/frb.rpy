@@ -847,11 +847,11 @@ label scene_8:
     narrator "Лис, в качестве ответа хозяину, довольно вывалил язык."
     hide fox
     show black_hare regular
-    narrator "Аш пытался найти глазами Вечну, хотя никто этого и не видел. "
+    pause
     call angry_sad
     show black_hare mood
+    narrator "Аш пытался найти глазами Вечну, хотя никто этого и не видел. "
     narrator "Аш пытался сосредоточиться: \"Важный момент. Соберись…\""
-    pause
     show black_hare regular
     black_hare "Спасибо, что дождались последнего выступления."
     hide black_hare
@@ -1754,7 +1754,6 @@ label scene_13 :
     hide black_hare
     onka "Удивлен? Конечно, нет. "
     onka "Я же делал тест, исходя из того, какими сильными будут конкурсанты."
-    hide onka
     show onka danger
     narrator "Потом он широко улыбнулся, показывая зубы."
     hide onka
@@ -2518,7 +2517,7 @@ label scene_16:
     hide black_hare
     onka "Веру в Фабрику? Это ведь тоже фантазия. "
     show onka thinking
-    onka "Убери из Фабрики всех лис, — разве при этом она закроется? "
+    onka "Убери из Фабрики всех лис — разве при этом она закроется? "
     onka "Убери все здания — Фабрика при этом юридически все равно будет существовать. "
     onka "А юридическое существование — просто фантазия, о которой люди договорились между собой. "
     show onka sneaky
@@ -3391,7 +3390,7 @@ label scene_19 :
     vechna "Будешь следующим?"
     hide vechna
     show fox shock
-    show fox shock
+    hide vechna
     fox "!"
     pause 0.2
     scene chip_factory_corridor3
@@ -5562,23 +5561,13 @@ label scene_31:
     show black_hare mad_var
     show black_hare mad_var
     black_hare "Для того, кто пару дней назад пытался скормить себя псам."
-    show onka sneaky
     hide black_hare
-    onka "Безотходное производство — это прекрасно."
-    show black_hare mad_var
-    hide onka
-    black_hare "Поэтому ты миллиардер?"
-    narrator "Онка сделал испуганные глаза."
-    hide black_hare
-    show onka smile
-    hide black_hare
-    onka "Что ты, не дай Фабрика, чтоб я остался миллиардером."
-    hide onka
     pause 0.2
     scene black_background
     play sound 'audio/fire.mp3'
     narrator "Спустя несколько часов, Аш вспоминает, как Илли жег свою одежду в костре, и последнее, что они сказали друг другу:"
-    show onka smile
+    show onka danger
+    hide black_hare
     onka "Готов начать наш проект?"
     hide onka
     show black_hare regular
@@ -5667,7 +5656,7 @@ label scene_32:
     scene chip_factory_audience
     narrator "Аш попадает в знакомое помещение. Лис отключает затемнение стекла."
     show black_hare surprised_var
-    play sound 'audio/sirena4.mp3'
+    play sound 'audio/sirena3.mp3'
     narrator "Черный Заяц не сразу понимает, что произошло. С внешней стороны купола поднимаются клубы пыли. "
     narrator "Острой режущей пыли. Которую не обтачивает ветер. "
     narrator "Она вступит в реакцию с жидкостью в легких и отравит организм токсичными соединениями."
