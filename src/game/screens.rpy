@@ -376,7 +376,7 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android and Web.
             imagebutton idle 'exit_idle' hover 'exit' action Quit(confirm=not main_menu)
 
-    use volume_bar
+    #use volume_bar
 
 transform zoom04:
     zoom .4
@@ -446,7 +446,7 @@ screen navigation2():
 
             textbutton _("ОТКЛЮЧИТЬСЯ") action Quit(confirm=not main_menu)
 
-    use volume_bar
+    #use volume_bar
 
 
 style navigation2_button is gui_button

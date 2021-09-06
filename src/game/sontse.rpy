@@ -939,12 +939,19 @@ label first_choice:
     return
     
 label end_card:
-    scene end_card:
+    scene black
+    show end_card:
+        subpixel True
         alpha .0
-        ease 1.5 alpha 1.0
+        align (.5,.5)
+        zoom 1.1
+        parallel:
+            ease 2.5 alpha 1.0
+        parallel:
+            ease 20 zoom 1.0
     pause
-    show black:
-        alpha 0.0
-        linear 3 alpha 1.0
+    show end_card:
+        alpha 1.0
+        linear 3 alpha .0
     pause 3
     return
