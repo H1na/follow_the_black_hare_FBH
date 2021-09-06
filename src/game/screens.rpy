@@ -730,32 +730,32 @@ screen show_stats:
             xalign 1.0
             text 'Злость'
             null width 10
-            bar value angry range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value angry range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
         hbox:
             xalign 1.0
             text 'Грусть'
             null width 10
-            bar value sad range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value sad range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
         hbox:
             xalign 1.0
             text 'Удивление'
             null width 10
-            bar value surprised range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value surprised range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
         hbox:
             xalign 1.0
             text 'Отвращение'
             null width 10
-            bar value disgust range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value disgust range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
         hbox:
             xalign 1.0
             text 'Безумие'
             null width 10
-            bar value mad range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value mad range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
         hbox:
             xalign 1.0
             text 'Страх'
             null width 10
-            bar value fear range 70 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
+            bar value fear range 30 xsize 500 ysize 50 left_bar '#fffa' right_bar '#fff3'
             
     use arrow_back_screen('show_stats')
             
