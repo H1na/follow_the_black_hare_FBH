@@ -12,7 +12,7 @@
 ##
 ## Символы "_()", окружающие название, отмечают его как пригодное для перевода.
 
-define config.name = _("src")
+define config.name = _("Follow The Black Hare")
 
 
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
@@ -20,6 +20,7 @@ define config.name = _("src")
 
 define gui.show_name = True
 
+define config.default_fullscreen = True
 
 ## Версия игры.
 
@@ -37,7 +38,7 @@ define gui.about = _p("""
 ## постройке дистрибутивов. Оно должно содержать текст формата ASCII и не должно
 ## содержать пробелы, двоеточия и точки с запятой.
 
-define build.name = "src"
+define build.name = "FBH"
 
 
 ## Звуки и музыка ##############################################################
@@ -191,6 +192,8 @@ init python:
 
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
+
+    build.classify('game/**.**', 'game')
 
     ## Файлы, соответствующие образцам документации, дублируются в приложениях
     ## Mac, чтобы они появлялись и в приложении, и в zip архиве.
