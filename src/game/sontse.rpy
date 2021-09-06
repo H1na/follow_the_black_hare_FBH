@@ -12,6 +12,13 @@ init python:
     mood = 'regular'
     #вот тут мне и захотелось в рефакторинг, классы и прочие прелести вкусного кода.
     
+    def my_scene(*args, **kwargs):
+        renpy.transition(fade)
+        #renpy.transition(Dissolve(1))
+        renpy.scene(*args, **kwargs)
+        return
+    config.scene = my_scene
+    
     def get_mood(mood):
         global angry_shown,sad_shown,surprised_shown,disgust_shown,mad_shown,fear_shown
                         
@@ -782,6 +789,7 @@ label angry_sad:
         "Грусть":                                                    
             $ sad +=10                                     
             $ mood = 'sad'
+    $ renpy.block_rollback()            
     $ show_learned_message()
     return
 
@@ -794,6 +802,7 @@ label surprised_disgust:
         "Отвращение":                                                    
             $ disgust +=10                                     
             $ mood = 'disgust'
+    $ renpy.block_rollback()            
     $ show_learned_message()
     return
 
@@ -806,6 +815,7 @@ label mad_fear:
         "Страх":                                                    
             $ fear +=10                                     
             $ mood = 'fear'
+    $ renpy.block_rollback()            
     $ show_learned_message()
     return
 
@@ -926,7 +936,9 @@ label first_choice:
     return
     
 label end_card:
-    scene end_card
+    scene end_card:
+        alpha .0
+        ease 1.5 alpha 1.0
     pause
     show black:
         alpha 0.0
