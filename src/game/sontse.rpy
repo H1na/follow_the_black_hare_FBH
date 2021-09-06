@@ -4,6 +4,9 @@
 
 #Функция отслеживания эмоций Аша
 init python:
+    # renpy.music.register_channel(music, mixer=music, loop=True)
+    renpy.music.register_channel('music1', mixer="music", loop=True)
+    renpy.music.register_channel('music2', mixer="music", loop=True)
     
     LEARN_CAP = 30
     DISSOLVE_TIME = .4
