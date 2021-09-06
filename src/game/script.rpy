@@ -46,4 +46,5 @@ label start:
     $text_msg = 'Тестовое послание'
 
     $ash_name = "Аш"
+    stop music fadeout 2
     jump scene_1
