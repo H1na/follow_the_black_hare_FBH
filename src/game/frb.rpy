@@ -449,7 +449,7 @@ label scene_5:
     show vechna smile1
     hide black_hare
     vechna "Божечки-кошечки! Если можно получить разрыв сердца из-за красоты, я его получу!"
-    vechna "Ты ведь не всех выпустил их фудрариума? "
+    vechna "Ты ведь не всех выпустил из фудрариума? "
     narrator "Младший брат был доволен, что угодил сестре."
     show black_hare regular_happy1
     hide vechna
@@ -483,7 +483,7 @@ label scene_5:
     black_hare "Опять? Твои идеи это слишком."
     show vechna thinking
     hide black_hare
-    vechna "Идея это — фантазия. "
+    vechna "Идея — это фантазия. "
     vechna "А у тебя — есть готовое решение для меня!"
     hide vechna
     show black_hare regular_angry
@@ -5527,7 +5527,7 @@ label scene_31:
     narrator "Стоящему рядом лису Онка бросает:"
     show onka angry
     onka "Проверь мою комнату! "
-    onka "Найди на Фабрике манго или эфирные масло, все, что возможно!"
+    onka "Найди на Фабрике манго или эфирное масло, все, что возможно!"
     show onka thinking
     onka "И без интервью, будь добр."
     hide onka
