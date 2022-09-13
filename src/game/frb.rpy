@@ -130,7 +130,7 @@ label scene_2 :
     hide vechna
     digital_vechna "Именно поэтому цифровая копия — ведущее сознание. "
     digital_vechna "В цифре я сделаю больше, чем две \"настоящие\" Вечны. "
-    digital_vechna "Ты сама знаешь про уговор!"
+    digital_vechna "Ты сама знаешь условия!"
     show vechna sad
     hide digital_vechna
     vechna "Это ошибка! Такого уговора не было!.."
